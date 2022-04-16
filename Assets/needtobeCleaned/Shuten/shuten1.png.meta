@@ -1,0 +1,1294 @@
+fileFormatVersion: 2
+guid: 7fe2973f79e29fd4dadf4b6d8b159fa1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shuten1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5e741df7acd5c4babb3b96d0a739c2
+      internalID: 1775118624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ce3e7ae8d2c1d40a55dcf40a36982d
+      internalID: -635810667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_2
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb0528f513a906488fff446d4de6a53
+      internalID: -661915958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_3
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3129a78f17df93943958579591fea687
+      internalID: 26481568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bce81de32120884aa8e8cc12f234e5b
+      internalID: -1376668573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_5
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c309df557d26eea43b26d347c18b4bb1
+      internalID: 436031520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_6
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af2c9d95314273489dfc3f19bfb970e
+      internalID: 1654744853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_7
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427d1e1ab43022d43a1fb6c9924097f1
+      internalID: -1912770471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a4676f2fecbe64384e00e2e18c707f
+      internalID: -351769308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f353c3d8fc944c448fe0d6e9a37b7ce
+      internalID: -2007358160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_10
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ebf4927618434459afa4c841749a9d
+      internalID: 1225605174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_11
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7668510667efb264bb6c30015388e297
+      internalID: 2095399199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729c7e9e99aa2cb46b2f784f2356dd88
+      internalID: -1008821650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_13
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1438ace42a6c27b4fb37176c99639e23
+      internalID: -1340593803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_14
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aa5fdc46eca22478966e8258ce66c4
+      internalID: 1052325958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_15
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1fd80660f1cef41928a75ffb945579
+      internalID: -1718136979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22106704c127354ab931acee65fd0eb
+      internalID: -495497319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f44a57154327f54b8db25c4a4e8a246
+      internalID: 104070291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b394e3fc2f9674d968b2860f14f02d
+      internalID: 1764905972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65862bdf96627144a96e7c99b1a43ce
+      internalID: -479972675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_20
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f90e68f89fde1240901919d714fa61d
+      internalID: 408015786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_21
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783023310bc269949bed2456f0f2a8ff
+      internalID: 1051184849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_22
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4786311b2bcd4a8468ecd7fde60fdae5
+      internalID: 130626710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_23
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b3295088f376b4fa667ebf2d2110b0
+      internalID: -462710143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8268daa996b2e0c47b1946bfbdfcd701
+      internalID: -694280759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_25
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff021a65f781c664f9ae1ffe817ec090
+      internalID: 2081197247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_26
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b7007985f7c504589e63a8aca17aed
+      internalID: 404735533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_27
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89930915013cc64ca2d8fd3c20f5c20
+      internalID: 2046874364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_28
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e760f9c9aeb04e41aa193fd3b217b07
+      internalID: 293343674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_29
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2442265e8c431a6459ec0ae27d0050de
+      internalID: 1556801956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_30
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9bdde5d81436d4dacfaec03a289163
+      internalID: 924824951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_31
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1254d7348db6c41b08a57e620d905c
+      internalID: -679282577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6208d40daae7464489301e0e051013c
+      internalID: 865162244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_33
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbbb902c6beec84585970fb8f89ab1e
+      internalID: -976658013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_34
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2759c0024d5c040822e8b65587ab63
+      internalID: 1309329821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_35
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1d837e222ea6947816ea035c573000
+      internalID: 1701107353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_36
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6facc64e6780fe246894247bcbd1ad62
+      internalID: 2779818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_37
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9affbf77f6ab93d40a5ba9054a64f8d8
+      internalID: -915932722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_38
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d31d0b66cb2f3409177f724a6fdcb5
+      internalID: -1689739446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_39
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a2301f915b04e43a4da06400e14ef4
+      internalID: -515782755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3f6b373f8832d45a367106fbdce8dc
+      internalID: -907152858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_41
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5354981d20faf6e46804ee25656bdcbc
+      internalID: -181646965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_42
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe60294fb35dcc49a97e3f67b6ef635
+      internalID: 2117240527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_43
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb4c877c2f8d0942a6cf7b902ddadc0
+      internalID: -779691009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_44
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ed0956d2deca941b298a0225b307b7
+      internalID: 1417913184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26b693a2b13981449db497eed735085
+      internalID: 267617393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_46
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa7e93f652546b409cc953de868f31f
+      internalID: -2026316310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_47
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32a7784785bcc54a914033d2a24300d
+      internalID: -1827392840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee73e47c3be9654bacb45bcdcec85c9
+      internalID: -2142512003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_49
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed552f455a092746b413cd517f7b66b
+      internalID: 743626574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shuten1_50
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29984108a4183f148bdde9ba1d86fab2
+      internalID: -1747277847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 2d2c7117dd4af9346a95f02f14c4732c, type: 3}
+      name: _NormalMap
+    nameFileIdTable:
+      shuten1_16: -495497319
+      shuten1_34: 1309329821
+      shuten1_4: -1376668573
+      shuten1_27: 2046874364
+      shuten1_35: 1701107353
+      shuten1_10: 1225605174
+      shuten1_29: 1556801956
+      shuten1_46: -2026316310
+      shuten1_2: -661915958
+      shuten1_18: 1764905972
+      shuten1_32: 865162244
+      shuten1_9: -2007358160
+      shuten1_48: -2142512003
+      shuten1_42: 2117240527
+      shuten1_49: 743626574
+      shuten1_24: -694280759
+      shuten1_23: -462710143
+      shuten1_30: 924824951
+      shuten1_40: -907152858
+      shuten1_33: -976658013
+      shuten1_17: 104070291
+      shuten1_45: 267617393
+      shuten1_39: -515782755
+      shuten1_43: -779691009
+      shuten1_15: -1718136979
+      shuten1_11: 2095399199
+      shuten1_8: -351769308
+      shuten1_21: 1051184849
+      shuten1_47: -1827392840
+      shuten1_7: -1912770471
+      shuten1_3: 26481568
+      shuten1_22: 130626710
+      shuten1_38: -1689739446
+      shuten1_1: -635810667
+      shuten1_14: 1052325958
+      shuten1_28: 293343674
+      shuten1_12: -1008821650
+      shuten1_13: -1340593803
+      shuten1_19: -479972675
+      shuten1_20: 408015786
+      shuten1_5: 436031520
+      shuten1_0: 1775118624
+      shuten1_31: -679282577
+      shuten1_6: 1654744853
+      shuten1_25: 2081197247
+      shuten1_50: -1747277847
+      shuten1_37: -915932722
+      shuten1_44: 1417913184
+      shuten1_26: 404735533
+      shuten1_36: 2779818
+      shuten1_41: -181646965
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

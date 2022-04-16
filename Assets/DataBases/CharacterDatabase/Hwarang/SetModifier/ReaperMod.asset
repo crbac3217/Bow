@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f55655d37de8e49a0647bf84b974bf, type: 3}
+  m_Name: ReaperMod
+  m_EditorClassIdentifier: 
+  onAdd: 1
+  modifierType: 2
+  before: {fileID: 11400000, guid: 99f09ec4361de564884441f6f82583cc, type: 2}
+  after: {fileID: 11400000, guid: 43cd415d9dc6caf4e824cf66e0eba8b7, type: 2}

@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603613bd5bc77964da35b003bdf516f3, type: 3}
+  m_Name: HwarangEquipmentDb
+  m_EditorClassIdentifier: 
+  equipments:
+  - nameCode: ke01
+    name: Stag's Horn
+    eType: 0
+    description: A bow made of stag's horns
+    thumbnail: {fileID: 5357457282185501634, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0.007843138, g: 0.83921576, b: 0.627451, a: 0.5686275}
+    skill: {fileID: 11400000, guid: 3cfd1e5540bd9c94684d6d8266818197, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke02
+    name: Broken Wing
+    eType: 0
+    description: A bow that resembles a wing
+    thumbnail: {fileID: -3109597227326708797, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0.5764706, g: 0.2901961, b: 0.69803923, a: 0.5686275}
+    skill: {fileID: 11400000, guid: 5511a6925508a7240b8ad8d6a6ea659a, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke03
+    name: Amplebow
+    eType: 0
+    description: A bow that requires immense powers to draw
+    thumbnail: {fileID: 8102782580162445882, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0.6901961, g: 0.627451, b: 0, a: 0.5686275}
+    skill: {fileID: 11400000, guid: f135c9c8c10e5cf439be031ec22285e7, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke04
+    name: Dokkaebi's Pot
+    eType: 1
+    description: A quiver infused with a Dokkaebi's greed
+    thumbnail: {fileID: -8632003197428247103, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0.054901965, g: 0.43529415, b: 0.6156863, a: 0.5686275}
+    skill: {fileID: 11400000, guid: 612586be4e3ac954bbfe67e2fd0b03c9, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke05
+    name: Divine Mane
+    eType: 1
+    description: Mane of a divine animal
+    thumbnail: {fileID: -2012831630524758095, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0.6862745, g: 0.5137255, b: 0.40784317, a: 0.5686275}
+    skill: {fileID: 11400000, guid: 361930cf594e7f54b839162ba63c2c67, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke06
+    name: Amplequiver
+    eType: 1
+    description: A quiver full of arrows that can take down stars
+    thumbnail: {fileID: 3544025558719922539, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0, g: 0.8235295, b: 0.57254905, a: 0.5686275}
+    skill: {fileID: 11400000, guid: f44f531fd287cc946b6fb4775bcc5a6d, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke07
+    name: Chasa's String
+    eType: 2
+    description: A string that once was part of a reaper's hat
+    thumbnail: {fileID: 6716528728708213977, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0.7725491, g: 0.08627451, b: 0.1254902, a: 0.5686275}
+    skill: {fileID: 11400000, guid: 99f09ec4361de564884441f6f82583cc, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke08
+    name: Dragon's Whisker
+    eType: 2
+    description: A string that possesses mystical powers of a dragon
+    thumbnail: {fileID: 8467683157880815104, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0.098039225, g: 0.49411768, b: 0.6509804, a: 0.5686275}
+    skill: {fileID: 11400000, guid: 2c8d5f5ce2afdd04c8f13cf232dd1bd8, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke09
+    name: Silver Tailhair
+    eType: 2
+    description: A string that glows mysteriously when moonlit
+    thumbnail: {fileID: -26949062715411665, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0.65882355, g: 0.16470589, b: 0.62352943, a: 0.5686275}
+    skill: {fileID: 11400000, guid: fdf0024594e29614a9f4eb50d682b00c, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke10
+    name: Wind's Sanctuary
+    eType: 3
+    description: A pair of shoes that emits a light breeze
+    thumbnail: {fileID: -1483235383253983028, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0, g: 0.91372555, b: 0.54509807, a: 0.5686275}
+    skill: {fileID: 11400000, guid: 30aaab6af3a225443b77f0fd030b3ff3, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke11
+    name: Deathwalker
+    eType: 3
+    description: A boot that emits unpleasant aura
+    thumbnail: {fileID: 3417289076994943864, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0.6666667, g: 0.078431375, b: 0.18823531, a: 0.5686275}
+    skill: {fileID: 11400000, guid: 2850a730a813ea947bdbaa60650613ef, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []
+  - nameCode: ke12
+    name: Dosa's Boots
+    eType: 3
+    description: A pair of boots that once belonged to an elementalist
+    thumbnail: {fileID: -6053966211132119045, guid: 51278cba235ba4c48afa8c245273c57c, type: 3}
+    color: {r: 0, g: 0.58431375, b: 0.72156864, a: 0.5686275}
+    skill: {fileID: 11400000, guid: 7f9444627ecf3624ebdec0239ba45567, type: 2}
+    statMods: []
+    damageMods: []
+    modifiers: []

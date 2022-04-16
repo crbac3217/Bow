@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5123113059169403426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5123113059169403424}
+  - component: {fileID: 5123113059169403425}
+  m_Layer: 0
+  m_Name: _GUIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5123113059169403424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123113059169403426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4613062, y: 5.579045, z: -3.2159145}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5123113059169403425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123113059169403426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d631944c9d0b54f845db04a5388237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tester: 0
+  pc: {fileID: 0}
+  volume: {fileID: 0}
+  canvas: {fileID: 0}
+  moveButton: {fileID: 0}
+  joyStick: {fileID: 0}
+  eqPanelPref: {fileID: 5416143967555033734, guid: 87e9ecf7a6c0c1343a1f94a19ca6efa2, type: 3}
+  eqConfirmPref: {fileID: 6174904713018737670, guid: 6ca0540af1fba2e4a962a1acba858387, type: 3}
+  eqEachItem: {fileID: 7230606590554358052, guid: 603be5c97733336409b2a0ff6bc2b632, type: 3}
+  chestPref: {fileID: 296423474826380797, guid: f09ff5f06aece034191144ccf25c5c68, type: 3}
+  shopPref: {fileID: 2888164753286387724, guid: 10aee2cd14437794299740b85a615ea4, type: 3}
+  shopEachPref: {fileID: 8647680978528197098, guid: 398431adbe0bb3c45845028e3949af02, type: 3}
+  bossBarPref: {fileID: 5076902320535880470, guid: 0505555e6e086cb4d99ca524133e20de, type: 3}
+  skillButtons: []
+  test: []

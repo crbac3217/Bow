@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02aa8c11e2986a547b49b901ce776f0a, type: 3}
+  m_Name: ShiningShield
+  m_EditorClassIdentifier: 
+  onAdd: 0
+  modifierType: 4
+  shineEffectPrefab: {fileID: 274958575517621262, guid: eaa7c9877c5b47b419475d81db1d4da2, type: 3}
+  stun: {fileID: 11400000, guid: f3922a7e45e25294aae148398a460c34, type: 2}
+  chanceMax: 10
+  stunDuration: 3
+  radius: 3

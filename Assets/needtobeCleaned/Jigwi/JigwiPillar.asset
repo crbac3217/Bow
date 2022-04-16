@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d208d74680292f4eb89d4323c483639, type: 3}
+  m_Name: JigwiPillar
+  m_EditorClassIdentifier: 
+  type: 4
+  avail: 1
+  whileMove: 0
+  AttackName: JigwiPillar
+  coolDown: 7
+  duration: 2
+  damageMult: 1
+  attackRangePrefab: {fileID: 2322153029454005009, guid: a599d90fcc7287d4e8f7b97753e930aa, type: 3}
+  projectilePrefab: {fileID: 8191544388239318185, guid: aad53d293a7d6eb40bacca77f3af8053, type: 3}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  pillars: []
+  maxDuration: 4
+  groundCheck:
+    serializedVersion: 2
+    m_Bits: 1024

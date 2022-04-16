@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f400a982c336e14e96ab172ad6e9c81, type: 3}
+  m_Name: SacredFlame
+  m_EditorClassIdentifier: 
+  skillType: 2
+  cdType: 1
+  skillName: Dragon Breath
+  description: 
+  isSkillAvail: 1
+  disableSkill: 0
+  isPassive: 0
+  selected: 0
+  held: 0
+  sb: {fileID: 0}
+  affectedSkills: []
+  activeFor: 0
+  cooldownTime: 0
+  lastTime: 0
+  cdMaxCount: 5
+  cdCurrentCount: 0
+  enhanceObj: {fileID: 0}
+  aimableSkill: {fileID: 0}
+  thumbnail: {fileID: 3710001279708246345, guid: 4945b0bf06b76a4408539fe0d04138a2, type: 3}
+  tempCounter: {fileID: 0}
+  BreathPrefabs:
+  - {fileID: 7565837559645007240, guid: b922f86e39048734e84521e057cffb50, type: 3}
+  - {fileID: 7565837559645007240, guid: f184a90c401901e47b1799097aadd66b, type: 3}
+  - {fileID: 7565837559645007240, guid: 64b34d712c7d1b04aa87718fe7669ead, type: 3}
+  - {fileID: 7565837559645007240, guid: b21f58cd5286fe240896df64274bc0e1, type: 3}
+  - {fileID: 7565837559645007240, guid: 8e8165624b248ef49ae67b13a2e7ba0e, type: 3}
+  sprites:
+  - {fileID: 4422209972271922523, guid: b60a8f1dea45dd34781f41407abfc7ae, type: 3}
+  - {fileID: -5239757025390120261, guid: 972ef6f9f73532e4f95f2832ce5724b9, type: 3}
+  - {fileID: 3710001279708246345, guid: 4945b0bf06b76a4408539fe0d04138a2, type: 3}
+  - {fileID: -6827116705786719833, guid: 92ce13c0549e36b44b825e8f89451dac, type: 3}
+  - {fileID: -7166836532441977358, guid: c57915ec6f6b0d54db945945f24076df, type: 3}
+  delem: 5
+  damageMultiplier: 0.5

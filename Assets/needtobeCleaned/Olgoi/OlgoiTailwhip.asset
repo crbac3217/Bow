@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8c395015eb6774a803b48afc63e076, type: 3}
+  m_Name: OlgoiTailwhip
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: OlgoiTailWhip
+  coolDown: 15
+  duration: 6
+  damageMult: 1
+  dashDist: 0
+  attackRangePrefab: {fileID: 2712442361421800412, guid: 210898fde74d114429bf4fbb25e8d98e, type: 3}
+  projectilePrefab: {fileID: 6896971151741930831, guid: 4b07447abf5adf844beb7ce6a591769c, type: 3}
+  range: {fileID: 2239209912514677464, guid: 210898fde74d114429bf4fbb25e8d98e, type: 3}
+  aiHandler: {fileID: 0}
+  actualRangePref: {fileID: 3950362817497139949, guid: 63d085c55e8f1a348ab3784c33ee43ab, type: 3}
+  actualRange: {fileID: 0}
+  oai: {fileID: 0}
+  meleeMult: 3

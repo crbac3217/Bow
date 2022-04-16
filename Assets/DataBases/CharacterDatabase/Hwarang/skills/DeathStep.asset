@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143cbe6efc15db648a3cfd5e9c82f296, type: 3}
+  m_Name: DeathStep
+  m_EditorClassIdentifier: 
+  skillType: 3
+  cdType: 2
+  skillName: DeathStep
+  description: 
+  isSkillAvail: 1
+  disableSkill: 0
+  isPassive: 0
+  selected: 0
+  held: 0
+  sb: {fileID: 0}
+  affectedSkills: []
+  activeFor: 0
+  cooldownTime: 3
+  lastTime: 0
+  cdMaxCount: 0
+  cdCurrentCount: 0
+  enhanceObj: {fileID: 0}
+  moveMod: {fileID: 11400000, guid: 8e86b553507ead449ab6180a6f826723, type: 2}
+  aimableSkill: {fileID: 0}
+  thumbnail: {fileID: 8626979464451430688, guid: c1a2d93721e62f74c85b1fac5b9727a7, type: 3}
+  tempCounter: {fileID: 0}

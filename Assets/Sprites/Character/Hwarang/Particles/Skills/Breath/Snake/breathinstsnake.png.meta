@@ -1,0 +1,633 @@
+fileFormatVersion: 2
+guid: 43857cb0870af88458baf12c13cf3259
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8410886972544276760
+    second: breathinstsnake_0
+  - first:
+      213: -7372517038989854286
+    second: breathinstsnake_1
+  - first:
+      213: 5270365150022572858
+    second: breathinstsnake_2
+  - first:
+      213: 2594215408361410008
+    second: breathinstsnake_3
+  - first:
+      213: -5439141350628438115
+    second: breathinstsnake_4
+  - first:
+      213: -5911541685993070777
+    second: breathinstsnake_5
+  - first:
+      213: 103584327221945960
+    second: breathinstsnake_6
+  - first:
+      213: -4364401102005061555
+    second: breathinstsnake_7
+  - first:
+      213: -4516970458329633098
+    second: breathinstsnake_8
+  - first:
+      213: 7333821327090405045
+    second: breathinstsnake_9
+  - first:
+      213: 2281702708760397069
+    second: breathinstsnake_10
+  - first:
+      213: 7835776736444531629
+    second: breathinstsnake_11
+  - first:
+      213: 2101890241903400184
+    second: breathinstsnake_12
+  - first:
+      213: 2864026203358509519
+    second: breathinstsnake_13
+  - first:
+      213: -1110748353801510697
+    second: breathinstsnake_14
+  - first:
+      213: 7392077571540929172
+    second: breathinstsnake_15
+  - first:
+      213: 6375527411536235130
+    second: breathinstsnake_16
+  - first:
+      213: -8365190753456235052
+    second: breathinstsnake_17
+  - first:
+      213: -452934962162731789
+    second: breathinstsnake_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: breathinstsnake_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6a98b7cd6864b80800000000000000
+      internalID: -8410886972544276760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9be7670de8fa990800000000000000
+      internalID: -7372517038989854286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_2
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b91bb2e29142940800000000000000
+      internalID: 5270365150022572858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_3
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd0a3e4b21800420800000000000000
+      internalID: 2594215408361410008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_4
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f47a862c94484b0800000000000000
+      internalID: -5439141350628438115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f1873482cf5fda0800000000000000
+      internalID: -5911541685993070777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_6
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866ac549561007100800000000000000
+      internalID: 103584327221945960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d483aa142588e63c0800000000000000
+      internalID: -4364401102005061555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be2452dc4f7051c0800000000000000
+      internalID: -4516970458329633098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_9
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be486704a7f6c560800000000000000
+      internalID: 7333821327090405045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05c5be468c3aaf10800000000000000
+      internalID: 2281702708760397069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_11
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3cb031d654ebc60800000000000000
+      internalID: 7835776736444531629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_12
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f41389e90a6b2d10800000000000000
+      internalID: 2101890241903400184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_13
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9389e58a01fb720800000000000000
+      internalID: 2864026203358509519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_14
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0afc8d144d590f0800000000000000
+      internalID: -1110748353801510697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a44dbe26fe59660800000000000000
+      internalID: 7392077571540929172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_16
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a026cd66c6a7850800000000000000
+      internalID: 6375527411536235130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dddbd5945fd8eb80800000000000000
+      internalID: -8365190753456235052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breathinstsnake_18
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.18, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f47fe93d0ad6b9f0800000000000000
+      internalID: -452934962162731789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      breathinstsnake_13: 2864026203358509519
+      breathinstsnake_18: -452934962162731789
+      breathinstsnake_0: -8410886972544276760
+      breathinstsnake_8: -4516970458329633098
+      breathinstsnake_7: -4364401102005061555
+      breathinstsnake_6: 103584327221945960
+      breathinstsnake_4: -5439141350628438115
+      breathinstsnake_14: -1110748353801510697
+      breathinstsnake_10: 2281702708760397069
+      breathinstsnake_11: 7835776736444531629
+      breathinstsnake_9: 7333821327090405045
+      breathinstsnake_2: 5270365150022572858
+      breathinstsnake_3: 2594215408361410008
+      breathinstsnake_5: -5911541685993070777
+      breathinstsnake_15: 7392077571540929172
+      breathinstsnake_1: -7372517038989854286
+      breathinstsnake_12: 2101890241903400184
+      breathinstsnake_16: 6375527411536235130
+      breathinstsnake_17: -8365190753456235052
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36baa7892bbbd884d83364f15801eac2, type: 3}
+  m_Name: MageAttack
+  m_EditorClassIdentifier: 
+  type: 1
+  avail: 1
+  whileMove: 0
+  AttackName: MageAttack
+  coolDown: 5
+  duration: 1
+  damageMult: 2
+  attackRangePrefab: {fileID: 6502609955261383993, guid: df7338bd7ac8e8d4384502e9a9d70997, type: 3}
+  projectilePrefab: {fileID: 6896971151741930831, guid: e619553a0afc13b4c83cfe3c1954ac48, type: 3}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}

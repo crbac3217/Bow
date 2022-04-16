@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27af5ccb31a8d7c4b862e5b0dc1bbba4, type: 3}
+  m_Name: ShutenDish
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: ShutenDish
+  coolDown: 20
+  duration: 5
+  damageMult: 0
+  attackRangePrefab: {fileID: 6492707592040892749, guid: 46e08af72b8035742865ff5c3f1fc7d9, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  maxTime: 7
+  reviveDuration: 3
+  hitTimes: 0
+  ShutenDishCollider: {fileID: 0}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36baa7892bbbd884d83364f15801eac2, type: 3}
+  m_Name: MeleeGolemAttack
+  m_EditorClassIdentifier: 
+  type: 0
+  avail: 1
+  whileMove: 0
+  AttackName: MeleeGolemAttack
+  coolDown: 2
+  duration: 1
+  damageMult: 1
+  attackRangePrefab: {fileID: 8988690514454954716, guid: 074be0b1d8ed05c429675508183f3a57, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 7517832579806922614, guid: 074be0b1d8ed05c429675508183f3a57, type: 3}
+  aiHandler: {fileID: 0}

@@ -1,0 +1,362 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf19e2971cef0074586ddc0dac6f8b69, type: 3}
+  m_Name: HwarangSetDb
+  m_EditorClassIdentifier: 
+  sets:
+  - setName: dragon
+    currentCount: 0
+    maxCount: 5
+    setCodes:
+    - ke01
+    - ke05
+    - ke08
+    - i017
+    - i036
+    collected: []
+    setEffects:
+    - effectName: eemugi
+      effectThumb: {fileID: 0}
+      setCount: 3
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 4
+        value: 3
+      damageMods:
+      - damageElement: 0
+        value: 5
+      modifiers: []
+    - effectName: dragon
+      effectThumb: {fileID: 0}
+      setCount: 5
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 4
+        value: 5
+      damageMods: []
+      modifiers:
+      - {fileID: 11400000, guid: 22177ab94eca76645aafa3c04dfab8db, type: 2}
+  - setName: divinity
+    currentCount: 0
+    maxCount: 3
+    setCodes:
+    - i021
+    - i025
+    - i053
+    collected: []
+    setEffects:
+    - effectName: divinity
+      effectThumb: {fileID: 0}
+      setCount: 3
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 5
+        value: 2
+      - statType: 1
+        value: 2
+      damageMods:
+      - damageElement: 0
+        value: 5
+      modifiers: []
+  - setName: chasa
+    currentCount: 0
+    maxCount: 3
+    setCodes:
+    - ke07
+    - ke11
+    - i047
+    collected: []
+    setEffects:
+    - effectName: chasa
+      effectThumb: {fileID: 0}
+      setCount: 3
+      currentlyActive: 0
+      elem: 0
+      statMods: []
+      damageMods: []
+      modifiers:
+      - {fileID: 11400000, guid: 7b216315694f71b439daa4cb082cbf49, type: 2}
+  - setName: kumiho
+    currentCount: 0
+    maxCount: 4
+    setCodes:
+    - ke09
+    - i024
+    - i026
+    - i036
+    collected: []
+    setEffects:
+    - effectName: sammiho
+      effectThumb: {fileID: 0}
+      setCount: 2
+      currentlyActive: 0
+      elem: 0
+      statMods: []
+      damageMods: []
+      modifiers: []
+    - effectName: kumiho
+      effectThumb: {fileID: 0}
+      setCount: 4
+      currentlyActive: 0
+      elem: 0
+      statMods: []
+      damageMods: []
+      modifiers:
+      - {fileID: 11400000, guid: 400af8b68b0935d46892197de5a08803, type: 2}
+  - setName: three-legged-crow
+    currentCount: 0
+    maxCount: 4
+    setCodes:
+    - ke02
+    - i028
+    - i029
+    - i031
+    collected: []
+    setEffects:
+    - effectName: three-legged-crow
+      effectThumb: {fileID: 0}
+      setCount: 4
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 5
+        value: 1
+      damageMods: []
+      modifiers:
+      - {fileID: 11400000, guid: 2c69c6312ff0934429bae5dff5371e80, type: 2}
+  - setName: tiger
+    currentCount: 0
+    maxCount: 2
+    setCodes:
+    - i006
+    - i026
+    collected: []
+    setEffects:
+    - effectName: tiger
+      effectThumb: {fileID: 0}
+      setCount: 1
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 0
+        value: 1
+      - statType: 1
+        value: 1
+      - statType: 2
+        value: 1
+      - statType: 3
+        value: 1
+      - statType: 4
+        value: 1
+      damageMods: []
+      modifiers: []
+    - effectName: sangoon
+      effectThumb: {fileID: 0}
+      setCount: 2
+      currentlyActive: 0
+      elem: 0
+      statMods: []
+      damageMods:
+      - damageElement: 0
+        value: 1
+      - damageElement: 1
+        value: 1
+      - damageElement: 2
+        value: 1
+      - damageElement: 3
+        value: 1
+      - damageElement: 4
+        value: 1
+      - damageElement: 5
+        value: 1
+      modifiers: []
+  - setName: beik
+    currentCount: 0
+    maxCount: 3
+    setCodes:
+    - ke02
+    - i030
+    - i031
+    collected: []
+    setEffects:
+    - effectName: beik
+      effectThumb: {fileID: 0}
+      setCount: 3
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 5
+        value: 1
+      damageMods: []
+      modifiers:
+      - {fileID: 11400000, guid: 516b31373d6c0e844895b41508a0bd40, type: 2}
+  - setName: dokkaebi
+    currentCount: 0
+    maxCount: 3
+    setCodes:
+    - ke04
+    - i034
+    - i059
+    collected: []
+    setEffects:
+    - effectName: dokkaebi
+      effectThumb: {fileID: 0}
+      setCount: 3
+      currentlyActive: 0
+      elem: 0
+      statMods: []
+      damageMods: []
+      modifiers: []
+    - effectName: dokkaebi
+      effectThumb: {fileID: 0}
+      setCount: 3
+      currentlyActive: 0
+      elem: 0
+      statMods: []
+      damageMods: []
+      modifiers:
+      - {fileID: 11400000, guid: 82b78f6f1d6b49843b496e6d5a578ed9, type: 2}
+  - setName: baridaeki
+    currentCount: 0
+    maxCount: 5
+    setCodes:
+    - i011
+    - i018
+    - i020
+    - i039
+    - i053
+    collected: []
+    setEffects:
+    - effectName: baridaeki
+      effectThumb: {fileID: 0}
+      setCount: 5
+      currentlyActive: 0
+      elem: 0
+      statMods: []
+      damageMods: []
+      modifiers:
+      - {fileID: 11400000, guid: 3574e98cfe3cb524e80634466a85caa3, type: 2}
+  - setName: starlords
+    currentCount: 0
+    maxCount: 2
+    setCodes:
+    - ke03
+    - ke06
+    collected: []
+    setEffects:
+    - effectName: starlords
+      effectThumb: {fileID: 0}
+      setCount: 2
+      currentlyActive: 0
+      elem: 0
+      statMods: []
+      damageMods:
+      - damageElement: 0
+        value: 10
+      modifiers:
+      - {fileID: 11400000, guid: b6118666e0ce77f42955ecab40d64ba1, type: 2}
+  - setName: zephyr
+    currentCount: 0
+    maxCount: 2
+    setCodes:
+    - ke10
+    - i011
+    collected: []
+    setEffects:
+    - effectName: zephyr
+      effectThumb: {fileID: 0}
+      setCount: 2
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 0
+        value: 2
+      damageMods:
+      - damageElement: 4
+        value: 5
+      modifiers: []
+  - setName: nimbus
+    currentCount: 0
+    maxCount: 2
+    setCodes:
+    - i007
+    - i012
+    collected: []
+    setEffects:
+    - effectName: nimbus
+      effectThumb: {fileID: 0}
+      setCount: 2
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 1
+        value: 2
+      damageMods:
+      - damageElement: 5
+        value: 5
+      modifiers: []
+  - setName: monsoon
+    currentCount: 0
+    maxCount: 2
+    setCodes:
+    - i016
+    - ke08
+    collected: []
+    setEffects:
+    - effectName: monsoon
+      effectThumb: {fileID: 0}
+      setCount: 2
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 2
+        value: 2
+      damageMods:
+      - damageElement: 1
+        value: 5
+      modifiers: []
+  - setName: hwanwoong
+    currentCount: 0
+    maxCount: 9
+    setCodes:
+    - ke08
+    - ke10
+    - i007
+    - i011
+    - i012
+    - i016
+    - i021
+    - i025
+    - i053
+    collected: []
+    setEffects:
+    - effectName: hwanwoong
+      effectThumb: {fileID: 0}
+      setCount: 9
+      currentlyActive: 0
+      elem: 0
+      statMods:
+      - statType: 3
+        value: 5
+      - statType: 4
+        value: 10
+      damageMods:
+      - damageElement: 0
+        value: 5
+      - damageElement: 2
+        value: 5
+      - damageElement: 3
+        value: 5
+      modifiers: []

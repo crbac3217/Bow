@@ -1,0 +1,633 @@
+fileFormatVersion: 2
+guid: 3312bd247697ec341ae66207454a464a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -480997996269841132
+    second: breath_waterinst_0
+  - first:
+      213: -2014864349913296252
+    second: breath_waterinst_1
+  - first:
+      213: -3230636734859653659
+    second: breath_waterinst_2
+  - first:
+      213: -3713868504157968625
+    second: breath_waterinst_3
+  - first:
+      213: 6685900091591186127
+    second: breath_waterinst_4
+  - first:
+      213: -5416858087957672042
+    second: breath_waterinst_5
+  - first:
+      213: -6589907731873906816
+    second: breath_waterinst_6
+  - first:
+      213: 281050243799506466
+    second: breath_waterinst_7
+  - first:
+      213: -3349222976140274033
+    second: breath_waterinst_8
+  - first:
+      213: 5402946852717738081
+    second: breath_waterinst_9
+  - first:
+      213: 8987251335930903998
+    second: breath_waterinst_10
+  - first:
+      213: 2616063071303229947
+    second: breath_waterinst_11
+  - first:
+      213: -1965148433459986406
+    second: breath_waterinst_12
+  - first:
+      213: -3597973435948697756
+    second: breath_waterinst_13
+  - first:
+      213: -5002039476775277080
+    second: breath_waterinst_14
+  - first:
+      213: 428989030870052791
+    second: breath_waterinst_15
+  - first:
+      213: -2007593120346020778
+    second: breath_waterinst_16
+  - first:
+      213: 9170161731510886916
+    second: breath_waterinst_17
+  - first:
+      213: -5517756475416774439
+    second: breath_waterinst_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: breath_waterinst_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41559aeeed62359f0800000000000000
+      internalID: -480997996269841132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482d1d88c83c904e0800000000000000
+      internalID: -2014864349913296252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_2
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edcc5c91097a23d0800000000000000
+      internalID: -3230636734859653659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_3
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07272bb540b57cc0800000000000000
+      internalID: -3713868504157968625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_4
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 600
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc65b0bb5b619cc50800000000000000
+      internalID: 6685900091591186127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fc49cc44473d4b0800000000000000
+      internalID: -5416858087957672042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_6
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f3e0b25d1fb84a0800000000000000
+      internalID: -6589907731873906816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ed4b925bd76e300800000000000000
+      internalID: 281050243799506466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f861599b27b2581d0800000000000000
+      internalID: -3349222976140274033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_9
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 400
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1683e88598f1bfa40800000000000000
+      internalID: 5402946852717738081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebdf059397129bc70800000000000000
+      internalID: 8987251335930903998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_11
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1eb0bb08f1e4420800000000000000
+      internalID: 2616063071303229947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_12
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10c3bc59e36ab4e0800000000000000
+      internalID: -1965148433459986406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_13
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4677cfe093e611ec0800000000000000
+      internalID: -3597973435948697756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_14
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 200
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed245a099f259ab0800000000000000
+      internalID: -5002039476775277080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf6c8d204314f500800000000000000
+      internalID: 428989030870052791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_16
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654e14891b89324e0800000000000000
+      internalID: -2007593120346020778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402669b5285f24f70800000000000000
+      internalID: 9170161731510886916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breath_waterinst_18
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 350
+        height: 200
+      alignment: 9
+      pivot: {x: 0.2, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8fbad48bdfc63b0800000000000000
+      internalID: -5517756475416774439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      breath_waterinst_15: 428989030870052791
+      breath_waterinst_14: -5002039476775277080
+      breath_waterinst_13: -3597973435948697756
+      breath_waterinst_17: 9170161731510886916
+      breath_waterinst_5: -5416858087957672042
+      breath_waterinst_10: 8987251335930903998
+      breath_waterinst_11: 2616063071303229947
+      breath_waterinst_9: 5402946852717738081
+      breath_waterinst_8: -3349222976140274033
+      breath_waterinst_4: 6685900091591186127
+      breath_waterinst_3: -3713868504157968625
+      breath_waterinst_2: -3230636734859653659
+      breath_waterinst_7: 281050243799506466
+      breath_waterinst_12: -1965148433459986406
+      breath_waterinst_1: -2014864349913296252
+      breath_waterinst_18: -5517756475416774439
+      breath_waterinst_6: -6589907731873906816
+      breath_waterinst_0: -480997996269841132
+      breath_waterinst_16: -2007593120346020778
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76001c970130b64ea3c26f5b69c0212, type: 3}
+  m_Name: MinotaurSlam
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: MinotaurSlam
+  coolDown: 5
+  duration: 1.5
+  damageMult: 1
+  attackRangePrefab: {fileID: 69027767456953500, guid: 40d16d568bd2ab64c919ac41b3db5fd6, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  groundSlamParticle: {fileID: 5620377640079746306, guid: 1b6162e155a61af409707f15dd808596, type: 3}

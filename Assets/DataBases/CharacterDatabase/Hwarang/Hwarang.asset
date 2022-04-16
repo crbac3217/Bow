@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670450444020fae448694380e806650e, type: 3}
+  m_Name: Hwarang
+  m_EditorClassIdentifier: 
+  typeName: Hwarang
+  itemdb: {fileID: 11400000, guid: 7bea01b3cd0215f4cb233c80b1fc3dfd, type: 2}
+  setdb: {fileID: 11400000, guid: 3f5aa5f32cfc2b346b1e2c81d970b6de, type: 2}
+  equipdb: {fileID: 11400000, guid: f73df900cfe99b141a980bee813317c5, type: 2}
+  beginner: {fileID: 11400000, guid: f73df900cfe99b141a980bee813317c5, type: 2}
+  defaultStats:
+  - statType: 0
+    value: 2
+  - statType: 1
+    value: 2
+  - statType: 2
+    value: 10
+  - statType: 3
+    value: 5
+  - statType: 4
+    value: 1
+  - statType: 5
+    value: 1
+  defaultDamages:
+  - damageElement: 0
+    value: 5
+  - damageElement: 2
+    value: 0
+  - damageElement: 3
+    value: 0
+  - damageElement: 4
+    value: 0
+  - damageElement: 5
+    value: 0
+  - damageElement: 6
+    value: 0
+  tierColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.9339623, g: 0.7684859, b: 0.3127893, a: 1}
+  - {r: 0.26462567, g: 0.6509434, b: 0.17501779, a: 1}
+  - {r: 0.18111429, g: 0.27555108, b: 0.6981132, a: 1}
+  - {r: 0.8301887, g: 0.21613002, b: 0.19188325, a: 1}
+  - {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+  DamageColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.20901564, g: 0.43116006, b: 0.7264151, a: 1}
+  - {r: 0.032796368, g: 0.6320754, b: 0.27357823, a: 1}
+  - {r: 0.8018868, g: 0.14549835, b: 0.13238695, a: 1}
+  - {r: 0.2811944, g: 0.8396226, b: 0.6397307, a: 1}
+  - {r: 0.33490568, g: 0.916462, b: 1, a: 1}
+  utilColors:
+  - {r: 0.03137255, g: 0.6313726, b: 0.27450982, a: 1}
+  - {r: 0.9333334, g: 0.7686275, b: 0.3137255, a: 1}
+  - {r: 0.8313726, g: 0.21568629, b: 0.19215688, a: 1}
+  damageSkins:
+  - {fileID: -6429493399158520243, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: 3648764528808031850, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -3688568089006841474, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -7608935580259569964, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: 8832018557762821792, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: 6534441128267502912, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -4376590647097162214, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: 4208607686195526434, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -5608541240922819171, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -4260601082722757067, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  critSkins:
+  - {fileID: 2341889305116284032, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: 4598295003502512739, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -7094699759390523938, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -1670278077192849873, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: 9131621325635297459, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -8331784581222038874, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -811320144273637953, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: 5889022747024144289, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: 5213909876358603406, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  - {fileID: -8963580178460325425, guid: 977e63db77bfaf14b82f97f5a3075549, type: 3}
+  critList:
+  - {fileID: 11400000, guid: 0af1125861bbfc942b5e5369442b12af, type: 2}
+  - {fileID: 11400000, guid: 2100ed74cde0c8545a2ababf49d50334, type: 2}
+  - {fileID: 11400000, guid: b9ce23c472f38c4408362c6dd4f07206, type: 2}
+  - {fileID: 11400000, guid: 8db8464af5e12b74493e0581bb81eee4, type: 2}
+  - {fileID: 11400000, guid: 47826d59bf7169742abcd6ffadb39b4d, type: 2}

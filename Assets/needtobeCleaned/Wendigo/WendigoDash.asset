@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa35b4f5e0c9a4f4a8ad443409f6e736, type: 3}
+  m_Name: WendigoDash
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: WendigoDash
+  coolDown: 5
+  duration: 1.5
+  damageMult: 1
+  attackRangePrefab: {fileID: 879816766042766336, guid: 17dcb784371ace846aa17abc890c6d88, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  dashDistance: 4.5
+  actualRangePref: {fileID: 1542883008932808649, guid: e2fc96080350f574596c0b77124f4ab2, type: 3}

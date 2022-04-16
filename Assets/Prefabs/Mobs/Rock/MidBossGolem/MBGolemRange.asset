@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36baa7892bbbd884d83364f15801eac2, type: 3}
+  m_Name: MBGolemRange
+  m_EditorClassIdentifier: 
+  type: 1
+  avail: 1
+  whileMove: 0
+  AttackName: MBGolemRange
+  coolDown: 8
+  duration: 1
+  damageMult: 1
+  attackRangePrefab: {fileID: 5807344334015697102, guid: aa3cc566712f1604db06dee89d8b5865, type: 3}
+  projectilePrefab: {fileID: 6896971151741930831, guid: 70d2a63ac7f701f40a45b55cb08d094c, type: 3}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}

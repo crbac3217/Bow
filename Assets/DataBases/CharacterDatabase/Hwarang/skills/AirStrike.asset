@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe573cad875bcb74a9fcd89a33edeb98, type: 3}
+  m_Name: AirStrike
+  m_EditorClassIdentifier: 
+  skillType: 2
+  cdType: 3
+  skillName: Flurry
+  description: Spin and shoot feathers that chases enemies
+  isSkillAvail: 1
+  disableSkill: 0
+  isPassive: 0
+  selected: 0
+  held: 0
+  sb: {fileID: 0}
+  affectedSkills: []
+  activeFor: 1
+  cooldownTime: 0
+  lastTime: 0
+  cdMaxCount: 0
+  cdCurrentCount: 0
+  enhanceObj: {fileID: 0}
+  aimableSkill: {fileID: 0}
+  thumbnail: {fileID: 3834680524920262440, guid: b60a8f1dea45dd34781f41407abfc7ae, type: 3}
+  tempCounter: {fileID: 0}
+  spinParticle: {fileID: 8593854284867003561, guid: 90646729ebbbfe84d93b809040a1d098, type: 3}
+  bird: {fileID: 0}
+  birdshot: {fileID: 11400000, guid: 5511a6925508a7240b8ad8d6a6ea659a, type: 2}
+  damageMultiplier: 0.2

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adec019b16ea88046b4c63ace66323bc, type: 3}
+  m_Name: Desert
+  m_EditorClassIdentifier: 
+  mapTheme: 0
+  startAreas:
+  - {fileID: 2701981635127938329, guid: 0835451db73e2e143b80629114e6400e, type: 3}
+  middleAreas:
+  - {fileID: 5671804190628430109, guid: 8478e92b0fe5591429a05617abba720a, type: 3}
+  - {fileID: 6157303536767307413, guid: abf65ea2c2ae82d458a498c028a0529d, type: 3}
+  - {fileID: 840446940718147377, guid: 0298563252d39714fb3b9dc722c50b2a, type: 3}
+  - {fileID: 4698969695660584288, guid: bce6700f74142da4e8408ad1d43959da, type: 3}
+  - {fileID: 8482118954290929973, guid: bd0697a5c12e39f428780ba2ee85fc29, type: 3}
+  - {fileID: 7488676940755355164, guid: 65aa9e5ab48641d4d956b8fd47558e4c, type: 3}
+  - {fileID: 895180963229083635, guid: 71dc2a853e09a52498d70301ba4f31bc, type: 3}
+  - {fileID: 4317586822560090187, guid: df56b672f73c3c748ad03568c3cc86d4, type: 3}
+  - {fileID: 6632814883172989707, guid: 7cdab7e0c0db94842aacc146005ab917, type: 3}
+  - {fileID: 149219465818914191, guid: 36294b566b30ffc499f9eca3722fde65, type: 3}
+  endAreas:
+  - {fileID: 8794652751386844218, guid: 8344864badd5e4e49b6a404cea04aa9e, type: 3}
+  backGround: []
+  midGround: []
+  effect: {fileID: 0}
+  themeColor: []

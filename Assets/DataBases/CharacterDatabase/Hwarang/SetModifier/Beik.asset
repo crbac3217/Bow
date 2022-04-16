@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd80e335c17c074a84e9e724dd89109, type: 3}
+  m_Name: Beik
+  m_EditorClassIdentifier: 
+  onAdd: 1
+  modifierType: 2
+  counter: 0
+  before: {fileID: 11400000, guid: 5511a6925508a7240b8ad8d6a6ea659a, type: 2}
+  after: {fileID: 11400000, guid: 7d5a2430516152946b75f3690a12bc20, type: 2}
+  Additional: {fileID: 649963140489972538, guid: 125583591bd4e6447907e706decedfb1, type: 3}

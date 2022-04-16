@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f048dc1b008d1e7499a4c8617d96384f, type: 3}
+  m_Name: Crit_Electro
+  m_EditorClassIdentifier: 
+  critName: Electrocuted
+  icon: {fileID: 21300000, guid: fc4819e6b4ac791479cea822dcdd8ff4, type: 3}
+  isTick: 0
+  hasEnded: 0
+  timeMult: 0.2
+  minTime: 3
+  maxTime: 8
+  ticksLeft: 
+  elecc: {fileID: 0}
+  radius: 1
+  minDam: 1
+  targettableEnemies: 3
+  electroLine: {fileID: 71179904603967392, guid: be2199c3f7047444795d78d364d9bd5d, type: 3}

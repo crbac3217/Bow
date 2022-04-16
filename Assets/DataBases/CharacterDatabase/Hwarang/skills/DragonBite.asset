@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e75a004b69e15488100c769dad5e26, type: 3}
+  m_Name: DragonBite
+  m_EditorClassIdentifier: 
+  skillType: 1
+  cdType: 0
+  skillName: Dragon's Bite
+  description: 
+  isSkillAvail: 1
+  disableSkill: 0
+  isPassive: 0
+  selected: 0
+  held: 0
+  sb: {fileID: 0}
+  affectedSkills: []
+  activeFor: 0
+  cooldownTime: 0
+  lastTime: 0
+  cdMaxCount: 8
+  cdCurrentCount: 0
+  enhanceObj: {fileID: 0}
+  aimableSkill: {fileID: 0}
+  thumbnail: {fileID: 5705123167740313221, guid: 4945b0bf06b76a4408539fe0d04138a2, type: 3}
+  tempCounter: {fileID: 0}
+  delem: 5
+  prefabs:
+  - {fileID: 5716282689887267659, guid: 8b200ae7d976f45449ac15e1692d8d79, type: 3}
+  - {fileID: 5716282689887267659, guid: 8722d204159121b4d87e1ec6242f2caa, type: 3}
+  - {fileID: 5716282689887267659, guid: 516b2fa68671fc84c85845532549f437, type: 3}
+  - {fileID: 5716282689887267659, guid: 0cd0a0701a6555c46bf256881e4fc22f, type: 3}
+  - {fileID: 5716282689887267659, guid: 6d210952412b4da45ba8dac87d62be56, type: 3}
+  icons:
+  - {fileID: 2514985694556150779, guid: b60a8f1dea45dd34781f41407abfc7ae, type: 3}
+  - {fileID: 1885450902818353668, guid: 972ef6f9f73532e4f95f2832ce5724b9, type: 3}
+  - {fileID: 5705123167740313221, guid: 4945b0bf06b76a4408539fe0d04138a2, type: 3}
+  - {fileID: 9120325627749195125, guid: 92ce13c0549e36b44b825e8f89451dac, type: 3}
+  - {fileID: 7550887471997204671, guid: c57915ec6f6b0d54db945945f24076df, type: 3}

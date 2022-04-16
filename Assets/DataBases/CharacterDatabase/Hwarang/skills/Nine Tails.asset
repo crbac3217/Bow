@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ce9fc133b0ba44394c433d128e0fe4, type: 3}
+  m_Name: Nine Tails
+  m_EditorClassIdentifier: 
+  skillType: 4
+  cdType: 3
+  skillName: Blessing of Nine Tails
+  description: 
+  isSkillAvail: 0
+  disableSkill: 0
+  isPassive: 1
+  selected: 0
+  held: 0
+  sb: {fileID: 0}
+  affectedSkills: []
+  activeFor: 0
+  cooldownTime: 0
+  lastTime: 0
+  cdMaxCount: 0
+  cdCurrentCount: 0
+  enhanceObj: {fileID: 1848334850108072242, guid: 12caebe4fc0e1e642adc7a18e59f454b, type: 3}
+  aimableSkill: {fileID: 0}
+  thumbnail: {fileID: 5019999175783521436, guid: c1a2d93721e62f74c85b1fac5b9727a7, type: 3}
+  tempCounter: {fileID: 0}
+  temp: {fileID: 0}
+  iconCycle:
+  - {fileID: -3492081514062868416, guid: 7459148cdb13a4e4390f81c279caa2e7, type: 3}
+  - {fileID: -5575216252843978839, guid: 7459148cdb13a4e4390f81c279caa2e7, type: 3}
+  - {fileID: -7359493589950282218, guid: 7459148cdb13a4e4390f81c279caa2e7, type: 3}
+  - {fileID: -771716195749599757, guid: 92ce13c0549e36b44b825e8f89451dac, type: 3}
+  - {fileID: 1383541457593884237, guid: c57915ec6f6b0d54db945945f24076df, type: 3}
+  - {fileID: 3404487135338125043, guid: 972ef6f9f73532e4f95f2832ce5724b9, type: 3}
+  - {fileID: -9154322862504046152, guid: b60a8f1dea45dd34781f41407abfc7ae, type: 3}
+  - {fileID: -8035173685691501373, guid: 4945b0bf06b76a4408539fe0d04138a2, type: 3}
+  - {fileID: 5019999175783521436, guid: c1a2d93721e62f74c85b1fac5b9727a7, type: 3}

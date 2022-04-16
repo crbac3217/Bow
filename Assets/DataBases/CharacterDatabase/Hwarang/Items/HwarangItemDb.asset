@@ -1,0 +1,870 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04acf88d9dbc86248aaefa36e0b0f553, type: 3}
+  m_Name: HwarangItemDb
+  m_EditorClassIdentifier: 
+  items:
+  - nameCode: i001
+    itemName: Gold Armor
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Hp+
+    itemThumbnail: {fileID: -8952701106119953289, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods:
+    - statType: 2
+      value: 1
+    damageMods: []
+    modifiers: []
+  - nameCode: i002
+    itemName: Bone Armor
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Hp++
+    itemThumbnail: {fileID: -3467226488965244148, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods:
+    - statType: 2
+      value: 2
+    damageMods: []
+    modifiers: []
+  - nameCode: i003
+    itemName: Belt of Strength
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Hp+++
+    itemThumbnail: {fileID: 7924064554569767795, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods:
+    - statType: 2
+      value: 3
+    damageMods: []
+    modifiers: []
+  - nameCode: i004
+    itemName: Small Twig
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Botanical+
+    itemThumbnail: {fileID: 4770331434234697323, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 2
+      value: 1
+    modifiers: []
+  - nameCode: i005
+    itemName: Jade Ornament
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Botanical++
+    itemThumbnail: {fileID: -4302082566658444737, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 2
+      value: 2
+    modifiers: []
+  - nameCode: i006
+    itemName: Hide of a Predator
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Botanical+++
+    itemThumbnail: {fileID: 4462785977665537077, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 2
+      value: 3
+    modifiers: []
+  - nameCode: i007
+    itemName: A Bottle of Cloud
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Voltaic+
+    itemThumbnail: {fileID: -6286903281297335883, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 5
+      value: 1
+    modifiers: []
+  - nameCode: i008
+    itemName: Bracelet of a Thunder-God
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Voltaic++
+    itemThumbnail: {fileID: -3214364410427034342, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 5
+      value: 2
+    modifiers: []
+  - nameCode: i009
+    itemName: Staff of Thunder
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Voltaic+++
+    itemThumbnail: {fileID: 6075139113948180489, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 5
+      value: 3
+    modifiers: []
+  - nameCode: i010
+    itemName: Sharp Earpiece
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Zephyrus+
+    itemThumbnail: {fileID: 2514371262491748838, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 4
+      value: 1
+    modifiers: []
+  - nameCode: i011
+    itemName: The Windcaller
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Zephyrus++
+    itemThumbnail: {fileID: -1748502172023070449, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 4
+      value: 2
+    modifiers: []
+  - nameCode: i012
+    itemName: Shard of the Sky
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Zephyrus+++
+    itemThumbnail: {fileID: 6234717501382092663, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 4
+      value: 3
+    modifiers: []
+  - nameCode: i013
+    itemName: A Stone That Holds Warmth
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Ignis+
+    itemThumbnail: {fileID: 4628546359729757513, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 3
+      value: 1
+    modifiers: []
+  - nameCode: i014
+    itemName: Fire Poker
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Ignis++
+    itemThumbnail: {fileID: 7777673027151330690, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 3
+      value: 2
+    modifiers: []
+  - nameCode: i015
+    itemName: Sword with Burning Runes
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Ignis+++
+    itemThumbnail: {fileID: -6504508737932756533, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 3
+      value: 3
+    modifiers: []
+  - nameCode: i016
+    itemName: The Raincaller
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Aqua+
+    itemThumbnail: {fileID: 2819249066428930279, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 1
+      value: 1
+    modifiers: []
+  - nameCode: i017
+    itemName: Reverse Scale
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Aqua++
+    itemThumbnail: {fileID: 8625035029984661048, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 1
+      value: 2
+    modifiers: []
+  - nameCode: i018
+    itemName: Piece of a Trident
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Aqua+++
+    itemThumbnail: {fileID: -7501776617235451075, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 1
+      value: 3
+    modifiers: []
+  - nameCode: i019
+    itemName: Small Dagger
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Damage+
+    itemThumbnail: {fileID: 764993303121466188, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 0
+      value: 1
+    modifiers: []
+  - nameCode: i020
+    itemName: Blade of a Polearm
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Damage++
+    itemThumbnail: {fileID: -6264324071824745877, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 0
+      value: 2
+    modifiers: []
+  - nameCode: i021
+    itemName: Legendary Sword
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Damage+++
+    itemThumbnail: {fileID: -2684266317853105591, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 0
+      value: 3
+    modifiers: []
+  - nameCode: i022
+    itemName: The Warcaller
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Speed+
+    itemThumbnail: {fileID: -2345743414441007667, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods:
+    - statType: 0
+      value: 1
+    damageMods: []
+    modifiers: []
+  - nameCode: i023
+    itemName: Rusty Horseshoe
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Speed++
+    itemThumbnail: {fileID: 2165153492772707336, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods:
+    - statType: 0
+      value: 2
+    damageMods: []
+    modifiers: []
+  - nameCode: i024
+    itemName: Moonlit Flower
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Speed+++
+    itemThumbnail: {fileID: -7648770509338288294, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods:
+    - statType: 0
+      value: 3
+    damageMods: []
+    modifiers: []
+  - nameCode: i025
+    itemName: Truth Reflector
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Snipe+
+    itemThumbnail: {fileID: -5899394380449558175, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods:
+    - statType: 4
+      value: 1
+    damageMods: []
+    modifiers: []
+  - nameCode: i026
+    itemName: Sharp Canine
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Snipe++
+    itemThumbnail: {fileID: 7303883879192196960, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods:
+    - statType: 4
+      value: 2
+    damageMods: []
+    modifiers: []
+  - nameCode: i027
+    itemName: The Sharpshooter
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Snipe+++
+    itemThumbnail: {fileID: -3992279242098286037, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods:
+    - statType: 4
+      value: 3
+    damageMods: []
+    modifiers: []
+  - nameCode: i028
+    itemName: Sharp Beak
+    itemTier: 1
+    cost: 5
+    multi: 1
+    itemDescription: Critical+
+    itemThumbnail: {fileID: 8060723203363659519, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods:
+    - statType: 3
+      value: 1
+    damageMods: []
+    modifiers: []
+  - nameCode: i029
+    itemName: Talon
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Critical++
+    itemThumbnail: {fileID: -3680181514729916765, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods:
+    - statType: 3
+      value: 2
+    damageMods: []
+    modifiers: []
+  - nameCode: i030
+    itemName: Bird's Eye
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Critical+++
+    itemThumbnail: {fileID: 1506500638102608295, guid: 43c1b443808092144b2028f9f963459e, type: 3}
+    statMods:
+    - statType: 3
+      value: 3
+    damageMods: []
+    modifiers: []
+  - nameCode: i031
+    itemName: Black Feather
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Mid-air jump
+    itemThumbnail: {fileID: 21300000, guid: 75e662465906eff4e8ebc85d7cf22039, type: 3}
+    statMods:
+    - statType: 5
+      value: 1
+    damageMods: []
+    modifiers: []
+  - nameCode: i032
+    itemName: Burning Branch
+    itemTier: 2
+    cost: 13
+    multi: 1
+    itemDescription: Struck by lightning
+    itemThumbnail: {fileID: 3325291523699893007, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 2
+      value: 1
+    - damageElement: 3
+      value: 1
+    - damageElement: 5
+      value: 1
+    modifiers: []
+  - nameCode: i033
+    itemName: Frozen Tuna
+    itemTier: 2
+    cost: 13
+    multi: 1
+    itemDescription: Bonk
+    itemThumbnail: {fileID: 21300000, guid: d71db354314330c4ea591eedfc39ec73, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 1
+      value: 1
+    - damageElement: 0
+      value: 1
+    modifiers: []
+  - nameCode: i034
+    itemName: Helm of Swiftness
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Stronger legs
+    itemThumbnail: {fileID: 4727665762673792716, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods:
+    - statType: 0
+      value: 1
+    - statType: 1
+      value: 1
+    damageMods: []
+    modifiers: []
+  - nameCode: i036
+    itemName: Mystic Orb
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Sharper Shots
+    itemThumbnail: {fileID: -2263691241740591259, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods:
+    - statType: 4
+      value: 1
+    - statType: 3
+      value: 1
+    damageMods: []
+    modifiers: []
+  - nameCode: i037
+    itemName: Steel Hammer
+    itemTier: 2
+    cost: 13
+    multi: 1
+    itemDescription: Sparks!
+    itemThumbnail: {fileID: 46928851760750416, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 0
+      value: 1
+    - damageElement: 5
+      value: 1
+    - damageElement: 3
+      value: 1
+    modifiers: []
+  - nameCode: i038
+    itemName: Firerat Hide
+    itemTier: 1
+    cost: 8
+    multi: 1
+    itemDescription: Light Protection
+    itemThumbnail: {fileID: 5597620136797826553, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods:
+    - statType: 2
+      value: 1
+    damageMods:
+    - damageElement: 3
+      value: 1
+    modifiers: []
+  - nameCode: i039
+    itemName: Water of Life
+    itemTier: 2
+    cost: 15
+    multi: 1
+    itemDescription: Nature's Blessing
+    itemThumbnail: {fileID: 21300000, guid: 02b25961624f3604caeb74ec16d51b30, type: 3}
+    statMods:
+    - statType: 2
+      value: 2
+    damageMods:
+    - damageElement: 2
+      value: 1
+    modifiers: []
+  - nameCode: i040
+    itemName: Herb of Immortality
+    itemTier: 3
+    cost: 22
+    multi: 1
+    itemDescription: Overall Boost
+    itemThumbnail: {fileID: 846191573135054887, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods:
+    - statType: 2
+      value: 1
+    - statType: 1
+      value: 1
+    - statType: 0
+      value: 1
+    - statType: 5
+      value: 1
+    damageMods: []
+    modifiers: []
+  - nameCode: i041
+    itemName: Giant's Axe
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Blunt Force
+    itemThumbnail: {fileID: -4115969827457987160, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods:
+    - statType: 3
+      value: -5
+    - statType: 4
+      value: -5
+    damageMods:
+    - damageElement: 0
+      value: 7
+    modifiers: []
+  - nameCode: i042
+    itemName: The Ring of Dwarf Lord
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Immense Power, Immense Sacrifice
+    itemThumbnail: {fileID: 3066715354918297948, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods:
+    - statType: 3
+      value: -8
+    - statType: 4
+      value: -8
+    damageMods:
+    - damageElement: 0
+      value: 12
+    modifiers: []
+  - nameCode: i044
+    itemName: Soma
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Drinks of gods
+    itemThumbnail: {fileID: -380481664353167724, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods:
+    - statType: 2
+      value: 1
+    - statType: 4
+      value: -1
+    damageMods:
+    - damageElement: 2
+      value: 1
+    modifiers: []
+  - nameCode: i045
+    itemName: Eitr
+    itemTier: 3
+    cost: 15
+    multi: 1
+    itemDescription: Power for Health
+    itemThumbnail: {fileID: 8595086734833644057, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
+    statMods:
+    - statType: 2
+      value: -3
+    - statType: 0
+      value: 1
+    - statType: 1
+      value: 1
+    - statType: 3
+      value: 1
+    - statType: 4
+      value: 1
+    - statType: 5
+      value: 1
+    damageMods: []
+    modifiers: []
+  - nameCode: i046
+    itemName: Chakram of Continuity
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Damage+?
+    itemThumbnail: {fileID: -1879887417628390870, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: b6b0006b3faf142418c092c0cb86f418, type: 2}
+  - nameCode: i047
+    itemName: Book of the Dead
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Desecrate
+    itemThumbnail: {fileID: -319130718388842680, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 47faeaabbfc4b34479d473af3c3b41a5, type: 2}
+  - nameCode: i048
+    itemName: Soul Harvester
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Harvest Souls
+    itemThumbnail: {fileID: 21300000, guid: 9f41bae09e6be4d439c15f6a01ef8c92, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 0b851637ea07f454584de5615851164e, type: 2}
+  - nameCode: i049
+    itemName: Shining Shield
+    itemTier: 4
+    cost: 25
+    multi: 1
+    itemDescription: Flash
+    itemThumbnail: {fileID: -5008339533774528205, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods:
+    - statType: 2
+      value: 1
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 94bfee94737e0144c9c363da34071a25, type: 2}
+  - nameCode: i050
+    itemName: Screming Shield
+    itemTier: 3
+    cost: 20
+    multi: 1
+    itemDescription: Protection
+    itemThumbnail: {fileID: 6671177133590871485, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods:
+    - statType: 2
+      value: 1
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 4e761b71b7233f04ab3dbfa069fa05a1, type: 2}
+  - nameCode: i051
+    itemName: Helm of the Black Dragon
+    itemTier: 3
+    cost: 23
+    multi: 1
+    itemDescription: Inflict Fear
+    itemThumbnail: {fileID: 9218779822792652957, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods:
+    - statType: 2
+      value: 1
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 4ac42cf0df083644d95978badd1a2f76, type: 2}
+  - nameCode: i052
+    itemName: Helm of the Dead
+    itemTier: 4
+    cost: 25
+    multi: 1
+    itemDescription: Necromancy?
+    itemThumbnail: {fileID: -8444492827580724224, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 9c94f45363d51e34d985154261abb961, type: 2}
+  - nameCode: i053
+    itemName: The Soulcaller
+    itemTier: 3
+    cost: 20
+    multi: 1
+    itemDescription: Shaman's Chimes
+    itemThumbnail: {fileID: -505374416082147931, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 07cb71cc78e5aa448ab1ba7b03b4c054, type: 2}
+  - nameCode: i054
+    itemName: Freezing Shield
+    itemTier: 4
+    cost: 30
+    multi: 1
+    itemDescription: Chills
+    itemThumbnail: {fileID: 6549172739181210766, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods:
+    - statType: 2
+      value: 2
+    damageMods:
+    - damageElement: 1
+      value: 1
+    modifiers:
+    - {fileID: 11400000, guid: be3ee4fc8ef04f349b7edc20a833ed3f, type: 2}
+  - nameCode: i055
+    itemName: Ring of Anti-magic
+    itemTier: 5
+    cost: 45
+    multi: 0
+    itemDescription: Forbid Skills
+    itemThumbnail: {fileID: 3260131147173602438, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 14364273c61b23e4cbdc0c41294c00ac, type: 2}
+  - nameCode: i056
+    itemName: Ring of Protection
+    itemTier: 5
+    cost: 45
+    multi: 0
+    itemDescription: Temporary Protection
+    itemThumbnail: {fileID: 8170121885020545224, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 7d4bde162ef25eb4d8c4e3bbbfdd8fa2, type: 2}
+  - nameCode: i057
+    itemName: The Dripper
+    itemTier: 3
+    cost: 20
+    multi: 1
+    itemDescription: Multiplies
+    itemThumbnail: {fileID: -8565728930057674282, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: cf8ec63d403cca141b56e34b9c930594, type: 2}
+  - nameCode: i058
+    itemName: Vine Staff
+    itemTier: 3
+    cost: 20
+    multi: 1
+    itemDescription: Healing Staff
+    itemThumbnail: {fileID: 21300000, guid: 2783747c44bdce640b67f1284eb7b9e7, type: 3}
+    statMods:
+    - statType: 2
+      value: 1
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: c48e790fe720ea84da503d4e57f848eb, type: 2}
+  - nameCode: i059
+    itemName: Pot of Infinity
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Full of Food
+    itemThumbnail: {fileID: 2316206749968614112, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: c39bd610671fd5740b4bf93d2ae0d2de, type: 2}
+  - nameCode: i060
+    itemName: Gold Brick
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: A gold brick used as a weapon
+    itemThumbnail: {fileID: 6514505247206400422, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 1b9064b46d442884490dfb41af0e971f, type: 2}
+  - nameCode: i061
+    itemName: Necklace of Affluence
+    itemTier: 1
+    cost: 8
+    multi: 1
+    itemDescription: For the Rich
+    itemThumbnail: {fileID: 4503172513585064475, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: b1316fa84026c40439e5354c3c6605cd, type: 2}
+  - nameCode: i062
+    itemName: Gold Arrowhead
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Love
+    itemThumbnail: {fileID: 21300000, guid: 522285ec715193744a5aac96b254fe69, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: d02e9ab6e58c69e449a989fd6f40b512, type: 2}
+  - nameCode: i063
+    itemName: Lead Arrowhead
+    itemTier: 3
+    cost: 18
+    multi: 1
+    itemDescription: Hate
+    itemThumbnail: {fileID: 21300000, guid: 8e9eb84c02b97a24085c23f5f387e63d, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: ae4c2016e6feab34a988b75fc2940c55, type: 2}
+  - nameCode: i064
+    itemName: Belt of Seduction
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Rapine Health
+    itemThumbnail: {fileID: 2478460946689539441, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods:
+    - statType: 2
+      value: -3
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 43210bba75f41da41b268828b96f9878, type: 2}
+  - nameCode: i065
+    itemName: Gem of Fate
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Good or Bad
+    itemThumbnail: {fileID: -4086250146083210891, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 7a62aadad9be01946b7c5b16b67abfe0, type: 2}
+  - nameCode: i066
+    itemName: Arrow of Destruction
+    itemTier: 5
+    cost: 30
+    multi: 1
+    itemDescription: Destroy Everything
+    itemThumbnail: {fileID: -3064179723642489473, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods: []
+    damageMods:
+    - damageElement: 0
+      value: 8
+    - damageElement: 1
+      value: 8
+    - damageElement: 2
+      value: 8
+    - damageElement: 3
+      value: 8
+    - damageElement: 4
+      value: 8
+    - damageElement: 5
+      value: 8
+    modifiers:
+    - {fileID: 11400000, guid: 8dde696e8c49c3849bcb439f5a6deec7, type: 2}
+  - nameCode: i067
+    itemName: Monkey's Paw
+    itemTier: 2
+    cost: 11
+    multi: 1
+    itemDescription: Wish for Sacrifice
+    itemThumbnail: {fileID: -5917088129175094385, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 7a831d7d13b7465448cccce407c564c3, type: 2}
+  - nameCode: i068
+    itemName: Helm of a Giant
+    itemTier: 4
+    cost: 20
+    multi: 0
+    itemDescription: A helmet that belonged to a giant
+    itemThumbnail: {fileID: 6388486641446567860, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods:
+    - statType: 2
+      value: 5
+    damageMods:
+    - damageElement: 0
+      value: 5
+    modifiers: []
+  - nameCode: i069
+    itemName: Pandora's Box
+    itemTier: 5
+    cost: 1
+    multi: 1
+    itemDescription: A mysterious box
+    itemThumbnail: {fileID: -5117599364648488189, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
+    statMods: []
+    damageMods: []
+    modifiers:
+    - {fileID: 11400000, guid: 698b764fc6efd81478b2c9a0371182d9, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46c078bd80c2f44cb5d3f7718ba365e, type: 3}
+  m_Name: HwarangDefaultShoot
+  m_EditorClassIdentifier: 
+  isDefault: 1
+  levelsOfShooting: 1
+  projPrefab: {fileID: 3970263554119951817, guid: 9f9cee981f4711547973280db26166cc, type: 3}
+  projectory: {fileID: 11400000, guid: e21e9e42af73189408cea21141f4f330, type: 2}
+  isSkill: 0
+  skill: {fileID: 0}

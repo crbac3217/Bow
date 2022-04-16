@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2916c57d6c43e09469dfef24b7236c3b, type: 3}
+  m_Name: JigwiMelee
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: JigwiMelee
+  coolDown: 1.5
+  duration: 1
+  damageMult: 1.5
+  attackRangePrefab: {fileID: 373823539430569873, guid: 2cdf02c14fda59c4f91378b463b9c905, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 6543379172379153021, guid: 2cdf02c14fda59c4f91378b463b9c905, type: 3}
+  aiHandler: {fileID: 0}
+  JigwiMeleeParticle: {fileID: 4660106257908398861, guid: e1d7b822cacc05f47811fd8ddcb644f7, type: 3}
+  JigwiMeleePoint: {fileID: 0}

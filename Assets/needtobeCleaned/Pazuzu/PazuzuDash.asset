@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60b1fd5ac6f58d4aaa2a8ad44a64243, type: 3}
+  m_Name: PazuzuDash
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: PazuzuDash
+  coolDown: 3
+  duration: 1.5
+  damageMult: 1
+  dashDist: 5
+  attackRangePrefab: {fileID: 3611459075452174657, guid: 3539acd1ff9b0fb4da786707aeeda07c, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  actualRangePref: {fileID: 2975815685252261642, guid: f767323c9f228284184d9c7a2191f6f7, type: 3}
+  actualRange: {fileID: 3279753875399285085, guid: f767323c9f228284184d9c7a2191f6f7, type: 3}
+  hasDashed: 0
+  dir: {x: 0, y: 0}

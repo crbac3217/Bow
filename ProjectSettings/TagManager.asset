@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - ItemManager
+  - Projectile
+  - Enemy
+  - Joystick
+  - lButton
+  - rButton
+  - jumpButton
+  - IGItemGUIPanel
+  - Boundary
+  - Arrow
+  - Skill1
+  - Skill2
+  - Skill3
+  - MoveButton
+  - Items
+  - EnemyProjectile
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - PathFinder
+  - SkillRangeChecker
+  - Units
+  - Projectiles
+  - Ground
+  - Player
+  - Penetrate
+  - MoonSun
+  - Items
+  - EnemyProjectile
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 768684869
+    locked: 0
+  - name: MapEffect
+    uniqueID: 1172428161
+    locked: 0
+  - name: Particle(Behind)
+    uniqueID: 1586877975
+    locked: 0
+  - name: Unit(BehindPlat)
+    uniqueID: 97026479
+    locked: 0
+  - name: Platform
+    uniqueID: 2810820265
+    locked: 0
+  - name: Unit(AbovePlat)
+    uniqueID: 3476350203
+    locked: 0
+  - name: Player
+    uniqueID: 3099544387
+    locked: 0
+  - name: ParticleLit
+    uniqueID: 1268924523
+    locked: 0
+  - name: Particle(Above)
+    uniqueID: 806450575
+    locked: 0
+  - name: semiUIemissive
+    uniqueID: 393163235
+    locked: 0

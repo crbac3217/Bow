@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 091b6cb8afd11f247b7acd9fa48b18b1, type: 3}
+  m_Name: MinotaurDash
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: MinotaurDash
+  coolDown: 4
+  duration: 3
+  damageMult: 1
+  attackRangePrefab: {fileID: 638093499189244441, guid: a0cff47b37681034abbf3c8c63e4a026, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  dashDistance: 3
+  actualRangePref: {fileID: 7401881797172619260, guid: 407412fe4c11b3940b62228d29d107ae, type: 3}

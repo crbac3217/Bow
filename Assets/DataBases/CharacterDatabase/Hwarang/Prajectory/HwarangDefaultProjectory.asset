@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 816c252f23cf7634ea5105bfe80da865, type: 3}
+  m_Name: HwarangDefaultProjectory
+  m_EditorClassIdentifier: 
+  gravity: 9.8
+  vertCount: 20
+  canHit:
+    serializedVersion: 2
+    m_Bits: 1024
+  position1: {x: 1.041512, y: 1.9107374}
+  velocity: {x: 1.1557068, y: 3.5634294}
+  yLimit: 0.53741074
