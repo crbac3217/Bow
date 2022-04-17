@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b241be827acd4ab48a8bfcd4a3af31f5, type: 3}
+  m_Name: ArangSpawn
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: ArangSpawn
+  coolDown: 10
+  duration: 1.5
+  damageMult: 0
+  dashDist: 0
+  attackRangePrefab: {fileID: 3330300943718063594, guid: 54445ac0998fd494ea7cceb49c3dd7b8, type: 3}
+  projectilePrefab: {fileID: 3595632200977222393, guid: f26c28fb820cd0940a86527003476fce, type: 3}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  aai: {fileID: 0}
+  particle: {fileID: 3532370294439623859, guid: fd642fc610915484a900e676e3f1d459, type: 3}

@@ -150,7 +150,7 @@ public class EnemyController : MonoBehaviour
             Dead(true);
         }
     }
-    public void Dead(bool doDrop)
+    public virtual void Dead(bool doDrop)
     {
         if (!doDrop)
         {

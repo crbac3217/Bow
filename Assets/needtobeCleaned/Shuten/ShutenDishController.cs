@@ -9,11 +9,10 @@ public class ShutenDishController : EnemyController
 
     public override void Setup()
     {
-        base.Setup();
+
     }
     public override void OnDamageTaken()
     {
-        base.OnDamageTaken();
         ai.AdditionalAttackTriggered("ShutenDish");
     }
     public override void UpdateHpUI()

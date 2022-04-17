@@ -32,7 +32,7 @@ public class AiHandler : MonoBehaviour
     private NodeEvaluator tempEval;
     private List<NodeEvaluator> openList = new List<NodeEvaluator>();
     private List<NodeEvaluator> closedList = new List<NodeEvaluator>();
-    private Animator anim;
+    public Animator anim;
     private SpriteRenderer spren;
     private Rigidbody2D rb;
     private Collider2D col;
@@ -68,16 +68,13 @@ public class AiHandler : MonoBehaviour
             temp.aiHandler = this;
             temp.SetUp();
         }
+        SetUp();
         StartCoroutine(StopMoving(1));
-        if (!pc)
-        {
-            Debug.Log("pc not even here buh"); 
-        }
-        else
-        {
-            Debug.Log("pc is here at least");
-        }
         StartCoroutine(CheckPlayer());
+    }
+    public virtual void SetUp()
+    {
+
     }
     private void Update()
     {
