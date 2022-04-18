@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pc: {fileID: 0}
   damage: 5
+  doBlockHit: 0
   rangeChecker: {fileID: 6543941004513654451}
 --- !u!212 &6469095841786956385
 SpriteRenderer:
@@ -135,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edbd7eb99ef67f14f994c299a674f5c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 15
+  time: 1
   objtoDestroy: {fileID: 0}
 --- !u!1 &6543941004513654451
 GameObject:

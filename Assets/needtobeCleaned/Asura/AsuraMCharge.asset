@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 445f56b72f9bd3442854f96ee252fa39, type: 3}
+  m_Name: AsuraMCharge
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: AsuraMCharge
+  coolDown: 10
+  duration: 5
+  damageMult: 1
+  dashDist: 0
+  attackRangePrefab: {fileID: 5381251574866306419, guid: c8924103731607148b92aa5fbf06333c, type: 3}
+  projectilePrefab: {fileID: 6896971151741930831, guid: f217105bcb6970e4182132cb31c63a23, type: 3}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  ball: {fileID: 4660106257908398861, guid: a8de037aa9713314aa3784957fdd10e2, type: 3}
+  chargePart: {fileID: 6536108248866985138, guid: cd33d04b605d9244d8ff82de4b4e9ce7, type: 3}
+  count: 0

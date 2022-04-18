@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0180453382a072f4fa6e4c3f46d1cccf, type: 3}
+  m_Name: AsuraBChargeShot
+  m_EditorClassIdentifier: 
+  type: 1
+  avail: 1
+  whileMove: 0
+  AttackName: AsuraBChargeShot
+  coolDown: 8
+  duration: 2
+  damageMult: 3
+  dashDist: 0
+  attackRangePrefab: {fileID: 3985259332714534857, guid: f130d5700972f2342a32dd591f782408, type: 3}
+  projectilePrefab: {fileID: 6896971151741930831, guid: 42758bd6bfc204e42a7c552a3e3d7922, type: 3}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  chargeParticle: {fileID: 6313644860862228137, guid: 8f53582d37bf6234591968d7845e4c5d, type: 3}
+  explodeParticle: {fileID: 4466994241477229306, guid: f81bf817bca43a14ea20ee107608e185, type: 3}

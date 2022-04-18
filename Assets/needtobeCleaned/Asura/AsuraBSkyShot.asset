@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a85d7bac74c5964590855757452e545, type: 3}
+  m_Name: AsuraBSkyShot
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  AttackName: AsuraBSkyShot
+  coolDown: 10
+  duration: 3
+  damageMult: 1
+  dashDist: 0
+  attackRangePrefab: {fileID: 730327224556951827, guid: 5b47363b9dc2797419cf2d6c704535aa, type: 3}
+  projectilePrefab: {fileID: 6896971151741930831, guid: fb885df2e91932e438acad7deb885bcd, type: 3}
+  range: {fileID: 1309666130106954077, guid: 5b47363b9dc2797419cf2d6c704535aa, type: 3}
+  aiHandler: {fileID: 0}
+  chargeParticle: {fileID: 6313644860862228137, guid: 8f53582d37bf6234591968d7845e4c5d, type: 3}
+  expParticle: {fileID: 6407035470292362846, guid: 66b00d066c96dff4da0f75f38ff83bca, type: 3}
+  marker: {fileID: 4660106257908398861, guid: e56a553066ab5c54598bf2627833eb9b, type: 3}
+  ground:
+    serializedVersion: 2
+    m_Bits: 1024

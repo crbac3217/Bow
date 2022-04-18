@@ -7,8 +7,33 @@ public class EnemyParticle : MonoBehaviour
     public PlayerControl pc;
     public int damage;
     public bool doBlockHit;
+    public bool disappear = false, appear = false;
+    private SpriteRenderer spren;
     public GameObject rangeChecker;
 
+    private void Start()
+    {
+        spren = GetComponent<SpriteRenderer>();
+    }
+    private void Update()
+    {
+        if (disappear)
+        {
+            spren.color = new Color(1, 1, 1, spren.color.a - 0.02f);
+            if (spren.color.a <= 0.05f)
+            {
+                Destroy(gameObject);
+            }
+        }
+        if (appear)
+        {
+            spren.color = new Color(1, 1, 1, spren.color.a + 0.02f);
+            if (spren.color.a >= 0.6f)
+            {
+                appear = false;
+            }
+        }
+    }
     public void TriggerDamage()
     {
         if (rangeChecker.GetComponent<EnemyAttackRange>().avail)
@@ -19,6 +44,10 @@ public class EnemyParticle : MonoBehaviour
     public void OnAnimFinished()
     {
         Destroy(gameObject);
+    }
+    public void AnimFinishedStartToningDown()
+    {
+        disappear = true;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

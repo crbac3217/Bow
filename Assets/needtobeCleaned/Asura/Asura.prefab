@@ -330,7 +330,11 @@ MonoBehaviour:
   nodeLayer:
     serializedVersion: 2
     m_Bits: 64
-  attacksPrefab: []
+  attacksPrefab:
+  - {fileID: 11400000, guid: 495be4d0b49c3654cbff4c04144b363c, type: 2}
+  - {fileID: 11400000, guid: b150144e373e64d4faaae4108baae3bc, type: 2}
+  - {fileID: 11400000, guid: 70883ff1d1121744b83cd36d1e4bc388, type: 2}
+  - {fileID: 11400000, guid: 51a231e56f74a614aa3ac2725aca3d07, type: 2}
   ec: {fileID: 7207520155809819100}
   visuals: {fileID: 7417083080981164258}
   attacks: []
@@ -352,11 +356,22 @@ MonoBehaviour:
   magicSpeed: 0.7
   swordAttacksPref:
   - {fileID: 11400000, guid: 51a231e56f74a614aa3ac2725aca3d07, type: 2}
+  - {fileID: 11400000, guid: 70883ff1d1121744b83cd36d1e4bc388, type: 2}
   - {fileID: 11400000, guid: b150144e373e64d4faaae4108baae3bc, type: 2}
+  - {fileID: 11400000, guid: 495be4d0b49c3654cbff4c04144b363c, type: 2}
   bowAttacksPref:
   - {fileID: 11400000, guid: 51a231e56f74a614aa3ac2725aca3d07, type: 2}
+  - {fileID: 11400000, guid: 8502b17b4373175479c55bf64d4bd1d7, type: 2}
+  - {fileID: 11400000, guid: 5922bc92d44bd4c478fd369e80bf88b3, type: 2}
+  - {fileID: 11400000, guid: 4ed6d26b00e415d439ef2e9ecbe36b8d, type: 2}
+  - {fileID: 11400000, guid: feee94e68db71e34fa6a730c7a49efe5, type: 2}
+  - {fileID: 11400000, guid: f613f01ce6c9085448612da341890a24, type: 2}
   magicAttacksPref:
   - {fileID: 11400000, guid: 51a231e56f74a614aa3ac2725aca3d07, type: 2}
+  - {fileID: 11400000, guid: e6b60ccbfbc638b4186a19dd2567b5de, type: 2}
+  - {fileID: 11400000, guid: e14d6ad48abc31e4c983d563525fc8e7, type: 2}
+  - {fileID: 11400000, guid: ab26afa537a1baf499849943db40727a, type: 2}
+  - {fileID: 11400000, guid: 8779fc51b9b5afe4cae6af7409d3afb4, type: 2}
   swordAttacks: []
   bowAttacks: []
   magicAttacks: []
@@ -484,7 +499,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1812702564, guid: 2ee6d2d63891325468626aef97fb89eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2, y: 2}

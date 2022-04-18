@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyProjectile : MonoBehaviour
 {
-    public bool doesHitGround, Targetted, destroyable, doesDestroyUponHit;
+    public bool doesHitGround, Targetted, destroyable, doesDestroyUponHit, Accel, Decel;
     private bool destroy;
-    public float speed, lifeTime;
+    public float speed, lifeTime, speedMod, maxSpeed;
     public int damage, hitPoint;
     public Vector2 pos, dir;
     public PlayerControl pc;
@@ -25,6 +25,11 @@ public class EnemyProjectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(Live());
         spr = GetComponent<SpriteRenderer>();
+        SetUp();
+    }
+    public virtual void SetUp()
+    {
+
     }
     void Update()
     {
@@ -50,6 +55,14 @@ public class EnemyProjectile : MonoBehaviour
             }
             float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
+        if (Accel)
+        {
+            speed = Mathf.Clamp(speed + speedMod, 0, maxSpeed);
+        }
+        if (Decel)
+        {
+            speed = Mathf.Clamp(speed - speedMod, 0, maxSpeed);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

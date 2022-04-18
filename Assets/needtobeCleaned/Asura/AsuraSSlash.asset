@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655646cbe31460345930e4ba66345d9b, type: 3}
+  m_Name: AsuraSSlash
+  m_EditorClassIdentifier: 
+  type: 1
+  avail: 1
+  whileMove: 0
+  AttackName: AsuraSSlash
+  coolDown: 12
+  duration: 2
+  damageMult: 3
+  dashDist: 0
+  attackRangePrefab: {fileID: 4421461636504196417, guid: 92d964d442400034eb82675d0f20562c, type: 3}
+  projectilePrefab: {fileID: 6896971151741930831, guid: d6eafb1ef539ac942b9e33cc0affc51f, type: 3}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  chargeParticle: {fileID: 8696451572871707770, guid: 248a6c5b378a7e94390e0d9ae4d5af19, type: 3}
+  explodeParticle: {fileID: 5663662437030274356, guid: eb747441b209ef54b866d3f9ade98321, type: 3}

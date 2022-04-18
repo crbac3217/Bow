@@ -12,16 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b4d861ca95dec4b8110460c70c48f6, type: 3}
   m_Name: AsuraChangeForm
   m_EditorClassIdentifier: 
-  type: 0
-  avail: 0
+  type: 5
+  avail: 1
   whileMove: 0
-  AttackName: 
-  coolDown: 0
-  duration: 0
+  AttackName: AsuraChangeForm
+  coolDown: 30
+  duration: 2
   damageMult: 0
   dashDist: 0
-  attackRangePrefab: {fileID: 0}
+  attackRangePrefab: {fileID: 2534632284720346854, guid: d4596c6dcc974b74ba6b9c80e5e364d8, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
   aai: {fileID: 0}
+  sChargeParticle: {fileID: 8696451572871707770, guid: 248a6c5b378a7e94390e0d9ae4d5af19, type: 3}
+  bChargeParticle: {fileID: 8916462905459959034, guid: 463e5ad3d4b49bc4aa82bee011e1051d, type: 3}
+  mChargeParticle: {fileID: 8309418197234441764, guid: a7b608298b1342e4ea1116ff79a937e0, type: 3}
+  sExplodeParticle: {fileID: 5663662437030274356, guid: eb747441b209ef54b866d3f9ade98321, type: 3}
+  bExplodeParticle: {fileID: 4466994241477229306, guid: f81bf817bca43a14ea20ee107608e185, type: 3}
+  mExplodeParticle: {fileID: 8221832483617530796, guid: 63fd30ca97246bc4589a86c080f49fa5, type: 3}

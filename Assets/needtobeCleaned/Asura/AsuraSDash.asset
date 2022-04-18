@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f31095ed937b7d4f9996f5342cd7d41, type: 3}
+  m_Script: {fileID: 11500000, guid: 713c708720e57324cb2912a3789aa77d, type: 3}
   m_Name: AsuraSDash
   m_EditorClassIdentifier: 
   type: 5
@@ -17,14 +17,14 @@ MonoBehaviour:
   whileMove: 0
   AttackName: AsuraSDash
   coolDown: 8
-  duration: 1.5
-  damageMult: 1
+  duration: 2
+  damageMult: 1.5
   dashDist: 5
-  attackRangePrefab: {fileID: 0}
+  attackRangePrefab: {fileID: 2562023322326686656, guid: 980d4d8bd0ccade46894113dab27919c, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
-  actualRangePref: {fileID: 0}
+  actualRangePref: {fileID: 5738143384590093325, guid: 26df95ec8e0cd6145a6c906deeac3a1a, type: 3}
+  particle: {fileID: 4660106257908398861, guid: 98b157dea0dcfc641907e382b17f0a00, type: 3}
   actualRange: {fileID: 0}
   hasDashed: 0
-  dir: {x: 0, y: 0}
