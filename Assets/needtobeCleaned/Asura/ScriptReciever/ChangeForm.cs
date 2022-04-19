@@ -11,11 +11,14 @@ public class ChangeForm : EnemyAttack
 
     public override void SetUp()
     {
+        aiHandler.StartCoroutine(CoolDown());
         base.SetUp();
         aai = aiHandler.GetComponent<AsuraAi>();
     }
     public override void Activate()
     {
+        Debug.Log(aai.currentFormIndex + "is the curIndex, but" + aiHandler.anim.GetInteger("FormIndex"));
+        aiHandler.anim.SetTrigger("Change");
         aiHandler.StartCoroutine(aiHandler.StopMoving(duration));
         if (aai.currentFormIndex == 1)
         {
@@ -29,13 +32,17 @@ public class ChangeForm : EnemyAttack
         {
             chargeInst = Instantiate(mChargeParticle, aiHandler.visuals.transform);
         }
-        aiHandler.anim.SetTrigger("Change");
-        aai.FormChange(); 
+        
     }
     public override void AttackEtc(PlayerControl pc)
     {
-        base.AttackEtc(pc);
+        aai.FormChange();
         aiHandler.anim.SetTrigger("ChangeEnd");
+        aai.StartCoroutine(Exp());
+    }
+    public IEnumerator Exp()
+    {
+        yield return new WaitForSeconds(0.5f);
         if (aai.currentFormIndex == 1)
         {
             var explodePart = Instantiate(sExplodeParticle, aiHandler.visuals.transform);

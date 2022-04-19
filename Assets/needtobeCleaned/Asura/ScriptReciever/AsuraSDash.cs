@@ -59,6 +59,7 @@ public class AsuraSDash : EnemyAttack
         base.AdditionalTrigger();
         aiHandler.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         var part = Instantiate(particle, aiHandler.visuals.transform.position, Quaternion.identity);
+        part.transform.localScale = new Vector2(aiHandler.visuals.transform.localScale.x, 1);
         part.GetComponent<EnemyParticle>().damage = (int)(aiHandler.damage * damageMult);
     }
 }

@@ -28,8 +28,8 @@ public class AsuraBSkyShot : EnemyAttack
     {
         if (rand > 0)
         {
-            float interval = Random.Range(0.2f, 0.5f);
             rand--;
+            float interval = Random.Range(0.2f, 0.5f);
             aiHandler.StartCoroutine(SkyShot());
             yield return new WaitForSeconds(interval);
             aiHandler.StartCoroutine(SkyShotPar());

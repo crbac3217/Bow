@@ -40,10 +40,10 @@ public class AsuraMCharge : EnemyAttack
     {
         yield return new WaitForSeconds(rand);
         aiHandler.TriggerAdditionalAnimation("AsuraMCharge", false, 1);
+        End();
     }
-    public override void AdditionalTrigger()
+    public void End()
     {
-        base.AdditionalTrigger();
         ballInst.GetComponent<EnemyParticle>().disappear = true;
     }
 }

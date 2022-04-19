@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.463}
+  m_AnchoredPosition: {x: 0, y: 1.347}
   m_SizeDelta: {x: 0.5, y: 0.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3109041762735133207
@@ -209,8 +209,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00024683028, y: 0.59995353}
-  m_Size: {x: 0.14035879, y: 0.86868834}
+  m_Offset: {x: 0.00024683028, y: 0.5105483}
+  m_Size: {x: 0.14035879, y: 0.8776289}
   m_Direction: 0
 --- !u!114 &7207520155809819100
 MonoBehaviour:
@@ -241,16 +241,16 @@ MonoBehaviour:
   - damageElement: 2
     value: 1
   - damageElement: 3
-    value: 11
+    value: 1
   - damageElement: 4
     value: 1
   - damageElement: 5
-    value: 11
+    value: 1
   strength:
   - damageElement: 0
-    value: 51
+    value: 1
   - damageElement: 1
-    value: 51
+    value: 1
   - damageElement: 2
     value: 1
   - damageElement: 3
@@ -315,8 +315,8 @@ MonoBehaviour:
   aggressionType: 5
   damage: 5
   canJump: 0
-  canFly: 0
-  isAffectedByCC: 1
+  canFly: 1
+  isAffectedByCC: 0
   defaultSpeed: 1.5
   checkInterval: 0.5
   weight: 2
@@ -330,11 +330,7 @@ MonoBehaviour:
   nodeLayer:
     serializedVersion: 2
     m_Bits: 64
-  attacksPrefab:
-  - {fileID: 11400000, guid: 495be4d0b49c3654cbff4c04144b363c, type: 2}
-  - {fileID: 11400000, guid: b150144e373e64d4faaae4108baae3bc, type: 2}
-  - {fileID: 11400000, guid: 70883ff1d1121744b83cd36d1e4bc388, type: 2}
-  - {fileID: 11400000, guid: 51a231e56f74a614aa3ac2725aca3d07, type: 2}
+  attacksPrefab: []
   ec: {fileID: 7207520155809819100}
   visuals: {fileID: 7417083080981164258}
   attacks: []
@@ -348,6 +344,7 @@ MonoBehaviour:
   canMove: 1
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
+  nodeSearch: 2
   campar: {fileID: 0}
   ea: {fileID: 0}
   currentFormIndex: 1
@@ -355,23 +352,22 @@ MonoBehaviour:
   bowSpeed: 0.2
   magicSpeed: 0.7
   swordAttacksPref:
-  - {fileID: 11400000, guid: 51a231e56f74a614aa3ac2725aca3d07, type: 2}
   - {fileID: 11400000, guid: 70883ff1d1121744b83cd36d1e4bc388, type: 2}
   - {fileID: 11400000, guid: b150144e373e64d4faaae4108baae3bc, type: 2}
   - {fileID: 11400000, guid: 495be4d0b49c3654cbff4c04144b363c, type: 2}
   bowAttacksPref:
-  - {fileID: 11400000, guid: 51a231e56f74a614aa3ac2725aca3d07, type: 2}
+  - {fileID: 11400000, guid: 4ed6d26b00e415d439ef2e9ecbe36b8d, type: 2}
   - {fileID: 11400000, guid: 8502b17b4373175479c55bf64d4bd1d7, type: 2}
   - {fileID: 11400000, guid: 5922bc92d44bd4c478fd369e80bf88b3, type: 2}
-  - {fileID: 11400000, guid: 4ed6d26b00e415d439ef2e9ecbe36b8d, type: 2}
   - {fileID: 11400000, guid: feee94e68db71e34fa6a730c7a49efe5, type: 2}
   - {fileID: 11400000, guid: f613f01ce6c9085448612da341890a24, type: 2}
   magicAttacksPref:
-  - {fileID: 11400000, guid: 51a231e56f74a614aa3ac2725aca3d07, type: 2}
-  - {fileID: 11400000, guid: e6b60ccbfbc638b4186a19dd2567b5de, type: 2}
   - {fileID: 11400000, guid: e14d6ad48abc31e4c983d563525fc8e7, type: 2}
+  - {fileID: 11400000, guid: e6b60ccbfbc638b4186a19dd2567b5de, type: 2}
   - {fileID: 11400000, guid: ab26afa537a1baf499849943db40727a, type: 2}
   - {fileID: 11400000, guid: 8779fc51b9b5afe4cae6af7409d3afb4, type: 2}
+  changeFormPref: {fileID: 11400000, guid: 51a231e56f74a614aa3ac2725aca3d07, type: 2}
+  changeForm: {fileID: 0}
   swordAttacks: []
   bowAttacks: []
   magicAttacks: []
@@ -400,7 +396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4143334635953499938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.013, y: 0.747, z: 0}
+  m_LocalPosition: {x: -0.013, y: 0.6309999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -449,7 +445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7417083080981164258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.035, y: 0.781, z: 0}
+  m_LocalPosition: {x: 0.028, y: 0.66499996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

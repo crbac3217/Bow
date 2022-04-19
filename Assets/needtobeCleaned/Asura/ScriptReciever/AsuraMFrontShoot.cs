@@ -21,5 +21,6 @@ public class AsuraMFrontShoot : EnemyAttack
         EnemyProjectile ep = inst.GetComponent<EnemyProjectile>();
         ep.damage = Mathf.RoundToInt(aiHandler.damage * damageMult);
         ep.dir = new Vector2(aiHandler.visuals.transform.localScale.x, 0);
+        ep.pc = aiHandler.pc;
     }
 }

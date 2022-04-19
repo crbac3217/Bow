@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "AsuraMReflect", menuName = "EnemyAttack/Boss/Asura/AsuraMReflect", order = 105)]
 public class AsuraMReflect : EnemyAttack
 {
-    public GameObject chargeParticle, explodeParticle;
+    public GameObject chargeParticle, explodeParticle, particle;
     private GameObject chargeInst;
     public override void Activate()
     {
@@ -22,9 +22,15 @@ public class AsuraMReflect : EnemyAttack
         aiHandler.ec.hp += (int)(lost * 0.4f);
         aiHandler.ec.UpdateHpUI();
         aiHandler.damage += 1;
+        aiHandler.ec.invincible = false;
         foreach (DamageType str in aiHandler.ec.strength)
         {
             str.value += 10;
         }
+    }
+    public override void AdditionalTrigger()
+    {
+        base.AdditionalTrigger();
+        var part = Instantiate(particle, aiHandler.visuals.transform);
     }
 }

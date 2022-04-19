@@ -49,6 +49,7 @@ public class AiHandler : MonoBehaviour
     private bool done;
     private Path tempPath = new Path();
     private int calls = 0;
+    public float nodeSearch = 2;
 
     private void Start()
     {
@@ -103,6 +104,7 @@ public class AiHandler : MonoBehaviour
     {
         snareStack++;
         anim.SetBool("Moving", false);
+        rb.velocity = Vector2.zero;
         canMove = false;
     }
     public void RemoveSnareStack()
@@ -195,7 +197,7 @@ public class AiHandler : MonoBehaviour
         float min = 2;
         if (canFly)
         {
-            foreach (Collider2D col in Physics2D.OverlapCircleAll(transform.position, 2f, nodeLayer))
+            foreach (Collider2D col in Physics2D.OverlapCircleAll(transform.position, nodeSearch, nodeLayer))
             {
                 if (Vector2.Distance(col.transform.position, transform.position) < min)
                 {
@@ -216,7 +218,7 @@ public class AiHandler : MonoBehaviour
             {
                 origin = transform.position;
             }
-            foreach (Collider2D col in Physics2D.OverlapCircleAll(origin, 1.5f, nodeLayer))
+            foreach (Collider2D col in Physics2D.OverlapCircleAll(origin, nodeSearch, nodeLayer))
             {
                 if (Vector2.Distance(col.transform.position, origin) < min)
                 {
@@ -634,7 +636,7 @@ public class AiHandler : MonoBehaviour
     }
     public void AttackTriggered(string attackName)
     {
-        foreach (EnemyAttack at in attacks)
+        foreach (EnemyAttack at in attacks.ToList())
         {
             if (at.AttackName == attackName)
             {

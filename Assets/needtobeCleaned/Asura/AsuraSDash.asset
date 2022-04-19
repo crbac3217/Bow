@@ -19,12 +19,11 @@ MonoBehaviour:
   coolDown: 8
   duration: 2
   damageMult: 1.5
-  dashDist: 5
+  dashDist: 10
   attackRangePrefab: {fileID: 2562023322326686656, guid: 980d4d8bd0ccade46894113dab27919c, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
   actualRangePref: {fileID: 5738143384590093325, guid: 26df95ec8e0cd6145a6c906deeac3a1a, type: 3}
   particle: {fileID: 4660106257908398861, guid: 98b157dea0dcfc641907e382b17f0a00, type: 3}
-  actualRange: {fileID: 0}
   hasDashed: 0

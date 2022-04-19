@@ -6,7 +6,6 @@ using UnityEngine;
 public class AsuraSCombo : BetterDashAttack
 {
     private int count;
-    private bool mult = false;
     public override void Activate()
     {
         base.Activate();
@@ -14,14 +13,14 @@ public class AsuraSCombo : BetterDashAttack
     }
     public override void AttackEtc(PlayerControl pc)
     {
-        if (count == 2 && !mult)
+        if (count == 2)
         {
-            damageMult *= 2;
+            damageMult += 2;
         }
         base.AttackEtc(pc);
-        if (mult)
+        if (count == 2)
         {
-            damageMult /= 2;
+            damageMult -= 2;
         }
     }
     public override void AdditionalTrigger()
@@ -29,5 +28,6 @@ public class AsuraSCombo : BetterDashAttack
         base.AdditionalTrigger();
         hasDashed = false;
         count++;
+        aiHandler.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
 }

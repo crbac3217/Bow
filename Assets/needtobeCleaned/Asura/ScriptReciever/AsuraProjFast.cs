@@ -13,7 +13,8 @@ public class AsuraProjFast : EnemyProjectile
     }
     private IEnumerator ChangeTargetted()
     {
-        yield return new WaitForSeconds(Random.Range(1f, 3f));
+        yield return new WaitForSeconds(Random.Range(0.5f, 1f));
+        Decel = false;
         Targetted = true;
         Accel = true;
     }

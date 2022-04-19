@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4660106257908398861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -49,6 +49,8 @@ MonoBehaviour:
   pc: {fileID: 0}
   damage: 5
   doBlockHit: 0
+  disappear: 0
+  appear: 0
   rangeChecker: {fileID: 0}
 --- !u!212 &6469095841786956385
 SpriteRenderer:
@@ -92,7 +94,7 @@ SpriteRenderer:
   m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 37606883, guid: 606da9197774ed64c8b9a2dbb4190b38, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.50980395}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0

@@ -10,12 +10,13 @@ public class AsuraBowDash : EnemyAttack
     public override void Activate()
     {
         base.Activate();
-        dir = (aiHandler.pc.transform.position - aiHandler.transform.position).normalized;
+        dir = (aiHandler.pc.transform.position - aiHandler.visuals.transform.position).normalized;
     }
     public override void AttackEtc(PlayerControl pc)
     {
         base.AttackEtc(pc);
-        var dash = Instantiate(dashParticle, aiHandler.transform);
+        var dash = Instantiate(dashParticle, aiHandler.visuals.transform);
+        dash.transform.localPosition = new Vector2(-0.5f, 0);
         aiHandler.GetComponent<Rigidbody2D>().velocity = dir * dashDist;
         if (dir.x > 0)
         {

@@ -18,7 +18,7 @@ public class AsuraBChargeShot : EnemyAttack
         var explodePart = Instantiate(explodeParticle, aiHandler.visuals.transform);
         var inst = Instantiate(projectilePrefab, aiHandler.visuals.transform.position, Quaternion.identity);
         EnemyProjectile ep = inst.GetComponent<EnemyProjectile>();
-        ep.dir = new Vector2(aiHandler.visuals.transform.localScale.x, 0);
+        ep.dir = new Vector2(aiHandler.visuals.transform.localScale.x, -0.05f);
         ep.damage = Mathf.RoundToInt(aiHandler.damage * damageMult);
     }
 }

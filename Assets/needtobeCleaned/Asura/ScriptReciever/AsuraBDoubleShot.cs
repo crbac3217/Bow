@@ -31,7 +31,7 @@ public class AsuraBDoubleShot : EnemyAttack
         }
         else
         {
-            ep.dir = new Vector2(aiHandler.visuals.transform.localScale.x, 2);
+            ep.dir = new Vector2(aiHandler.visuals.transform.localScale.x, -0.05f);
         }
     }
 }
