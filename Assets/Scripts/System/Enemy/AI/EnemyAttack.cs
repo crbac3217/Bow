@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyAttack : ScriptableObject
 {
     public AttackType type;
-    public bool avail, whileMove;
+    public bool avail, whileMove, cantCutoff;
     public string AttackName;
     public float coolDown, duration, damageMult, dashDist;
     public GameObject attackRangePrefab, projectilePrefab;
@@ -23,7 +23,15 @@ public class EnemyAttack : ScriptableObject
     }
     public virtual void Activate()
     {
-        aiHandler.TriggerAnimation(AttackName, whileMove, duration);
+        if (!cantCutoff)
+        {
+            aiHandler.TriggerAnimation(AttackName, whileMove, duration);
+        }
+        else
+        {
+            aiHandler.TriggerAnimationNoDisrupt(AttackName, whileMove, duration);
+        }
+        
     }
     public virtual void DealDamage(PlayerControl pc)
     {

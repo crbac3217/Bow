@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a825775656f7f9349a15cf19ecdaf700, type: 3}
+  m_Name: Shadow1Shoot
+  m_EditorClassIdentifier: 
+  type: 1
+  avail: 1
+  whileMove: 0
+  cantCutoff: 0
+  AttackName: Shadow1Shoot
+  coolDown: 8
+  duration: 2
+  damageMult: 1
+  dashDist: 0
+  attackRangePrefab: {fileID: 6841697714110522629, guid: 960f00dde90c5ee46bbef45b32fa33e8, type: 3}
+  projectilePrefab: {fileID: 6896971151741930831, guid: 1360d09e891de7d438d76c227c35bd5c, type: 3}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}

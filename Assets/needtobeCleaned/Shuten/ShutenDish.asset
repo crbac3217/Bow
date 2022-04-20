@@ -15,10 +15,12 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 1
   AttackName: ShutenDish
   coolDown: 20
   duration: 5
   damageMult: 0
+  dashDist: 0
   attackRangePrefab: {fileID: 6492707592040892749, guid: 46e08af72b8035742865ff5c3f1fc7d9, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}

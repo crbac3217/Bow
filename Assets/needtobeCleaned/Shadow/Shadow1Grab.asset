@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a42586a8f9f0d4ea1444f954b6c02a, type: 3}
+  m_Name: Shadow1Grab
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  cantCutoff: 1
+  AttackName: Shadow1Grab
+  coolDown: 8
+  duration: 1.5
+  damageMult: 1.5
+  dashDist: 0
+  attackRangePrefab: {fileID: 4757487996031732100, guid: a496d541fe764b14681b7cc1f3f46f6b, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  grab: {fileID: 4660106257908398861, guid: abb0b7ef3efb66b4b84cc7d9c1695cec, type: 3}
+  ground:
+    serializedVersion: 2
+    m_Bits: 1024

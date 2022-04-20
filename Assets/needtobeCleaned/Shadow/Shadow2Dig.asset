@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c9d0c05092606f48957981ae23b33d6, type: 3}
+  m_Name: Shadow2Dig
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  cantCutoff: 1
+  AttackName: Shadow2Dig
+  coolDown: 12
+  duration: 2.5
+  damageMult: 1.5
+  dashDist: 0
+  attackRangePrefab: {fileID: 6280363626573937402, guid: e2769950295cec54a89750000dadaac1, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  actualRangePref: {fileID: 4320108791483384024, guid: 9fc29357007f9a5428a12e351fe6a8eb, type: 3}
+  actualRange: {fileID: 0}
+  sai: {fileID: 0}

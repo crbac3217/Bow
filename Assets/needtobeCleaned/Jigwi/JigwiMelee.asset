@@ -15,10 +15,12 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 1
   AttackName: JigwiMelee
   coolDown: 1.5
   duration: 1
   damageMult: 1.5
+  dashDist: 0
   attackRangePrefab: {fileID: 373823539430569873, guid: 2cdf02c14fda59c4f91378b463b9c905, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 6543379172379153021, guid: 2cdf02c14fda59c4f91378b463b9c905, type: 3}

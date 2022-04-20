@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be92ea9e8bb96bb43a6195a93025308e, type: 3}
+  m_Name: Shadow2Slash
+  m_EditorClassIdentifier: 
+  type: 5
+  avail: 1
+  whileMove: 0
+  cantCutoff: 1
+  AttackName: Shadow2Slash
+  coolDown: 10
+  duration: 2
+  damageMult: 2
+  dashDist: 0
+  attackRangePrefab: {fileID: 8054581148458400434, guid: d268fe71b6f396840830fbab38c2505a, type: 3}
+  projectilePrefab: {fileID: 0}
+  range: {fileID: 0}
+  aiHandler: {fileID: 0}
+  slash: {fileID: 4660106257908398861, guid: be5f7d2ad8ae3194282135d85c77f8ab, type: 3}
+  actualRangePref: {fileID: 4723855135787383743, guid: 02ce2ffb0a86f784d886d4ca956438c9, type: 3}

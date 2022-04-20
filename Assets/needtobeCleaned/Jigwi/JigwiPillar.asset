@@ -15,10 +15,12 @@ MonoBehaviour:
   type: 4
   avail: 1
   whileMove: 0
+  cantCutoff: 1
   AttackName: JigwiPillar
   coolDown: 7
   duration: 2
   damageMult: 1
+  dashDist: 0
   attackRangePrefab: {fileID: 2322153029454005009, guid: a599d90fcc7287d4e8f7b97753e930aa, type: 3}
   projectilePrefab: {fileID: 8191544388239318185, guid: aad53d293a7d6eb40bacca77f3af8053, type: 3}
   range: {fileID: 0}

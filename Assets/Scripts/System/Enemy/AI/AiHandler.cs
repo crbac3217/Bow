@@ -98,6 +98,11 @@ public class AiHandler : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+        OnUpdate();
+    }
+    public virtual void OnUpdate()
+    {
+
     }
     #region StopMoveAndCC
     public void AddSnareStack()
@@ -164,6 +169,14 @@ public class AiHandler : MonoBehaviour
         AddSnareStack();
         yield return new WaitForSeconds(time);
         RemoveSnareStack();
+    }
+    public IEnumerator StopMovingNoDisrupt(float time)
+    {
+        isAffectedByCC = false;
+        AddSnareStack();
+        yield return new WaitForSeconds(time);
+        RemoveSnareStack();
+        isAffectedByCC = true;
     }
     public void Snared(float time)
     {
@@ -680,6 +693,14 @@ public class AiHandler : MonoBehaviour
         if (!whileMove)
         {
             StartCoroutine(StopMoving(duration));
+        }
+    }
+    public void TriggerAnimationNoDisrupt(string name, bool whileMove, float duration)
+    {
+        anim.SetTrigger(name);
+        if (!whileMove)
+        {
+            StartCoroutine(StopMovingNoDisrupt(duration));
         }
     }
     public void TriggerAdditionalAnimation(string attackName, bool whileMove, float time)

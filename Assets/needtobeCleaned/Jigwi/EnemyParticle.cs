@@ -14,6 +14,11 @@ public class EnemyParticle : MonoBehaviour
     private void Start()
     {
         spren = GetComponent<SpriteRenderer>();
+        SetUp();
+    }
+    public virtual void SetUp()
+    {
+
     }
     private void Update()
     {
