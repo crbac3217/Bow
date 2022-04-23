@@ -6,6 +6,7 @@ public class DokebiInst : MonoBehaviour
 {
     public List<DamageType> damages = new List<DamageType>();
     public ParticleSystem impactParticle;
+    public SpriteRenderer spren;
     public Animator anim;
     public Crit prankcrit;
     public bool disappear = false;
@@ -24,6 +25,7 @@ public class DokebiInst : MonoBehaviour
                 Invoke(col.gameObject);
             }
         }
+        spren = anim.gameObject.GetComponent<SpriteRenderer>();
     }
     private void Invoke(GameObject go)
     {
@@ -35,7 +37,7 @@ public class DokebiInst : MonoBehaviour
     {
         if (disappear)
         {
-            anim.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, anim.gameObject.GetComponent<SpriteRenderer>().color.a - 0.01f);
+            spren.color = new Color(spren.color.r, spren.color.g, spren.color.b, anim.gameObject.GetComponent<SpriteRenderer>().color.a - 0.003f);
             if (anim.gameObject.GetComponent<SpriteRenderer>().color.a < 0.05f)
             {
                 Destroy(this.gameObject);

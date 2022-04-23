@@ -77,7 +77,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 4a93ed7f5c39b9e4290fbba90fdf1068, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -161,8 +161,12 @@ MonoBehaviour:
   Targetted: 1
   destroyable: 1
   doesDestroyUponHit: 1
+  Accel: 0
+  Decel: 0
   speed: 1.5
   lifeTime: 4
+  speedMod: 0
+  maxSpeed: 0
   damage: 1
   hitPoint: 1
   pos: {x: 0, y: 0}

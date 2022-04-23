@@ -25,7 +25,6 @@ public class Shadow2Charge : EnemyAttack
         if (ballInst)
         {
             Vector2 spawnPos = ballInst.transform.position;
-            base.ShootProjectile(pc);
             var inst = Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
             EnemyProjectile ep = inst.GetComponent<EnemyProjectile>();
             ep.damage = Mathf.RoundToInt(aiHandler.damage * damageMult);

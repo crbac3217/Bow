@@ -63,7 +63,7 @@ public class LevelManager : MonoBehaviour
     {
         CreateStartArea();
         //change to 5 and 2 later
-        int areaAmount = 0 + (level * 0);
+        int areaAmount = 5 + (level * 0);
         for (int i = 0; i < areaAmount; i++)
         {
             CreateMidArea(areas[i].end.transform.position);

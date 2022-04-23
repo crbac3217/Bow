@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.9848078, w: 0.17364825}
   m_LocalPosition: {x: -0.68, y: 0.342, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3970263554119951816}
   m_RootOrder: 1
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 806450575
-  m_SortingLayer: 4
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 8687861017710569522, guid: 1a1e903829bb81b4d978bd644b19db6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &7345764554092408731
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,6 +101,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -209,6 +211,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.7621621, y: 0, z: 0}
   m_LocalScale: {x: 2.7027028, y: 0.1923077, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3970263554119951816}
   m_RootOrder: 0
@@ -296,6 +299,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.2189, y: 4.41, z: 0}
   m_LocalScale: {x: 0.1576422, y: 0.22155118, z: 0.42606}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3970263553785290011}
   - {fileID: 3439736989234645288}
@@ -344,7 +348,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
-  m_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7372549}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -416,19 +420,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269df261affb824488f10b8baaff0702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  liveSec: 10
-  damageMultiplier: 0.85
-  firePower: 1
-  fireLevel: 0
-  xMin: 0
-  yMin: 0
-  yMax: 0
-  totalValue: 0
   isHit: 0
-  damageList: []
-  pPos: {x: 0, y: 0}
+  disappear: 0
+  onHit: 0
+  doesHitGround: 1
+  isParticleColored: 0
+  critChance: 0
+  liveTime: 6
+  disapperRate: 0.01
+  particleDisplacementValue: 0
+  onHitParticle: {fileID: 0}
+  damages: []
+  spren: []
   rb: {fileID: 0}
-  pc: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &1662455750198712935
 MonoBehaviour:
@@ -442,11 +446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f66a10d364d8c49a9dda26f5f9874b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 4023628216270442125, guid: 947c62000b29cfd4badc0cb48c197a87, type: 3}
-  partemp: {fileID: 2861141514697647309}
   isNine: 0
-  pc: {fileID: 0}
-  multiplier: 0.5
-  nblue: {r: 0.16, g: 0.58, b: 1, a: 1}
-  npurple: {r: 0.72, g: 0.42, b: 1, a: 1}
-  damages: []
+  projectile: {fileID: 4023628216270442125, guid: 947c62000b29cfd4badc0cb48c197a87, type: 3}
+  multval: 0
