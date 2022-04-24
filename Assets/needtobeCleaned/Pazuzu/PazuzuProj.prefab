@@ -154,10 +154,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.0130198, y: -0.016363025}
-      - {x: 0.055761263, y: -0.26076663}
-      - {x: -0.081280336, y: -0.018733263}
-      - {x: 0.04079932, y: 0.21779358}
+    - - {x: 0.05521393, y: -0.018707156}
+      - {x: -0.049724415, y: -0.24201357}
+      - {x: -0.0015801042, y: -0.023421407}
+      - {x: -0.029524624, y: 0.1966964}
 --- !u!114 &247118043562273695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,8 +174,12 @@ MonoBehaviour:
   Targetted: 0
   destroyable: 0
   doesDestroyUponHit: 0
+  Accel: 0
+  Decel: 0
   speed: 8
   lifeTime: 1
+  speedMod: 0
+  maxSpeed: 0
   damage: 2
   hitPoint: 0
   pos: {x: 0, y: 0}

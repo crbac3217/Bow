@@ -438,18 +438,18 @@ MonoBehaviour:
   m_ShadowGroup: 0
   m_ComponentVersion: 1
   m_HasRenderer: 1
-  m_UseRendererSilhouette: 0
+  m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 434bbfb8fbe434cfa9b689a7af81c80581d5e145
   m_ShapePath:
   - {x: -0.08873783, y: -0.13434982, z: 0}
-  - {x: -0.040066935, y: -0.001000464, z: 0}
-  - {x: -0.03730179, y: -0.14802687, z: 0}
+  - {x: 0.016065948, y: 0.07384338, z: 0}
+  - {x: -0.016511839, y: -0.13971087, z: 0}
   - {x: -0.040443867, y: -0.40302587, z: 0}
-  m_ShapePathHash: -477701180
+  m_ShapePathHash: 1135063773
   m_Mesh: {fileID: 0}
-  m_InstanceId: 76574
+  m_InstanceId: 132082
 --- !u!1 &3234187195837565239
 GameObject:
   m_ObjectHideFlags: 0
