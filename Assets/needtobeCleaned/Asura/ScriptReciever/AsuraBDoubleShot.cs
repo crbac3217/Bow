@@ -12,6 +12,10 @@ public class AsuraBDoubleShot : EnemyAttack
     {
         base.Activate();
         count = 0;
+        if (chargeInst)
+        {
+            Destroy(chargeInst);
+        }
         chargeInst = Instantiate(chargeParticle, aiHandler.visuals.transform);
     }
     public override void ShootProjectile(PlayerControl pc)

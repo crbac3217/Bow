@@ -7,16 +7,20 @@ public class AsuraMCharge : EnemyAttack
 {
     public GameObject ball, chargePart;
     public int count;
-    private GameObject ballInst;
+    private GameObject ballInst, chargeInst;
     public override void Activate()
     {
         int rand = Random.Range((int)duration, (int)duration + 3);
-        aiHandler.TriggerAnimation(AttackName, whileMove, rand);
+        aiHandler.TriggerAnimationNoDisrupt(AttackName, whileMove, rand);
         aiHandler.StartCoroutine(StopCharging(rand));
         ballInst = Instantiate(ball, new Vector2 (aiHandler.visuals.transform.position.x, aiHandler.visuals.transform.position.y + 1), Quaternion.identity);
         ballInst.transform.SetParent(aiHandler.visuals.transform);
         ballInst.GetComponent<EnemyParticle>().appear = true;
-        var chargePartInst = Instantiate(chargePart, ballInst.transform);
+        if (chargeInst)
+        {
+            Destroy(chargeInst);
+        }
+        chargeInst = Instantiate(chargePart, ballInst.transform);
         count = 0;
     }
     public override void AttackEtc(PlayerControl pc)
@@ -45,5 +49,6 @@ public class AsuraMCharge : EnemyAttack
     public void End()
     {
         ballInst.GetComponent<EnemyParticle>().disappear = true;
+        Destroy(chargeInst);
     }
 }

@@ -5,12 +5,17 @@ using UnityEngine;
 public class BreathCollider : MonoBehaviour
 {
     public List<GameObject> enemies = new List<GameObject>();
+    public List<GameObject> projs = new List<GameObject>();
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
             enemies.Add(collision.gameObject);
+        }
+        if (collision.CompareTag("EnemyProjectile"))
+        {
+            projs.Add(collision.gameObject);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

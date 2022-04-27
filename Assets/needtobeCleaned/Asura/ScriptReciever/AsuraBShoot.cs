@@ -10,6 +10,10 @@ public class AsuraBShoot : EnemyAttack
     public override void Activate()
     {
         base.Activate();
+        if (chargeInst)
+        {
+            Destroy(chargeInst);
+        }
         chargeInst = Instantiate(chargeParticle, aiHandler.visuals.transform);
     }
     public override void ShootProjectile(PlayerControl pc)

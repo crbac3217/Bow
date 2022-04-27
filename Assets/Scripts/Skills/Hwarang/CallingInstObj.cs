@@ -19,6 +19,10 @@ public class CallingInstObj : MonoBehaviour
                 {
                     col.GetComponent<EnemyController>().CritEffect(1, effect);
                 }
+                if (col.CompareTag("EnemyProjectile"))
+                {
+                    col.GetComponent<EnemyProjectile>().Dest(null);
+                }
             }
         }
     }

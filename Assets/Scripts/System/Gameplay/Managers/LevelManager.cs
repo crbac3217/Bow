@@ -7,10 +7,12 @@ public class LevelManager : MonoBehaviour
     public int level;
     public PlayerType playerType;
     public CameraParent cp;
-    public GameObject playerPrefab, spawnPoint, ItemManagerObject, GUIManagerObject, DamageManagerObject, LootManagerObject;
+    public bool shouldInitialize;
+    public GameObject playerPrefab, spawnPoint, ItemManagerObject, GUIManagerObject, DamageManagerObject, LootManagerObject, boss;
     public PlayerControl pc;
     public ThemeDatabase theme;
     public EndType endtype;
+    public GameManager gm;
     private List<Area> areas = new List<Area>();
     private ItemManager itemManager;
     private GUIManager guiManager;
@@ -19,13 +21,35 @@ public class LevelManager : MonoBehaviour
     public List<GameObject> enemies = new List<GameObject>();
     private void Start()
     {
+        GetInfoFromGM();
         SpawnManagers();
         SpawnPlayer();
         GenerateLevel();
         CreateConnections();
-        LoadAssets();
     }
     #region SetUp
+    private void GetInfoFromGM()
+    {
+        gm = FindObjectOfType<GameManager>();
+        if (gm)
+        {
+            if (gm.isStarting)
+            {
+                shouldInitialize = true;
+                gm.isStarting = false;
+            }
+            playerType = gm.pt;
+            playerPrefab = gm.player;
+            theme = gm.levels[0].theme;
+            level = gm.levels[0].level;
+            endtype = gm.levels[0].endType;
+            boss = gm.levels[0].boss;
+        }
+        else
+        {
+            Debug.Log("A critical error happend :(");
+        }
+    }
     private void SpawnManagers()
     {
         var itemManagerObject = Instantiate(ItemManagerObject, this.transform);
@@ -40,22 +64,18 @@ public class LevelManager : MonoBehaviour
     private void SpawnPlayer()
     {
         var player = Instantiate(playerPrefab, spawnPoint.transform.position, Quaternion.identity);
+        gm.DestroyPrevPlayer();
         pc = player.GetComponent<PlayerControl>();
+        pc.levelManager = this;
         damageManager.pc = pc;
         itemManager.pc = pc;
         guiManager.pc = pc;
         pc.playerType = Instantiate(playerType);
-        pc.levelManager = this;
         pc.damageManager = damageManager;
         pc.guiManager = guiManager;
         pc.itemManager = itemManager;
         cp.player = player;
         pc.campar = cp;
-    }
-    private void LoadAssets()
-    {
-        Resources.LoadAll<Texture>("Assets/Sprites/Character/Hwarang/Hwarang_100/Animation/BowArm");
-        Resources.LoadAll<Texture>("Assets/Sprites/Character/Hwarang/Hwarang_100/Animation/EmptyArm");
     }
     #endregion SetUp
     #region MapMaking
@@ -63,7 +83,7 @@ public class LevelManager : MonoBehaviour
     {
         CreateStartArea();
         //change to 5 and 2 later
-        int areaAmount = 5 + (level * 0);
+        int areaAmount = 0 + (level * 0);
         for (int i = 0; i < areaAmount; i++)
         {
             CreateMidArea(areas[i].end.transform.position);
@@ -102,6 +122,7 @@ public class LevelManager : MonoBehaviour
         areas.Add(endArea.GetComponent<Area>());
         AreaSetting(endArea.GetComponent<Area>());
         ea.campar = cp;
+        ea.bossPref = boss;
         cp.xBoundaryR = endArea.GetComponent<Area>().end.transform.position.x - 2;
         cp.yBoundaryU = endArea.GetComponent<Area>().end.transform.position.y + 3;
     }

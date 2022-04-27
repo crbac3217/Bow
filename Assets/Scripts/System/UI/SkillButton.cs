@@ -10,7 +10,6 @@ public class SkillButton : MonoBehaviour
 
     public void UpdateCD()
     {
-        Debug.Log("Updated cooldown for " + thisSkill.skillName+", which is " + thisSkill.cdCurrentCount +"/" + thisSkill.cdMaxCount);
         if (thisSkill.cdType != CooldownType.time)
         {
             if (!thisSkill.isSkillAvail)

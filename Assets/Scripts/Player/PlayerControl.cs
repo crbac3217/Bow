@@ -42,8 +42,11 @@ public class PlayerControl : MonoBehaviour
         pf = GetComponent<PlayerFreeze>();
         ph = GetComponent<PlayerHit>();
         psm = GetComponent<PlayerSkillManager>();
-        skills = new Skill[4] {null, null, null, null};
-        InitializeStats();
+        if (levelManager.shouldInitialize)
+        {
+            InitializeStats();
+            levelManager.shouldInitialize = false;
+        }
         SetPlayer();
     }
         
@@ -59,6 +62,8 @@ public class PlayerControl : MonoBehaviour
         pf.Begin();
         pa.Begin();
         ReloadStats();
+        //this is temp function
+        FindObjectOfType<PCInputManager>().pc = this;
     }
     public void ReloadStats()
     {
@@ -77,17 +82,9 @@ public class PlayerControl : MonoBehaviour
             };
             stats[(int)stat.statType] = temp;
         }
-    }
-
-    public void BeginnerEquips()
-    {
-        if (items.Count < Enum.GetNames(typeof(Equipment.EquipmentType)).Length)
-        {
-            foreach (Equipment eq in playerType.beginner.equipments)
-            {
-                equipments.Add(eq);
-            }
-        }
+        damageTypes = new List<DamageType>(playerType.defaultDamages);
+        currentHp = stats[2].value;
+        skills = new Skill[4] { null, null, null, null };
     }
     public void AddSkill(Equipment eq)
     {
@@ -116,8 +113,6 @@ public class PlayerControl : MonoBehaviour
             {
                 if (skillName == skills[i].skillName)
                 {
-                    Debug.Log(skills[i].skillName);
-                    Debug.Log(skillToReplace.skillName);
                     guiManager.RemoveSkill(i, skills[i]);
                     skills[i].OnSkillRemove(this);
                     skills[i] = Instantiate(skillToReplace);

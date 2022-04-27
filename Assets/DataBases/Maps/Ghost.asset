@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adec019b16ea88046b4c63ace66323bc, type: 3}
+  m_Name: Ghost
+  m_EditorClassIdentifier: 
+  mapTheme: 1
+  startAreas:
+  - {fileID: 2701981635127938329, guid: 37b51f7ad0848f942a78beb2267cc513, type: 3}
+  middleAreas:
+  - {fileID: 149219465818914191, guid: 24acb1045be073b43bee9eb8b335febc, type: 3}
+  - {fileID: 5671804190628430109, guid: 2587a735ced866c41b469496f88eb183, type: 3}
+  - {fileID: 6157303536767307413, guid: 2759b3107f798a749835a54ef28b94aa, type: 3}
+  - {fileID: 840446940718147377, guid: fcbae41138504a64aa83fef0fabc241a, type: 3}
+  - {fileID: 4698969695660584288, guid: 13855a8516c5bf34a9969a4ce5f8aa04, type: 3}
+  - {fileID: 8482118954290929973, guid: 2b7a4af8099acfb44b680f3a37776045, type: 3}
+  - {fileID: 7488676940755355164, guid: 4379ad4623137554c81dffe848f69132, type: 3}
+  - {fileID: 895180963229083635, guid: 6de42a0661529c04a8bdc83c33f69cb3, type: 3}
+  - {fileID: 4317586822560090187, guid: 351fa35119f652642b27789ce83f5dd0, type: 3}
+  - {fileID: 6632814883172989707, guid: b0e190981d8ba5c498bad7a9e9f66883, type: 3}
+  endAreas:
+  - {fileID: 8794652751386844218, guid: 03c5eb8a61c4e3944b30767925ddcb11, type: 3}
+  backGround: []
+  midGround: []
+  effect: {fileID: 0}
+  themeColor: []

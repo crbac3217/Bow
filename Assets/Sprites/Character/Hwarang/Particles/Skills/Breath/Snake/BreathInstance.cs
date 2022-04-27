@@ -27,6 +27,13 @@ public class BreathInstance : MonoBehaviour
                 }
             }
         }
+        foreach (GameObject go in bc.projs)
+        {
+            if (go)
+            {
+                go.GetComponent<EnemyProjectile>().Dest(null);
+            }
+        }
     }
     public void EndAnim()
     {

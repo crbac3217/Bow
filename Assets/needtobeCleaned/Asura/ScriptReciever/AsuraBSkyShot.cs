@@ -14,6 +14,10 @@ public class AsuraBSkyShot : EnemyAttack
     {
         base.Activate();
         rand = Random.Range(3, 8);
+        if (chargeInst)
+        {
+            Destroy(chargeInst);
+        }
         chargeInst = Instantiate(chargeParticle, aiHandler.visuals.transform);
         playerpos = aiHandler.pc.transform.position;
     }

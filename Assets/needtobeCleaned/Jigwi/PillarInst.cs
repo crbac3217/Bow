@@ -12,6 +12,7 @@ public class PillarInst : MonoBehaviour
     private void Start()
     {
         spren = GetComponent<SpriteRenderer>();
+        StartCoroutine(PillarExp());
     }
     public void TriggerDamage()
     {
@@ -34,6 +35,13 @@ public class PillarInst : MonoBehaviour
         {
             avail = false;
         }
+    }
+    private IEnumerator PillarExp()
+    {
+        yield return new WaitForSeconds(5);
+        damage = 0;
+        GetComponent<Animator>().SetTrigger("Trigger");
+        transform.position = new Vector2(transform.position.x, transform.position.y + 0.3f);
     }
     public void AnimFinished()
     {

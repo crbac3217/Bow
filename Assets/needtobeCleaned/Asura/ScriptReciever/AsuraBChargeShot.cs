@@ -6,15 +6,19 @@ using UnityEngine;
 public class AsuraBChargeShot : EnemyAttack
 {
     public GameObject chargeParticle, explodeParticle;
-    private GameObject chargeParticleInst;
+    private GameObject chargeInst;
     public override void Activate()
     {
         base.Activate();
-        chargeParticleInst = Instantiate(chargeParticle, aiHandler.visuals.transform);
+        if (chargeInst)
+        {
+            Destroy(chargeInst);
+        }
+        chargeInst = Instantiate(chargeParticle, aiHandler.visuals.transform);
     }
     public override void ShootProjectile(PlayerControl pc)
     {
-        Destroy(chargeParticleInst);
+        Destroy(chargeInst);
         var explodePart = Instantiate(explodeParticle, aiHandler.visuals.transform);
         var inst = Instantiate(projectilePrefab, aiHandler.visuals.transform.position, Quaternion.identity);
         EnemyProjectile ep = inst.GetComponent<EnemyProjectile>();

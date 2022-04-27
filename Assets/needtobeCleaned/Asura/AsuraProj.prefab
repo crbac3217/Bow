@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doesHitGround: 1
   Targetted: 0
-  destroyable: 0
+  destroyable: 1
   doesDestroyUponHit: 1
   Accel: 0
   Decel: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   speedMod: 0
   maxSpeed: 0
   damage: 5
-  hitPoint: 1
+  hitPoint: 2
   pos: {x: 0, y: 0}
   dir: {x: 0, y: 0}
   pc: {fileID: 0}

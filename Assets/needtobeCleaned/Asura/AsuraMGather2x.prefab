@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7564640121173132077}
   - component: {fileID: 1271949145503648640}
   - component: {fileID: 1067449593431479651}
+  - component: {fileID: 1482244602562667170}
   m_Layer: 0
   m_Name: AsuraMGather2x
   m_TagString: Untagged
@@ -4812,3 +4813,17 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &1482244602562667170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6536108248866985138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edbd7eb99ef67f14f994c299a674f5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 5
+  objtoDestroy: {fileID: 0}

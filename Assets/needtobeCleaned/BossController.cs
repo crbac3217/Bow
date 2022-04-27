@@ -20,4 +20,9 @@ public class BossController : EnemyController
             aiHandler.isAffectedByCC = false;
         }
     }
+    public override void Drop()
+    {
+        base.Drop();
+        ea.BossDefeated();
+    }
 }

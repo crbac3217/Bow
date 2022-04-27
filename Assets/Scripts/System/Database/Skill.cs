@@ -101,7 +101,6 @@ public class Skill : ScriptableObject
     }
     public virtual void EndSkill(PlayerControl pc)
     {
-        Debug.Log(skillName + "has finished :D");
         cdCurrentCount = 0;
         isSkillAvail = false;
         pc.psm.InvokeEvent();
@@ -133,13 +132,11 @@ public class Skill : ScriptableObject
         //check if the skill is a passive skill
         if (skillType == SkillType.Passive)
         {
-            Debug.Log("This is a Passive Skill");
             //gui manager pop up This is Passive bruv
         }else
         {
             if (!isSkillAvail)
             {
-                Debug.Log(skillName + " is still on Cooldown");
             }
             else
             {

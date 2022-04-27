@@ -12,7 +12,7 @@ public class JigwiPillar : EnemyAttack
     public override void Activate()
     {
         int rand = Random.Range((int)duration, (int)maxDuration);
-        aiHandler.TriggerAnimation(AttackName, whileMove, rand);
+        aiHandler.TriggerAnimationNoDisrupt(AttackName, whileMove, rand);
         aiHandler.StartCoroutine(PillarsSetup(rand));
     }
     public IEnumerator PillarsSetup(int rand)

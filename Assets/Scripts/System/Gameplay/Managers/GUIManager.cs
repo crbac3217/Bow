@@ -29,7 +29,7 @@ public class GUIManager : MonoBehaviour
         volume = FindObjectOfType<Volume>();
         moveButton = GameObject.FindGameObjectWithTag("MoveButton");
         joyStick = GameObject.FindGameObjectWithTag("Joystick");
-        canvas = GameObject.Find("Canvas");
+        canvas = pc.campar.GetComponentInChildren<Canvas>().gameObject;
         skillButtons = new GameObject[3] { GameObject.FindGameObjectWithTag("Skill1"), GameObject.FindGameObjectWithTag("Skill2"), GameObject.FindGameObjectWithTag("Skill3")};
         SetUpEQPanels();
         SetUpShopPanels();
@@ -38,6 +38,7 @@ public class GUIManager : MonoBehaviour
         joyStick.GetComponent<FixedJoystick>().ps = pc.ps;
         MoveButtonInitialize();
         JumpButtonInitialize();
+        SkillButtonInitailize();
         //MoveButtonRead();
         //JoystickRead();
     }
@@ -67,7 +68,16 @@ public class GUIManager : MonoBehaviour
         ButtonAdd(pc.gameObject, pc.pj.GetType(), pc.pj.GetType().GetMethod("Jump"), parameters, "jumpButton", EventTriggerType.PointerDown);
         ButtonAdd(pc.gameObject, pc.pj.GetType(), pc.pj.GetType().GetMethod("OnLetGo"), parameters, "jumpButton", EventTriggerType.PointerUp);
     }
-
+    public void SkillButtonInitailize()
+    {
+        for (int i = 0; i < pc.skills.Length; i++)
+        {
+            if (pc.skills[i])
+            {
+                AddSkill(i, pc.skills[i]);
+            }
+        }
+    }
     #endregion GUIButtonInitialize
     #region ButtonAdd
     public void ButtonAdd(GameObject obj, Type type, MethodInfo method, object[] parameters, string buttonName, EventTriggerType triggerType)
@@ -80,7 +90,7 @@ public class GUIManager : MonoBehaviour
         string typeMethodButton = type.Name + method.Name + buttonName;
         entries.Add(typeMethodButton, entry);
         test.Add(typeMethodButton);
-        Debug.Log(typeMethodButton);
+        //Debug.Log(typeMethodButton);
     }
     public void ButtonRemove(Type type, MethodInfo method, string buttonName)
     {

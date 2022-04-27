@@ -137,10 +137,6 @@ public class EnemyController : MonoBehaviour
         critRotate.GetComponent<CritRotator>().CreateCrits(activeCrits);
         StartCoroutine(temp.EffectTimer(value, this));
     }
-    public void InflictDamage(int damage, bool isProj, bool didCrit)
-    {
-        
-    }
     public void ConfirmDamage(int value)
     {
         hp -= value;

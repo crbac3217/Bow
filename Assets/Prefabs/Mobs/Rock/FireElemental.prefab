@@ -27,6 +27,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7833448042870944718}
   m_Father: {fileID: 7701175148600739250}
@@ -86,6 +87,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3959859933192778375}
   m_RootOrder: 0
@@ -165,6 +167,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4143334635953499936}
   - {fileID: 3959859933192778375}
@@ -228,14 +231,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 74234a1dea9add1458a1016105f5b52a, type: 2}
   ec: {fileID: 0}
   visuals: {fileID: 7417083080981164258}
+  attacks: []
   pc: {fileID: 0}
   isInteracting: 0
   currentPath:
     nodes: []
     didConnect: 0
     totalDistance: 0
+  anim: {fileID: 0}
+  canMove: 1
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
+  nodeSearch: 2
 --- !u!70 &2539111272817491126
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -249,8 +256,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.044772357, y: 0.52020776}
-  m_Size: {x: 0.30652517, y: 0.39426708}
+  m_Offset: {x: 0.005967647, y: 0.6146892}
+  m_Size: {x: 0.3030259, y: 0.40826428}
   m_Direction: 0
 --- !u!114 &2777166427433825537
 MonoBehaviour:
@@ -266,6 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiHandler: {fileID: 0}
   color: {r: 1, g: 0.010436682, b: 0, a: 1}
+  invincible: 0
   hp: 8
   maxHp: 8
   minGoldDrop: 0
@@ -279,12 +287,7 @@ MonoBehaviour:
   - damageElement: 3
     value: 5
   activeCrits: []
-  damageCrits:
-  - {fileID: 11400000, guid: 0af1125861bbfc942b5e5369442b12af, type: 2}
-  - {fileID: 11400000, guid: 2100ed74cde0c8545a2ababf49d50334, type: 2}
-  - {fileID: 11400000, guid: b9ce23c472f38c4408362c6dd4f07206, type: 2}
-  - {fileID: 11400000, guid: 8db8464af5e12b74493e0581bb81eee4, type: 2}
-  - {fileID: 11400000, guid: 47826d59bf7169742abcd6ffadb39b4d, type: 2}
+  damageCrits: []
   critRotate: {fileID: 4143334635953499938}
   panel: {fileID: 3940204033452486776}
   dm: {fileID: 0}
@@ -316,8 +319,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4143334635953499938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.32899997, z: 0}
+  m_LocalPosition: {x: 0, y: 0.451, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7701175148600739250}
   m_RootOrder: 0
@@ -364,8 +368,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7417083080981164258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.576, z: 0}
+  m_LocalPosition: {x: -0.001, y: 0.576, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7701175148600739250}
   m_RootOrder: 2
@@ -424,7 +429,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &403020807301908632
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -437,6 +442,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -527,7 +533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1476912610918300163, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.028
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1476912610918300163, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
       propertyPath: m_AnchoredPosition.y

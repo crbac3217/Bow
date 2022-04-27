@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8729118193067264438}
   - component: {fileID: 1372307629141377635}
   - component: {fileID: 1520623372669501753}
+  - component: {fileID: 6396315506296751929}
   m_Layer: 15
   m_Name: PazuzuWingInst
   m_TagString: EnemyProjectile
@@ -153,6 +154,8 @@ MonoBehaviour:
   pc: {fileID: 0}
   damage: 2
   doBlockHit: 1
+  disappear: 0
+  appear: 0
   rangeChecker: {fileID: 3887465772339385849}
 --- !u!114 &1520623372669501753
 MonoBehaviour:
@@ -167,3 +170,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   avail: 0
+--- !u!114 &6396315506296751929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3887465772339385849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edbd7eb99ef67f14f994c299a674f5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 4
+  objtoDestroy: {fileID: 0}

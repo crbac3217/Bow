@@ -57,6 +57,10 @@ public class HwarangDefaultMelee : Melee
                 GameObject particleobj = Instantiate(hitParticle, Vector2.Lerp(aa.apc.transform.position, enemy.gameObject.transform.position, 0.5f), Quaternion.identity);
                 particleobj.GetComponent<ParticleSystem>().Play();
             }
+            else if (enemy.gameObject.CompareTag("EnemyProjectile"))
+            {
+               enemy.GetComponent<EnemyProjectile>().Dest(null);
+            }
         }
         base.InvokeMelee(aa);
     }

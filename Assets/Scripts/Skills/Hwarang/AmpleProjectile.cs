@@ -26,8 +26,10 @@ public class AmpleProjectile : Projectile
     public override void OnCollisionEnemy(EnemyController ec)
     {
         DealDamage(ec);
-        Color temp = ec.color;
-        ec.aiHandler.KnockBack(startpos, 0.5f);
+        if (ec.hp > 0)
+        {
+            ec.aiHandler.KnockBack(startpos, 0.5f);
+        }
         if (isEnhanced)
         {
             InstantiateExplosion(ec.gameObject);
@@ -39,18 +41,19 @@ public class AmpleProjectile : Projectile
         }
         else
         {
-            Debug.Log("stop");
             isHit = true;
             if (anim != null)
             {
                 anim.enabled = false;
             }
-            InvokeParticle(temp);
             transform.SetParent(ec.transform);
             disappear = true;
             rb.bodyType = RigidbodyType2D.Static;
             Destroy(GetComponent<Collider2D>());
         }
+    }
+    public override void OnHit()
+    {
     }
     public void InstantiateExplosion (GameObject go)
     {

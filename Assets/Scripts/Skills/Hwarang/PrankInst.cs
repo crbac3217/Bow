@@ -26,6 +26,10 @@ public class PrankInst : MonoBehaviour
                 col.GetComponent<EnemyController>().CritEffect(1, prankCrit);
                 col.GetComponent<EnemyController>().CalculateDamage(damages, false, 0);
             }
+            if (col.CompareTag("EnemyProjectile"))
+            {
+                col.GetComponent<EnemyProjectile>().Dest(null);
+            }
         }
         disapper = true;
     }

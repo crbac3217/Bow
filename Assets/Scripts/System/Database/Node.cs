@@ -193,29 +193,29 @@ public class Node : MonoBehaviour
             };
             n.connectedNodes.Add(this);
             n.connections.Add(temp2);
-            CreateVisuallizer(this, n, jump);
+            //CreateVisuallizer(this, n, jump);
         }
     }
-    public void CreateVisuallizer(Node firstNode, Node secondNode, bool jump)
-    {
-        GameObject visualizer = new GameObject("Visualizer");
-        visualizer.AddComponent<LineRenderer>();
-        LineRenderer lr = visualizer.GetComponent<LineRenderer>();
-        lr.positionCount = 2;
-        lr.SetPosition(0, firstNode.position);
-        lr.SetPosition(1, secondNode.position);
-        lr.widthMultiplier = 0.01f;
-        if (jump)
-        {
-            lr.startColor = Color.red;
-            lr.endColor = Color.red;
-        }
-        else
-        {
-            lr.startColor = Color.green;
-            lr.endColor = Color.green;
-        }
-    }
+    //public void CreateVisuallizer(Node firstNode, Node secondNode, bool jump)
+    //{
+    //    GameObject visualizer = new GameObject("Visualizer");
+    //    visualizer.AddComponent<LineRenderer>();
+    //    LineRenderer lr = visualizer.GetComponent<LineRenderer>();
+    //    lr.positionCount = 2;
+    //    lr.SetPosition(0, firstNode.position);
+    //    lr.SetPosition(1, secondNode.position);
+    //    lr.widthMultiplier = 0.01f;
+    //    if (jump)
+    //    {
+    //        lr.startColor = Color.red;
+    //        lr.endColor = Color.red;
+    //    }
+    //    else
+    //    {
+    //        lr.startColor = Color.green;
+    //        lr.endColor = Color.green;
+    //    }
+    //}
 
     //if the base node is 
     ////if a node is an endnode

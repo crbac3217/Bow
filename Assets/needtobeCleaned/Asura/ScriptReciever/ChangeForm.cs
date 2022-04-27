@@ -20,6 +20,10 @@ public class ChangeForm : EnemyAttack
         Debug.Log(aai.currentFormIndex + "is the curIndex, but" + aiHandler.anim.GetInteger("FormIndex"));
         aiHandler.anim.SetTrigger("Change");
         aiHandler.StartCoroutine(aiHandler.StopMoving(duration));
+        if (chargeInst)
+        {
+            Destroy(chargeInst);
+        }
         if (aai.currentFormIndex == 1)
         {
             chargeInst = Instantiate(sChargeParticle, aiHandler.visuals.transform);

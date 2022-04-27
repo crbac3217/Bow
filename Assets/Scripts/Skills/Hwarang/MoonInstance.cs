@@ -30,14 +30,14 @@ public class MoonInstance : MonoBehaviour
     private IEnumerator AliveFor()
     {
         yield return new WaitForSeconds(liveTime);
-        Destroy(this.gameObject);
+        disappear = true;
     }
     private void Update()
     {
         if (disappear)
         {
             GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, GetComponent<SpriteRenderer>().color.a - 0.01f);
-            if (GetComponent<SpriteRenderer>().color.a <= 0.05f)
+            if (GetComponent<SpriteRenderer>().color.a <= 0.01f)
             {
                 Destroy(gameObject);
             }
@@ -107,6 +107,10 @@ public class MoonInstance : MonoBehaviour
             if (col.CompareTag("Enemy"))
             {
                 col.GetComponent<EnemyController>().CalculateDamage(halfDamages, false, 0);
+            }
+            if (col.CompareTag("EnemyProjectile"))
+            {
+                col.GetComponent<EnemyProjectile>().Dest(null);
             }
         }
         StartCoroutine(Pulse());

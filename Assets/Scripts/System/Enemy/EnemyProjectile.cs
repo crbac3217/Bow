@@ -74,19 +74,8 @@ public class EnemyProjectile : MonoBehaviour
                 destroy = true;
                 anim.SetTrigger("Hit");
             }
-        }else if (collision.CompareTag("Projectile"))
-        {
-            if (destroyable && !destroy)
-            {
-                hitPoint--;
-                if (hitPoint <= 0)
-                {
-                    destroy = true;
-                    anim.SetTrigger("Hit");
-                    collision.GetComponent<Projectile>().OnHit();
-                }
-            }
-        }else if (collision.CompareTag("Player") && !destroy)
+        }
+        else if (collision.CompareTag("Player") && !destroy)
         {
             if (doesDestroyUponHit)
             {
@@ -97,6 +86,22 @@ public class EnemyProjectile : MonoBehaviour
         }
         float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
+    public void Dest(Projectile source)
+    {
+        if (destroyable && !destroy)
+        {
+            hitPoint--;
+            if (hitPoint <= 0)
+            {
+                destroy = true;
+                anim.SetTrigger("Hit");
+                if (source)
+                {
+                    source.OnHit();
+                }
+            }
+        }
     }
     private IEnumerator Live()
     {

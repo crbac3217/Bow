@@ -295,6 +295,7 @@ MonoBehaviour:
     totalDistance: 0
   anim: {fileID: 403020807301908632}
   canMove: 1
+  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
   nodeSearch: 3
@@ -309,6 +310,7 @@ MonoBehaviour:
   buried: 0
   onGround: 0
   digParticle: {fileID: 5620377640079746306, guid: 03e732dd2b55af0479993a33e9b099fc, type: 3}
+  handPref: {fileID: 4660106257908398861, guid: abb0b7ef3efb66b4b84cc7d9c1695cec, type: 3}
   groundLevel: 0
   ground:
     serializedVersion: 2

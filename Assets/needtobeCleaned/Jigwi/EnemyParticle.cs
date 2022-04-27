@@ -15,6 +15,10 @@ public class EnemyParticle : MonoBehaviour
     {
         spren = GetComponent<SpriteRenderer>();
         SetUp();
+        if (GetComponent<Animator>())
+        {
+            StartCoroutine(EndTime());
+        }
     }
     public virtual void SetUp()
     {
@@ -53,6 +57,12 @@ public class EnemyParticle : MonoBehaviour
     public void AnimFinishedStartToningDown()
     {
         disappear = true;
+    }
+    private IEnumerator EndTime()
+    {
+        yield return new WaitForSeconds(5);
+        damage = 0;
+        GetComponent<Animator>().SetTrigger("End");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

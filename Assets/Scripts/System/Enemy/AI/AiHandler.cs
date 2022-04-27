@@ -40,6 +40,7 @@ public class AiHandler : MonoBehaviour
     [SerializeField]
     private bool canMove = true;
     private int snareStack = 0;
+    [SerializeField]
     private bool isGrounded = false;
     public Node curNode, nextNode;
     private Connection curCon;
@@ -122,7 +123,7 @@ public class AiHandler : MonoBehaviour
     }
     public void Hit()
     {
-        if (isAffectedByCC)
+        if (isAffectedByCC && ec.hp > 0)
         {
             AddSnareStack();
             anim.SetTrigger("Hit");
@@ -130,8 +131,8 @@ public class AiHandler : MonoBehaviour
     }
     public virtual void Dead()
     {
-        rb.bodyType = RigidbodyType2D.Static;
         AddSnareStack();
+        rb.bodyType = RigidbodyType2D.Static;
         Destroy(col);
         anim.SetTrigger("Death");
         StopCoroutine(CheckPlayer());
@@ -529,6 +530,7 @@ public class AiHandler : MonoBehaviour
             if (curCon.jump && isGrounded && horspeed != 0)
             {
                 anim.SetTrigger("Jump");
+                isGrounded = false;
                 float xDist = Mathf.Abs(curNode.position.x - nextNode.position.x);
                 float time = xDist / speed;
                 float iniH = curNode.position.y - nextNode.position.y;
@@ -619,13 +621,6 @@ public class AiHandler : MonoBehaviour
             }
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
-    }
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (!canFly)
@@ -689,27 +684,36 @@ public class AiHandler : MonoBehaviour
     }
     public void TriggerAnimation(string name, bool whileMove, float duration)
     {
-        anim.SetTrigger(name);
-        if (!whileMove)
+        if (ec.hp > 0)
         {
-            StartCoroutine(StopMoving(duration));
+            anim.SetTrigger(name);
+            if (!whileMove)
+            {
+                StartCoroutine(StopMoving(duration));
+            }
         }
     }
     public void TriggerAnimationNoDisrupt(string name, bool whileMove, float duration)
     {
-        anim.SetTrigger(name);
-        if (!whileMove)
+        if (ec.hp > 0)
         {
-            StartCoroutine(StopMovingNoDisrupt(duration));
+            anim.SetTrigger(name);
+            if (!whileMove)
+            {
+                StartCoroutine(StopMovingNoDisrupt(duration));
+            }
         }
     }
     public void TriggerAdditionalAnimation(string attackName, bool whileMove, float time)
     {
-        string tempName = attackName + "Trigger";
-        anim.SetTrigger(tempName);
-        if (!whileMove)
+        if (ec.hp > 0)
         {
-            StartCoroutine(StopMoving(time));
+            string tempName = attackName + "Trigger";
+            anim.SetTrigger(tempName);
+            if (!whileMove)
+            {
+                StartCoroutine(StopMoving(time));
+            }
         }
     }
     #endregion Actions

@@ -55,7 +55,6 @@ public class FixedJoystick : Joystick
         for (int i = 0; i <= maxLevelsOfShooting; i++)
         {
             indicator.Add(i, i * 2.5f);
-            Debug.Log(indicator[i]);
         }
         FireLevelUp(1);
         isPressed = true;

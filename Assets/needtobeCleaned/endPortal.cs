@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class endPortal : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public LevelManager lm;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.CompareTag("Player"))
+        {
+            lm.gm.LoadNextLevel(collision.gameObject);
+        }
     }
 }

@@ -11,6 +11,10 @@ public class AsuraMReflect : EnemyAttack
     {
         base.Activate();
         aiHandler.ec.invincible = true;
+        if (chargeInst)
+        {
+            Destroy(chargeInst);
+        }
         chargeInst = Instantiate(chargeParticle, aiHandler.visuals.transform);
     }
     public override void AttackEtc(PlayerControl pc)

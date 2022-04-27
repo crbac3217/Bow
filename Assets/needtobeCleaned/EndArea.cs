@@ -5,11 +5,12 @@ using UnityEngine;
 public class EndArea : Area
 {
     public EndType endtype;
-    public GameObject endingPortal, endSpawnPos, bossOrShopPos, bossPref, ShopPref, bossInst;
+    public GameObject portalPref, bossPos, ShopPos, portalPos, bossPref, ShopPref, bossInst, endBoundary;
     public CameraParent campar;
     private Vector3 velocity = Vector2.zero;
     public Vector3 endAreaCam;
     public bool defeatedBoss, enteredBossfight, bossSpawned;
+    private GameObject shop, portal;
     private BossController bc;
     private BossAi bai;
 
@@ -44,13 +45,42 @@ public class EndArea : Area
                     pc.guiManager.bossBar.SetActive(true);
                     bc.enabled = true;
                     bai.enabled = true;
+                    endBoundary.SetActive(true);
                 }
             }
         }
+        else if (endtype == EndType.Shop)
+        {
+            if (!shop && pc.transform.position.x > transform.position.x - 3)
+            {
+                SpawnShop();
+            }
+            if (!portal && pc.transform.position.x > portalPos.transform.position.x - 2)
+            {
+                SpawnPortal();
+            }
+        }
+        else if (endtype == EndType.Portal)
+        {
+            if (!portal && pc.transform.position.x > portalPos.transform.position.x - 2)
+            {
+                SpawnPortal();
+            }
+        }
+    }
+    private void SpawnShop()
+    {
+        ShopPref.GetComponentInChildren<ShopKeeper>().level = level;
+        shop = Instantiate(ShopPref, ShopPos.transform.position, Quaternion.identity);
+    }
+    private void SpawnPortal()
+    {
+        portal = Instantiate(portalPref, portalPos.transform.position, Quaternion.identity);
+        portal.GetComponent<endPortal>().lm = lvlm;
     }
     private void SpawnBoss()
     {
-        bossInst = Instantiate(bossPref, bossOrShopPos.transform.position, Quaternion.identity);
+        bossInst = Instantiate(bossPref, bossPos.transform.position, Quaternion.identity);
         bc = bossInst.GetComponent<BossController>();
         bai = bossInst.GetComponent<BossAi>();
         bai.ea = this;
@@ -69,5 +99,25 @@ public class EndArea : Area
         bc.enabled = false;
         bai.enabled = false;
         bossSpawned = true;
+    }
+    public void BossDefeated()
+    {
+        SpawnPortal();
+        if (level == 1)
+        {
+            pc.guiManager.EQPanelOn(0);
+        }
+        if (level == 2)
+        {
+            pc.guiManager.EQPanelOn(3);
+        }
+        if (level == 3)
+        {
+            pc.guiManager.EQPanelOn(2);
+        }
+        if (level == 4)
+        {
+            pc.guiManager.EQPanelOn(1);
+        }
     }
 }

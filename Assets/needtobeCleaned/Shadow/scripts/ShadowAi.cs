@@ -6,7 +6,7 @@ public class ShadowAi : BossAi
 {
     public List<EnemyAttack> phase2attacksPref, phase2 = new List<EnemyAttack>();
     public bool buried, onGround;
-    public GameObject digParticle;
+    public GameObject digParticle, handPref;
     public float groundLevel;
     private Vector2 groundspritePos = new Vector2(0, 0.269f);
     private Vector2 airspritePos = new Vector2(0, 0.368f);
@@ -87,5 +87,17 @@ public class ShadowAi : BossAi
         StopMovingNoDisrupt(1);
         attacks = new List<EnemyAttack>(phase2);
         chaseSpeed = 1.3f;
+        StartCoroutine(HandSpawn());
+    }
+    private IEnumerator HandSpawn()
+    {
+        Vector2 markPos = new Vector2(pc.transform.position.x, groundLevel);
+        var grabInst = Instantiate(handPref, markPos, Quaternion.identity);
+        grabInst.transform.localScale = visuals.transform.localScale;
+        grabInst.GetComponent<EnemyParticle>().damage = Mathf.RoundToInt(damage * 2);
+        grabInst.GetComponent<EnemyParticle>().pc = pc;
+        yield return new WaitForSeconds(2);
+        grabInst.GetComponent<Animator>().SetTrigger("End");
+        StartCoroutine(HandSpawn());
     }
 }
