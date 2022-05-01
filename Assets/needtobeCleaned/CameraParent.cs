@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.Rendering.Universal;
 
 public class CameraParent : MonoBehaviour
 {
     public float dampAmount, height, shakeIntensity;
     public GameObject backGround, player, lightObj;
+    public List<GameObject> lightsColorChange;
     public Camera cam;
     public bool doFollowPlayer;
     public float xBoundaryL, xBoundaryR, yBoundaryD, yBoundaryU;
-    private float lightStartAngle;
     private Vector3 velocity = Vector3.zero;
     private Vector3 camPos, lightPos;
     public Vector3 defcamPos;
@@ -17,7 +19,6 @@ public class CameraParent : MonoBehaviour
 
     private void Start()
     {
-        lightStartAngle = 120;
         lightPos = lightObj.transform.localPosition;
         doFollowPlayer = true;
         camPos = cam.transform.localPosition;
@@ -30,8 +31,9 @@ public class CameraParent : MonoBehaviour
         {
             Vector3 target = player.transform.TransformPoint(new Vector3(0, height, -10));
             Vector3 movePoint = Vector3.SmoothDamp(transform.position, target, ref velocity, dampAmount);
-            lightObj.transform.localPosition = new Vector3(lightPos.x - (transform.position.x / xBoundaryR * 6f), lightObj.transform.localPosition.y, lightObj.transform.localPosition.z);
-            lightObj.transform.localRotation = Quaternion.Euler(0, 0, lightStartAngle + (transform.position.x / xBoundaryR * 120f));
+            float xrate = (float)Mathf.Abs((float)lightObj.transform.position.x - xBoundaryL) / (float)Mathf.Abs((float)xBoundaryR - xBoundaryL);
+            float lightXpos = Mathf.Clamp(3f + (-6 * xrate), -3, 3);
+            lightObj.transform.localPosition = new Vector3(lightXpos, lightObj.transform.localPosition.y, lightObj.transform.localPosition.z);
             transform.position = new Vector3(Mathf.Clamp(movePoint.x, xBoundaryL, xBoundaryR), Mathf.Clamp(movePoint.y, yBoundaryD, yBoundaryU), movePoint.z);
         }
         if (camShake != Vector2.zero)

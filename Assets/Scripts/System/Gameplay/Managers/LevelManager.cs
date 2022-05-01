@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.Rendering.Universal;
+
 
 public class LevelManager : MonoBehaviour
 {
@@ -44,6 +47,12 @@ public class LevelManager : MonoBehaviour
             level = gm.levels[0].level;
             endtype = gm.levels[0].endType;
             boss = gm.levels[0].boss;
+            foreach (GameObject go in cp.lightsColorChange)
+            {
+                go.GetComponent<Light2D>().color = theme.themeColor[0];
+            }
+            cp.lightsColorChange[0].GetComponent<Light2D>().intensity = theme.backgLightIntensity;
+            cp.backGround.GetComponent<SpriteRenderer>().sprite = theme.backGround[Random.Range(0, theme.backGround.Count)];
         }
         else
         {

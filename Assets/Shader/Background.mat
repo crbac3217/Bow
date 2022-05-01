@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Platform
+  m_Name: Background
   m_Shader: {fileID: -6465566751694194690, guid: 51c8b0c8b790701419babc91cbdb4b89, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -51,10 +51,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Amount: 1
-    - _Detail: 7
+    - _Detail: 15
     - _EnableExternalAlpha: 0
-    - _Maxval: 0.94
-    - _MinVal: 0.34
+    - _Maxval: 1
+    - _MinVal: -2
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}

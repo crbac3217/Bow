@@ -9,5 +9,6 @@ public class ThemeDatabase : ScriptableObject
     public List<GameObject> startAreas, middleAreas, endAreas = new List<GameObject>();
     public List<Sprite> backGround, midGround = new List<Sprite>();
     public GameObject effect;
+    public float backgLightIntensity;
     public List<Color> themeColor = new List<Color>();
 }

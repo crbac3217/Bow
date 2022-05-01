@@ -28,7 +28,14 @@ MonoBehaviour:
   - {fileID: 149219465818914191, guid: 36294b566b30ffc499f9eca3722fde65, type: 3}
   endAreas:
   - {fileID: 8794652751386844218, guid: 8344864badd5e4e49b6a404cea04aa9e, type: 3}
-  backGround: []
+  backGround:
+  - {fileID: 21300000, guid: 6f593edf88966864bb55728de658d646, type: 3}
+  - {fileID: 21300000, guid: b202895eea78fa4439ee7eb3d3ba37eb, type: 3}
+  - {fileID: 21300000, guid: 73f813249f25e1b4cb13c0fd8754078c, type: 3}
+  - {fileID: 21300000, guid: 1d60ecf14bdde14469df2be4a80f9949, type: 3}
+  - {fileID: 21300000, guid: b971c93d388b7c845b8c931392a8d5cb, type: 3}
   midGround: []
   effect: {fileID: 0}
-  themeColor: []
+  backgLightIntensity: 1
+  themeColor:
+  - {r: 1, g: 0.64870286, b: 0.5801887, a: 1}
