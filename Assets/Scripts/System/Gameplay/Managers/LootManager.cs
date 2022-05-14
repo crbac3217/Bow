@@ -6,7 +6,6 @@ public class LootManager : MonoBehaviour
 {
     public GameObject coin;
     public GameObject[] chests = new GameObject[] { };
-    public ItemManager im;
     public void DropGold(int gold, Vector2 objPos)
     {
         for (int i = 0; i < gold; i++)

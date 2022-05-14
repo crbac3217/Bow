@@ -353,9 +353,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 760d36edc2c7fd64bb67383606ffc010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStarting: 1
   pt: {fileID: 11400000, guid: 6d80c5752f979f34bbc6476c0c966bf8, type: 2}
-  player: {fileID: 6216104295027416197, guid: 29a6067d9ee367640996eb8a1bc2588d, type: 3}
+  playerPrf: {fileID: 6216104295027416197, guid: 29a6067d9ee367640996eb8a1bc2588d, type: 3}
+  instPlayer: {fileID: 0}
+  managerPar: {fileID: 0}
+  joystick: {fileID: 0}
+  buttons: {fileID: 0}
   levels: []
   lvldata: {fileID: 11400000, guid: 4a8f80ac2bb51e34281a228754918d8c, type: 2}
 --- !u!4 &896529851

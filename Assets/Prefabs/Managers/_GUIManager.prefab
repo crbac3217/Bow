@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.4613062, y: 5.579045, z: -3.2159145}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,6 +47,9 @@ MonoBehaviour:
   tester: 0
   pc: {fileID: 0}
   volume: {fileID: 0}
+  joystickPref: {fileID: 4868267940989916050, guid: 8a3f5aa55d08bbc4aae99a198d5fa59e, type: 3}
+  movePref: {fileID: 1019890095138489216, guid: ced997a773fbfa642a875c6f5717bfdf, type: 3}
+  canvasPref: {fileID: 8612003832796497420, guid: 95260aec4c890ec4a86fc99f249edf27, type: 3}
   canvas: {fileID: 0}
   moveButton: {fileID: 0}
   joyStick: {fileID: 0}
@@ -56,5 +60,6 @@ MonoBehaviour:
   shopPref: {fileID: 2888164753286387724, guid: 10aee2cd14437794299740b85a615ea4, type: 3}
   shopEachPref: {fileID: 8647680978528197098, guid: 398431adbe0bb3c45845028e3949af02, type: 3}
   bossBarPref: {fileID: 5076902320535880470, guid: 0505555e6e086cb4d99ca524133e20de, type: 3}
+  bossBar: {fileID: 0}
   skillButtons: []
   test: []

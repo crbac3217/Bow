@@ -10,8 +10,7 @@ public class LevelManager : MonoBehaviour
     public int level;
     public PlayerType playerType;
     public CameraParent cp;
-    public bool shouldInitialize;
-    public GameObject playerPrefab, spawnPoint, ItemManagerObject, GUIManagerObject, DamageManagerObject, LootManagerObject, boss;
+    public GameObject managerPar, playerPrefab, camParPref, spawnPoint, ItemManagerObject, GUIManagerObject, DamageManagerObject, LootManagerObject, boss;
     public PlayerControl pc;
     public ThemeDatabase theme;
     public EndType endtype;
@@ -25,10 +24,9 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         GetInfoFromGM();
-        SpawnManagers();
-        SpawnPlayer();
         GenerateLevel();
         CreateConnections();
+        OnSceneReset();
     }
     #region SetUp
     private void GetInfoFromGM()
@@ -36,17 +34,32 @@ public class LevelManager : MonoBehaviour
         gm = FindObjectOfType<GameManager>();
         if (gm)
         {
-            if (gm.isStarting)
-            {
-                shouldInitialize = true;
-                gm.isStarting = false;
-            }
             playerType = gm.pt;
-            playerPrefab = gm.player;
+            playerPrefab = gm.playerPrf;
             theme = gm.levels[0].theme;
             level = gm.levels[0].level;
             endtype = gm.levels[0].endType;
             boss = gm.levels[0].boss;
+            if (!gm.instPlayer)
+            {
+                SpawnCampar();
+                SpawnManagers();
+                SpawnPlayer();
+                guiManager.SpawnGUI();
+            }
+            else
+            {
+                Destroy(managerPar);
+                cp = gm.camPar.GetComponent<CameraParent>();
+                managerPar = gm.managerPar;
+                gm.instPlayer.transform.position = spawnPoint.transform.position;
+                itemManager = managerPar.GetComponentInChildren<ItemManager>();
+                guiManager = managerPar.GetComponentInChildren<GUIManager>();
+                damageManager = managerPar.GetComponentInChildren<DamageManager>();
+                lootManager = managerPar.GetComponentInChildren<LootManager>();
+                pc = gm.instPlayer.GetComponent<PlayerControl>();
+                cp.player = pc.gameObject;
+            }
             foreach (GameObject go in cp.lightsColorChange)
             {
                 go.GetComponent<Light2D>().color = theme.themeColor[0];
@@ -59,22 +72,31 @@ public class LevelManager : MonoBehaviour
             Debug.Log("A critical error happend :(");
         }
     }
+    private void SpawnCampar()
+    {
+        var camparobj = Instantiate(camParPref, Vector2.zero, Quaternion.identity);
+        cp = camparobj.GetComponent<CameraParent>();
+        gm.camPar = camparobj;
+        DontDestroyOnLoad(camparobj);
+    }
     private void SpawnManagers()
     {
-        var itemManagerObject = Instantiate(ItemManagerObject, this.transform);
+        var itemManagerObject = Instantiate(ItemManagerObject, managerPar.transform);
         itemManager = itemManagerObject.GetComponent<ItemManager>();
-        var guiManagerObject = Instantiate(GUIManagerObject, this.transform);
+        var guiManagerObject = Instantiate(GUIManagerObject, managerPar.transform);
         guiManager = guiManagerObject.GetComponent<GUIManager>();
-        var damageManagerObject = Instantiate(DamageManagerObject, this.transform);
+        var damageManagerObject = Instantiate(DamageManagerObject, managerPar.transform);
         damageManager = damageManagerObject.GetComponent<DamageManager>();
-        var lootManagerObject = Instantiate(LootManagerObject, this.transform);
+        var lootManagerObject = Instantiate(LootManagerObject, managerPar.transform);
         lootManager = lootManagerObject.GetComponent<LootManager>();
+        DontDestroyOnLoad(managerPar);
+        gm.managerPar = managerPar;
     }
     private void SpawnPlayer()
     {
         var player = Instantiate(playerPrefab, spawnPoint.transform.position, Quaternion.identity);
-        gm.DestroyPrevPlayer();
         pc = player.GetComponent<PlayerControl>();
+        pc.campar = cp;
         pc.levelManager = this;
         damageManager.pc = pc;
         itemManager.pc = pc;
@@ -84,7 +106,11 @@ public class LevelManager : MonoBehaviour
         pc.guiManager = guiManager;
         pc.itemManager = itemManager;
         cp.player = player;
-        pc.campar = cp;
+    }
+    private void OnSceneReset()
+    {
+        cp.doFollowPlayer = true;
+        cp.cam.orthographicSize = 1.5f;
     }
     #endregion SetUp
     #region MapMaking

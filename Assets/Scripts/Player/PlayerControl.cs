@@ -35,24 +35,24 @@ public class PlayerControl : MonoBehaviour
 
     private void Start()
     {
-        pa = GetComponent<PlayerAnim>();
-        ps = GetComponent<PlayerShoot>();
-        pm = GetComponent<PlayerMove>();
-        pj = GetComponent<PlayerJump>();
-        pf = GetComponent<PlayerFreeze>();
-        ph = GetComponent<PlayerHit>();
-        psm = GetComponent<PlayerSkillManager>();
-        if (levelManager.shouldInitialize)
+        DontDestroyOnLoad(this.gameObject);
+        if (!levelManager.gm.instPlayer)
         {
             InitializeStats();
-            levelManager.shouldInitialize = false;
+            levelManager.gm.instPlayer = this.gameObject;
+            pa = GetComponent<PlayerAnim>();
+            ps = GetComponent<PlayerShoot>();
+            pm = GetComponent<PlayerMove>();
+            pj = GetComponent<PlayerJump>();
+            pf = GetComponent<PlayerFreeze>();
+            ph = GetComponent<PlayerHit>();
+            psm = GetComponent<PlayerSkillManager>();
+            SetPlayer();
         }
-        SetPlayer();
     }
         
     public void SetPlayer()
     {
-        guiManager.SetPlayer();
         itemManager.SetPlayer();
         psm.Begin();
         pm.Begin();

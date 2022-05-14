@@ -23,11 +23,22 @@ public class PlayerShoot : MonoBehaviour
 
     public void Begin()
     {
-        fixedJoystick = GameObject.FindGameObjectWithTag("Joystick").GetComponent<FixedJoystick>();
-        fixedJoystick.defaultCd = coolDown;
-        ArmInitialDeg = bowArm.rotation;
         pc = GetComponent<PlayerControl>();
+        fixedJoystick = pc.guiManager.joyStick.GetComponent<FixedJoystick>();
+        fixedJoystick.defaultCd = coolDown;
+        fixedJoystick.pc = pc;
+        fixedJoystick.ps = this;
+        ArmInitialDeg = bowArm.rotation;
+        if (!pc.campar || !pc.campar.cam)
+        {
+            Debug.Log("none");
+        }
+        else
+        {
+            Debug.Log("it exists");
+        }
         fixedJoystick.campar = pc.campar;
+        fixedJoystick.camTemp = pc.campar.cam;
         pm = GetComponent<PlayerMove>();
     }
     public void Attack(Vector2 joyDir, float joyHeld, int joyIndicator)

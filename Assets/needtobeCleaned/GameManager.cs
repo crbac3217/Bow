@@ -5,11 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public bool isStarting;
     public PlayerType pt;
-    public GameObject player;
+    public GameObject playerPrf, instPlayer, managerPar, joystick, buttons, camPar;
     public List<Level> levels = new List<Level>();
     public LevelDataBase lvldata;
+
+    private void Start()
+    {
+        if (!PlayerPrefs.HasKey("MoveX"))
+        {
+            SetUpGUIPref();
+        }
+    }
+
+    private void SetUpGUIPref()
+    {
+        PlayerPrefs.SetFloat("MoveX", 200f);
+        PlayerPrefs.SetFloat("MoveY", 250f);
+        PlayerPrefs.SetFloat("JoyX", -280f);
+        PlayerPrefs.SetFloat("JoyY", 230f);
+    }
 
     public void StartGame()
     {
@@ -34,20 +49,10 @@ public class GameManager : MonoBehaviour
             levels.Add(temp);
         }
     }
-    public void LoadNextLevel(GameObject curplayer)
+    public void LoadNextLevel()
     {
-        DontDestroyOnLoad(curplayer);
-        player = curplayer;
         levels.Remove(levels[0]);
         SceneManager.LoadSceneAsync(1);
     }
-    public void DestroyPrevPlayer()
-    {
-        if (player)
-        {
-            Destroy(player);
-        }
-    }
-    
 }
 

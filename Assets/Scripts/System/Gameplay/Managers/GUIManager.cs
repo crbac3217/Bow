@@ -16,7 +16,7 @@ public class GUIManager : MonoBehaviour
     public bool tester = false;
     public PlayerControl pc;
     public Volume volume;
-    public GameObject canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar;
+    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar;
     private GameObject eqPanel, eqConfirm, shopPanel, chestPanel;
     private ShopBase sb;
     public GameObject[] skillButtons = new GameObject[] { };
@@ -24,21 +24,27 @@ public class GUIManager : MonoBehaviour
     public Dictionary<string, GameObject> uiElements = new Dictionary<string, GameObject>();
     public Dictionary<string, EventTrigger.Entry> entries = new Dictionary<string, EventTrigger.Entry>();
 
-    public void SetPlayer()
+    private void Start()
     {
         volume = FindObjectOfType<Volume>();
-        moveButton = GameObject.FindGameObjectWithTag("MoveButton");
+    }
+    public void SpawnGUI()
+    {
+        canvas = Instantiate(canvasPref, pc.campar.cam.transform);
+        moveButton = Instantiate(movePref, canvas.transform);
+        RectTransform mtrans = moveButton.GetComponent<RectTransform>();
+        mtrans.anchoredPosition = new Vector2(PlayerPrefs.GetFloat("MoveX"), PlayerPrefs.GetFloat("MoveY"));
+        joyStick = Instantiate(joystickPref, canvas.transform);
+        RectTransform jtrans = joyStick.GetComponent<RectTransform>();
+        jtrans.anchoredPosition = new Vector2(PlayerPrefs.GetFloat("JoyX"), PlayerPrefs.GetFloat("JoyY"));
         joyStick = GameObject.FindGameObjectWithTag("Joystick");
-        canvas = pc.campar.GetComponentInChildren<Canvas>().gameObject;
-        skillButtons = new GameObject[3] { GameObject.FindGameObjectWithTag("Skill1"), GameObject.FindGameObjectWithTag("Skill2"), GameObject.FindGameObjectWithTag("Skill3")};
-        SetUpEQPanels();
-        SetUpShopPanels();
-        SetUpChestPanel();
-        joyStick.GetComponent<FixedJoystick>().pc = pc;
-        joyStick.GetComponent<FixedJoystick>().ps = pc.ps;
+        skillButtons = new GameObject[3] { GameObject.FindGameObjectWithTag("Skill1"), GameObject.FindGameObjectWithTag("Skill2"), GameObject.FindGameObjectWithTag("Skill3") };
         MoveButtonInitialize();
         JumpButtonInitialize();
         SkillButtonInitailize();
+        SetUpEQPanels();
+        SetUpShopPanels();
+        SetUpChestPanel();
         //MoveButtonRead();
         //JoystickRead();
     }
@@ -57,16 +63,18 @@ public class GUIManager : MonoBehaviour
     public void MoveButtonInitialize()
     {
         object[] parameters = new object[] { };
-        ButtonAdd(pc.gameObject, pc.pm.GetType(), pc.pm.GetType().GetMethod("MoveRight"), parameters, "rButton", EventTriggerType.PointerDown);
-        ButtonAdd(pc.gameObject, pc.pm.GetType(), pc.pm.GetType().GetMethod("MoveLeft"), parameters, "lButton", EventTriggerType.PointerDown);
-        ButtonAdd(pc.gameObject, pc.pm.GetType(), pc.pm.GetType().GetMethod("LetGoRight"), parameters, "rButton", EventTriggerType.PointerUp);
-        ButtonAdd(pc.gameObject, pc.pm.GetType(), pc.pm.GetType().GetMethod("LetGoLeft"), parameters, "lButton", EventTriggerType.PointerUp);
+        PlayerMove pm = pc.GetComponent<PlayerMove>();
+        ButtonAdd(pc.gameObject, pm.GetType(), pm.GetType().GetMethod("MoveRight"), parameters, "rButton", EventTriggerType.PointerDown);
+        ButtonAdd(pc.gameObject, pm.GetType(), pm.GetType().GetMethod("MoveLeft"), parameters, "lButton", EventTriggerType.PointerDown);
+        ButtonAdd(pc.gameObject, pm.GetType(), pm.GetType().GetMethod("LetGoRight"), parameters, "rButton", EventTriggerType.PointerUp);
+        ButtonAdd(pc.gameObject, pm.GetType(), pm.GetType().GetMethod("LetGoLeft"), parameters, "lButton", EventTriggerType.PointerUp);
     }
     public void JumpButtonInitialize()
     {
         object[] parameters = new object[] { };
-        ButtonAdd(pc.gameObject, pc.pj.GetType(), pc.pj.GetType().GetMethod("Jump"), parameters, "jumpButton", EventTriggerType.PointerDown);
-        ButtonAdd(pc.gameObject, pc.pj.GetType(), pc.pj.GetType().GetMethod("OnLetGo"), parameters, "jumpButton", EventTriggerType.PointerUp);
+        PlayerJump pj = pc.GetComponent<PlayerJump>();
+        ButtonAdd(pc.gameObject, pj.GetType(), pj.GetType().GetMethod("Jump"), parameters, "jumpButton", EventTriggerType.PointerDown);
+        ButtonAdd(pc.gameObject, pj.GetType(), pj.GetType().GetMethod("OnLetGo"), parameters, "jumpButton", EventTriggerType.PointerUp);
     }
     public void SkillButtonInitailize()
     {

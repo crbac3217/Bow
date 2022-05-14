@@ -9,7 +9,7 @@ public class endPortal : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            lm.gm.LoadNextLevel(collision.gameObject);
+            lm.gm.LoadNextLevel();
         }
     }
 }

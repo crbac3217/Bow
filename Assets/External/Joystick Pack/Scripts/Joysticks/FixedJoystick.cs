@@ -10,6 +10,7 @@ public class FixedJoystick : Joystick
     public PlayerControl pc;
     public PlayerShoot ps;
     public CameraParent campar;
+    public Camera camTemp;
     public bool isPressed = false, Avail = true;
     private Vector2 tempvec;
     public int currentLevel = 1, maxLevelsOfShooting;
@@ -25,7 +26,6 @@ public class FixedJoystick : Joystick
     }
     protected override void Start()
     {
-        cam = Camera.main;
         base.Start();
         handleObj = transform.GetChild(0).gameObject;
         handleCD = transform.GetChild(1).gameObject;
@@ -35,7 +35,7 @@ public class FixedJoystick : Joystick
     public override void OnPointerDown(PointerEventData eventData)
     {
         //if there is no shoot active, we are going to fire our defaultShoot
-        if (ps.activeShoot == null)
+        if (!ps.activeShoot)
         {
             ps.activeShoot = Instantiate(ps.defaultShoot);
         }
@@ -82,7 +82,7 @@ public class FixedJoystick : Joystick
                     holdtime = Mathf.Clamp(Time.deltaTime * 1.5f + holdtime, 0, indicator[currentLevel] - indicator[currentLevel-1]);
                     if (campar.doFollowPlayer)
                     {
-                        cam.orthographicSize = Mathf.Clamp(cam.orthographicSize + 0.005f, 1.5f, 2);
+                        camTemp.orthographicSize = Mathf.Clamp(camTemp.orthographicSize + 0.005f, 1.5f, 2);
                     }
                 }
                 else
@@ -90,7 +90,7 @@ public class FixedJoystick : Joystick
                     holdtime = Mathf.Clamp(Time.deltaTime + holdtime, 0, indicator[currentLevel] - indicator[currentLevel-1]);
                     if (campar.doFollowPlayer)
                     {
-                        cam.orthographicSize = Mathf.Clamp(cam.orthographicSize + 0.005f, 1.5f, 2);
+                        camTemp.orthographicSize = Mathf.Clamp(camTemp.orthographicSize + 0.005f, 1.5f, 2);
                     }
                 }
                 //arms and head rotation;
@@ -152,9 +152,12 @@ public class FixedJoystick : Joystick
         }
         else 
         {
-            if (cam.orthographicSize > 1.5f && campar.doFollowPlayer)
+            if (camTemp && campar)
             {
-                cam.orthographicSize = Mathf.Clamp(cam.orthographicSize - 0.03f, 1.5f, 2);
+                if (camTemp.orthographicSize > 1.5f && campar.doFollowPlayer)
+                {
+                    camTemp.orthographicSize = Mathf.Clamp(camTemp.orthographicSize - 0.03f, 1.5f, 2);
+                }
             }
         } 
     }
