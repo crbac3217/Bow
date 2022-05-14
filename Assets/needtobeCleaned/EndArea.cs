@@ -39,6 +39,10 @@ public class EndArea : Area
                 campar.cam.orthographicSize = Mathf.Clamp(campar.cam.orthographicSize + 0.01f, 1.5f, 2f);
                 if (Vector3.Distance(campar.transform.position, endAreaCam) < 0.001f && campar.cam.orthographicSize > 1.99f)
                 {
+                    foreach (GameObject enemy in lvlm.enemies)
+                    {
+                        enemy.GetComponent<EnemyController>().Dead(false);
+                    }
                     campar.transform.position = endAreaCam;
                     campar.cam.orthographicSize = 2;
                     enteredBossfight = true;
