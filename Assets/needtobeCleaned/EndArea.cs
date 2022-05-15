@@ -5,7 +5,7 @@ using UnityEngine;
 public class EndArea : Area
 {
     public EndType endtype;
-    public GameObject portalPref, bossPos, ShopPos, portalPos, bossPref, ShopPref, bossInst, endBoundary;
+    public GameObject portalPref, bossPos, ShopPos, portalPos, portalPos2, bossPref, ShopPref, bossInst, endBoundary;
     public CameraParent campar;
     private Vector3 velocity = Vector2.zero;
     public Vector3 endAreaCam;
@@ -82,6 +82,19 @@ public class EndArea : Area
         portal = Instantiate(portalPref, portalPos.transform.position, Quaternion.identity);
         portal.GetComponent<endPortal>().lm = lvlm;
     }
+    private void BossSpawnPortal()
+    {
+        if (Vector2.Distance(pc.transform.position, portalPos.transform.position) > Vector2.Distance(pc.transform.position, portalPos2.transform.position))
+        {
+            portal = Instantiate(portalPref, portalPos.transform.position, Quaternion.identity);
+            portal.GetComponent<endPortal>().lm = lvlm;
+        }
+        else
+        {
+            portal = Instantiate(portalPref, portalPos2.transform.position, Quaternion.identity);
+            portal.GetComponent<endPortal>().lm = lvlm;
+        }
+    }
     private void SpawnBoss()
     {
         bossInst = Instantiate(bossPref, bossPos.transform.position, Quaternion.identity);
@@ -106,7 +119,7 @@ public class EndArea : Area
     }
     public void BossDefeated()
     {
-        SpawnPortal();
+        BossSpawnPortal();
         if (level == 1)
         {
             pc.guiManager.EQPanelOn(0);
