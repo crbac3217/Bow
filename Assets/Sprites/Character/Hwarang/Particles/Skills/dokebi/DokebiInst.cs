@@ -26,6 +26,7 @@ public class DokebiInst : MonoBehaviour
             }
         }
         spren = anim.gameObject.GetComponent<SpriteRenderer>();
+        disappear = true;
     }
     private void Invoke(GameObject go)
     {

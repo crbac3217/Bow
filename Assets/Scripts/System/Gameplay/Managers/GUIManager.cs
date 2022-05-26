@@ -18,7 +18,7 @@ public class GUIManager : MonoBehaviour
     public Volume volume;
     public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar;
     private GameObject eqPanel, eqConfirm, shopPanel, chestPanel;
-    private ShopBase sb;
+    public ShopBase sb;
     public GameObject[] skillButtons = new GameObject[] { };
     public List<string> test = new List<string>();
     public Dictionary<string, GameObject> uiElements = new Dictionary<string, GameObject>();

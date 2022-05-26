@@ -275,10 +275,10 @@ MonoBehaviour:
   canJump: 0
   canFly: 0
   isAffectedByCC: 1
-  defaultSpeed: 1.6
+  defaultSpeed: 1.2
   checkInterval: 0.5
   weight: 0
-  chaseSpeed: 1.6
+  chaseSpeed: 1.2
   detectionDistance: 7
   kiteDistance: 0
   jumpStr: 0
@@ -301,9 +301,12 @@ MonoBehaviour:
     nodes: []
     didConnect: 0
     totalDistance: 0
+  anim: {fileID: 0}
   canMove: 1
+  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
+  nodeSearch: 2
   campar: {fileID: 0}
   ea: {fileID: 0}
 --- !u!1 &4143334635953499938
@@ -401,6 +404,8 @@ MonoBehaviour:
   pc: {fileID: 0}
   damage: 0
   doBlockHit: 1
+  disappear: 0
+  appear: 0
   rangeChecker: {fileID: 0}
 --- !u!70 &2832120697506454273
 CapsuleCollider2D:

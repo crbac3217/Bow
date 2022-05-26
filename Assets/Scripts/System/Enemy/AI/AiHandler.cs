@@ -199,6 +199,20 @@ public class AiHandler : MonoBehaviour
         disappear = true;
         ec.Drop();
     }
+    public IEnumerator HitAggro()
+    {
+        if (!isInteracting)
+        {
+            detectionDistance += 10;
+            yield return new WaitForSeconds(1.5f);
+            detectionDistance -= 10;
+        }
+        else
+        {
+            yield return null;
+        }
+        
+    }
     #endregion StopMoveAndCC
     #region PathFinding
     public void SetCurNode()
@@ -270,7 +284,14 @@ public class AiHandler : MonoBehaviour
     {
         if (currentPath.nodes[currentPath.nodes.Count - 1] == cur)
         {
-            StopMoving(checkInterval);
+            if (SelectedAttack())
+            {
+                CheckAttackOrMove();
+            }
+            else
+            {
+                StopMoving(checkInterval);
+            }
         }else if(!currentPath.nodes.Contains(cur))
         {
             StopMoving(checkInterval);
@@ -296,6 +317,10 @@ public class AiHandler : MonoBehaviour
     private Node NextNode(Node n)
     {
         //if (aggro == AggressionType.Melee)
+        if (currentPath.nodes[currentPath.nodes.IndexOf(n) + 1] == pc.pm.nearestNode && SelectedAttack())
+        {
+            CheckAttackOrMove();
+        }
         return currentPath.nodes[currentPath.nodes.IndexOf(n) + 1];
     }
     private Connection CurrentConnection()
@@ -577,24 +602,36 @@ public class AiHandler : MonoBehaviour
     {
         if (canMove)
         {
-            List<EnemyAttack> candidates = new List<EnemyAttack>();
-            foreach (EnemyAttack at in attacks)
+            EnemyAttack tempSel = SelectedAttack();
+            if (tempSel)
             {
-                if (at.avail && at.range.avail)
-                {
-                    candidates.Add(at);
-                }
-            }
-            if (candidates.Count > 0)
-            {
-                int rand = Random.Range(0, candidates.Count);
-                candidates[rand].Activate();
-                StartCoroutine(candidates[rand].CoolDown());
+                tempSel.Activate();
+                StartCoroutine(tempSel.CoolDown());
             }
             else
             {
                 CreatePath();
             }
+        }
+    }
+    private EnemyAttack SelectedAttack()
+    {
+        List<EnemyAttack> candidates = new List<EnemyAttack>();
+        foreach (EnemyAttack at in attacks)
+        {
+            if (at.avail && at.range.avail)
+            {
+                candidates.Add(at);
+            }
+        }
+        if (candidates.Count > 0)
+        {
+            int rand = Random.Range(0, candidates.Count);
+            return candidates[rand];
+        }
+        else
+        {
+            return null;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

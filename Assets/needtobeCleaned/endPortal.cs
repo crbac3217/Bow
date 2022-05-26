@@ -9,7 +9,10 @@ public class endPortal : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            collision.GetComponent<PlayerShoot>().fixedJoystick.CancelShooting();
             lm.gm.LoadNextLevel();
+            collision.GetComponent<PlayerMove>().LetGoLeft();
+            collision.GetComponent<PlayerMove>().LetGoRight();
         }
     }
 }

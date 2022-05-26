@@ -47,7 +47,7 @@ public class PlayerJump : MonoBehaviour
                 isJumping = true;
                 isGrounded = false;
                 curJumpCount--;
-                jumpForce = pc.stats[1].value * jumpMultiplyer + jumpStatic;
+                jumpForce = Mathf.Log(pc.stats[1].value) * jumpMultiplyer + jumpStatic;
                 pc.pm.SetNode();
             }
         }

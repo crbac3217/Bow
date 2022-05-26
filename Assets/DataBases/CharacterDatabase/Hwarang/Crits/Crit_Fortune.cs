@@ -11,7 +11,6 @@ public class Crit_Fortune : Crit
         base.StatusEffect(value, ec);
         pm = ScriptableObject.CreateInstance<AdPrankMod>();
         pm.ect = ec;
-        pm.parent = this;
         ec.dm.killedMods.Add(pm);
     }
     public override void RemoveStatusEffect(EnemyController ec)
@@ -33,6 +32,5 @@ public class AdPrankMod : Modifier
             da.hitObj.GetComponent<EnemyController>().minGoldDrop += 3;
             da.hitObj.GetComponent<EnemyController>().maxGoldDrop += 3;
         }
-        parent.RemoveStatusEffect(null);
     }
 }

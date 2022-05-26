@@ -140,6 +140,7 @@ public class EnemyController : MonoBehaviour
     public void ConfirmDamage(int value)
     {
         hp -= value;
+        aiHandler.StartCoroutine(aiHandler.HitAggro());
         UpdateHpUI();
         if (hp <= 0)
         {

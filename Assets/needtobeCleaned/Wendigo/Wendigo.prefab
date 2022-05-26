@@ -226,12 +226,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiHandler: {fileID: 0}
   color: {r: 0.26666668, g: 0.25490198, b: 0.2509804, a: 1}
+  invincible: 0
   hp: 120
   maxHp: 120
   minGoldDrop: 20
   maxGoldDrop: 25
   chestDropMax: 1
-  chestTier: 4
+  chestTier: 3
   weakness:
   - damageElement: 3
     value: 10
@@ -291,15 +292,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 47f4e32cefa15e64bba4bf5cbf73eb83, type: 2}
   ec: {fileID: 0}
   visuals: {fileID: 7417083080981164258}
+  attacks: []
   pc: {fileID: 0}
   isInteracting: 0
   currentPath:
     nodes: []
     didConnect: 0
     totalDistance: 0
+  anim: {fileID: 0}
   canMove: 1
+  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
+  nodeSearch: 2
   campar: {fileID: 0}
   ea: {fileID: 0}
 --- !u!1 &4143334635953499938

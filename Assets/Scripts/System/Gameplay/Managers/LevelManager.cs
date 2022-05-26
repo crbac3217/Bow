@@ -58,7 +58,11 @@ public class LevelManager : MonoBehaviour
                 damageManager = managerPar.GetComponentInChildren<DamageManager>();
                 lootManager = managerPar.GetComponentInChildren<LootManager>();
                 pc = gm.instPlayer.GetComponent<PlayerControl>();
+                pc.pm.LetGoLeft();
+                pc.pm.LetGoRight();
+                pc.ps.fixedJoystick.CancelShooting();
                 cp.player = pc.gameObject;
+                ShopReset();
             }
             foreach (GameObject go in cp.lightsColorChange)
             {
@@ -71,6 +75,16 @@ public class LevelManager : MonoBehaviour
         {
             Debug.Log("A critical error happend :(");
         }
+    }
+    private void ShopReset()
+    {
+        int j = guiManager.sb.shopList.transform.childCount;
+        for (int i = j-1; i >= 0; i--)
+        {
+            Destroy(guiManager.sb.shopList.transform.GetChild(i).gameObject);
+        }
+        guiManager.sb.items.Clear();
+        
     }
     private void SpawnCampar()
     {

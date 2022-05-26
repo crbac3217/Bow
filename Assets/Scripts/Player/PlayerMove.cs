@@ -37,7 +37,7 @@ public class PlayerMove : MonoBehaviour
     }
     public void ResetStat()
     {
-        maxSpeed = pc.stats[0].value;
+        maxSpeed = 1 + Mathf.Log(pc.stats[0].value);
     }
     private void Update()
     {

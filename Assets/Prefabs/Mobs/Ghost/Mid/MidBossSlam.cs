@@ -18,14 +18,17 @@ public class MidBossSlam : EnemyAttack
     }
     public override void AttackEtc(PlayerControl pc)
     {
-        if (pc.pm.nearestNode.platform == aiHandler.curNode.platform)
+        if (aiHandler.curNode)
         {
-            var part = Instantiate(groundSlamParticle, aiHandler.transform);
-            pc.campar.StartCoroutine(pc.campar.CamShake(Vector2.up * 0.05f, 0.5f));
-            if (pc.pj.isGrounded)
+            if (pc.pm.nearestNode.platform == aiHandler.curNode.platform)
             {
-                float amount = aiHandler.damage * damageMult;
-                pc.ph.OnPlayerHit(aiHandler.visuals.transform.position, (int)amount);
+                var part = Instantiate(groundSlamParticle, aiHandler.transform);
+                pc.campar.StartCoroutine(pc.campar.CamShake(Vector2.up * 0.05f, 0.5f));
+                if (pc.pj.isGrounded)
+                {
+                    float amount = aiHandler.damage * damageMult;
+                    pc.ph.OnPlayerHit(aiHandler.visuals.transform.position, (int)amount);
+                }
             }
         }
         if (actualRange.avail)
