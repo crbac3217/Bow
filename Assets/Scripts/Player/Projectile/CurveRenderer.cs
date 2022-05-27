@@ -11,7 +11,7 @@ public class CurveRenderer : MonoBehaviour
     public LineRenderer lineRenderer;
     public Vector3[] pointArray = new Vector3[] { };
     public int vertCount = 20;
-    void Update()
+    void FixedUpdate()
     {
         RenderCurve();
         //var pointList = new List<Vector3>();

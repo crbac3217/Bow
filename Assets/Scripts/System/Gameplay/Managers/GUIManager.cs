@@ -16,8 +16,8 @@ public class GUIManager : MonoBehaviour
     public bool tester = false;
     public PlayerControl pc;
     public Volume volume;
-    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar;
-    private GameObject eqPanel, eqConfirm, shopPanel, chestPanel;
+    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref;
+    private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth;
     public ShopBase sb;
     public GameObject[] skillButtons = new GameObject[] { };
     public List<string> test = new List<string>();
@@ -42,6 +42,8 @@ public class GUIManager : MonoBehaviour
         MoveButtonInitialize();
         JumpButtonInitialize();
         SkillButtonInitailize();
+        SetUpPlayerHealthBar();
+        SetUpSetText();
         SetUpEQPanels();
         SetUpShopPanels();
         SetUpChestPanel();
@@ -116,6 +118,17 @@ public class GUIManager : MonoBehaviour
     }
     #endregion ButtonAdd(discontinued)
     #region SetUpPanels
+    private void SetUpPlayerHealthBar()
+    {
+        playerHealth = Instantiate(playerHealthPref, canvas.transform);
+        pc.healthBar = playerHealth.transform.Find("playerhealthred").GetComponent<Image>();
+        pc.goldUI = playerHealth.GetComponentInChildren<TextMeshProUGUI>();
+    }
+    private void SetUpSetText()
+    {
+        setTextParent = Instantiate(setTextParentPref, canvas.transform);
+        setTextParent.SetActive(true);
+    }
     private void SetUpEQPanels()
     {
         eqPanel = Instantiate(eqPanelPref, canvas.transform);
@@ -295,9 +308,13 @@ public class GUIManager : MonoBehaviour
                     tempCandidates.Add(item);
                     tempCandidates.Add(item);
                     tempCandidates.Add(item);
-                    tempCandidates.Add(item);
                 }
                 else if (Mathf.Abs(item.itemTier - i) == 1)
+                {
+                    tempCandidates.Add(item);
+                    tempCandidates.Add(item);
+                }
+                else if (Mathf.Abs(item.itemTier - i) == 2)
                 {
                     tempCandidates.Add(item);
                 }
@@ -358,6 +375,7 @@ public class GUIManager : MonoBehaviour
         if (item.cost <= pc.gold)
         {
             pc.itemManager.AddItem(item.nameCode);
+            pc.goldUI.text = "$" + pc.gold;
             pc.gold -= item.cost;
             Destroy(sp.gameObject);
             RefreshShop();
@@ -385,6 +403,13 @@ public class GUIManager : MonoBehaviour
         }
     }
     #endregion Boss
+    #region SetText
+    public void DisplaySetText(SetEffect set)
+    {
+        var temp = Instantiate(setTextPref, setTextParent.transform);
+        temp.GetComponent<SetTextInst>().set = set;
+    }
+    #endregion SetText
     public void StopGame()
     {
         Time.timeScale = 0;

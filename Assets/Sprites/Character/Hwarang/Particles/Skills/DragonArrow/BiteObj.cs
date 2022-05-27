@@ -14,7 +14,7 @@ public class BiteObj : MonoBehaviour
         spren = GetComponent<SpriteRenderer>();
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         spren.color = new Color(1, 1, 1,spren.color.a + 0.01f);
     }

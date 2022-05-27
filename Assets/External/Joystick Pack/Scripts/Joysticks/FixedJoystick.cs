@@ -59,7 +59,7 @@ public class FixedJoystick : Joystick
         FireLevelUp(1);
         isPressed = true;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         //Cooldown Timer visualization
         if (!Avail)

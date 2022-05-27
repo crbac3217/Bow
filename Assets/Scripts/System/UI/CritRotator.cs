@@ -30,7 +30,7 @@ public class CritRotator : MonoBehaviour
             Panel.transform.SetParent(this.transform);
         }
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (transform.childCount != 0)
         {

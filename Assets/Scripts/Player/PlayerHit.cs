@@ -48,6 +48,7 @@ public class PlayerHit : MonoBehaviour
     {
         invincible = true;
         invincibleStack++;
+        pc.healthBar.color = Color.blue;
     }
     public void SetVulnerable()
     {
@@ -55,6 +56,7 @@ public class PlayerHit : MonoBehaviour
         if (invincibleStack <= 0)
         {
             invincible = false;
+            pc.healthBar.color = Color.white;
         }
     }
     private void HitCheck(Vector2 origin, int amount)
@@ -104,6 +106,7 @@ public class PlayerHit : MonoBehaviour
         SetInvincible();
         CancelAllAnim();
         pc.pf.DisableMove();
+        Destroy(pc.healthBar.gameObject);
         pc.pa.bodyAnim.SetTrigger("playerDead");
     }
 }

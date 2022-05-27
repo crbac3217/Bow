@@ -9,19 +9,24 @@ public class MoveMod : Modifier
     public float invinDuration, dashSpeed, dashDuration;
     public Skill skill;
     private float lastTap;
+    private bool wasRight;
     public override void OnModifierActive(PlayerControl pc)
     {
         base.OnModifierActive(pc);
-        if (((Time.time - lastTap) < doubleTapCd) && skill.isSkillAvail)
+        if (wasRight == pc.pm.rightPressed)
         {
-            pc.psm.StartCoroutine(Dashing(pc));
-            pc.psm.StartCoroutine(Invincible(pc));
-            skill.EndSkill(pc);
+            if (((Time.time - lastTap) < doubleTapCd) && skill.isSkillAvail)
+            {
+                pc.psm.StartCoroutine(Dashing(pc));
+                pc.psm.StartCoroutine(Invincible(pc));
+                skill.EndSkill(pc);
+            }
+            else
+            {
+                lastTap = Time.time;
+            }
         }
-        else
-        {
-            lastTap = Time.time;
-        }
+        wasRight = pc.pm.rightPressed;
     }
     public virtual IEnumerator Dashing(PlayerControl pc)
     {

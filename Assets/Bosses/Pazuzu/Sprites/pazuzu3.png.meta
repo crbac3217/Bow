@@ -1,0 +1,1294 @@
+fileFormatVersion: 2
+guid: 5ea01a40e7e87f743b7c9ebb2bf74262
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pazuzu3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fe5856865d02142bdbb46f2b733a69
+      internalID: 121469935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255ad5a2060c00e4c913d86dd461b289
+      internalID: -811184501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_2
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec24641885de6941bcf98f2514b04f0
+      internalID: -1128478138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_3
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea8fd68467274a4b96fbf894f10205b
+      internalID: 1674418140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc34b989cea8a8479d3097aaa08f21c
+      internalID: 1575132322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_5
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79756f9356f11ba4d8141c14e2777be8
+      internalID: -507082095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_6
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4085c485459d614395d00d4990d7197
+      internalID: 131648224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_7
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed25283b36a2814a9ea880124662cbc
+      internalID: -1260672563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6274bf111274f043953683f3c72ffbb
+      internalID: -2002435092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99a8f10d869fef44a4e87f435f0c735
+      internalID: 1886609126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_10
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac88175868340f346835bbca46add663
+      internalID: 406534318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_11
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9229dc529e15e949896bedbcf8a25e8
+      internalID: -405028001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f16da4b6bdfc1a4abf3b7d41e57d778
+      internalID: 1229444401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_13
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d292e72eedd4374eb5d47f50f8ffef7
+      internalID: 468424220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_14
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb6fcfd5f266704fa0c4b5f1242b746
+      internalID: -659969797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_15
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4161428954857145b67e76a528c938f
+      internalID: 686163451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961f5539dcdae2448bdfd1b21e4f0782
+      internalID: 1106297953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9c3495915d8b44c9be784eb56c7184
+      internalID: 405613835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18551a47da0f62347a8625a56793f3b2
+      internalID: -330069203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6019f5bff42464584efa377aac124a
+      internalID: -63573453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_20
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f96c816e0fa9cf4cb615f947650bc04
+      internalID: 1886878736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_21
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534255256f40bc143934395149ecd6fa
+      internalID: -594174980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_22
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19c2d197615de342b7eaa3259256671
+      internalID: -1379798330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_23
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef6e3cd03b0d6342a6b3567d37fdbc1
+      internalID: -1538538441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1c8f23bb725334b9f6c2aff92f0cd3
+      internalID: 965312445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_25
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50af0d52da35ef54e9a2d9126aeb8d72
+      internalID: 1191943132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_26
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86fcd19aed181c4c83a22ffae6dc353
+      internalID: 350377507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_27
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c04a47b7a4c7a478aab3f919dcc0d6
+      internalID: 993646921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_28
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10bba5e0584b1f4b80e510d1596fb37
+      internalID: 1667770617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_29
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fcef3214d997e429f74728444449a6
+      internalID: 1586014084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_30
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bba6184fbc6723468078b46738cc00e
+      internalID: 2141228851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_31
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c4975b19c8089458c583130ac534a1
+      internalID: -926993499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade2715bba28933479710ba8646416f7
+      internalID: 407559564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_33
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29aeeea59edd59d4f91297ddafcf9fa4
+      internalID: -1077647710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_34
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b54616dfb0d35c4db110f1b0ad10145
+      internalID: 1803527534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_35
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356f0b87e881dc943be50135b464ce2a
+      internalID: -1133083243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_36
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153b62a323879bb47a7db4ce14507130
+      internalID: -75047243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_37
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb73a93c11f2181439b2b2666e583b00
+      internalID: -281567065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_38
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679fa9b1a7a166c489f1dd481141f4be
+      internalID: -1984461267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_39
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6450a0184753ba4e9b07c7028068145
+      internalID: 1511833279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b015458fc495694b87723ea82264204
+      internalID: -826742852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_41
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b234cf27422fc8d4c806d8d469126eaf
+      internalID: 883491633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_42
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64327c4ebb5470446afb50bc7261bae7
+      internalID: -1294460148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_43
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb11fe3d0fcd064d81710dd493704ba
+      internalID: -406252319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_44
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54958475cece4fa4a97b88a8cf78291b
+      internalID: 91332235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0f6368d4c719b4db44bb0795cdb8c7
+      internalID: 335266872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_46
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e467bb6e7867843b164f86c95a67be
+      internalID: -679281849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_47
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a1678b907d38345998442febc37a3f
+      internalID: 70285891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06729ca8f2f905b41b47ca21dee91f28
+      internalID: 1565764583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_49
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de4cea4ec5fa33428241aa18bb1a082
+      internalID: -831529804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pazuzu3_50
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.62, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed019dd539cae0149aed460dc5a4ccd0
+      internalID: -916100412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 2b295864528c24442a2b872485c11025, type: 3}
+      name: _NormalMap
+    nameFileIdTable:
+      pazuzu3_14: -659969797
+      pazuzu3_43: -406252319
+      pazuzu3_46: -679281849
+      pazuzu3_40: -826742852
+      pazuzu3_31: -926993499
+      pazuzu3_9: 1886609126
+      pazuzu3_25: 1191943132
+      pazuzu3_3: 1674418140
+      pazuzu3_1: -811184501
+      pazuzu3_15: 686163451
+      pazuzu3_36: -75047243
+      pazuzu3_44: 91332235
+      pazuzu3_19: -63573453
+      pazuzu3_13: 468424220
+      pazuzu3_34: 1803527534
+      pazuzu3_4: 1575132322
+      pazuzu3_12: 1229444401
+      pazuzu3_26: 350377507
+      pazuzu3_47: 70285891
+      pazuzu3_45: 335266872
+      pazuzu3_42: -1294460148
+      pazuzu3_35: -1133083243
+      pazuzu3_24: 965312445
+      pazuzu3_16: 1106297953
+      pazuzu3_20: 1886878736
+      pazuzu3_17: 405613835
+      pazuzu3_39: 1511833279
+      pazuzu3_11: -405028001
+      pazuzu3_30: 2141228851
+      pazuzu3_7: -1260672563
+      pazuzu3_29: 1586014084
+      pazuzu3_2: -1128478138
+      pazuzu3_28: 1667770617
+      pazuzu3_0: 121469935
+      pazuzu3_10: 406534318
+      pazuzu3_41: 883491633
+      pazuzu3_49: -831529804
+      pazuzu3_50: -916100412
+      pazuzu3_33: -1077647710
+      pazuzu3_18: -330069203
+      pazuzu3_23: -1538538441
+      pazuzu3_38: -1984461267
+      pazuzu3_21: -594174980
+      pazuzu3_27: 993646921
+      pazuzu3_48: 1565764583
+      pazuzu3_37: -281567065
+      pazuzu3_6: 131648224
+      pazuzu3_32: 407559564
+      pazuzu3_22: -1379798330
+      pazuzu3_8: -2002435092
+      pazuzu3_5: -507082095
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

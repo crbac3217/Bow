@@ -33,6 +33,8 @@ MonoBehaviour:
   defaultDamages:
   - damageElement: 0
     value: 5
+  - damageElement: 1
+    value: 0
   - damageElement: 2
     value: 0
   - damageElement: 3
@@ -40,8 +42,6 @@ MonoBehaviour:
   - damageElement: 4
     value: 0
   - damageElement: 5
-    value: 0
-  - damageElement: 6
     value: 0
   tierColors:
   - {r: 1, g: 1, b: 1, a: 1}

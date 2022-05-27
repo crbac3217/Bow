@@ -31,7 +31,7 @@ public class EnemyProjectile : MonoBehaviour
     {
 
     }
-    void Update()
+    void FixedUpdate()
     {
         if (destroy)
         {

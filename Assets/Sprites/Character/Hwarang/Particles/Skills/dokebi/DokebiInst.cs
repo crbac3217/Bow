@@ -34,7 +34,7 @@ public class DokebiInst : MonoBehaviour
         go.GetComponent<EnemyController>().CalculateDamage(damages, false, 0);
         var part = Instantiate(affectedParticle, go.transform.position, Quaternion.identity);
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (disappear)
         {

@@ -8,6 +8,7 @@ public class EnemyAttack : ScriptableObject
     public AttackType type;
     public bool avail, whileMove, cantCutoff;
     public string AttackName;
+    public AudioClip AttackSound;
     public float coolDown, duration, damageMult, dashDist;
     public GameObject attackRangePrefab, projectilePrefab;
     private GameObject rangeInst;

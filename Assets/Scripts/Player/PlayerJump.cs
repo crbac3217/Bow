@@ -15,13 +15,13 @@ public class PlayerJump : MonoBehaviour
     {
         pc = GetComponent<PlayerControl>();
         playerRigid = GetComponent<Rigidbody2D>();
+        defaultGravity = playerRigid.gravityScale;
     }
     public void ResetStat()
     {
-        defaultGravity = playerRigid.gravityScale;
         curJumpCount = Convert.ToInt32(pc.stats[5].value);
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (isJumping)
         {

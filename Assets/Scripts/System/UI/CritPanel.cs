@@ -18,7 +18,7 @@ public class CritPanel : MonoBehaviour
             isFront = true;
         }
     }
-    void Update()
+    void FixedUpdate()
     {
         if (transform.position.z > 0 && isFront)
         {

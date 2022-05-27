@@ -34,7 +34,7 @@ public class ElectroLine : MonoBehaviour
             line.SetPosition(i, posval);
         }
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (line.startColor.a < 0.9f && !didDamage)
         {

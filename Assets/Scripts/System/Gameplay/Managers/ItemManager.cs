@@ -196,7 +196,6 @@ public class ItemManager : MonoBehaviour
     }
     public void ActivateSetEffect(SetEffect effect)
     {
-        Debug.Log(effect.effectName + "has been activated!");
         foreach (Modifier mod in effect.modifiers)
         {
             AddMod(mod);
@@ -209,6 +208,7 @@ public class ItemManager : MonoBehaviour
         {
             DamageAdd(dtype);
         }
+        pc.guiManager.DisplaySetText(effect);
     }
     public void StatAdd(Stat stat)
     {

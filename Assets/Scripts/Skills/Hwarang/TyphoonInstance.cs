@@ -16,7 +16,7 @@ public class TyphoonInstance : MonoBehaviour
     {
         spren = GetComponent<SpriteRenderer>();
     }
-    void Update()
+    void FixedUpdate()
     {
         if (fadein)
         {

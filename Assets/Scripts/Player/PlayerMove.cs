@@ -39,7 +39,7 @@ public class PlayerMove : MonoBehaviour
     {
         maxSpeed = 1 + Mathf.Log(pc.stats[0].value);
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (!pc.pf.compFrozen)
         {

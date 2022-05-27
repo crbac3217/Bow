@@ -78,7 +78,7 @@ public class AiHandler : MonoBehaviour
     {
 
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (transform.position.y < -10)
         {

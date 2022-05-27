@@ -23,6 +23,7 @@ public class Set
 public class SetEffect
 {
     public string effectName;
+    public string effectDescription;
     public Sprite effectThumb;
     public int setCount;
     public bool currentlyActive = false;

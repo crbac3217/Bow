@@ -13,7 +13,7 @@ public class moveTowards : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (p1 != null && p2 != null)
         {

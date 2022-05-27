@@ -493,7 +493,7 @@ MonoBehaviour:
   - {x: 0.04336214, y: -0.2837867, z: 0}
   m_ShapePathHash: -1755553739
   m_Mesh: {fileID: 0}
-  m_InstanceId: 92860
+  m_InstanceId: 139182
 --- !u!1001 &7460994159462002680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -592,6 +592,18 @@ PrefabInstance:
     - target: {fileID: 4354110103685695923, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
       propertyPath: m_Name
       value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888154731563895286, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.7416
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888154731563895286, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.0612
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888154731563895286, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8942552953884761091, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
       propertyPath: m_SizeDelta.x

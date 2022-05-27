@@ -16,7 +16,7 @@ public class FlurryInstance : MonoBehaviour
     {
         spren = GetComponent<SpriteRenderer>();
     }
-    void Update()
+    void FixedUpdate()
     {
         if (fadein)
         {

@@ -27,6 +27,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7833448042870944718}
   m_Father: {fileID: 7701175148600739250}
@@ -86,6 +87,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3959859933192778375}
   m_RootOrder: 0
@@ -165,6 +167,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4143334635953499936}
   - {fileID: 3959859933192778375}
@@ -229,14 +232,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: de89b75f6f88d8846acc1e82d05d9707, type: 2}
   ec: {fileID: 0}
   visuals: {fileID: 7417083080981164258}
+  attacks: []
   pc: {fileID: 0}
   isInteracting: 0
   currentPath:
     nodes: []
     didConnect: 0
     totalDistance: 0
+  anim: {fileID: 0}
+  canMove: 1
+  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
+  nodeSearch: 2
 --- !u!70 &2539111272817491126
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -267,6 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiHandler: {fileID: 0}
   color: {r: 1, g: 0.010436682, b: 0, a: 1}
+  invincible: 0
   hp: 35
   maxHp: 35
   minGoldDrop: 4
@@ -323,6 +332,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.441, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7701175148600739250}
   m_RootOrder: 0
@@ -371,6 +381,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.445, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7701175148600739250}
   m_RootOrder: 2
@@ -429,7 +440,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &403020807301908632
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -442,6 +453,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -558,17 +570,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthBar
       objectReference: {fileID: 0}
+    - target: {fileID: 4888154731563895286, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.7363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888154731563895286, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.0665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888154731563895286, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8942552953884761091, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
---- !u!224 &8355807444884739579 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1476912610918300163, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
-  m_PrefabInstance: {fileID: 7460994159462002680}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7847344963011626525 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 823481444587104741, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
@@ -580,3 +599,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &8355807444884739579 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1476912610918300163, guid: e3cd92f670825134880c4a5ab870770d, type: 3}
+  m_PrefabInstance: {fileID: 7460994159462002680}
+  m_PrefabAsset: {fileID: 0}

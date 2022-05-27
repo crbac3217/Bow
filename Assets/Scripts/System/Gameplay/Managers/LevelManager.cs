@@ -60,9 +60,9 @@ public class LevelManager : MonoBehaviour
                 pc = gm.instPlayer.GetComponent<PlayerControl>();
                 pc.pm.LetGoLeft();
                 pc.pm.LetGoRight();
-                pc.ps.fixedJoystick.CancelShooting();
                 cp.player = pc.gameObject;
                 ShopReset();
+                pc.ps.fixedJoystick.CancelShooting();
             }
             foreach (GameObject go in cp.lightsColorChange)
             {

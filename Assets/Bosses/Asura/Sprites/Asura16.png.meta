@@ -1,0 +1,1316 @@
+fileFormatVersion: 2
+guid: df1461d646c245f43911e197dec8b2c4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Asura16_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfd3604dc6384f44b8a87126939b32e
+      internalID: -1100129957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffbc52f3e9426349b997909695d7e44
+      internalID: 1654110123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_2
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113f5efa6256aae40bcddd9ef3989da2
+      internalID: -783510404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_3
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4ba9b1315bb5542ab9165ec8bf825c
+      internalID: -1141474105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ac57dae075a8c4ea279933f66e01c3
+      internalID: 153137065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_5
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89034ff5e37627b4d87159462fec3a9b
+      internalID: 549457173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_6
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198d52e1deefaac41b3ca420fc1a6f65
+      internalID: -1831351422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_7
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1050
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972c616ee9b237c49926ab61dcf06e65
+      internalID: 796779619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f24a0fb60d30649bd8864d8951c6ed
+      internalID: 495543319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ae80fd861bbf84597ed988bfaea7a0
+      internalID: 39352647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_10
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0d887562239c946a86fbd1050a91f5
+      internalID: 2079181019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_11
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ee98994d4fd6149a1d3bfdf7a693cc
+      internalID: 34603153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459a652b3a033c14aaee634c056ba0fd
+      internalID: 328799629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_13
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906ff661c362d8c40a89f73ee2696c6e
+      internalID: -2030252353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_14
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc32a02b989a0b4693dca586105d719
+      internalID: 639455876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_15
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 900
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993bd882f16748741997d2bfdbfda7e6
+      internalID: -841801958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d319e74eeff95d345a066908d7bd00dc
+      internalID: 701169403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979d0d4f632b16649a10d466b0e44145
+      internalID: -1763605555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879f290c88902e34fbbad3d477550574
+      internalID: 344376788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f1954fa7da3804fac8a89cfc14dbb1
+      internalID: 2042456751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_20
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b931218db3a0474c80811b9c417184d
+      internalID: -379887204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_21
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a377615e10137f44bbe59ba431128545
+      internalID: 2037379951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_22
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d35c0958895cf841ae47d1fa0b6bbdb
+      internalID: -509002270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_23
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 750
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd687d1a5f59b44a906a2d83cf6cc20
+      internalID: -99079787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15f5e3a8dab17e408ef74ad79b3a17a
+      internalID: -547722483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_25
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7b2a1895003804da4a7b97727e9a79
+      internalID: 168301280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_26
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50172f6683c5a9540bc545c85e0b9ece
+      internalID: 409150964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_27
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66f5baeba574eb4d8153f7c1288ee97
+      internalID: 145651690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_28
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edb70b2691f48e458bc62c79e1ffb23
+      internalID: -107426021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_29
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07220f6e8f3db643bf1b8551841ee63
+      internalID: -2112026770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_30
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74de0ae153341eb4a85e60f3b8ffb6f6
+      internalID: -714640217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_31
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 600
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb56a7bd1416cad46b930ac24a25cf30
+      internalID: -470208243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632bd89a9b0ed0e4b9874536bbcf8195
+      internalID: 1564638971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_33
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c80348f748bd44e88d5f65782ff28e
+      internalID: -1569204179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_34
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1cc9029c6077645b90aecdf7b17830
+      internalID: 1664510263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_35
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b4ff49ae6329d4c94ad01fef2aa94c
+      internalID: 400744310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_36
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759cc07fc1b40764797ae6202dbcd63a
+      internalID: -1179577794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_37
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe81aafeea078743995e525066491fb
+      internalID: 755800351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_38
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa850ac684b20d1408b38e391f43ffc2
+      internalID: -105644782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_39
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 450
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707f8f0658f72c040a130a44c0fa034f
+      internalID: 818861858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c6731f5b65e8644a843b229e4cfd74
+      internalID: -1473345309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_41
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30417af053fedd04bb117096fab8bcb7
+      internalID: -350262350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_42
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32c2356756b8d243a4be790ecf153e1
+      internalID: -1298122271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_43
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98f8f123f77ba74ba17972fb1cf1775
+      internalID: -1167646507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_44
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328567fbf41918d40ac1807202563114
+      internalID: 1068668936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365cf3ff15ad07a439ec22083d0b47eb
+      internalID: -792508230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_46
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4612f26ad3a28a444aeb48c2dad9586c
+      internalID: 990821200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_47
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 300
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ab6989aea7fe8499106ad00b6fc43d
+      internalID: -1579089782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc5c5e7aba8bf64f8cebbceebc1ab1c
+      internalID: 980072282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_49
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a83fbf879b8cf84abd82da283fe6d5c
+      internalID: 322213125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_50
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca7ba73addacd641946a8e10c34cdeb
+      internalID: -1467955790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asura16_51
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 150
+        width: 225
+        height: 150
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166442bbac14bb64eb9c843a4604135c
+      internalID: -1068593819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: df99f2415dff2904ba1a4da87ecc082d, type: 3}
+      name: _NormalMap
+    nameFileIdTable:
+      Asura16_34: 1664510263
+      Asura16_42: -1298122271
+      Asura16_16: 701169403
+      Asura16_36: -1179577794
+      Asura16_35: 400744310
+      Asura16_28: -107426021
+      Asura16_25: 168301280
+      Asura16_1: 1654110123
+      Asura16_46: 990821200
+      Asura16_23: -99079787
+      Asura16_4: 153137065
+      Asura16_12: 328799629
+      Asura16_41: -350262350
+      Asura16_39: 818861858
+      Asura16_43: -1167646507
+      Asura16_37: 755800351
+      Asura16_11: 34603153
+      Asura16_6: -1831351422
+      Asura16_19: 2042456751
+      Asura16_40: -1473345309
+      Asura16_17: -1763605555
+      Asura16_45: -792508230
+      Asura16_27: 145651690
+      Asura16_33: -1569204179
+      Asura16_38: -105644782
+      Asura16_31: -470208243
+      Asura16_8: 495543319
+      Asura16_3: -1141474105
+      Asura16_44: 1068668936
+      Asura16_15: -841801958
+      Asura16_29: -2112026770
+      Asura16_30: -714640217
+      Asura16_47: -1579089782
+      Asura16_20: -379887204
+      Asura16_14: 639455876
+      Asura16_18: 344376788
+      Asura16_50: -1467955790
+      Asura16_26: 409150964
+      Asura16_2: -783510404
+      Asura16_48: 980072282
+      Asura16_9: 39352647
+      Asura16_51: -1068593819
+      Asura16_49: 322213125
+      Asura16_5: 549457173
+      Asura16_21: 2037379951
+      Asura16_0: -1100129957
+      Asura16_7: 796779619
+      Asura16_32: 1564638971
+      Asura16_24: -547722483
+      Asura16_22: -509002270
+      Asura16_13: -2030252353
+      Asura16_10: 2079181019
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

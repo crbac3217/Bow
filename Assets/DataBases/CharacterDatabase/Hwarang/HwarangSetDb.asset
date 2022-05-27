@@ -24,7 +24,8 @@ MonoBehaviour:
     - i036
     collected: []
     setEffects:
-    - effectName: eemugi
+    - effectName: imugi
+      effectDescription: Yet a snake, closer to a dragon
       effectThumb: {fileID: 0}
       setCount: 3
       currentlyActive: 0
@@ -37,6 +38,7 @@ MonoBehaviour:
         value: 5
       modifiers: []
     - effectName: dragon
+      effectDescription: the most sacred beast
       effectThumb: {fileID: 0}
       setCount: 5
       currentlyActive: 0
@@ -57,6 +59,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: divinity
+      effectDescription: the divine treasures of the sky
       effectThumb: {fileID: 0}
       setCount: 3
       currentlyActive: 0
@@ -80,6 +83,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: chasa
+      effectDescription: death calls
       effectThumb: {fileID: 0}
       setCount: 3
       currentlyActive: 0
@@ -99,6 +103,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: sammiho
+      effectDescription: three tailed fox
       effectThumb: {fileID: 0}
       setCount: 2
       currentlyActive: 0
@@ -107,6 +112,7 @@ MonoBehaviour:
       damageMods: []
       modifiers: []
     - effectName: kumiho
+      effectDescription: fully awakened nine-tails
       effectThumb: {fileID: 0}
       setCount: 4
       currentlyActive: 0
@@ -125,7 +131,8 @@ MonoBehaviour:
     - i031
     collected: []
     setEffects:
-    - effectName: three-legged-crow
+    - effectName: three legged crow
+      effectDescription: messenger of god
       effectThumb: {fileID: 0}
       setCount: 4
       currentlyActive: 0
@@ -145,6 +152,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: tiger
+      effectDescription: king of all beasts
       effectThumb: {fileID: 0}
       setCount: 1
       currentlyActive: 0
@@ -163,6 +171,7 @@ MonoBehaviour:
       damageMods: []
       modifiers: []
     - effectName: sangoon
+      effectDescription: the ruler of a mountain
       effectThumb: {fileID: 0}
       setCount: 2
       currentlyActive: 0
@@ -192,6 +201,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: beik
+      effectDescription: two imperfect birds
       effectThumb: {fileID: 0}
       setCount: 3
       currentlyActive: 0
@@ -212,14 +222,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: dokkaebi
-      effectThumb: {fileID: 0}
-      setCount: 3
-      currentlyActive: 0
-      elem: 0
-      statMods: []
-      damageMods: []
-      modifiers: []
-    - effectName: dokkaebi
+      effectDescription: prankster that brings wealth!
       effectThumb: {fileID: 0}
       setCount: 3
       currentlyActive: 0
@@ -240,6 +243,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: baridaeki
+      effectDescription: shaman princess
       effectThumb: {fileID: 0}
       setCount: 5
       currentlyActive: 0
@@ -257,6 +261,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: starlords
+      effectDescription: the brothers who shot down sun and moon
       effectThumb: {fileID: 0}
       setCount: 2
       currentlyActive: 0
@@ -276,6 +281,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: zephyr
+      effectDescription: the one who manages all winds
       effectThumb: {fileID: 0}
       setCount: 2
       currentlyActive: 0
@@ -296,6 +302,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: nimbus
+      effectDescription: the one who calls in the clouds
       effectThumb: {fileID: 0}
       setCount: 2
       currentlyActive: 0
@@ -316,6 +323,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: monsoon
+      effectDescription: the one that brings rain
       effectThumb: {fileID: 0}
       setCount: 2
       currentlyActive: 0
@@ -343,6 +351,7 @@ MonoBehaviour:
     collected: []
     setEffects:
     - effectName: hwanwoong
+      effectDescription: the one above all
       effectThumb: {fileID: 0}
       setCount: 9
       currentlyActive: 0
@@ -354,7 +363,7 @@ MonoBehaviour:
         value: 10
       damageMods:
       - damageElement: 0
-        value: 5
+        value: 10
       - damageElement: 2
         value: 5
       - damageElement: 3

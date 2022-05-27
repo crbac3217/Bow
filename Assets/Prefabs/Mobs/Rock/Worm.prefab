@@ -27,6 +27,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7833448042870944718}
   m_Father: {fileID: 7701175148600739250}
@@ -86,6 +87,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3959859933192778375}
   m_RootOrder: 0
@@ -165,6 +167,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4143334635953499936}
   - {fileID: 3959859933192778375}
@@ -228,14 +231,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1c4b1bb8a94f5894a8f46d3e5e0d19c7, type: 2}
   ec: {fileID: 0}
   visuals: {fileID: 7417083080981164258}
+  attacks: []
   pc: {fileID: 0}
   isInteracting: 0
   currentPath:
     nodes: []
     didConnect: 0
     totalDistance: 0
+  anim: {fileID: 0}
+  canMove: 1
+  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
+  nodeSearch: 2
 --- !u!114 &2777166427433825537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,8 +258,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiHandler: {fileID: 0}
   color: {r: 0.5, g: 0.18883614, b: 0.16273585, a: 1}
-  hp: 15
-  maxHp: 15
+  invincible: 0
+  hp: 12
+  maxHp: 12
   minGoldDrop: 1
   maxGoldDrop: 2
   chestDropMax: 0
@@ -319,6 +328,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.025, y: 0.237, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7701175148600739250}
   m_RootOrder: 0
@@ -368,6 +378,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.044, y: 0.336, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7701175148600739250}
   m_RootOrder: 2
@@ -426,7 +437,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &403020807301908632
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -439,6 +450,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -469,6 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShadowGroup: 0
+  m_ComponentVersion: 1
   m_HasRenderer: 1
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1

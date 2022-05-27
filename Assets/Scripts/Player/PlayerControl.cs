@@ -13,6 +13,8 @@ public class PlayerControl : MonoBehaviour
     public List<Item> items;
     public List<Set> sets;
     public List<DamageType> damageTypes;
+    public Image healthBar;
+    public TextMeshProUGUI goldUI;
     public Stat[] stats = new Stat[] { };
     public List<Modifier> onAddList = new List<Modifier>();
     public Skill[] skills = new Skill[] { };
@@ -134,6 +136,8 @@ public class PlayerControl : MonoBehaviour
         var pan = Instantiate(eachPanel, panel.transform);
         pan.GetComponent<TextMeshProUGUI>().text = "+" + amount;
         pan.GetComponent<TextMeshProUGUI>().color = playerType.utilColors[0];
+        healthBar.fillAmount = (float)currentHp / stats[2].value;
+        StartCoroutine(HealEffect());
     }
     public void GainGold(int amount)
     {
@@ -141,11 +145,24 @@ public class PlayerControl : MonoBehaviour
         var pan = Instantiate(eachPanel, panel.transform);
         pan.GetComponent<TextMeshProUGUI>().text = "+" + amount;
         pan.GetComponent<TextMeshProUGUI>().color = playerType.utilColors[1];
+        goldUI.text = "$" + gold;
     }
     public void UpdateHP(int amount)
     {
         var pan = Instantiate(eachPanel, panel.transform);
         pan.GetComponent<TextMeshProUGUI>().text = amount + "!";
         pan.GetComponent<TextMeshProUGUI>().color = playerType.utilColors[2];
+        healthBar.fillAmount = (float)currentHp / stats[2].value;
+    }
+    private IEnumerator HealEffect()
+    {
+        Color temp = Color.white;
+        if (healthBar.color != Color.green)
+        {
+            temp = healthBar.color;
+        }
+        healthBar.color = Color.green;
+        yield return new WaitForSeconds(0.5f);
+        healthBar.color = temp;
     }
 }

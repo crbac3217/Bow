@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour
         yield return new WaitForSeconds(liveTime);
         disappear = true;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (!isHit)
         {

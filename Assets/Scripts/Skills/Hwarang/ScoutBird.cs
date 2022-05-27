@@ -40,7 +40,7 @@ public class ScoutBird : MonoBehaviour
         Destroy(this.gameObject);
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         rigid.velocity = dir*speed;
     }

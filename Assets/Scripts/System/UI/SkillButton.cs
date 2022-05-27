@@ -23,7 +23,7 @@ public class SkillButton : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (thisSkill != null)
         {
