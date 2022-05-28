@@ -8,6 +8,7 @@ public class PlayerShoot : MonoBehaviour
 {
     public PlayerControl pc;
     public PlayerMove pm;
+    public AudioClip meleeClip, drawClip;
     public FixedJoystick fixedJoystick;
     public List<Modifier> shootMods = new List<Modifier>();
     public List<Modifier> killMods = new List<Modifier>();
@@ -66,6 +67,8 @@ public class PlayerShoot : MonoBehaviour
             activeMelee.InvokeMelee(attackArg);
             pc.pa.bodyAnim.ResetTrigger("meleeReleased");
             pc.pa.bodyAnim.SetTrigger("meleeReleased");
+            pc.shootAudio.clip = meleeClip;
+            pc.shootAudio.Play();
             pc.pa.DisableHead();
             pc.pa.DisableArm();
         }
@@ -107,6 +110,8 @@ public class PlayerShoot : MonoBehaviour
             }
             pc.pa.DisableHead();
             pc.pa.DisableArm();
+            pc.shootAudio.clip = activeShoot.shootClip;
+            pc.shootAudio.Play();
             activeShoot.InvokeShoot(attackArg);
         }
     }

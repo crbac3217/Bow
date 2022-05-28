@@ -34,6 +34,7 @@ public class EndArea : Area
             if (pc.transform.position.x > transform.position.x + 1 && !defeatedBoss && !enteredBossfight)
             {
                 campar.doFollowPlayer = false;
+                lvlm.bgmManager.ChangeMusic(bossInst.GetComponent<BossController>().bgm);
                 Vector3 movePoint = Vector3.SmoothDamp(campar.transform.position, endAreaCam, ref velocity, 0.3f);
                 campar.transform.position = movePoint;
                 campar.cam.orthographicSize = Mathf.Clamp(campar.cam.orthographicSize + 0.01f, 1.5f, 2f);

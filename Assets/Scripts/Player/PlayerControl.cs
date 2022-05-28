@@ -21,6 +21,7 @@ public class PlayerControl : MonoBehaviour
     public EquipmentDataBase beginnerEqDb;
     public int currentHp, gold, levelsOfShooting;
     public CameraParent campar;
+    public AudioSource bodyAudio, shootAudio;
     public Transform bottompoint;
     public PlayerAnim pa;
     public PlayerShoot ps;

@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     public int level;
     public PlayerType playerType;
     public CameraParent cp;
-    public GameObject managerPar, playerPrefab, camParPref, spawnPoint, ItemManagerObject, GUIManagerObject, DamageManagerObject, LootManagerObject, boss;
+    public GameObject managerPar, playerPrefab, camParPref, spawnPoint, ItemManagerObject, GUIManagerObject, DamageManagerObject, LootManagerObject, bgmManagerObject, boss;
     public PlayerControl pc;
     public ThemeDatabase theme;
     public EndType endtype;
@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
     private GUIManager guiManager;
     private DamageManager damageManager;
     private LootManager lootManager;
+    public BGMManager bgmManager;
     public List<GameObject> enemies = new List<GameObject>();
     private void Start()
     {
@@ -57,6 +58,7 @@ public class LevelManager : MonoBehaviour
                 guiManager = managerPar.GetComponentInChildren<GUIManager>();
                 damageManager = managerPar.GetComponentInChildren<DamageManager>();
                 lootManager = managerPar.GetComponentInChildren<LootManager>();
+                bgmManager = managerPar.GetComponentInChildren<BGMManager>();
                 pc = gm.instPlayer.GetComponent<PlayerControl>();
                 pc.pm.LetGoLeft();
                 pc.pm.LetGoRight();
@@ -103,6 +105,9 @@ public class LevelManager : MonoBehaviour
         damageManager = damageManagerObject.GetComponent<DamageManager>();
         var lootManagerObject = Instantiate(LootManagerObject, managerPar.transform);
         lootManager = lootManagerObject.GetComponent<LootManager>();
+        var BgmManagerObject = Instantiate(bgmManagerObject, managerPar.transform);
+        bgmManager = BgmManagerObject.GetComponent<BGMManager>();
+        gm.transitionAnims.Add(bgmManager.GetComponent<Animator>());
         DontDestroyOnLoad(managerPar);
         gm.managerPar = managerPar;
     }
@@ -125,14 +130,18 @@ public class LevelManager : MonoBehaviour
     {
         cp.doFollowPlayer = true;
         cp.cam.orthographicSize = 1.5f;
+        float healAmount = (float)pc.stats[2].value / 10f;
+        pc.Heal((int)healAmount);
     }
     #endregion SetUp
     #region MapMaking
     public void GenerateLevel()
     {
+        AudioClip rand = theme.audios[Random.Range(0, theme.audios.Count)];
+        bgmManager.audioSource.clip = rand;
+        bgmManager.audioSource.Play();
         CreateStartArea();
-        //change to 5 and 2 later
-        int areaAmount = 1 + (level * 0);
+        int areaAmount = 3 + (level * 1);
         for (int i = 0; i < areaAmount; i++)
         {
             CreateMidArea(areas[i].end.transform.position);

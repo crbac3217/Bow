@@ -288,6 +288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiHandler: {fileID: 0}
   color: {r: 0.9372549, g: 0.12764212, b: 0, a: 1}
+  invincible: 0
   hp: 75
   maxHp: 75
   minGoldDrop: 15
@@ -312,6 +313,7 @@ MonoBehaviour:
   hpIndi: {fileID: 0}
   BossName: Jigwi
   ea: {fileID: 0}
+  bgm: {fileID: 8300000, guid: a76e0e280350d5d40bff628dad1b270a, type: 3}
   pc: {fileID: 0}
 --- !u!114 &6881179283237360764
 MonoBehaviour:
@@ -349,15 +351,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 35512c2de412dd84b8e335d38e8a3e14, type: 2}
   ec: {fileID: 0}
   visuals: {fileID: 7417083080981164258}
+  attacks: []
   pc: {fileID: 0}
   isInteracting: 0
   currentPath:
     nodes: []
     didConnect: 0
     totalDistance: 0
+  anim: {fileID: 0}
   canMove: 1
+  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
+  nodeSearch: 2
   campar: {fileID: 0}
   ea: {fileID: 0}
 --- !u!1 &4143334635953499938

@@ -37,5 +37,8 @@ MonoBehaviour:
   midGround: []
   effect: {fileID: 0}
   backgLightIntensity: 2
+  audios:
+  - {fileID: 8300000, guid: a9bcddfdaf26c2d48b38b708c28dc6bb, type: 3}
+  - {fileID: 8300000, guid: 95d1dbbfcad9b2c42b313004b3d22771, type: 3}
   themeColor:
   - {r: 0.38714847, g: 0.45808733, b: 0.5660378, a: 1}

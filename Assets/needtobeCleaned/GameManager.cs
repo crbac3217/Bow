@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public PlayerType pt;
     public GameObject playerPrf, instPlayer, managerPar, joystick, buttons, camPar;
+    public float transitionTime;
+    public List<Animator> transitionAnims = new List<Animator>();
     public List<Level> levels = new List<Level>();
     public LevelDataBase lvldata;
 
@@ -51,6 +53,15 @@ public class GameManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
+        StartCoroutine(NextLevelAnim());
+    }
+    private IEnumerator NextLevelAnim()
+    {
+        foreach (Animator anim in transitionAnims)
+        {
+            anim.SetTrigger("Transition");
+        }
+        yield return new WaitForSeconds(transitionTime);
         levels.Remove(levels[0]);
         SceneManager.LoadSceneAsync(1);
     }

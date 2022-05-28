@@ -5,7 +5,13 @@ using UnityEngine;
 public class PlayerBodyAnim : MonoBehaviour
 {
     public PlayerAnim pa;
-
+    public PlayerControl pc;
+    public AudioClip footstep;
+    public void FootStep()
+    {
+        pc.bodyAudio.clip = footstep;
+        pc.bodyAudio.Play();
+    }
     public void EnableHead()
     {
         pa.EnableHead();

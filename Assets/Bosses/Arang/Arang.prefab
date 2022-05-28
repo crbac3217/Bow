@@ -249,6 +249,7 @@ MonoBehaviour:
   hpIndi: {fileID: 0}
   BossName: Arang
   ea: {fileID: 0}
+  bgm: {fileID: 8300000, guid: 41ecacaea5548ce458df66d2701b5648, type: 3}
   pc: {fileID: 0}
 --- !u!114 &2878436405759658638
 MonoBehaviour:
@@ -293,9 +294,12 @@ MonoBehaviour:
     nodes: []
     didConnect: 0
     totalDistance: 0
+  anim: {fileID: 0}
   canMove: 1
+  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
+  nodeSearch: 2
   campar: {fileID: 0}
   ea: {fileID: 0}
   butterflies: []

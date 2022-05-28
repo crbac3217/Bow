@@ -40,6 +40,8 @@ public class FixedJoystick : Joystick
             ps.activeShoot = Instantiate(ps.defaultShoot);
         }
         InitializeShooting();
+        pc.shootAudio.clip = ps.drawClip;
+        pc.shootAudio.Play();
         base.OnPointerDown(eventData);
     }
     private void InitializeShooting()

@@ -269,6 +269,7 @@ MonoBehaviour:
   hpIndi: {fileID: 0}
   BossName: Asura
   ea: {fileID: 0}
+  bgm: {fileID: 8300000, guid: 1a63bd73afd930941960a63ca41ec475, type: 3}
   pc: {fileID: 0}
   swordStrength:
   - damageElement: 0
@@ -342,6 +343,7 @@ MonoBehaviour:
     totalDistance: 0
   anim: {fileID: 0}
   canMove: 1
+  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
   nodeSearch: 2

@@ -10,5 +10,6 @@ public class ThemeDatabase : ScriptableObject
     public List<Sprite> backGround, midGround = new List<Sprite>();
     public GameObject effect;
     public float backgLightIntensity;
+    public List<AudioClip> audios = new List<AudioClip>();
     public List<Color> themeColor = new List<Color>();
 }

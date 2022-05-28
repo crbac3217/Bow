@@ -19,6 +19,7 @@ public class PlayerFreeze : MonoBehaviour
         isFrozen = true;
         Time.timeScale = 0.5f;
         Time.fixedDeltaTime = 0.5f * startFixedDelta;
+        pc.levelManager.bgmManager.GetComponent<AudioChorusFilter>().dryMix = 0f;
         pc.pj.playerRigid.gravityScale = pc.pj.modifiedGravity;
     }
     public void UnFreeze()
@@ -26,6 +27,7 @@ public class PlayerFreeze : MonoBehaviour
         isFrozen = false;
         Time.timeScale = 1;
         Time.fixedDeltaTime = startFixedDelta;
+        pc.levelManager.bgmManager.GetComponent<AudioChorusFilter>().dryMix = 0.5f;
         pc.pj.playerRigid.gravityScale = pc.pj.defaultGravity;
     }
     public void FreezePosIndef()

@@ -7,6 +7,7 @@ public class PlayerJump : MonoBehaviour
 {
     public PlayerControl pc;
     public Rigidbody2D playerRigid;
+    public AudioClip jump;
     public float jumpMultiplyer,jumpStatic, reductionMultiplyer, defaultGravity, modifiedGravity, jumpForce, reJumpThreshHold;
     public bool isGrounded, isJumping, isPressed;
     public int curJumpCount;
@@ -35,6 +36,8 @@ public class PlayerJump : MonoBehaviour
     }
     public void Jump()
     {
+        pc.bodyAudio.clip = jump;
+        pc.bodyAudio.Play();
         if (!pc.pf.compFrozen)
         {
             isPressed = true;

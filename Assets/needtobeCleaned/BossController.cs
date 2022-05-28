@@ -6,6 +6,7 @@ public class BossController : EnemyController
 {
     public string BossName;
     public EndArea ea;
+    public AudioClip bgm;
     public PlayerControl pc;
 
     public override void Setup()

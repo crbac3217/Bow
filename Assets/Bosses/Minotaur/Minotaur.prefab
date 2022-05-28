@@ -226,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiHandler: {fileID: 0}
   color: {r: 0.8679245, g: 0.63569736, b: 0.40530434, a: 1}
+  invincible: 0
   hp: 30
   maxHp: 30
   minGoldDrop: 8
@@ -254,6 +255,7 @@ MonoBehaviour:
   hpIndi: {fileID: 0}
   BossName: Minotaur
   ea: {fileID: 0}
+  bgm: {fileID: 8300000, guid: b47e831b167257a40bae0a848539858e, type: 3}
   pc: {fileID: 0}
 --- !u!114 &-8390387662106751150
 MonoBehaviour:
@@ -290,15 +292,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8ed69c70ec627114498bf3554f183b18, type: 2}
   ec: {fileID: 4471361649199328710}
   visuals: {fileID: 7417083080981164258}
+  attacks: []
   pc: {fileID: 0}
   isInteracting: 0
   currentPath:
     nodes: []
     didConnect: 0
     totalDistance: 0
+  anim: {fileID: 0}
   canMove: 1
+  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
+  nodeSearch: 2
   campar: {fileID: 0}
   ea: {fileID: 0}
 --- !u!1 &4143334635953499938

@@ -8,6 +8,7 @@ public class Shoot : ScriptableObject
 {
     public bool isDefault;
     public int levelsOfShooting;
+    public AudioClip shootClip;
     public GameObject projPrefab;
     public Projectory projectory;
     public bool isSkill;
