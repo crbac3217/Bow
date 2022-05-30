@@ -23,12 +23,15 @@ MonoBehaviour:
   held: 0
   sb: {fileID: 0}
   affectedSkills: []
+  enhanceTemp: {fileID: 0}
   activeFor: 1
   cooldownTime: 0
   lastTime: 0
+  skillSound: {fileID: 8300000, guid: a36fe12dcb77abb46b3fc28d92f55265, type: 3}
   cdMaxCount: 0
   cdCurrentCount: 0
   enhanceObj: {fileID: 0}
+  moveMod: {fileID: 0}
   aimableSkill: {fileID: 0}
   thumbnail: {fileID: -5566621775100821512, guid: 972ef6f9f73532e4f95f2832ce5724b9, type: 3}
   tempCounter: {fileID: 0}

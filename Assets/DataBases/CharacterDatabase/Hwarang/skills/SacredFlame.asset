@@ -23,14 +23,17 @@ MonoBehaviour:
   held: 0
   sb: {fileID: 0}
   affectedSkills: []
+  enhanceTemp: {fileID: 0}
   activeFor: 0
   cooldownTime: 0
   lastTime: 0
+  skillSound: {fileID: 8300000, guid: 767ed8a8dc1101b47982c8318042da3f, type: 3}
   cdMaxCount: 5
   cdCurrentCount: 0
   enhanceObj: {fileID: 0}
+  moveMod: {fileID: 0}
   aimableSkill: {fileID: 0}
-  thumbnail: {fileID: 3710001279708246345, guid: 4945b0bf06b76a4408539fe0d04138a2, type: 3}
+  thumbnail: {fileID: -7166836532441977358, guid: c57915ec6f6b0d54db945945f24076df, type: 3}
   tempCounter: {fileID: 0}
   BreathPrefabs:
   - {fileID: 7565837559645007240, guid: b922f86e39048734e84521e057cffb50, type: 3}
