@@ -7,7 +7,7 @@ public class PlayerJump : MonoBehaviour
 {
     public PlayerControl pc;
     public Rigidbody2D playerRigid;
-    public AudioClip jump;
+    public AudioClip jump, land;
     public float jumpMultiplyer,jumpStatic, reductionMultiplyer, defaultGravity, modifiedGravity, jumpForce, reJumpThreshHold;
     public bool isGrounded, isJumping, isPressed;
     public int curJumpCount;
@@ -60,11 +60,25 @@ public class PlayerJump : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            pc.pa.bodyAnim.SetBool("isGrounded", true);
-            pc.pa.headAnim.SetBool("isGrounded", true);
-            isGrounded = true;
-            curJumpCount = Convert.ToInt32(pc.stats[5].value);
-            pc.pm.SetNode();
+            if (!isGrounded)
+            {
+                pc.pa.bodyAnim.SetBool("isGrounded", true);
+                pc.pa.headAnim.SetBool("isGrounded", true);
+                isGrounded = true;
+                curJumpCount = Convert.ToInt32(pc.stats[5].value);
+                pc.bodyAudio.clip = land;
+                pc.bodyAudio.Play();
+                pc.pm.SetNode();
+            }
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            pc.pa.bodyAnim.SetBool("isGrounded", false);
+            pc.pa.headAnim.SetBool("isGrounded", false);
+            isGrounded = false;
         }
     }
     public void OnLetGo()

@@ -8,6 +8,7 @@ public class MoveMod : Modifier
     public float doubleTapCd;
     public float invinDuration, dashSpeed, dashDuration;
     public Skill skill;
+    public AudioClip audio;
     private float lastTap;
     private bool wasRight;
     public override void OnModifierActive(PlayerControl pc)
@@ -44,6 +45,8 @@ public class MoveMod : Modifier
             inst.transform.localScale = new Vector2(inst.transform.localScale.x * pc.pm.body.transform.localScale.x, inst.transform.localScale.y);
             pc.pm.modifiedVelocity = Vector2.left * dashSpeed;
         }
+        pc.bodyAudio.clip = audio;
+        pc.bodyAudio.Play();
         yield return new WaitForSeconds(dashDuration);
         pc.pf.EnableMove();
         pc.pm.dashing = false;

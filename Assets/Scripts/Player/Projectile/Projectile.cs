@@ -8,9 +8,11 @@ public class Projectile : MonoBehaviour
     public float critChance = 0, liveTime = 6, disapperRate = 0.01f, particleDisplacementValue;
     public ParticleSystem onHitParticle;
     public List<DamageType> damages;
+    public AudioClip enemyImpact, groundImpact;
     public List<SpriteRenderer> spren = new List<SpriteRenderer>();
     public Rigidbody2D rb;
     public Animator anim;
+    private AudioSource audio;
 
     private void Start()
     {
@@ -19,6 +21,7 @@ public class Projectile : MonoBehaviour
         spren.Add(GetComponent<SpriteRenderer>());
         SetUp();
         StartCoroutine(Fired());
+        audio = GetComponent<AudioSource>();
     }
     public virtual void SetUp()
     {
@@ -67,6 +70,8 @@ public class Projectile : MonoBehaviour
                 Color temp = collision.GetComponent<Platform>().color;
                 InvokeParticle(temp);
                 OnHit();
+                audio.clip = groundImpact;
+                audio.Play();
             }
         }
         else if (collision.CompareTag("EnemyProjectile") && !isHit)
@@ -89,6 +94,8 @@ public class Projectile : MonoBehaviour
     {
         OnHit();
         DealDamage(ec);
+        audio.clip = enemyImpact;
+        audio.Play();
         transform.SetParent(ec.transform);
         Color temp = ec.color;
         InvokeParticle(temp);

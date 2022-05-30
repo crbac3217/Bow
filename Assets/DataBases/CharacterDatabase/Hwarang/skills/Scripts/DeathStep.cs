@@ -24,6 +24,8 @@ public class DeathStep : MoveMod
             inst.transform.localScale = new Vector2(inst.transform.localScale.x * pc.pm.body.transform.localScale.x, inst.transform.localScale.y);
             pc.pm.modifiedVelocity = Vector2.left * dashSpeed;
         }
+        pc.bodyAudio.clip = audio;
+        pc.bodyAudio.Play();
         yield return new WaitForSeconds(dashDuration);
         endpos = pc.transform.position;
         DealDamageInBetween(startpos, endpos, pc);

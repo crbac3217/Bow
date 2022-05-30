@@ -9,9 +9,12 @@ public class BiteObj : MonoBehaviour
     public ParticleSystem impact;
     public EnemyController enemy;
     private SpriteRenderer spren;
+    private AudioSource audioSource;
+    public AudioClip soundClip;
     private void Start()
     {
         spren = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -35,6 +38,11 @@ public class BiteObj : MonoBehaviour
             }
         }
         impact.Play();
+    }
+    public void Sound()
+    {
+        audioSource.clip = soundClip;
+        audioSource.Play();
     }
     public void OnEnd()
     {

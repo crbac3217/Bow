@@ -64,8 +64,8 @@ public class LevelManager : MonoBehaviour
                 pc.pm.LetGoRight();
                 cp.player = pc.gameObject;
                 ShopReset();
-                pc.ps.fixedJoystick.CancelShooting();
             }
+            pc.levelManager = this;
             foreach (GameObject go in cp.lightsColorChange)
             {
                 go.GetComponent<Light2D>().color = theme.themeColor[0];
@@ -116,7 +116,6 @@ public class LevelManager : MonoBehaviour
         var player = Instantiate(playerPrefab, spawnPoint.transform.position, Quaternion.identity);
         pc = player.GetComponent<PlayerControl>();
         pc.campar = cp;
-        pc.levelManager = this;
         damageManager.pc = pc;
         itemManager.pc = pc;
         guiManager.pc = pc;
@@ -132,6 +131,7 @@ public class LevelManager : MonoBehaviour
         cp.cam.orthographicSize = 1.5f;
         float healAmount = (float)pc.stats[2].value / 10f;
         pc.Heal((int)healAmount);
+        pc.ps.fixedJoystick.CancelShooting();
     }
     #endregion SetUp
     #region MapMaking
@@ -141,7 +141,7 @@ public class LevelManager : MonoBehaviour
         bgmManager.audioSource.clip = rand;
         bgmManager.audioSource.Play();
         CreateStartArea();
-        int areaAmount = 3 + (level * 1);
+        int areaAmount = 0 + (level * 0);
         for (int i = 0; i < areaAmount; i++)
         {
             CreateMidArea(areas[i].end.transform.position);

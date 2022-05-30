@@ -425,7 +425,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pa: {fileID: 6825561536170592037}
   pc: {fileID: 6216104295027416254}
-  footstep: {fileID: 8300000, guid: e078de42bd2038d438d410da390054fe, type: 3}
+  pj: {fileID: 6216104295027416253}
+  footstep: {fileID: 8300000, guid: 04f52c6fb2d5c3449a554bfcc8e22b61, type: 3}
 --- !u!114 &8906692433624708617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,7 +453,7 @@ MonoBehaviour:
   - {x: -0.040443867, y: -0.40302587, z: 0}
   m_ShapePathHash: 1135063773
   m_Mesh: {fileID: 0}
-  m_InstanceId: 95950
+  m_InstanceId: 97864
 --- !u!82 &3232738287951118759
 AudioSource:
   m_ObjectHideFlags: 0
@@ -793,7 +794,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pc: {fileID: 0}
   playerRigid: {fileID: 0}
-  jump: {fileID: 8300000, guid: 33bc64283742d544393af71b40de27fb, type: 3}
+  jump: {fileID: 8300000, guid: e6af97f9a923f674e8c2d83c16cf4876, type: 3}
+  land: {fileID: 8300000, guid: dc17bf3d6ac64e84da187e915214f9a1, type: 3}
   jumpMultiplyer: 0.5
   jumpStatic: 3.5
   reductionMultiplyer: 9.81
@@ -849,7 +851,6 @@ MonoBehaviour:
   pc: {fileID: 0}
   pm: {fileID: 0}
   meleeClip: {fileID: 8300000, guid: 0d450c68105308d4fa3c160939f27d08, type: 3}
-  shootClip: {fileID: 8300000, guid: 34a57e25c13abde49a2ec2e823da3993, type: 3}
   drawClip: {fileID: 8300000, guid: 0748a538083e05f48ba409b667ed30e0, type: 3}
   fixedJoystick: {fileID: 0}
   shootMods: []

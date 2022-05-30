@@ -6,11 +6,15 @@ public class PlayerBodyAnim : MonoBehaviour
 {
     public PlayerAnim pa;
     public PlayerControl pc;
+    public PlayerJump pj;
     public AudioClip footstep;
     public void FootStep()
     {
-        pc.bodyAudio.clip = footstep;
-        pc.bodyAudio.Play();
+        if (pj.isGrounded)
+        {
+            pc.bodyAudio.clip = footstep;
+            pc.bodyAudio.Play();
+        }
     }
     public void EnableHead()
     {

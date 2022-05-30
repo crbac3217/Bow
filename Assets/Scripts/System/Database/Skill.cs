@@ -12,7 +12,9 @@ public class Skill : ScriptableObject
     public bool isSkillAvail, disableSkill, isPassive, selected, held = false;
     public SkillButton sb;
     public List<Skill> affectedSkills = new List<Skill>();
+    public AddEnhanceOnShoot enhanceTemp;
     public float activeFor, cooldownTime, lastTime;
+    public AudioClip skillSound;
     public int cdMaxCount, cdCurrentCount;
     public GameObject enhanceObj;
     public MoveMod moveMod;
@@ -211,17 +213,40 @@ public class Skill : ScriptableObject
     {
         if (pc.ps.activeShoot == null)
         {
-            ShotSelectedToggleOn(pc);
-            AddEnhanceOnShoot temp = ScriptableObject.CreateInstance<AddEnhanceOnShoot>();
-            temp.skill = this;
-            pc.ps.shootMods.Add(temp);
-            foreach (Skill skill in pc.skills)
+            if (!selected)
             {
-                if (skill)
+                if (skillSound)
                 {
-                    if (skill.skillType == SkillType.replaceShot)
+                    pc.shootAudio.clip = skillSound;
+                    pc.shootAudio.Play();
+                }
+                ShotSelectedToggleOn(pc);
+                enhanceTemp = ScriptableObject.CreateInstance<AddEnhanceOnShoot>();
+                enhanceTemp.skill = this;
+                pc.ps.shootMods.Add(enhanceTemp);
+                foreach (Skill skill in pc.skills)
+                {
+                    if (skill)
                     {
-                        DisableSkill(skill);
+                        if (skill.skillType == SkillType.replaceShot)
+                        {
+                            DisableSkill(skill);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                ShotSelectedToggleOff(pc);
+                pc.ps.shootMods.Remove(enhanceTemp);
+                foreach (Skill skill in pc.skills)
+                {
+                    if (skill)
+                    {
+                        if (skill.skillType == SkillType.replaceShot)
+                        {
+                            EnableSkill(skill);
+                        }
                     }
                 }
             }
@@ -252,6 +277,11 @@ public class Skill : ScriptableObject
         held = false;
         isSkillAvail = false;
         pc.pa.bodyAnim.SetTrigger("skillReleased");
+        if (skillSound)
+        {
+            pc.shootAudio.clip = skillSound;
+            pc.shootAudio.Play();
+        }
         foreach (Skill skill in pc.skills)
         {
             if (skill)
