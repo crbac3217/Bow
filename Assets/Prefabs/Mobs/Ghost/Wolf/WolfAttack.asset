@@ -17,6 +17,7 @@ MonoBehaviour:
   whileMove: 0
   cantCutoff: 0
   AttackName: WolfAttack
+  AttackSound: {fileID: 0}
   coolDown: 3
   duration: 1.5
   damageMult: 2
@@ -25,3 +26,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 814f4c197607ab249b9c66c1974b0cb2, type: 3}

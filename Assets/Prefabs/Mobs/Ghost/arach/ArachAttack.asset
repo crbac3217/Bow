@@ -17,6 +17,7 @@ MonoBehaviour:
   whileMove: 0
   cantCutoff: 0
   AttackName: ArachAttack
+  AttackSound: {fileID: 0}
   coolDown: 4
   duration: 1.5
   damageMult: 1.5
@@ -25,3 +26,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6896971151741930831, guid: 920b32b88562394448d5e5d09fe6a75b, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 728aae3fdb15c13478ea2abf02cd39c0, type: 3}

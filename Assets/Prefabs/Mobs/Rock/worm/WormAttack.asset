@@ -15,11 +15,16 @@ MonoBehaviour:
   type: 0
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: WormAttack
   coolDown: 2
   duration: 1
   damageMult: 3
+  dashDist: 0
   attackRangePrefab: {fileID: 3011102926305076843, guid: 6e38ca431010bd641b828da3c891a88a, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 8554ed80975ac894ba9858d07e0e2b87, type: 3}

@@ -17,6 +17,7 @@ MonoBehaviour:
   whileMove: 0
   cantCutoff: 0
   AttackName: GhostElemAttack
+  AttackSound: {fileID: 0}
   coolDown: 4
   duration: 1.5
   damageMult: 1
@@ -25,3 +26,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6896971151741930831, guid: 403324480b1ea934c8d5f86faebc3dfe, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 3877132bde1ab7b469714ede1dd3b5aa, type: 3}

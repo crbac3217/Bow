@@ -8,15 +8,17 @@ public class EnemyAttack : ScriptableObject
     public AttackType type;
     public bool avail, whileMove, cantCutoff;
     public string AttackName;
-    public AudioClip AttackSound;
     public float coolDown, duration, damageMult, dashDist;
     public GameObject attackRangePrefab, projectilePrefab;
     private GameObject rangeInst;
     public EnemyAttackRange range;
     public AiHandler aiHandler;
+    public int noiseCounter;
+    public List<AudioClip> attacknoises = new List<AudioClip>();
 
     public virtual void SetUp()
     {
+        noiseCounter = 0;
         rangeInst = Instantiate(attackRangePrefab, aiHandler.visuals.transform.position, Quaternion.identity) as GameObject;
         rangeInst.transform.localScale = rangeInst.transform.localScale * (aiHandler.transform.localScale.x / Mathf.Abs(aiHandler.transform.localScale.x));
         rangeInst.transform.SetParent(aiHandler.visuals.transform);

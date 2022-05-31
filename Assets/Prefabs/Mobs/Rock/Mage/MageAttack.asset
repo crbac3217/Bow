@@ -15,11 +15,16 @@ MonoBehaviour:
   type: 1
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: MageAttack
   coolDown: 5
   duration: 1
   damageMult: 2
+  dashDist: 0
   attackRangePrefab: {fileID: 6502609955261383993, guid: df7338bd7ac8e8d4384502e9a9d70997, type: 3}
   projectilePrefab: {fileID: 6896971151741930831, guid: e619553a0afc13b4c83cfe3c1954ac48, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: e1f496f5561c54f43b1e197d1365954e, type: 3}

@@ -10,11 +10,12 @@ public class BiteObj : MonoBehaviour
     public EnemyController enemy;
     private SpriteRenderer spren;
     private AudioSource audioSource;
-    public AudioClip soundClip;
+    public AudioClip soundClip, spawnClip;
     private void Start()
     {
         spren = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
+        Spawn();
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -23,6 +24,8 @@ public class BiteObj : MonoBehaviour
     }
     public void OnHit()
     {
+        audioSource.clip = soundClip;
+        audioSource.Play();
         enemy.CalculateDamage(damages, false, 0);
         if (enemy)
         {
@@ -39,9 +42,9 @@ public class BiteObj : MonoBehaviour
         }
         impact.Play();
     }
-    public void Sound()
+    public void Spawn()
     {
-        audioSource.clip = soundClip;
+        audioSource.clip = spawnClip;
         audioSource.Play();
     }
     public void OnEnd()

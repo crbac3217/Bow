@@ -757,6 +757,8 @@ MonoBehaviour:
   itemManager: {fileID: 0}
   levelManager: {fileID: 0}
   damageManager: {fileID: 0}
+  gain: {fileID: 8300000, guid: 1caac2ca576995c4eac8ba5e879c0f3b, type: 3}
+  healclip: {fileID: 8300000, guid: 7ee90b737fe0cfe48b29f66720aedc43, type: 3}
   HealParticle: {fileID: 2612414883514738814, guid: c9676a90222301045a7810940f49ed3d, type: 3}
   panel: {fileID: 2770489485104725904}
   eachPanel: {fileID: 241993113244936509, guid: d89dee54710f9ef4fa81b05fe26fe3aa, type: 3}
@@ -778,6 +780,8 @@ MonoBehaviour:
   knockAmount: 0
   hitList: []
   deadList: []
+  hitClip: {fileID: 8300000, guid: 5583f50365c446b45a56ce7a2b450ba2, type: 3}
+  deadClip: {fileID: 8300000, guid: 3e4aeb6613bc3234d81526cfbf00a4fb, type: 3}
   invincible: 0
   knockback: 0
 --- !u!114 &6216104295027416253

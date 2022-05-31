@@ -17,6 +17,7 @@ MonoBehaviour:
   whileMove: 0
   cantCutoff: 0
   AttackName: midDash
+  AttackSound: {fileID: 0}
   coolDown: 3
   duration: 1.5
   damageMult: 1.5
@@ -25,6 +26,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 5051a0425a5651048945e4fa078c02cf, type: 3}
+  - {fileID: 8300000, guid: 002d9c853cb99054da43f01245b1a531, type: 3}
   actualRangePref: {fileID: 2433838169341078632, guid: c98da485e2fdac9478bbff9eca576ae5, type: 3}
   actualRange: {fileID: 0}
   hasDashed: 0

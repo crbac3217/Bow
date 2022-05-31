@@ -17,6 +17,7 @@ MonoBehaviour:
   whileMove: 0
   cantCutoff: 0
   AttackName: SwordAttack
+  AttackSound: {fileID: 0}
   coolDown: 4
   duration: 2
   damageMult: 2
@@ -25,3 +26,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: f745de2cb1ebde44db7bf20d501e47b5, type: 3}

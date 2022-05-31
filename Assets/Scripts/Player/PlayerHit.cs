@@ -10,6 +10,7 @@ public class PlayerHit : MonoBehaviour
     public float invSec = 0.25f, knockAmount;
     public List<Modifier> hitList = new List<Modifier>();
     public List<Modifier> deadList = new List<Modifier>();
+    public AudioClip hitClip, deadClip;
     public bool invincible = false;
     private PlayerControl pc;
     public float knockback;
@@ -30,6 +31,8 @@ public class PlayerHit : MonoBehaviour
         }
         else
         {
+            pc.bodyAudio.clip = hitClip;
+            pc.bodyAudio.Play();
             var inst = Instantiate(hitPart, transform.position, Quaternion.identity);
             inst.GetComponent<ParticleSystem>().Play();
             pc.currentHp -= amount;
@@ -105,6 +108,8 @@ public class PlayerHit : MonoBehaviour
     {
         SetInvincible();
         CancelAllAnim();
+        pc.bodyAudio.clip = deadClip;
+        pc.bodyAudio.Play();
         pc.pf.DisableMove();
         Destroy(pc.healthBar.gameObject);
         pc.pa.bodyAnim.SetTrigger("playerDead");

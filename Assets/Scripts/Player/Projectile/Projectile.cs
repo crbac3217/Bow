@@ -12,16 +12,16 @@ public class Projectile : MonoBehaviour
     public List<SpriteRenderer> spren = new List<SpriteRenderer>();
     public Rigidbody2D rb;
     public Animator anim;
-    private AudioSource audio;
+    public AudioSource audio;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spren.Add(GetComponent<SpriteRenderer>());
+        audio = GetComponent<AudioSource>();
         SetUp();
         StartCoroutine(Fired());
-        audio = GetComponent<AudioSource>();
     }
     public virtual void SetUp()
     {

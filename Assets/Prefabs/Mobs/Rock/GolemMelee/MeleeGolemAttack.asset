@@ -15,11 +15,16 @@ MonoBehaviour:
   type: 0
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: MeleeGolemAttack
   coolDown: 2
   duration: 1
   damageMult: 1
+  dashDist: 0
   attackRangePrefab: {fileID: 8988690514454954716, guid: 074be0b1d8ed05c429675508183f3a57, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 7517832579806922614, guid: 074be0b1d8ed05c429675508183f3a57, type: 3}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 6a8d2e08dd9eb49429b7cfa78632655f, type: 3}

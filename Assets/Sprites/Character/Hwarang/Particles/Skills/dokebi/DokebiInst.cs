@@ -14,8 +14,18 @@ public class DokebiInst : MonoBehaviour
     public float range;
     public CameraParent campar;
     public GameObject affectedParticle;
+    public AudioClip grab, impact;
+    private AudioSource audioSource;
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = grab;
+        audioSource.Play();
+    }
     public void OnImpact()
     {
+        audioSource.clip = impact;
+        audioSource.Play();
         campar.StartCoroutine(campar.CamShake(new Vector2(0f, 0.2f), 0.1f));
         impactParticle.Play();
         foreach (Collider2D col in Physics2D.OverlapCircleAll(transform.position, range, mask))

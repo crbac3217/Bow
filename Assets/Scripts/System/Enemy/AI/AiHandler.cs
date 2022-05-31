@@ -27,7 +27,6 @@ public class AiHandler : MonoBehaviour
     public List<EnemyAttack> attacks = new List<EnemyAttack>();
     public PlayerControl pc;
     public bool isInteracting;
-    [SerializeField]
     private Path currentPath = new Path();
     private NodeEvaluator tempEval;
     private List<NodeEvaluator> openList = new List<NodeEvaluator>();
@@ -37,10 +36,8 @@ public class AiHandler : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D col;
     private float speed;
-    [SerializeField]
     private bool canMove = true;
     private int snareStack = 0;
-    [SerializeField]
     private bool isGrounded = false;
     public Node curNode, nextNode;
     private Connection curCon;
@@ -51,9 +48,12 @@ public class AiHandler : MonoBehaviour
     private Path tempPath = new Path();
     private int calls = 0;
     public float nodeSearch = 2;
+    public AudioClip jumpClip, hitClip, deadClip;
+    public AudioSource audioSource;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         col = GetComponent<Collider2D>();
         visuals.GetComponent<AnimationTriggerReceiver>().ai = this;
         speed = defaultSpeed;
@@ -555,6 +555,8 @@ public class AiHandler : MonoBehaviour
             if (curCon.jump && isGrounded && horspeed != 0)
             {
                 anim.SetTrigger("Jump");
+                audioSource.clip = jumpClip;
+                audioSource.Play();
                 isGrounded = false;
                 float xDist = Mathf.Abs(curNode.position.x - nextNode.position.x);
                 float time = xDist / speed;
@@ -705,6 +707,22 @@ public class AiHandler : MonoBehaviour
                     {
                         at.AttackEtc(pc);
                     }
+                }
+            }
+        }
+    }
+    public void AttackSoundTriggered(string attackName)
+    {
+        foreach (EnemyAttack at in attacks.ToList())
+        {
+            if (at.AttackName == attackName)
+            {
+                audioSource.clip = at.attacknoises[at.noiseCounter];
+                audioSource.Play();
+                at.noiseCounter++;
+                if (at.noiseCounter == at.attacknoises.Count)
+                {
+                    at.noiseCounter = 0;
                 }
             }
         }

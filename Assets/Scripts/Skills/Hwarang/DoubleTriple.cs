@@ -9,9 +9,12 @@ public class DoubleTriple : MonoBehaviour
     public Vector2 dir;
     public GameObject[] projectiles = new GameObject[] { };
     public int tripleCounter;
+    public AudioClip shootsound;
+    private AudioSource audioSource;
 
     public void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         tripleCounter = 0;
         if (delem != DamageElement.None)
         {
@@ -28,6 +31,8 @@ public class DoubleTriple : MonoBehaviour
     }
     public void OnFireDouble()
     {
+        audioSource.clip = shootsound;
+        audioSource.Play();
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         GameObject arrow = Instantiate(projectiles[(int)delem], transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
         var arrowRigid = arrow.GetComponent<Rigidbody2D>();
@@ -39,6 +44,8 @@ public class DoubleTriple : MonoBehaviour
     }
     public void OnFireTriple()
     {
+        audioSource.clip = shootsound;
+        audioSource.Play();
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         GameObject arrow = Instantiate(projectiles[(int)delem], transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
         var arrowRigid = arrow.GetComponent<Rigidbody2D>();

@@ -11,9 +11,12 @@ public class MoonInstance : MonoBehaviour
     public CameraParent campar;
     public GameObject impactParticle;
     private Rigidbody2D rb;
+    public AudioClip flying, impact, pulseclip;
+    private AudioSource audioSource;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(AliveFor());
         rb = GetComponent<Rigidbody2D>();
         foreach (DamageType dt in damages)
@@ -26,6 +29,8 @@ public class MoonInstance : MonoBehaviour
             };
             halfDamages.Add(half);
         }
+        audioSource.clip = flying;
+        audioSource.Play();
     }
     private IEnumerator AliveFor()
     {
@@ -76,6 +81,8 @@ public class MoonInstance : MonoBehaviour
     }
     private void Impact()
     {
+        audioSource.clip = impact;
+        audioSource.Play();
         campar.StartCoroutine(campar.CamShake(new Vector2(0f, 0.2f), 0.1f));
         foreach (Collider2D col in Physics2D.OverlapCircleAll(transform.position, range))
         {
@@ -113,6 +120,8 @@ public class MoonInstance : MonoBehaviour
                 col.GetComponent<EnemyProjectile>().Dest(null);
             }
         }
+        audioSource.clip = pulseclip;
+        audioSource.Play();
         StartCoroutine(Pulse());
     }
 }

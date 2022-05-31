@@ -142,6 +142,8 @@ public class EnemyController : MonoBehaviour
         hp -= value;
         aiHandler.StartCoroutine(aiHandler.HitAggro());
         UpdateHpUI();
+        aiHandler.audioSource.clip = aiHandler.hitClip;
+        aiHandler.audioSource.Play();
         if (hp <= 0)
         {
             Dead(true);
@@ -174,6 +176,8 @@ public class EnemyController : MonoBehaviour
         }
         lvlm.enemies.Remove(this.gameObject);
         aiHandler.Dead();
+        aiHandler.audioSource.clip = aiHandler.deadClip;
+        aiHandler.audioSource.Play();
     }
     public virtual void Drop()
     {

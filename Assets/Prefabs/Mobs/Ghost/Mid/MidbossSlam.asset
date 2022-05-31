@@ -17,6 +17,7 @@ MonoBehaviour:
   whileMove: 0
   cantCutoff: 0
   AttackName: midGroundSlam
+  AttackSound: {fileID: 0}
   coolDown: 8
   duration: 2
   damageMult: 1
@@ -25,6 +26,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 5051a0425a5651048945e4fa078c02cf, type: 3}
+  - {fileID: 8300000, guid: b3b690317876f3a48bce836beba449f6, type: 3}
   groundSlamParticle: {fileID: 5620377640079746306, guid: 1b6162e155a61af409707f15dd808596, type: 3}
   actualRangePref: {fileID: 2433838169341078632, guid: 84369b214abc4044b98f5291a3bd053d, type: 3}
   actualRange: {fileID: 0}

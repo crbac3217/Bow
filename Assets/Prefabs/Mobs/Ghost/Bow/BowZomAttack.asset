@@ -17,6 +17,7 @@ MonoBehaviour:
   whileMove: 0
   cantCutoff: 0
   AttackName: BowZomAttack
+  AttackSound: {fileID: 0}
   coolDown: 4
   duration: 2
   damageMult: 1.5
@@ -25,3 +26,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6896971151741930831, guid: 5ec81cf2a34de23409ed3ceaa772ca28, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 6d45bafb77141a443b8acdb95e31e38b, type: 3}

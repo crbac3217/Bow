@@ -15,11 +15,18 @@ MonoBehaviour:
   type: 0
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: MBGolemMelee
   coolDown: 2
   duration: 1
   damageMult: 2
+  dashDist: 0
   attackRangePrefab: {fileID: 4582738019999906001, guid: a283f39e7aa82c843a558782728ca249, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 5502651c3075f3948b1633450cff1dff, type: 3}
+  - {fileID: 8300000, guid: 5502651c3075f3948b1633450cff1dff, type: 3}
+  - {fileID: 8300000, guid: 5502651c3075f3948b1633450cff1dff, type: 3}

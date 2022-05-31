@@ -36,13 +36,13 @@ public class PlayerJump : MonoBehaviour
     }
     public void Jump()
     {
-        pc.bodyAudio.clip = jump;
-        pc.bodyAudio.Play();
         if (!pc.pf.compFrozen)
         {
             isPressed = true;
             if (curJumpCount > 0)
             {
+                pc.bodyAudio.clip = jump;
+                pc.bodyAudio.Play();
                 pc.pa.bodyAnim.SetBool("isGrounded", false);
                 pc.pa.headAnim.SetBool("isGrounded", false);
                 pc.pa.bodyAnim.SetTrigger("jump");

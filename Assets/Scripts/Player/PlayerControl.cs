@@ -34,6 +34,7 @@ public class PlayerControl : MonoBehaviour
     public ItemManager itemManager;
     public LevelManager levelManager;
     public DamageManager damageManager;
+    public AudioClip gain, healclip;
     public GameObject HealParticle, panel, eachPanel;
 
     private void Start()
@@ -127,6 +128,8 @@ public class PlayerControl : MonoBehaviour
     }
     public void Heal (int amount)
     {
+        bodyAudio.clip = healclip;
+        bodyAudio.Play();
         currentHp += amount;
         var inst = Instantiate(HealParticle, transform.position, Quaternion.identity);
         inst.transform.SetParent(transform);
@@ -142,6 +145,8 @@ public class PlayerControl : MonoBehaviour
     }
     public void GainGold(int amount)
     {
+        bodyAudio.clip = gain;
+        bodyAudio.Play();
         gold += amount;
         var pan = Instantiate(eachPanel, panel.transform);
         pan.GetComponent<TextMeshProUGUI>().text = "+" + amount;

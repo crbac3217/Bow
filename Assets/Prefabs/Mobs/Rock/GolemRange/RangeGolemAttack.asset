@@ -15,11 +15,16 @@ MonoBehaviour:
   type: 1
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: RangeGolemAttack
   coolDown: 3
   duration: 1.5
   damageMult: 2
+  dashDist: 0
   attackRangePrefab: {fileID: 1013977751052735505, guid: 5036946e873fbd6408b9eee7abbc1463, type: 3}
   projectilePrefab: {fileID: 6896971151741930831, guid: 70d2a63ac7f701f40a45b55cb08d094c, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 8c40a2316d360114fba3fa7816309521, type: 3}

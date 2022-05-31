@@ -15,11 +15,16 @@ MonoBehaviour:
   type: 1
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: FireElemAttack
   coolDown: 4
   duration: 0.5
   damageMult: 1
+  dashDist: 0
   attackRangePrefab: {fileID: 1278152910594330405, guid: 2b241c72f3f1aca48bf8aed84e4bd0d0, type: 3}
   projectilePrefab: {fileID: 6896971151741930831, guid: 8e266288b9aafc04ca523e056225970e, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: af421277e1b1aaa42a9230ec507fbfe2, type: 3}

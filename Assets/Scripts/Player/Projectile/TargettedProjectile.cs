@@ -8,6 +8,7 @@ public class TargettedProjectile : Projectile
     public GameObject target;
     public Vector2 startPos, tempPos;
     public float speed, disp, findTargetRange;
+    public List<AudioClip> spawnnoise = new List<AudioClip>();
     public bool ReachedTemp;
     public override void SetUp()
     {
@@ -19,6 +20,8 @@ public class TargettedProjectile : Projectile
             target = target.GetComponent<AiHandler>().visuals;
             tempPos = Vector2.Perpendicular((Vector2)target.transform.position - startPos).normalized * disp;
         }
+        audio.clip = spawnnoise[Random.Range(0, spawnnoise.Count)];
+        audio.Play();
     }
     public override void Flying()
     {

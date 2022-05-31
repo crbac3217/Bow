@@ -15,11 +15,17 @@ MonoBehaviour:
   type: 1
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: MBGolemRange
   coolDown: 8
   duration: 1
   damageMult: 1
+  dashDist: 0
   attackRangePrefab: {fileID: 5807344334015697102, guid: aa3cc566712f1604db06dee89d8b5865, type: 3}
   projectilePrefab: {fileID: 6896971151741930831, guid: 70d2a63ac7f701f40a45b55cb08d094c, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 0f0c50c255882ba49828fbe1bb4ef218, type: 3}
+  - {fileID: 8300000, guid: 0f0c50c255882ba49828fbe1bb4ef218, type: 3}
