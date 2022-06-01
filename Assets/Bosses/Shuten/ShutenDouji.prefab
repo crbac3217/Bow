@@ -373,16 +373,14 @@ MonoBehaviour:
   attacks: []
   pc: {fileID: 0}
   isInteracting: 0
-  currentPath:
-    nodes: []
-    didConnect: 0
-    totalDistance: 0
   anim: {fileID: 0}
-  canMove: 1
-  isGrounded: 0
   curNode: {fileID: 0}
   nextNode: {fileID: 0}
   nodeSearch: 2
+  jumpClip: {fileID: 0}
+  hitClip: {fileID: 0}
+  deadClip: {fileID: 0}
+  audioSource: {fileID: 0}
   campar: {fileID: 0}
   ea: {fileID: 0}
 --- !u!1 &4143334635953499938
@@ -505,8 +503,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 97026479
-  m_SortingLayer: 4
+  m_SortingLayerID: -818617093
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -277613776, guid: d1babd1d8ad6d16458ec58ab1bf0f1df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -551,4 +549,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efce984ce9075d743b871b4284ec2d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movenoise: {fileID: 0}
   ai: {fileID: 0}
