@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 1
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: ArangShoot
   coolDown: 5
   duration: 1
@@ -24,4 +25,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6896971151741930831, guid: c4a328340ba019d49840ff7719377dba, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 26946a368ae3e784d80eb526c02f9b0a, type: 3}
   aai: {fileID: 0}

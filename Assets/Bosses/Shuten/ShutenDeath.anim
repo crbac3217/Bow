@@ -252,6 +252,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 4.9166665
+    functionName: playFoley
+    data: shutenDead2
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 5.1666665
     functionName: DeadAnimFinished
     data: 

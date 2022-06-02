@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: AsuraSDash
   coolDown: 8
   duration: 2
@@ -24,6 +25,9 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: ac7753851aa114c47b310056a62c4455, type: 3}
   actualRangePref: {fileID: 5738143384590093325, guid: 26df95ec8e0cd6145a6c906deeac3a1a, type: 3}
   particle: {fileID: 4660106257908398861, guid: 98b157dea0dcfc641907e382b17f0a00, type: 3}
   hasDashed: 0

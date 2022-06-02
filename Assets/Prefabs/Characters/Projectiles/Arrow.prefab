@@ -5060,6 +5060,7 @@ MonoBehaviour:
   spren: []
   rb: {fileID: 0}
   anim: {fileID: 0}
+  audio: {fileID: 0}
   yMax: 0
   accuracy: 0
   accuracyMult: 0
@@ -5077,7 +5078,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0

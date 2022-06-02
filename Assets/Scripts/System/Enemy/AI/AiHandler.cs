@@ -49,11 +49,16 @@ public class AiHandler : MonoBehaviour
     private int calls = 0;
     public float nodeSearch = 2;
     public AudioClip jumpClip, hitClip, deadClip;
-    public AudioSource audioSource;
+    public AudioSource voiceSource, foleySource;
+    public List<AudioClip> foleys, voices = new List<AudioClip>();
+    public List<string> foleyNames, voiceNames = new List<string>();
+    private Dictionary<string, AudioClip> foleyDic = new Dictionary<string, AudioClip>();
+    private Dictionary<string, AudioClip> voiceDic = new Dictionary<string, AudioClip>();
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        voiceSource = GetComponent<AudioSource>();
+        foleySource = visuals.GetComponent<AudioSource>();
         col = GetComponent<Collider2D>();
         visuals.GetComponent<AnimationTriggerReceiver>().ai = this;
         speed = defaultSpeed;
@@ -69,6 +74,20 @@ public class AiHandler : MonoBehaviour
             attacks.Add(temp);
             temp.aiHandler = this;
             temp.SetUp();
+        }
+        if (foleys.Count > 0)
+        {
+            for (int i = 0; i < foleys.Count; i++)
+            {
+                foleyDic.Add(foleyNames[i], foleys[i]);
+            }
+        }
+        if (voices.Count > 0)
+        {
+            for (int i = 0; i < voices.Count; i++)
+            {
+                voiceDic.Add(voiceNames[i], voices[i]);
+            }
         }
         SetUp();
         StartCoroutine(StopMoving(1));
@@ -555,8 +574,8 @@ public class AiHandler : MonoBehaviour
             if (curCon.jump && isGrounded && horspeed != 0)
             {
                 anim.SetTrigger("Jump");
-                audioSource.clip = jumpClip;
-                audioSource.Play();
+                foleySource.clip = jumpClip;
+                foleySource.Play();
                 isGrounded = false;
                 float xDist = Mathf.Abs(curNode.position.x - nextNode.position.x);
                 float time = xDist / speed;
@@ -711,22 +730,6 @@ public class AiHandler : MonoBehaviour
             }
         }
     }
-    public void AttackSoundTriggered(string attackName)
-    {
-        foreach (EnemyAttack at in attacks.ToList())
-        {
-            if (at.AttackName == attackName)
-            {
-                audioSource.clip = at.attacknoises[at.noiseCounter];
-                audioSource.Play();
-                at.noiseCounter++;
-                if (at.noiseCounter == at.attacknoises.Count)
-                {
-                    at.noiseCounter = 0;
-                }
-            }
-        }
-    }
     public void AdditionalAttackTriggered(string attackName)
     {
         foreach (EnemyAttack at in attacks)
@@ -772,8 +775,34 @@ public class AiHandler : MonoBehaviour
         }
     }
     #endregion Actions
-    #region etc
-    #endregion etc
+    #region sound
+    public void AttackSoundTriggered(string attackName)
+    {
+        foreach (EnemyAttack at in attacks.ToList())
+        {
+            if (at.AttackName == attackName)
+            {
+                foleySource.clip = at.attacknoises[at.noiseCounter];
+                foleySource.Play();
+                at.noiseCounter++;
+                if (at.noiseCounter == at.attacknoises.Count)
+                {
+                    at.noiseCounter = 0;
+                }
+            }
+        }
+    }
+    public void playVoice(string voiceName)
+    {
+        voiceSource.clip = voiceDic[voiceName];
+        voiceSource.Play();
+    }
+    public void playFoley(string foleyName)
+    {
+        foleySource.clip = foleyDic[foleyName];
+        foleySource.Play();
+    }
+    #endregion sound
 }
 [System.Serializable]
 public class NodeEvaluator

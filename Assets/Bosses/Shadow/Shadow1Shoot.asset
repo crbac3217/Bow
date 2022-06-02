@@ -25,3 +25,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6896971151741930831, guid: 1360d09e891de7d438d76c227c35bd5c, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 19b50227685f1db4ea75cdf8f8f12eb0, type: 3}

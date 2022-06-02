@@ -7,6 +7,7 @@ public class BossAi : AiHandler
     public CameraParent campar;
     public EndArea ea;
 
+
     public override void SetUp()
     {
         base.SetUp();

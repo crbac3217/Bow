@@ -15,11 +15,16 @@ MonoBehaviour:
   type: 0
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: WendigoArm
   coolDown: 2
   duration: 1.5
   damageMult: 2
+  dashDist: 0
   attackRangePrefab: {fileID: 1067003444223184628, guid: c056fd6d60f9c1d448dbb13557a4c713, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 089efc51ebbb7f141a50f544b77357a3, type: 3}

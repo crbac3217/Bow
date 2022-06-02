@@ -388,6 +388,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 1.4166666
+    functionName: playFoley
+    data: olgoiDig
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 1.5
     functionName: Dig
     data: 
@@ -395,9 +402,30 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 1.9166666
+    functionName: playFoley
+    data: olgoiDig
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.75
+    functionName: playFoley
+    data: olgoiDig
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 3.1666667
     functionName: AttackTriggered
     data: OlgoiDig
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 3.25
+    functionName: playFoley
+    data: olgoiDig
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
@@ -430,6 +458,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 4.5
+    functionName: playFoley
+    data: olgoiDig
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 4.6666665
     functionName: Dig
     data: 
@@ -444,6 +479,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 5.3333335
+    functionName: playFoley
+    data: olgoiDig
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 5.4166665
     functionName: Emerge
     data: 
@@ -454,6 +496,13 @@ AnimationClip:
   - time: 5.75
     functionName: AttackTriggered
     data: OlgoiDig
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 5.8333335
+    functionName: playFoley
+    data: olgoiLand
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

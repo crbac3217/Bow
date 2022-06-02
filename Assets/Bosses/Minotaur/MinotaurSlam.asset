@@ -15,12 +15,17 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: MinotaurSlam
   coolDown: 5
   duration: 1.5
   damageMult: 1
+  dashDist: 0
   attackRangePrefab: {fileID: 69027767456953500, guid: 40d16d568bd2ab64c919ac41b3db5fd6, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 1f72fa785de817349a028fba755b46a6, type: 3}
   groundSlamParticle: {fileID: 5620377640079746306, guid: 1b6162e155a61af409707f15dd808596, type: 3}

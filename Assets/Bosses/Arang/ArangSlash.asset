@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 0
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: ArangSlash
   coolDown: 3
   duration: 1
@@ -24,3 +25,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 6a8d2e08dd9eb49429b7cfa78632655f, type: 3}

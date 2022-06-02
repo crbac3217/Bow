@@ -8,11 +8,17 @@ public class PillarInst : MonoBehaviour
     private SpriteRenderer spren;
     public int damage;
     private PlayerControl pc;
+    private AudioSource audioS;
+    public AudioClip prep, exp;
 
     private void Start()
     {
         spren = GetComponent<SpriteRenderer>();
         StartCoroutine(PillarExp());
+        audioS = GetComponent<AudioSource>();
+        audioS.loop = true;
+        audioS.clip = prep;
+        audioS.Play();
     }
     public void TriggerDamage()
     {
@@ -39,6 +45,9 @@ public class PillarInst : MonoBehaviour
     private IEnumerator PillarExp()
     {
         yield return new WaitForSeconds(5);
+        audioS.loop = false;
+        audioS.clip = exp;
+        audioS.Play();
         damage = 0;
         GetComponent<Animator>().SetTrigger("Trigger");
         transform.position = new Vector2(transform.position.x, transform.position.y + 0.3f);

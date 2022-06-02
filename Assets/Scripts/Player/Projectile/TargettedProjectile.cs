@@ -20,8 +20,11 @@ public class TargettedProjectile : Projectile
             target = target.GetComponent<AiHandler>().visuals;
             tempPos = Vector2.Perpendicular((Vector2)target.transform.position - startPos).normalized * disp;
         }
-        audio.clip = spawnnoise[Random.Range(0, spawnnoise.Count)];
-        audio.Play();
+        if (spawnnoise.Count > 0)
+        {
+            audio.clip = spawnnoise[Random.Range(0, spawnnoise.Count)];
+            audio.Play();
+        }
     }
     public override void Flying()
     {

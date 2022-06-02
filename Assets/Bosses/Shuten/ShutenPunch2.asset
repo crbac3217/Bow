@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: ShutenPunch2
   coolDown: 3
   duration: 1
@@ -24,6 +25,9 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: f73fbe4b0a3453848b83c1c467a253e6, type: 3}
   actualRangePref: {fileID: 2713451805111012114, guid: 5e3894a89abeb5745ab155c0144690c2, type: 3}
   actualRange: {fileID: 0}
   hasDashed: 0

@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: PazuzuDash
   coolDown: 3
   duration: 1.5
@@ -24,6 +25,9 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: b04c899ac8ee49748b036a889307d87e, type: 3}
   actualRangePref: {fileID: 2975815685252261642, guid: f767323c9f228284184d9c7a2191f6f7, type: 3}
   actualRange: {fileID: 3279753875399285085, guid: f767323c9f228284184d9c7a2191f6f7, type: 3}
   hasDashed: 0

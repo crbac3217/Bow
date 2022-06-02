@@ -15,13 +15,18 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: JigwiAttack1
   coolDown: 2
   duration: 1.5
   damageMult: 1
+  dashDist: 0
   attackRangePrefab: {fileID: 816107681734531990, guid: cbd539d6061bca84e8b24bfa65a0d277, type: 3}
   projectilePrefab: {fileID: 6896971151741930831, guid: 8f88815119d3f0548becf38dda9b2bdf, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 51b906697b7629440ab899813798ff78, type: 3}
   JigwiAttack1Point: {fileID: 0}
   SmashParticle: {fileID: 2486982561839028910, guid: 88fea756e1519174e8e2ec1cdbd2a20a, type: 3}

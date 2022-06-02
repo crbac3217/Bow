@@ -13,9 +13,15 @@ public class EnemyProjectile : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer spr;
     private Animator anim;
+    private AudioSource audioSource;
+    public AudioClip playerHit, groundHit;
 
     private void Start()
     {
+        if (GetComponent<AudioSource>())
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
         if (pos != Vector2.zero)
         {
             dir = (pos - (Vector2)transform.position).normalized;
@@ -73,6 +79,11 @@ public class EnemyProjectile : MonoBehaviour
             {
                 destroy = true;
                 anim.SetTrigger("Hit");
+                if (groundHit)
+                {
+                    audioSource.clip = groundHit;
+                    audioSource.Play();
+                }
             }
         }
         else if (collision.CompareTag("Player") && !destroy)
@@ -80,6 +91,11 @@ public class EnemyProjectile : MonoBehaviour
             if (doesDestroyUponHit)
             {
                 destroy = true;
+            }
+            if (playerHit)
+            {
+                audioSource.clip = playerHit;
+                audioSource.Play();
             }
             collision.GetComponent<PlayerHit>().OnPlayerHit(transform.position, damage);
             anim.SetTrigger("Hit");

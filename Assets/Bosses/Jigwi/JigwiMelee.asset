@@ -25,5 +25,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 6543379172379153021, guid: 2cdf02c14fda59c4f91378b463b9c905, type: 3}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: a14d7333c4338e14fb54cfec6ff62346, type: 3}
   JigwiMeleeParticle: {fileID: 4660106257908398861, guid: e1d7b822cacc05f47811fd8ddcb644f7, type: 3}
   JigwiMeleePoint: {fileID: 0}

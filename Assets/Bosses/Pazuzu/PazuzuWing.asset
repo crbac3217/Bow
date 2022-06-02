@@ -25,6 +25,9 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3887465772339385849, guid: 73605ad1a0ad9174b80f9c49a95b50d0, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 537204c7c0194ea4ebbdfe36dbcb3500, type: 3}
   ground:
     serializedVersion: 2
     m_Bits: 1024

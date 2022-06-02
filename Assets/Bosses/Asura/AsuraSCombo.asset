@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: AsuraSCombo
   coolDown: 8
   duration: 3.5
@@ -24,6 +25,11 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: f0bfc36ac966c9d4e9573710b40528ea, type: 3}
+  - {fileID: 8300000, guid: 5c8487a74b04a0c499241bdf739d2b4e, type: 3}
+  - {fileID: 8300000, guid: 3c1cf179abac10747b88de45f214fa28, type: 3}
   actualRangePref: {fileID: 1673095608355260869, guid: 014bfe9a46795404aafc6e015e83b98a, type: 3}
   actualRange: {fileID: 0}
   hasDashed: 0

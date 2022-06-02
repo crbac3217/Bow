@@ -141,7 +141,8 @@ public class LevelManager : MonoBehaviour
         bgmManager.audioSource.clip = rand;
         bgmManager.audioSource.Play();
         CreateStartArea();
-        int areaAmount = 5 + (level * 0);
+        //change this
+        int areaAmount = 0 + (level * 0);
         for (int i = 0; i < areaAmount; i++)
         {
             CreateMidArea(areas[i].end.transform.position);

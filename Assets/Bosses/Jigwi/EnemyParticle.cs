@@ -10,15 +10,32 @@ public class EnemyParticle : MonoBehaviour
     public bool disappear = false, appear = false;
     private SpriteRenderer spren;
     public GameObject rangeChecker;
+    private AudioSource audioSource;
+    public AudioClip sound, beginSound;
 
     private void Start()
     {
+        if (GetComponent<AudioSource>())
+        {
+            audioSource = GetComponent<AudioSource>();
+            if (beginSound)
+            {
+                audioSource.clip = beginSound;
+                audioSource.Play();
+            }
+        }
+
         spren = GetComponent<SpriteRenderer>();
         SetUp();
         if (GetComponent<Animator>())
         {
             StartCoroutine(EndTime());
         }
+    }
+    public void TriggerSound()
+    {
+        audioSource.clip = sound;
+        audioSource.Play();
     }
     public virtual void SetUp()
     {

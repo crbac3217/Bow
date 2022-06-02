@@ -15,13 +15,23 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: MinotaurDash
   coolDown: 4
   duration: 3
   damageMult: 1
+  dashDist: 0
   attackRangePrefab: {fileID: 638093499189244441, guid: a0cff47b37681034abbf3c8c63e4a026, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: a21af9ebac43fe244874e76e5aa591be, type: 3}
+  - {fileID: 8300000, guid: a21af9ebac43fe244874e76e5aa591be, type: 3}
+  - {fileID: 8300000, guid: 4ce91d475502087488d6ba044ba2785b, type: 3}
+  - {fileID: 8300000, guid: 4ce91d475502087488d6ba044ba2785b, type: 3}
+  - {fileID: 8300000, guid: 4ce91d475502087488d6ba044ba2785b, type: 3}
+  - {fileID: 8300000, guid: 4ce91d475502087488d6ba044ba2785b, type: 3}
   dashDistance: 3
   actualRangePref: {fileID: 7401881797172619260, guid: 407412fe4c11b3940b62228d29d107ae, type: 3}

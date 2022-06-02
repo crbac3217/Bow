@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: GolemSpawn
   coolDown: 12
   duration: 1
@@ -24,3 +25,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4143334635267145267, guid: 9472f74c5b9c2074d8e1e1329dc50aa6, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 3ea446e3f7d72eb429389704debbd5d1, type: 3}

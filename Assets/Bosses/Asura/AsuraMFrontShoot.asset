@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 1
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: AsuraMFrontShot
   coolDown: 5
   duration: 1.5
@@ -24,5 +25,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6896971151741930831, guid: 0df0dd1358d19bd4b91dcc1025f5ac38, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 5b01989939071d144a08298aea24da8e, type: 3}
   chargeParticle: {fileID: 6536108248866985138, guid: cd33d04b605d9244d8ff82de4b4e9ce7, type: 3}
   explodeParticle: {fileID: 8221832483617530796, guid: 63fd30ca97246bc4589a86c080f49fa5, type: 3}

@@ -220,6 +220,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 1.8333334
+    functionName: AttackSound
+    data: AsuraMTripleShot
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 2.4166667
     functionName: AttackTriggered
     data: AsuraMTripleShot
@@ -227,8 +234,22 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 2.5833333
+    functionName: AttackSound
+    data: AsuraMTripleShot
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 3.25
     functionName: AttackTriggered
+    data: AsuraMTripleShot
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 3.4166667
+    functionName: AttackSound
     data: AsuraMTripleShot
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

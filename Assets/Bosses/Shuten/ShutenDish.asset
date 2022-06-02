@@ -25,6 +25,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 33eebd3cf8d95fc40ae6be1a29a57edd, type: 3}
+  - {fileID: 8300000, guid: 659d1c45d52fea847b909441b791084a, type: 3}
   maxTime: 7
   reviveDuration: 3
   hitTimes: 0

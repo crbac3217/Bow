@@ -26,8 +26,8 @@ public class GolemSpawn : EnemyAttack
         ec.lvlm = aiHandler.ec.lvlm;
         ec.chestTier = 2;
         ec.maxHp += Mathf.RoundToInt(ec.maxHp * 0.5f * 2);
-        ec.minGoldDrop += Mathf.RoundToInt(ec.minGoldDrop * 0.5f * 2);
-        ec.maxGoldDrop += Mathf.RoundToInt(ec.maxGoldDrop * 0.5f * 2);
+        ec.minGoldDrop = 0;
+        ec.maxGoldDrop += Mathf.RoundToInt(ec.maxGoldDrop * 0.5f * 1);
         foreach (DamageType dt in ec.strength)
         {
             float val = dt.value + (dt.value * 2 * 0.5f);

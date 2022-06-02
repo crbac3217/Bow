@@ -142,8 +142,8 @@ public class EnemyController : MonoBehaviour
         hp -= value;
         aiHandler.StartCoroutine(aiHandler.HitAggro());
         UpdateHpUI();
-        aiHandler.audioSource.clip = aiHandler.hitClip;
-        aiHandler.audioSource.Play();
+        aiHandler.voiceSource.clip = aiHandler.hitClip;
+        aiHandler.voiceSource.Play();
         if (hp <= 0)
         {
             Dead(true);
@@ -159,6 +159,9 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            aiHandler.Dead();
+            aiHandler.voiceSource.clip = aiHandler.deadClip;
+            aiHandler.voiceSource.Play();
             dm.OnKill(this.gameObject);
         }
         for (int i = activeCrits.Count - 1; i >= 0; i--)
@@ -175,9 +178,6 @@ public class EnemyController : MonoBehaviour
             }
         }
         lvlm.enemies.Remove(this.gameObject);
-        aiHandler.Dead();
-        aiHandler.audioSource.clip = aiHandler.deadClip;
-        aiHandler.audioSource.Play();
     }
     public virtual void Drop()
     {

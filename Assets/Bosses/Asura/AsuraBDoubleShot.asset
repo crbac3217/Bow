@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 1
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: AsuraBDoubleShot
   coolDown: 6
   duration: 1.5
@@ -24,5 +25,9 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6896971151741930831, guid: 68fc1abb39a2e724da482cecd44617da, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 998825c6953fbde4e904885573248e69, type: 3}
+  - {fileID: 8300000, guid: 998825c6953fbde4e904885573248e69, type: 3}
   chargeParticle: {fileID: 6313644860862228137, guid: 8f53582d37bf6234591968d7845e4c5d, type: 3}
   explodeParticle: {fileID: 6407035470292362846, guid: 66b00d066c96dff4da0f75f38ff83bca, type: 3}

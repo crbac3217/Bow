@@ -25,4 +25,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 8c9746fba1515ef48b16c394f06aafc1, type: 3}
   dashParticle: {fileID: 4660106257908398861, guid: 6976a2592968c754683704df47850349, type: 3}

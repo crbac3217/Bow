@@ -9,9 +9,16 @@ public class AnimationTriggerReceiver : MonoBehaviour
     public AiHandler ai;
     private void Start()
     {
-        audioSource = gameObject.GetComponentInParent<AudioSource>();
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
-
+    public void playVoice(string voiceName)
+    {
+        ai.playVoice(voiceName);
+    }
+    public void playFoley(string foleyName)
+    {
+        ai.playFoley(foleyName);
+    }
     public void AttackSound(string attackName)
     {
         ai.AttackSoundTriggered(attackName);

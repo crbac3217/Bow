@@ -15,13 +15,18 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: WendigoDash
   coolDown: 5
   duration: 1.5
   damageMult: 1
+  dashDist: 0
   attackRangePrefab: {fileID: 879816766042766336, guid: 17dcb784371ace846aa17abc890c6d88, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: b8e2bacc16c43904a8e227cada997203, type: 3}
   dashDistance: 4.5
   actualRangePref: {fileID: 1542883008932808649, guid: e2fc96080350f574596c0b77124f4ab2, type: 3}

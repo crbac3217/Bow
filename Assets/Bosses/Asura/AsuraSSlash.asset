@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 1
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: AsuraSSlash
   coolDown: 12
   duration: 3
@@ -24,5 +25,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6896971151741930831, guid: d6eafb1ef539ac942b9e33cc0affc51f, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 5c58d320bb94f0047bcdf4a0b269a0aa, type: 3}
   chargeParticle: {fileID: 8696451572871707770, guid: 248a6c5b378a7e94390e0d9ae4d5af19, type: 3}
   explodeParticle: {fileID: 5663662437030274356, guid: eb747441b209ef54b866d3f9ade98321, type: 3}

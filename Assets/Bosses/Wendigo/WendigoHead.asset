@@ -15,11 +15,16 @@ MonoBehaviour:
   type: 0
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: WendigoHead
   coolDown: 4
   duration: 1.5
   damageMult: 3
+  dashDist: 0
   attackRangePrefab: {fileID: 7991519640673533295, guid: 3434789a830d0f34a9bca231ab282171, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: e96ded684b83af84e8983ff27bbf51f5, type: 3}

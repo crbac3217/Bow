@@ -5008,6 +5008,7 @@ MonoBehaviour:
   spren: []
   rb: {fileID: 0}
   anim: {fileID: 0}
+  audio: {fileID: 0}
 --- !u!50 &3844213225657668271
 Rigidbody2D:
   serializedVersion: 4
@@ -5070,7 +5071,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -8312082079983998156, guid: eac65ab411cb02647973d88ce9c08de1, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.796
   m_Pitch: 1
   Loop: 0
   Mute: 0

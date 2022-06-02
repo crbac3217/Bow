@@ -15,6 +15,7 @@ MonoBehaviour:
   type: 5
   avail: 1
   whileMove: 0
+  cantCutoff: 0
   AttackName: ArangSpawn
   coolDown: 10
   duration: 1.5
@@ -24,5 +25,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3595632200977222393, guid: f26c28fb820cd0940a86527003476fce, type: 3}
   range: {fileID: 0}
   aiHandler: {fileID: 0}
+  noiseCounter: 0
+  attacknoises:
+  - {fileID: 8300000, guid: 116e1f130d437034fae8baeee4fefe03, type: 3}
   aai: {fileID: 0}
   particle: {fileID: 3532370294439623859, guid: fd642fc610915484a900e676e3f1d459, type: 3}
