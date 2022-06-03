@@ -13,7 +13,7 @@ public class PlayerControl : MonoBehaviour
     public List<Item> items;
     public List<Set> sets;
     public List<DamageType> damageTypes;
-    public Image healthBar;
+    public Image healthBar, moveGem, moveCDGem;
     public TextMeshProUGUI goldUI, healthUI;
     public Stat[] stats = new Stat[] { };
     public List<Modifier> onAddList = new List<Modifier>();

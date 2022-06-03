@@ -10,10 +10,10 @@ public class HelmOfTheBlackDragon : Modifier
 
     public override void OnEnemyModActive(EnemyArg da)
     {
-        base.OnEnemyModActive(da);
         int chance = Random.Range(1, chanceMax);
         if (chance == 1)
         {
+            base.OnEnemyModActive(da);
             da.hitObj.GetComponent<EnemyController>().CritEffect(1, fear);
         }
     }

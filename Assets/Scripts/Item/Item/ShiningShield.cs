@@ -12,10 +12,10 @@ public class ShiningShield : Modifier
 
     public override void OnModifierActive(PlayerControl pc)
     {
-        base.OnModifierActive(pc);
         int chance = Random.Range(0, chanceMax);
         if (chance == 1)
         {
+            base.OnModifierActive(pc);
             var part = Instantiate(shineEffectPrefab, pc.transform.position, Quaternion.identity);
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(pc.transform.position, radius);
             foreach (Collider2D enemy in hitEnemies)

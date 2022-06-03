@@ -8,12 +8,12 @@ public class MoveMod : Modifier
     public float doubleTapCd;
     public float invinDuration, dashSpeed, dashDuration;
     public Skill skill;
+    public Color gemColor;
     public AudioClip audio;
     private float lastTap;
     private bool wasRight;
     public override void OnModifierActive(PlayerControl pc)
-    {
-        base.OnModifierActive(pc);
+    { 
         if (wasRight == pc.pm.rightPressed)
         {
             if (((Time.time - lastTap) < doubleTapCd) && skill.isSkillAvail)

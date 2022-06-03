@@ -6,17 +6,31 @@ public class Modifier : ScriptableObject
 {
     public bool onAdd;
     public ModifierType modifierType;
+    public AudioClip modifierAudio;
+
     public virtual void OnModifierAdd(PlayerControl pc)
     {
-
+        if (modifierAudio)
+        {
+            pc.bodyAudio.clip = modifierAudio;
+            pc.bodyAudio.Play();
+        }
     }
     public virtual void OnModifierActive(PlayerControl pc)
     {
-
+        if (modifierAudio)
+        {
+            pc.bodyAudio.clip = modifierAudio;
+            pc.bodyAudio.Play();
+        }
     }
     public virtual void OnEnemyModActive(EnemyArg da)
     {
-
+        if (modifierAudio)
+        {
+            da.epc.bodyAudio.clip = modifierAudio;
+            da.epc.bodyAudio.Play();
+        }
     }
     public virtual float NumberMod(PlayerControl pc, float f)
     {

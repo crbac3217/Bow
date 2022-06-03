@@ -10,11 +10,11 @@ public class LeadArrowhead : Modifier
 
     public override void OnEnemyModActive(EnemyArg da)
     {
-        base.OnEnemyModActive(da);
         int chance = Random.Range(0, chanceMax);
         if (chance == 1)
         {
             CreateKnockBack(da.hitObj);
+            base.OnEnemyModActive(da);
         }
     }
     public void CreateKnockBack(GameObject obj)

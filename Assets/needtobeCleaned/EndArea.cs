@@ -48,11 +48,11 @@ public class EndArea : Area
                     campar.cam.orthographicSize = 2;
                     enteredBossfight = true;
                     pc.guiManager.bossBar.SetActive(true);
-                    bc.invincible = false;
-                    bc.UpdateHpUI();
                     endBoundary.SetActive(true);
                     bc.enabled = true;
                     bai.enabled = true;
+                    bc.invincible = false;
+                    bc.UpdateHpUI();
                 }
             }
         }

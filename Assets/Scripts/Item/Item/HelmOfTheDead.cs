@@ -11,7 +11,6 @@ public class HelmOfTheDead : Modifier
 
     public override void OnModifierActive(PlayerControl pc)
     {
-        base.OnModifierActive(pc);
         pc.psm.ActivateCoroutine(SetPlayerInvincible(pc));
     }
 
@@ -33,11 +32,15 @@ public class HelmOfTheDead : Modifier
         }
         pc.pf.FreezePosIndef();
         yield return new WaitForSeconds(1);
-        pc.currentHp = (int) (pc.stats[2].value / 16);
+        pc.Heal((int)MathF.Min(1, ((float)pc.stats[2].value / 16f)));
         yield return new WaitForSeconds(1);
-        pc.currentHp = (int)(pc.stats[2].value / 8);
+        pc.Heal((int)MathF.Min(1, ((float)pc.stats[2].value / 16f)));
         yield return new WaitForSeconds(1);
-        pc.currentHp = (int)(pc.stats[2].value / 4);
+        pc.Heal((int)MathF.Min(1, ((float)pc.stats[2].value / 16f)));
+        pc.bodyAudio.clip = modifierAudio;
+        pc.bodyAudio.Play();
+        yield return new WaitForSeconds(1);
+        pc.Heal((int)MathF.Min(1, ((float)pc.stats[2].value / 16f)));
         foreach (Collider2D col in Physics2D.OverlapCircleAll(pc.transform.position, radius))
         {
             if (col.CompareTag("Enemy"))

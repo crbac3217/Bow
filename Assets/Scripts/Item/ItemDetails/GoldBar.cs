@@ -12,6 +12,10 @@ public class GoldBar : TargettedProjectile
     }
     private void DropCoin()
     {
-        var coint = Instantiate(coin, transform.position, Quaternion.identity);
+        int rand = Random.Range(1, 4);
+        for (int i = 0; i < rand; i++)
+        {
+            var coint = Instantiate(coin, transform.position, Quaternion.identity);
+        }
     }
 }

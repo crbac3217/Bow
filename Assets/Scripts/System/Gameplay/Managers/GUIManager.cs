@@ -70,6 +70,8 @@ public class GUIManager : MonoBehaviour
         ButtonAdd(pc.gameObject, pm.GetType(), pm.GetType().GetMethod("MoveLeft"), parameters, "lButton", EventTriggerType.PointerDown);
         ButtonAdd(pc.gameObject, pm.GetType(), pm.GetType().GetMethod("LetGoRight"), parameters, "rButton", EventTriggerType.PointerUp);
         ButtonAdd(pc.gameObject, pm.GetType(), pm.GetType().GetMethod("LetGoLeft"), parameters, "lButton", EventTriggerType.PointerUp);
+        pc.moveGem = moveButton.transform.Find("GemImage").GetComponent<Image>();
+        pc.moveCDGem = moveButton.transform.Find("Cooldown").GetComponent<Image>();
     }
     public void JumpButtonInitialize()
     {
@@ -438,7 +440,7 @@ public class GUIManager : MonoBehaviour
     }
     public void BossHPBarVulnerable()
     {
-        bossBar.GetComponent<BossHpBar>().redBar.color = Color.blue;
+        bossBar.GetComponent<BossHpBar>().redBar.color = Color.white;
     }
     #endregion Boss
     #region SetText

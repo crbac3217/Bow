@@ -14,6 +14,7 @@ public class ScreamingShield : Modifier
 
         if (chance == 1)
         {
+            base.OnModifierActive(pc);
             float norval = 0;
             foreach (DamageType dtype in pc.damageTypes)
             {

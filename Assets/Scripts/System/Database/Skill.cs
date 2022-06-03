@@ -37,6 +37,10 @@ public class Skill : ScriptableObject
         {
             var inst = Instantiate(moveMod);
             pc.pm.moveMods.Add(inst);
+            pc.moveGem.color = inst.gemColor;
+            pc.moveCDGem.GetComponent<moveSkillCD>().skillCD = cooldownTime;
+            pc.moveCDGem.GetComponent<moveSkillCD>().remaining = 0;
+            pc.moveCDGem.GetComponent<moveSkillCD>().CDUpdate();
             inst.skill = this;
         }
     }
@@ -89,6 +93,11 @@ public class Skill : ScriptableObject
         yield return new WaitForSeconds(cooldownTime);
         isSkillAvail = true;
     }
+    public virtual IEnumerator MoveskillCooldown(PlayerControl pc)
+    {
+        pc.moveCDGem.GetComponent<moveSkillCD>().remaining = cooldownTime;
+        yield return new WaitForSeconds(cooldownTime);
+    }
     #endregion Cooldown
     #region skillDisable
     public void DisableSkill(Skill skill)
@@ -114,6 +123,10 @@ public class Skill : ScriptableObject
         if (cdType == CooldownType.time)
         {
             pc.psm.StartCoroutine(StartCooldownTimer());
+        }
+        if (skillType == SkillType.Movement)
+        {
+            pc.psm.StartCoroutine(MoveskillCooldown(pc));
         }
         if (sb)
         {

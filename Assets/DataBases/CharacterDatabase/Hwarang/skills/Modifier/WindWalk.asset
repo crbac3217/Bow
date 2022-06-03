@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onAdd: 1
   modifierType: 6
+  modifierAudio: {fileID: 0}
   movePrefab: {fileID: 1485258861279967534, guid: 864786220a0672649a3a84515579b7d7, type: 3}
   doubleTapCd: 0.3
-  invinDuration: 0.1
+  invinDuration: 0.4
   dashSpeed: 7
   dashDuration: 0.1
   skill: {fileID: 0}
