@@ -122,7 +122,8 @@ public class GUIManager : MonoBehaviour
     {
         playerHealth = Instantiate(playerHealthPref, canvas.transform);
         pc.healthBar = playerHealth.transform.Find("playerhealthred").GetComponent<Image>();
-        pc.goldUI = playerHealth.GetComponentInChildren<TextMeshProUGUI>();
+        pc.goldUI = playerHealth.transform.Find("goldAmount").GetComponent<TextMeshProUGUI>();
+        pc.healthUI = playerHealth.transform.Find("healthAmount").GetComponent<TextMeshProUGUI>();
     }
     private void SetUpSetText()
     {
@@ -175,8 +176,9 @@ public class GUIManager : MonoBehaviour
             eqdata.description.text = eq.description;
             eqdata.skillName.text = eq.skill.skillName;
             eqdata.skillImage.sprite = eq.skill.thumbnail;
+            eqdata.skillDescription.text = eq.skill.description;
             //adding functions to the button
-            EventTrigger trigger = eqButton.GetComponent<EventTrigger>();
+            EventTrigger trigger = eqdata.activeTrigger;
             EventTrigger.Entry clickEntry = new EventTrigger.Entry();
             clickEntry.eventID = EventTriggerType.PointerClick;
             clickEntry.callback.AddListener((eventData) => { ConfirmEq(eq, eqButton.GetComponent<EquipmentButtonPrefab>()) ; });
@@ -297,6 +299,9 @@ public class GUIManager : MonoBehaviour
         StopGame();
         shopPanel.SetActive(true);
         sb.outline.effectColor = pc.playerType.tierColors[i];
+        int tier1 = 0;
+        int tier2 = 0;
+        int tier3 = 0;
         if (shopPanel.GetComponent<ShopBase>().items.Count <= 10)
         {
             List<Item> tempCandidates = new List<Item>();
@@ -304,21 +309,44 @@ public class GUIManager : MonoBehaviour
             {
                 if (item.itemTier == i)
                 {
-                    tempCandidates.Add(item);
-                    tempCandidates.Add(item);
-                    tempCandidates.Add(item);
-                    tempCandidates.Add(item);
+                    if (UnityEngine.Random.Range(0, 10) >= 0)
+                    {
+                        tempCandidates.Add(item);
+                        tier1++;
+                    }
                 }
                 else if (Mathf.Abs(item.itemTier - i) == 1)
                 {
-                    tempCandidates.Add(item);
-                    tempCandidates.Add(item);
+                    if (UnityEngine.Random.Range(0, 10) > 7)
+                    {
+                        tempCandidates.Add(item);
+                        tier2++;
+                    }
                 }
                 else if (Mathf.Abs(item.itemTier - i) == 2)
                 {
-                    tempCandidates.Add(item);
+                    if (UnityEngine.Random.Range(0, 10) > 8)
+                    {
+                        tempCandidates.Add(item);
+                        tier3++;
+                    }
+                }
+                else if ((i - item.itemTier) == 3)
+                {
+                    if (UnityEngine.Random.Range(0, 10) > 9)
+                    {
+                        tempCandidates.Add(item);
+                    }
+                }
+                else if ((i - item.itemTier) == 4)
+                {
+                    if (UnityEngine.Random.Range(0, 10) > 9)
+                    {
+                        tempCandidates.Add(item);
+                    }
                 }
             }
+            Debug.Log(tier1 + " of tier 1, " + tier2 + ", " + tier3);
             sb.items = tempCandidates;
         }
         RefreshGold();
@@ -354,6 +382,7 @@ public class GUIManager : MonoBehaviour
             sb.items.Remove(it);
         }
         RefreshGold();
+        pc.GoldUpdate();
     }
     private void RefreshGold()
     {
@@ -379,6 +408,7 @@ public class GUIManager : MonoBehaviour
             pc.gold -= item.cost;
             Destroy(sp.gameObject);
             RefreshShop();
+            pc.GoldUpdate();
         }
     }
     public void ShopClose()
@@ -401,6 +431,14 @@ public class GUIManager : MonoBehaviour
         {
             Destroy(bossBar);
         }
+    }
+    public void BossHPBarInvincible()
+    {
+        bossBar.GetComponent<BossHpBar>().redBar.color = Color.blue;
+    }
+    public void BossHPBarVulnerable()
+    {
+        bossBar.GetComponent<BossHpBar>().redBar.color = Color.blue;
     }
     #endregion Boss
     #region SetText

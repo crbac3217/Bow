@@ -166,12 +166,18 @@ public class Skill : ScriptableObject
     public virtual void ShotSelectedToggleOn(PlayerControl pc)
     {
         selected = true;
-        //gui button to indicate that this is now selected
+        if (skillType == SkillType.replaceShot || skillType == SkillType.shotEnhance)
+        {
+            sb.SkillSelected();
+        }
     }
     public virtual void ShotSelectedToggleOff(PlayerControl pc)
     {
         selected = false;
-        //gui button to indicate that this is now de-selected
+        if (skillType == SkillType.replaceShot || skillType == SkillType.shotEnhance)
+        {
+            sb.SkillDeselected();
+        }
     }
     public virtual void ReplaceShotPress(PlayerControl pc)
     {
@@ -321,8 +327,12 @@ public class CoolDownCounter : Modifier
         skill.cdCurrentCount++;
         if (skill.cdCurrentCount >= skill.cdMaxCount)
         {
-            skill.isSkillAvail = true;
-            skill.cdCurrentCount = skill.cdMaxCount;
+            if (!skill.isSkillAvail)
+            {
+                skill.isSkillAvail = true;
+                skill.cdCurrentCount = skill.cdMaxCount;
+                skill.sb.CDFinish();
+            }
         }
         skill.sb.UpdateCD();
     }

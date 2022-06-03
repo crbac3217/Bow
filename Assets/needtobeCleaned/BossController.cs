@@ -16,6 +16,14 @@ public class BossController : EnemyController
     public override void UpdateHpUI()
     {
         pc.guiManager.BossHPBarUpdate(this);
+        if (invincible)
+        {
+            pc.guiManager.BossHPBarInvincible();
+        }
+        else
+        {
+            pc.guiManager.BossHPBarVulnerable();
+        }
         if (hp/maxHp < 0.45f)
         {
             aiHandler.isAffectedByCC = false;

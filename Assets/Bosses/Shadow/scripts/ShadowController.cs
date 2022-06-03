@@ -10,10 +10,13 @@ public class ShadowController : BossController
     public override void OnDamageTaken()
     {
         base.OnDamageTaken();
-        float threshHold = maxHp * 0.5f;
-        if (hp < threshHold && phase == 1)
+        if (hp > 0)
         {
-            ChangePhase();
+            float threshHold = maxHp * 0.5f;
+            if (hp < threshHold && phase == 1)
+            {
+                ChangePhase();
+            }
         }
     }
     private void ChangePhase()

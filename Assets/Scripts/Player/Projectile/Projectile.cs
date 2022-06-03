@@ -76,7 +76,10 @@ public class Projectile : MonoBehaviour
         }
         else if (collision.CompareTag("EnemyProjectile") && !isHit)
         {
-            collision.GetComponent<EnemyProjectile>().Dest(this);
+            if (collision.GetComponent<EnemyProjectile>())
+            {
+                collision.GetComponent<EnemyProjectile>().Dest(this);
+            }
         }
     }
     public virtual void OnHit()

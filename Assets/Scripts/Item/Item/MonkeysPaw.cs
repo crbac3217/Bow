@@ -30,6 +30,7 @@ public class MonkeysPaw : Modifier
             savedAmount = 0;
         }
         pc.stats[WhichStat].value -= savedAmount;
+        Mathf.Clamp(pc.stats[WhichStat].value, 1, pc.stats[WhichStat].value);
     }
     void IncRandom(PlayerControl pc)
     {

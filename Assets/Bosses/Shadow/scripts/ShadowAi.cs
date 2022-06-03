@@ -18,6 +18,8 @@ public class ShadowAi : BossAi
         campar.StartCoroutine(campar.CamShake(Vector2.up * 0.03f, 0.3f));
         buried = true;
         onGround = true;
+        ec.invincible = true;
+        GetComponent<BossController>().UpdateHpUI();
     }
     public void Emerge()
     {
@@ -26,6 +28,8 @@ public class ShadowAi : BossAi
         campar.StartCoroutine(campar.CamShake(Vector2.up * 0.03f, 0.3f));
         buried = false;
         onGround = false;
+        ec.invincible = false;
+        GetComponent<BossController>().UpdateHpUI();
     }
     public override void SetUp()
     {

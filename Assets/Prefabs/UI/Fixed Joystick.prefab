@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4033886710574116824}
   - component: {fileID: 1758100508801561061}
   - component: {fileID: 9001986082507543631}
+  - component: {fileID: 1762285594163269299}
   m_Layer: 5
   m_Name: SkillImage
   m_TagString: Untagged
@@ -76,6 +77,26 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1762285594163269299
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226904212291403237}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1905eae8eb6566f48844d1ce2201d25d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1826632089587086536
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDownImage: {fileID: 8462349131486010207}
+  outline: {fileID: 7815341602928860427}
   thisSkill: {fileID: 0}
 --- !u!1 &4868267941637767052
 GameObject:
@@ -732,6 +754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDownImage: {fileID: 646815275204519907}
+  outline: {fileID: 1226904212291403237}
   thisSkill: {fileID: 0}
 --- !u!1 &4868267942090556191
 GameObject:
@@ -839,6 +862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDownImage: {fileID: 4062488811394426959}
+  outline: {fileID: 8102234509492811446}
   thisSkill: {fileID: 0}
 --- !u!1 &7266493908420669123
 GameObject:
@@ -927,6 +951,7 @@ GameObject:
   - component: {fileID: 6782390830380901660}
   - component: {fileID: 5607769745343025195}
   - component: {fileID: 7223905546860981955}
+  - component: {fileID: 661319214299754058}
   m_Layer: 5
   m_Name: SkillImage
   m_TagString: Untagged
@@ -992,6 +1017,26 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &661319214299754058
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7815341602928860427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1905eae8eb6566f48844d1ce2201d25d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8102234509492811446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,6 +1048,7 @@ GameObject:
   - component: {fileID: 478493872584555717}
   - component: {fileID: 2398007916104692390}
   - component: {fileID: 1033942451764618356}
+  - component: {fileID: 539068892575599730}
   m_Layer: 5
   m_Name: SkillImage
   m_TagString: Untagged
@@ -1068,6 +1114,26 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &539068892575599730
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8102234509492811446}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1905eae8eb6566f48844d1ce2201d25d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8320126807465923541
 GameObject:
   m_ObjectHideFlags: 0

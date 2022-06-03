@@ -11,6 +11,7 @@ public class AsuraMReflect : EnemyAttack
     {
         base.Activate();
         aiHandler.ec.invincible = true;
+        aiHandler.GetComponent<BossController>().UpdateHpUI();
         if (chargeInst)
         {
             Destroy(chargeInst);
@@ -27,6 +28,7 @@ public class AsuraMReflect : EnemyAttack
         aiHandler.ec.UpdateHpUI();
         aiHandler.damage += 1;
         aiHandler.ec.invincible = false;
+        aiHandler.GetComponent<BossController>().UpdateHpUI();
         foreach (DamageType str in aiHandler.ec.strength)
         {
             str.value += 10;

@@ -27,7 +27,6 @@ public class LevelManager : MonoBehaviour
         GetInfoFromGM();
         GenerateLevel();
         CreateConnections();
-        OnSceneReset();
     }
     #region SetUp
     private void GetInfoFromGM()
@@ -64,6 +63,7 @@ public class LevelManager : MonoBehaviour
                 pc.pm.LetGoRight();
                 cp.player = pc.gameObject;
                 ShopReset();
+                OnSceneReset();
             }
             pc.levelManager = this;
             foreach (GameObject go in cp.lightsColorChange)
@@ -129,9 +129,12 @@ public class LevelManager : MonoBehaviour
     {
         cp.doFollowPlayer = true;
         cp.cam.orthographicSize = 1.5f;
-        float healAmount = (float)pc.stats[2].value / 10f;
-        pc.Heal((int)healAmount);
-        pc.ps.fixedJoystick.CancelShooting();
+        if (pc.stats[2].value != 0)
+        {
+            float healAmount = (float)pc.stats[2].value / 10f;
+            pc.Heal((int)healAmount);
+            pc.ps.fixedJoystick.CancelShooting();
+        }
     }
     #endregion SetUp
     #region MapMaking

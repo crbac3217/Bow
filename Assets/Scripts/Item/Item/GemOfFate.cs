@@ -9,7 +9,6 @@ public class GemOfFate : Modifier
     {
         base.OnModifierAdd(pc);
         int chance = Random.Range(0, maxWinChance);
-        ItemManager im = pc.itemManager;
         if (chance == 1)
         {
             pc.stats[2].value += 10;

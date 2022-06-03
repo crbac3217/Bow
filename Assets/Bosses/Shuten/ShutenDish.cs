@@ -42,6 +42,7 @@ public class ShutenDish : EnemyAttack
         aiHandler.ec.hp += hitTimes * 4;
         aiHandler.ec.UpdateHpUI();
         aiHandler.ec.invincible = false;
+        aiHandler.GetComponent<BossController>().UpdateHpUI();
         aiHandler.checkInterval = Mathf.Clamp(aiHandler.checkInterval - (0.05f * hitTimes), 0.1f, 1f);
     }
     public override void AttackEtc(PlayerControl pc)
@@ -49,5 +50,6 @@ public class ShutenDish : EnemyAttack
         base.AttackEtc(pc);
         ShutenDishCollider.SetActive(true);
         aiHandler.ec.invincible = true;
+        aiHandler.GetComponent<BossController>().UpdateHpUI();
     }
 }

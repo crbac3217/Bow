@@ -14,7 +14,7 @@ public class PlayerControl : MonoBehaviour
     public List<Set> sets;
     public List<DamageType> damageTypes;
     public Image healthBar;
-    public TextMeshProUGUI goldUI;
+    public TextMeshProUGUI goldUI, healthUI;
     public Stat[] stats = new Stat[] { };
     public List<Modifier> onAddList = new List<Modifier>();
     public Skill[] skills = new Skill[] { };
@@ -73,6 +73,7 @@ public class PlayerControl : MonoBehaviour
     {
         pm.ResetStat();
         pj.ResetStat();
+        HPBarUpdate();
     }
     public void InitializeStats()
     {
@@ -140,8 +141,30 @@ public class PlayerControl : MonoBehaviour
         var pan = Instantiate(eachPanel, panel.transform);
         pan.GetComponent<TextMeshProUGUI>().text = "+" + amount;
         pan.GetComponent<TextMeshProUGUI>().color = playerType.utilColors[0];
-        healthBar.fillAmount = (float)currentHp / stats[2].value;
+        HPBarUpdate();
         StartCoroutine(HealEffect());
+    }
+    public void HPBarUpdate()
+    {
+        healthBar.fillAmount = (float)currentHp / stats[2].value;
+        healthUI.text = currentHp + " / " + stats[2].value;
+        CheckInvincible();
+    }
+    public void GoldUpdate()
+    {
+        goldUI.text = "$" + gold;
+    }
+    public void CheckInvincible()
+    {
+        if (ph.invincible == true)
+        {
+            healthBar.color = Color.blue;
+        }
+        else
+        {
+            healthBar.color = Color.white;
+        }
+        
     }
     public void GainGold(int amount)
     {
@@ -151,14 +174,14 @@ public class PlayerControl : MonoBehaviour
         var pan = Instantiate(eachPanel, panel.transform);
         pan.GetComponent<TextMeshProUGUI>().text = "+" + amount;
         pan.GetComponent<TextMeshProUGUI>().color = playerType.utilColors[1];
-        goldUI.text = "$" + gold;
+        GoldUpdate();
     }
     public void UpdateHP(int amount)
     {
         var pan = Instantiate(eachPanel, panel.transform);
         pan.GetComponent<TextMeshProUGUI>().text = amount + "!";
         pan.GetComponent<TextMeshProUGUI>().color = playerType.utilColors[2];
-        healthBar.fillAmount = (float)currentHp / stats[2].value;
+        HPBarUpdate();
     }
     private IEnumerator HealEffect()
     {

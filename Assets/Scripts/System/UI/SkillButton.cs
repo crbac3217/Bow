@@ -6,8 +6,17 @@ using UnityEngine.UI;
 public class SkillButton : MonoBehaviour
 {
     public Image coolDownImage;
+    public GameObject outline;
+    private Animator anim;
     public Skill thisSkill;
 
+    private void Start()
+    {
+        if (!anim)
+        {
+            anim = outline.GetComponent<Animator>();
+        }
+    }
     public void UpdateCD()
     {
         if (thisSkill.cdType != CooldownType.time)
@@ -39,5 +48,26 @@ public class SkillButton : MonoBehaviour
                 }
             }
         }
+    }
+    public void SkillSelected()
+    {
+        anim.ResetTrigger("Selected");
+        anim.ResetTrigger("Deselected");
+        anim.ResetTrigger("CDFinished");
+        anim.SetTrigger("Selected");
+    }
+    public void SkillDeselected()
+    {
+        anim.ResetTrigger("Selected");
+        anim.ResetTrigger("Deselected");
+        anim.ResetTrigger("CDFinished");
+        anim.SetTrigger("Deselected");
+    }
+    public void CDFinish()
+    {
+        anim.ResetTrigger("Selected");
+        anim.ResetTrigger("Deselected");
+        anim.ResetTrigger("CDFinished");
+        anim.SetTrigger("CDFinished");
     }
 }

@@ -48,9 +48,11 @@ public class EndArea : Area
                     campar.cam.orthographicSize = 2;
                     enteredBossfight = true;
                     pc.guiManager.bossBar.SetActive(true);
+                    bc.invincible = false;
+                    bc.UpdateHpUI();
+                    endBoundary.SetActive(true);
                     bc.enabled = true;
                     bai.enabled = true;
-                    endBoundary.SetActive(true);
                 }
             }
         }
@@ -114,9 +116,11 @@ public class EndArea : Area
         pc.guiManager.BossHPBarSpawn(bc) ;
         pc.guiManager.BossHPBarUpdate(bc);
         pc.guiManager.bossBar.SetActive(false);
+        bc.invincible = true;
+        bossSpawned = true;
+        bc.UpdateHpUI();
         bc.enabled = false;
         bai.enabled = false;
-        bossSpawned = true;
     }
     public void BossDefeated()
     {

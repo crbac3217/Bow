@@ -20,6 +20,7 @@ public class GolemSpin : EnemyAttack
     {
         base.Activate();
         aiHandler.ec.invincible = true;
+        aiHandler.GetComponent<BossController>().UpdateHpUI();
     }
     public override void AttackEtc(PlayerControl pc)
     {
@@ -34,5 +35,6 @@ public class GolemSpin : EnemyAttack
     {
         base.AdditionalTrigger();
         aiHandler.ec.invincible = false;
+        aiHandler.GetComponent<BossController>().UpdateHpUI();
     }
 }

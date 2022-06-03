@@ -51,7 +51,7 @@ public class PlayerHit : MonoBehaviour
     {
         invincible = true;
         invincibleStack++;
-        pc.healthBar.color = Color.blue;
+        pc.CheckInvincible();
     }
     public void SetVulnerable()
     {
@@ -59,8 +59,8 @@ public class PlayerHit : MonoBehaviour
         if (invincibleStack <= 0)
         {
             invincible = false;
-            pc.healthBar.color = Color.white;
         }
+        pc.CheckInvincible();
     }
     private void HitCheck(Vector2 origin, int amount)
     {
