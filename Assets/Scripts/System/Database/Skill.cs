@@ -38,6 +38,7 @@ public class Skill : ScriptableObject
             var inst = Instantiate(moveMod);
             pc.pm.moveMods.Add(inst);
             pc.moveGem.color = inst.gemColor;
+            pc.moveCDGem.color = inst.gemColor;
             pc.moveCDGem.GetComponent<moveSkillCD>().skillCD = cooldownTime;
             pc.moveCDGem.GetComponent<moveSkillCD>().remaining = 0;
             pc.moveCDGem.GetComponent<moveSkillCD>().CDUpdate();

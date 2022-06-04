@@ -33,7 +33,7 @@ public class Naturalize : Modifier
         base.OnEnemyModActive(da);
         if (da.hitObj == ect.gameObject)
         {
-            int amount = Mathf.Max((int)(val * multiplier), 1);
+            int amount = Mathf.RoundToInt((val * multiplier) + 1);
             da.epc.Heal(amount);
         }
     }
