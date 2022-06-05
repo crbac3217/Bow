@@ -58,6 +58,8 @@ public class HelmOfTheDead : Modifier
                 sk.sb.UpdateCD();
             }
         }
+        pc.pa.bodyAnim.Rebind();
+        pc.pa.bodyAnim.Update(0f);
         pc.ph.SetVulnerable();
         pc.ps.fixedJoystick.Avail = true;
         pc.ps.fixedJoystick.defaultCd = cdtemp;
