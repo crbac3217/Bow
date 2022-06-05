@@ -212,7 +212,7 @@ public class FixedJoystick : Joystick
     {
         isPressed = false;
         lastShot = Time.time;
-        DisableShooting();
+        OnPointerUp(new PointerEventData (EventSystem.current));
         foreach (Skill skill in ps.pc.skills)
         {
             if (skill)
@@ -222,6 +222,9 @@ public class FixedJoystick : Joystick
         }
         ps.activeShoot = null;
         defaultCd = ps.coolDown;
+        pc.pa.bodyAnim.Rebind();
+        pc.pa.bodyAnim.Update(0f);
+        pc.ps.AfterAttack();
     }
     public void ResetShootdata()
     {

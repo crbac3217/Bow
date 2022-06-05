@@ -69,8 +69,7 @@ public class PlayerShoot : MonoBehaviour
             pc.pa.bodyAnim.SetTrigger("meleeReleased");
             pc.shootAudio.clip = meleeClip;
             pc.shootAudio.Play();
-            pc.pa.DisableHead();
-            pc.pa.DisableArm();
+            AfterAttack();
         }
         else
         {
@@ -78,12 +77,10 @@ public class PlayerShoot : MonoBehaviour
             {
                 if (-joyDir.normalized.x > 0)
                 {
-                    pc.pa.bodyAnim.ResetTrigger("shotReleased");
                     pc.pa.bodyAnim.SetTrigger("shotReleased");
                 }
                 else
                 {
-                    pc.pa.bodyAnim.ResetTrigger("revShotReleased");
                     pc.pa.bodyAnim.SetTrigger("revShotReleased");
                 }
             }
@@ -91,12 +88,10 @@ public class PlayerShoot : MonoBehaviour
             {
                 if (-joyDir.normalized.x < 0)
                 {
-                    pc.pa.bodyAnim.ResetTrigger("shotReleased");
                     pc.pa.bodyAnim.SetTrigger("shotReleased");
                 }
                 else
                 {
-                    pc.pa.bodyAnim.ResetTrigger("revShotReleased");
                     pc.pa.bodyAnim.SetTrigger("revShotReleased");
                 }
             }
@@ -108,12 +103,16 @@ public class PlayerShoot : MonoBehaviour
                     attackArg = shootMods[i].AttackArgMod(attackArg);
                 }
             }
-            pc.pa.DisableHead();
-            pc.pa.DisableArm();
             pc.shootAudio.clip = activeShoot.shootClip;
             pc.shootAudio.Play();
             activeShoot.InvokeShoot(attackArg);
+            AfterAttack();
         }
+    }
+    public void AfterAttack()
+    {
+        pc.pa.DisableHead();
+        pc.pa.DisableArm();
     }
     public void CancelShooting()
     {

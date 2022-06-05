@@ -38,6 +38,9 @@ public class JigwiPillar : EnemyAttack
         foreach (GameObject go in pillars)
         {
             go.GetComponent<Animator>().SetTrigger("Trigger");
+            go.GetComponent<PillarInst>().audioS.loop = false;
+            go.GetComponent<PillarInst>().audioS.clip = go.GetComponent<PillarInst>().exp;
+            go.GetComponent<PillarInst>().audioS.Play();
             go.transform.position = new Vector2(go.transform.position.x, go.transform.position.y + 0.3f);
         }
         aiHandler.GetComponent<BossAi>().campar.StartCoroutine(aiHandler.GetComponent<BossAi>().campar.CamShake(Vector2.up * 0.05f, 0.5f));

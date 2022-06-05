@@ -8,7 +8,7 @@ public class PillarInst : MonoBehaviour
     private SpriteRenderer spren;
     public int damage;
     private PlayerControl pc;
-    private AudioSource audioS;
+    public AudioSource audioS;
     public AudioClip prep, exp;
 
     private void Start()
