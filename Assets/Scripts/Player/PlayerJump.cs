@@ -17,6 +17,8 @@ public class PlayerJump : MonoBehaviour
         pc = GetComponent<PlayerControl>();
         playerRigid = GetComponent<Rigidbody2D>();
         defaultGravity = playerRigid.gravityScale;
+        pc.pa.bodyAnim.SetBool("isGrounded", true);
+        pc.pa.headAnim.SetBool("isGrounded", true);
     }
     public void ResetStat()
     {

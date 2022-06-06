@@ -54,7 +54,9 @@ public class MoveMod : Modifier
     public IEnumerator Invincible(PlayerControl pc)
     {
         pc.ph.SetInvincible();
+        pc.ph.SetDodge();
         yield return new WaitForSeconds(invinDuration);
+        pc.ph.UnsetDodge();
         pc.ph.SetVulnerable();
     }
 }

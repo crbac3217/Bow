@@ -8,7 +8,10 @@ public class GolemSpawn : EnemyAttack
     public override void AttackEtc(PlayerControl pc)
     {
         base.AttackEtc(pc);
-        SpawnMob(new Vector2(aiHandler.nextNode.position.x, aiHandler.nextNode.position.y + 1));
+        if (aiHandler.nextNode)
+        {
+            SpawnMob(new Vector2(aiHandler.nextNode.position.x, aiHandler.nextNode.position.y + 1));
+        }
     }
     public void SpawnMob(Vector2 pos)
     {
@@ -27,7 +30,7 @@ public class GolemSpawn : EnemyAttack
         ec.chestTier = 2;
         ec.maxHp += Mathf.RoundToInt(ec.maxHp * 0.5f * 2);
         ec.minGoldDrop = 0;
-        ec.maxGoldDrop += Mathf.RoundToInt(ec.maxGoldDrop * 0.5f * 1);
+        ec.maxGoldDrop = 1;
         foreach (DamageType dt in ec.strength)
         {
             float val = dt.value + (dt.value * 2 * 0.5f);

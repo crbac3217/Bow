@@ -225,6 +225,7 @@ public class FixedJoystick : Joystick
         pc.pa.bodyAnim.Rebind();
         pc.pa.bodyAnim.Update(0f);
         pc.ps.AfterAttack();
+        ResetShootdata();
     }
     public void ResetShootdata()
     {

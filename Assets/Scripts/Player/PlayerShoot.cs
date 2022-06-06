@@ -117,8 +117,6 @@ public class PlayerShoot : MonoBehaviour
     public void CancelShooting()
     {
         fixedJoystick.CancelShooting();
-        pc.pa.DisableHead();
-        pc.pa.DisableArm();
     }
     public void Projectory(Vector2 joyDir, int joyIndicator, float joyHeld)
     {

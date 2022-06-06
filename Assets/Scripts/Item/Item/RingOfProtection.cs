@@ -15,7 +15,9 @@ public class RingOfProtection : Modifier
     public IEnumerator InvincibleForTime(PlayerControl pc)
     {
         pc.ph.SetInvincible();
+        pc.ph.SetDodge();
         yield return new WaitForSeconds(time);
+        pc.ph.UnsetDodge();
         pc.ph.SetVulnerable();
     }
 }

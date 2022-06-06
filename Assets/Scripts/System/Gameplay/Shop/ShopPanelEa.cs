@@ -7,15 +7,19 @@ using TMPro;
 public class ShopPanelEa : MonoBehaviour
 {
     public Item item;
-    public Image image, bg;
+    public Image image, bg, panel;
     public TextMeshProUGUI iName, description, price;
 
+    private void Start()
+    {
+        panel = GetComponent<Image>();
+    }
     public void PointerEnter()
     {
-        GetComponent<Image>().color = new Color(0, 0, 0, 1);
+        panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, 1);
     }
     public void PointerExit()
     {
-        GetComponent<Image>().color = new Color(0, 0, 0, 0.603f);
+        panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, 0.603f);
     }
 }

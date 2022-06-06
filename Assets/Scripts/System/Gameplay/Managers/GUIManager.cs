@@ -301,9 +301,6 @@ public class GUIManager : MonoBehaviour
         StopGame();
         shopPanel.SetActive(true);
         sb.outline.effectColor = pc.playerType.tierColors[i];
-        int tier1 = 0;
-        int tier2 = 0;
-        int tier3 = 0;
         if (shopPanel.GetComponent<ShopBase>().items.Count <= 10)
         {
             List<Item> tempCandidates = new List<Item>();
@@ -314,33 +311,30 @@ public class GUIManager : MonoBehaviour
                     if (UnityEngine.Random.Range(0, 10) >= 0)
                     {
                         tempCandidates.Add(item);
-                        tier1++;
                     }
                 }
-                else if (Mathf.Abs(item.itemTier - i) == 1)
+                else if (i - item.itemTier == 1)
+                {
+                    if (UnityEngine.Random.Range(0, 10) > 5)
+                    {
+                        tempCandidates.Add(item);
+                    }
+                }
+                else if (item.itemTier - i == 2)
                 {
                     if (UnityEngine.Random.Range(0, 10) > 7)
                     {
                         tempCandidates.Add(item);
-                        tier2++;
                     }
                 }
-                else if (Mathf.Abs(item.itemTier - i) == 2)
+                else if (i - item.itemTier == 3)
                 {
                     if (UnityEngine.Random.Range(0, 10) > 8)
                     {
                         tempCandidates.Add(item);
-                        tier3++;
                     }
                 }
-                else if ((i - item.itemTier) == 3)
-                {
-                    if (UnityEngine.Random.Range(0, 10) > 9)
-                    {
-                        tempCandidates.Add(item);
-                    }
-                }
-                else if ((i - item.itemTier) == 4)
+                else if (i - item.itemTier == 4)
                 {
                     if (UnityEngine.Random.Range(0, 10) > 9)
                     {
@@ -348,7 +342,6 @@ public class GUIManager : MonoBehaviour
                     }
                 }
             }
-            Debug.Log(tier1 + " of tier 1, " + tier2 + ", " + tier3);
             sb.items = tempCandidates;
         }
         RefreshGold();
@@ -376,6 +369,7 @@ public class GUIManager : MonoBehaviour
             sp.description.text = it.itemDescription;
             sp.price.text = it.cost + " Gold";
             sp.bg.color = pc.playerType.tierColors[it.itemTier];
+            sp.panel.color = pc.playerType.tierColors[it.itemTier];
             EventTrigger trigger = itemButton.GetComponent<EventTrigger>();
             EventTrigger.Entry buyEntry = new EventTrigger.Entry();
             buyEntry.eventID = EventTriggerType.PointerClick;
@@ -452,10 +446,15 @@ public class GUIManager : MonoBehaviour
     #endregion SetText
     public void StopGame()
     {
+        pc.ps.CancelShooting();
+        joyStick.SetActive(false);
+        moveButton.SetActive(false);
         Time.timeScale = 0;
     }
     public void ResumeGame()
     {
+        joyStick.SetActive(true);
+        moveButton.SetActive(true);
         Time.timeScale = 1;
     }
 }

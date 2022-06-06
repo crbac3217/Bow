@@ -734,6 +734,8 @@ MonoBehaviour:
   sets: []
   damageTypes: []
   healthBar: {fileID: 0}
+  moveGem: {fileID: 0}
+  moveCDGem: {fileID: 0}
   goldUI: {fileID: 0}
   healthUI: {fileID: 0}
   stats: []
@@ -783,6 +785,7 @@ MonoBehaviour:
   deadList: []
   hitClip: {fileID: 8300000, guid: 5583f50365c446b45a56ce7a2b450ba2, type: 3}
   deadClip: {fileID: 8300000, guid: 3e4aeb6613bc3234d81526cfbf00a4fb, type: 3}
+  blockClip: {fileID: 8300000, guid: 38ae21ca6fdef6848b8b1d1032ba171a, type: 3}
   invincible: 0
   knockback: 0
 --- !u!114 &6216104295027416253

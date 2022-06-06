@@ -10,8 +10,9 @@ public class PlayerHit : MonoBehaviour
     public float invSec = 0.25f, knockAmount;
     public List<Modifier> hitList = new List<Modifier>();
     public List<Modifier> deadList = new List<Modifier>();
-    public AudioClip hitClip, deadClip;
+    public AudioClip hitClip, deadClip, blockClip;
     public bool invincible = false;
+    public bool dodging = false;
     private PlayerControl pc;
     public float knockback;
 
@@ -27,6 +28,12 @@ public class PlayerHit : MonoBehaviour
     {
         if (invincible)
         {
+            if (dodging)
+            {
+                pc.bodyAudio.clip = blockClip;
+                pc.bodyAudio.Play();
+                pc.DodgeVis();
+            }
             Debug.Log("invincible right now!");
         }
         else
@@ -46,6 +53,14 @@ public class PlayerHit : MonoBehaviour
                 HitCheck(origin, amount);
             }
         }
+    }
+    public void SetDodge()
+    {
+        dodging = true;
+    }
+    public void UnsetDodge()
+    {
+        dodging = false;
     }
     public void SetInvincible()
     {

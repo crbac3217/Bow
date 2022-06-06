@@ -183,6 +183,12 @@ public class PlayerControl : MonoBehaviour
         pan.GetComponent<TextMeshProUGUI>().color = playerType.utilColors[2];
         HPBarUpdate();
     }
+    public void DodgeVis()
+    {
+        var pan = Instantiate(eachPanel, panel.transform);
+        pan.GetComponent<TextMeshProUGUI>().text = "Dodged!";
+        pan.GetComponent<TextMeshProUGUI>().color = Color.blue;
+    }
     private IEnumerator HealEffect()
     {
         Color temp = Color.white;
