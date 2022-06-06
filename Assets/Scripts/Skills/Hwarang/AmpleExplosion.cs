@@ -5,17 +5,17 @@ using UnityEngine;
 public class AmpleExplosion : MonoBehaviour
 {
     public AudioClip explodeaudio;
-    private AudioSource audio;
+    private AudioSource ampleAudio;
     public GameObject ChildObject;
 
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
+        ampleAudio = GetComponent<AudioSource>();
     }
     public void Activate()
     {
-        audio.clip = explodeaudio;
-        audio.Play();
+        ampleAudio.clip = explodeaudio;
+        ampleAudio.Play();
         Destroy(ChildObject);
         GetComponent<ParticleSystem>().Play();
         StartCoroutine(DestroyAfter1Sec());

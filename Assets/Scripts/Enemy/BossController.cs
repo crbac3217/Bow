@@ -11,6 +11,7 @@ public class BossController : EnemyController
 
     public override void Setup()
     {
+        UpdateHpUI();
         base.Setup();
     }
     public override void UpdateHpUI()
