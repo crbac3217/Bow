@@ -94,6 +94,7 @@ public class LevelManager : MonoBehaviour
         cp = camparobj.GetComponent<CameraParent>();
         gm.camPar = camparobj;
         DontDestroyOnLoad(camparobj);
+        gm.donotdestroy.Add(camparobj);
     }
     private void SpawnManagers()
     {
@@ -109,6 +110,7 @@ public class LevelManager : MonoBehaviour
         bgmManager = BgmManagerObject.GetComponent<BGMManager>();
         gm.transitionAnims.Add(bgmManager.GetComponent<Animator>());
         DontDestroyOnLoad(managerPar);
+        gm.donotdestroy.Add(managerPar);
         gm.managerPar = managerPar;
     }
     private void SpawnPlayer()

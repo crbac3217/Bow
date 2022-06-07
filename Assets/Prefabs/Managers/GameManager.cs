@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public float transitionTime;
     public List<Animator> transitionAnims = new List<Animator>();
     public List<Level> levels = new List<Level>();
+    public List<GameObject> donotdestroy = new List<GameObject>();
     public LevelDataBase lvldata;
 
     private void Start()
