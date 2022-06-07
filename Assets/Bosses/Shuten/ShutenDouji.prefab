@@ -385,10 +385,16 @@ MonoBehaviour:
   foleySource: {fileID: 0}
   foleys:
   - {fileID: 8300000, guid: f433362fab649f24b85edb2856f8aaf2, type: 3}
-  voices: []
+  voices:
+  - {fileID: 8300000, guid: 07d2a166ba6e43c488d4b3e6eabaf315, type: 3}
+  - {fileID: 8300000, guid: bd4f6313911d3ab4192b6671380da87b, type: 3}
+  - {fileID: 8300000, guid: 44f761b6094da6e40bc1601fe1e05b8c, type: 3}
   foleyNames:
   - shutenDead2
-  voiceNames: []
+  voiceNames:
+  - 1
+  - 2
+  - 3
   campar: {fileID: 0}
   ea: {fileID: 0}
 --- !u!82 &8627003641644991735

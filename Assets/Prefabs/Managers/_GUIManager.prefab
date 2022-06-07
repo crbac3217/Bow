@@ -64,6 +64,11 @@ MonoBehaviour:
   setTextParentPref: {fileID: 3956761976838850341, guid: 91f38f0d4c9e95241ba8ea54868e9de2, type: 3}
   setTextPref: {fileID: 4544801261533717953, guid: 309f0b99d64088f49b7c4691f1a0f471, type: 3}
   playerHealthPref: {fileID: 6833550645268767788, guid: f6d5c2515a28cbf4eb6104c3f813310b, type: 3}
+  pausePanelPref: {fileID: 2216924393132521538, guid: 7f4ad9814d50b7d4ba26f93bcee64deb, type: 3}
+  pauseButtonPref: {fileID: 3510824163827279540, guid: 6b53f47f0043bbf4eb53e888aca42b30, type: 3}
   sb: {fileID: 0}
   skillButtons: []
   test: []
+  mixer: {fileID: 24100000, guid: eac65ab411cb02647973d88ce9c08de1, type: 2}
+  bgm: {fileID: 1273306869019405506, guid: eac65ab411cb02647973d88ce9c08de1, type: 2}
+  vfx: {fileID: -8312082079983998156, guid: eac65ab411cb02647973d88ce9c08de1, type: 2}

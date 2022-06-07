@@ -10,19 +10,22 @@ using UnityEngine.EventSystems;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class GUIManager : MonoBehaviour
 {
     public bool tester = false;
     public PlayerControl pc;
     public Volume volume;
-    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref;
-    private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth;
+    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref;
+    private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton;
     public ShopBase sb;
     public GameObject[] skillButtons = new GameObject[] { };
     public List<string> test = new List<string>();
     public Dictionary<string, GameObject> uiElements = new Dictionary<string, GameObject>();
     public Dictionary<string, EventTrigger.Entry> entries = new Dictionary<string, EventTrigger.Entry>();
+    public AudioMixer mixer;
+    public AudioMixerGroup bgm, sfx;
 
     private void Start()
     {
@@ -41,12 +44,13 @@ public class GUIManager : MonoBehaviour
         skillButtons = new GameObject[3] { GameObject.FindGameObjectWithTag("Skill1"), GameObject.FindGameObjectWithTag("Skill2"), GameObject.FindGameObjectWithTag("Skill3") };
         MoveButtonInitialize();
         JumpButtonInitialize();
-        SkillButtonInitailize();
+        SkillButtonInitailize(); 
         SetUpPlayerHealthBar();
         SetUpSetText();
         SetUpEQPanels();
         SetUpShopPanels();
         SetUpChestPanel();
+        SetUpPausePanel();
         //MoveButtonRead();
         //JoystickRead();
     }
@@ -120,6 +124,15 @@ public class GUIManager : MonoBehaviour
     }
     #endregion ButtonAdd(discontinued)
     #region SetUpPanels
+    private void SetUpPausePanel()
+    {
+        pausePanel = Instantiate(pausePanelPref, canvas.transform);
+        pausePanel.SetActive(false);
+        pausePanel.GetComponent<PausePanel>().guiManager = this;
+        pauseButton = Instantiate(pauseButtonPref, canvas.transform);
+        Button button = pauseButton.GetComponent<Button>();
+        button.onClick.AddListener(() => PausePanelOn());
+    }
     private void SetUpPlayerHealthBar()
     {
         playerHealth = Instantiate(playerHealthPref, canvas.transform);
@@ -313,28 +326,28 @@ public class GUIManager : MonoBehaviour
                         tempCandidates.Add(item);
                     }
                 }
-                else if (i - item.itemTier == 1)
+                else if (item.itemTier - i == 1 || i - item.itemTier == 1)
                 {
                     if (UnityEngine.Random.Range(0, 10) > 5)
                     {
                         tempCandidates.Add(item);
                     }
                 }
-                else if (item.itemTier - i == 2)
-                {
-                    if (UnityEngine.Random.Range(0, 10) > 7)
-                    {
-                        tempCandidates.Add(item);
-                    }
-                }
-                else if (i - item.itemTier == 3)
+                else if (item.itemTier - i == 2 || i - item.itemTier == 2)
                 {
                     if (UnityEngine.Random.Range(0, 10) > 8)
                     {
                         tempCandidates.Add(item);
                     }
                 }
-                else if (i - item.itemTier == 4)
+                else if (i - item.itemTier == 3 || i - item.itemTier == 3)
+                {
+                    if (UnityEngine.Random.Range(0, 10) > 9)
+                    {
+                        tempCandidates.Add(item);
+                    }
+                }
+                else if (i - item.itemTier == 4 || i - item.itemTier == 4)
                 {
                     if (UnityEngine.Random.Range(0, 10) > 9)
                     {
@@ -444,17 +457,36 @@ public class GUIManager : MonoBehaviour
         temp.GetComponent<SetTextInst>().set = set;
     }
     #endregion SetText
+    public void PausePanelOn()
+    {
+        if (!pausePanel.activeSelf)
+        {
+            pausePanel.SetActive(true);
+            pausePanel.GetComponent<PausePanel>().SetUpPanel();
+            StopGame();
+        }
+    }
+    public void PausePanelClose()
+    {
+        if (pausePanel.activeSelf)
+        {
+            pausePanel.SetActive(false);
+            ResumeGame();
+        }
+    }
     public void StopGame()
     {
         pc.ps.CancelShooting();
         joyStick.SetActive(false);
         moveButton.SetActive(false);
+        pauseButton.SetActive(false);
         Time.timeScale = 0;
     }
     public void ResumeGame()
     {
         joyStick.SetActive(true);
         moveButton.SetActive(true);
+        pauseButton.SetActive(true);
         Time.timeScale = 1;
     }
 }

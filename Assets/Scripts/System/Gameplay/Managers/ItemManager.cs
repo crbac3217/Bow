@@ -217,9 +217,14 @@ public class ItemManager : MonoBehaviour
             if (stat.statType == pstat.statType)
             {
                 pstat.value += stat.value;
+                pstat.value = (int)MathF.Max(pstat.value, 0);
                 if (stat.statType == StatType.hp)
                 {
-                    pc.currentHp += stat.value;
+                    if (stat.value > 0)
+                    {
+                        pc.currentHp += stat.value;
+                    }
+                    pstat.value = (int)MathF.Max(pstat.value, 1);
                 }
             }
         }
