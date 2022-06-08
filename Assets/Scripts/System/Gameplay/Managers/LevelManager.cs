@@ -115,7 +115,8 @@ public class LevelManager : MonoBehaviour
     }
     private void SpawnPlayer()
     {
-        var player = Instantiate(playerPrefab, spawnPoint.transform.position, Quaternion.identity);
+        var player = Instantiate(playerPrefab, spawnPoint.transform.position, Quaternion.identity) as GameObject;
+        gm.donotdestroy.Add(player);
         pc = player.GetComponent<PlayerControl>();
         pc.campar = cp;
         damageManager.pc = pc;
@@ -147,7 +148,7 @@ public class LevelManager : MonoBehaviour
         bgmManager.audioSource.Play();
         CreateStartArea();
         //change this
-        int areaAmount = 0 + (level * 0);
+        int areaAmount = 1 + (level * 0);
         for (int i = 0; i < areaAmount; i++)
         {
             CreateMidArea(areas[i].end.transform.position);

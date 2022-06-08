@@ -32,4 +32,8 @@ public class PlayerBodyAnim : MonoBehaviour
     {
         pa.DisableArm();
     }
+    public void DeadAnimFinished()
+    {
+        pc.ph.DeadAnimFinished();
+    }
 }

@@ -31,41 +31,47 @@ public class Area : MonoBehaviour
     }
     public virtual void CheckForPlayerposMob()
     {
-        if (pc.transform.position.x > transform.position.x - 2)
+        if (pc)
         {
-            if (msps.Count > 0)
+            if (pc.transform.position.x > transform.position.x - 2)
             {
-                mobDelayCounter++;
-                if (mobDelayCounter == 5)
+                if (msps.Count > 0)
                 {
-                    SpawnMobs();
-                    mobDelayCounter = 0;
+                    mobDelayCounter++;
+                    if (mobDelayCounter == 5)
+                    {
+                        SpawnMobs();
+                        mobDelayCounter = 0;
+                    }
                 }
             }
         }
     }
     public virtual void CheckForPlayerposChunkload()
     {
-        if (Vector2.Distance(pc.transform.position, transform.position) < 15 || Vector2.Distance(pc.transform.position, end.transform.position) < 15)
+        if (pc)
         {
-            if (!loaded)
+            if (Vector2.Distance(pc.transform.position, transform.position) < 15 || Vector2.Distance(pc.transform.position, end.transform.position) < 15)
             {
-                foreach (Platform pf in pf)
+                if (!loaded)
                 {
-                    pf.gameObject.SetActive(true);
+                    foreach (Platform pf in pf)
+                    {
+                        pf.gameObject.SetActive(true);
+                    }
+                    loaded = true;
                 }
-                loaded = true;
             }
-        }
-        else
-        {
-            if (loaded)
+            else
             {
-                foreach (Platform pf in pf)
+                if (loaded)
                 {
-                    pf.gameObject.SetActive(false);
+                    foreach (Platform pf in pf)
+                    {
+                        pf.gameObject.SetActive(false);
+                    }
+                    loaded = false;
                 }
-                loaded = false;
             }
         }
     }

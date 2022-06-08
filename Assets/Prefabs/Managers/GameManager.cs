@@ -66,5 +66,19 @@ public class GameManager : MonoBehaviour
         levels.Remove(levels[0]);
         SceneManager.LoadSceneAsync(1);
     }
+    public void GameReset()
+    {
+        for (int i = donotdestroy.Count-1; i >= 0; i--)
+        {
+            Destroy(donotdestroy[i]);
+        }
+        Destroy(this.gameObject);
+        Time.timeScale = 1;
+        SceneManager.LoadSceneAsync(0);
+    }
+    public void Victory()
+    {
+
+    }
 }
 

@@ -17,8 +17,8 @@ public class GUIManager : MonoBehaviour
     public bool tester = false;
     public PlayerControl pc;
     public Volume volume;
-    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref;
-    private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton;
+    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver;
+    private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton, volumeObj;
     public ShopBase sb;
     public GameObject[] skillButtons = new GameObject[] { };
     public List<string> test = new List<string>();
@@ -29,7 +29,7 @@ public class GUIManager : MonoBehaviour
 
     private void Start()
     {
-        volume = FindObjectOfType<Volume>();
+
     }
     public void SpawnGUI()
     {
@@ -46,11 +46,13 @@ public class GUIManager : MonoBehaviour
         JumpButtonInitialize();
         SkillButtonInitailize(); 
         SetUpPlayerHealthBar();
+        SetUpVolume();
         SetUpSetText();
         SetUpEQPanels();
         SetUpShopPanels();
         SetUpChestPanel();
         SetUpPausePanel();
+        SetUpGameOverPanel();
         //MoveButtonRead();
         //JoystickRead();
     }
@@ -124,6 +126,11 @@ public class GUIManager : MonoBehaviour
     }
     #endregion ButtonAdd(discontinued)
     #region SetUpPanels
+    private void SetUpVolume()
+    {
+        volumeObj = Instantiate(volumePref, canvas.transform);
+        volume = volumeObj.GetComponent<Volume>();
+    }
     private void SetUpPausePanel()
     {
         pausePanel = Instantiate(pausePanelPref, canvas.transform);
@@ -164,6 +171,13 @@ public class GUIManager : MonoBehaviour
         chestPanel = Instantiate(chestPref, canvas.transform);
         chestPanel.SetActive(false);
         chestPanel.GetComponent<ChestPanel>().closeButton.onClick.AddListener(ChestPopUpOff);
+    }
+    private void SetUpGameOverPanel()
+    {
+        gameOver = Instantiate(gameOverPref, canvas.transform);
+        gameOver.GetComponent<GameOver>().gm = FindObjectOfType<GameManager>();
+        gameOver.GetComponent<GameOver>().volume = volume;
+        gameOver.GetComponent<GameOver>().guim = this;
     }
     #endregion SetUpPanels
     #region equipments and skill
@@ -488,5 +502,10 @@ public class GUIManager : MonoBehaviour
         moveButton.SetActive(true);
         pauseButton.SetActive(true);
         Time.timeScale = 1;
+    }
+    public void GameOverPanelOn()
+    {
+        StopGame();
+        gameOver.GetComponent<GameOver>().panel.SetActive(true);
     }
 }

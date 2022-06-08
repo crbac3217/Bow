@@ -79,6 +79,10 @@ public class PlayerMove : MonoBehaviour
             }
             
         }
+        if (transform.position.y < -5 && !pc.pf.compFrozen)
+        {
+            pc.ph.Dead();
+        }
     }
     public void SetNode()
     {

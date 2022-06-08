@@ -126,7 +126,13 @@ public class PlayerHit : MonoBehaviour
         pc.bodyAudio.clip = deadClip;
         pc.bodyAudio.Play();
         pc.pf.DisableMove();
+        pc.currentHp = 0;
+        pc.HPBarUpdate();
         Destroy(pc.healthBar.gameObject);
         pc.pa.bodyAnim.SetTrigger("playerDead");
+    }
+    public void DeadAnimFinished()
+    {
+        pc.guiManager.gameOver.GetComponent<GameOver>().GameOverInit();
     }
 }

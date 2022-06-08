@@ -40,7 +40,6 @@ public class PlayerControl : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        levelManager.gm.donotdestroy.Add(this.gameObject);
         if (!levelManager.gm.instPlayer)
         {
             InitializeStats();
