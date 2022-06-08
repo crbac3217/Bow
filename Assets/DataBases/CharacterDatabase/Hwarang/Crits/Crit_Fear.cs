@@ -17,6 +17,7 @@ public class Crit_Fear : Crit
             dtype.value = newVal;
             prev.Add(dtype.damageElement, prevVal - newVal);
         }
+        ec.aiHandler.detectionDistance /= 10f;
         ec.aiHandler.Snared(2);
     }
     public override void RemoveStatusEffect(EnemyController ec)
@@ -24,6 +25,7 @@ public class Crit_Fear : Crit
         foreach (DamageType dtype in ec.strength)
         {
             dtype.value += prev[dtype.damageElement];
+            ec.aiHandler.detectionDistance *= 10f;
         }
         base.RemoveStatusEffect(ec);
     }

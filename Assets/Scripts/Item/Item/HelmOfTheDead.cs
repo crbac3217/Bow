@@ -31,16 +31,17 @@ public class HelmOfTheDead : Modifier
             }
         }
         pc.pf.FreezePosIndef();
+        int healAmount = Mathf.Max((int)MathF.Min(1, ((float)pc.stats[2].value / 16f)), 1);
         yield return new WaitForSeconds(1);
-        pc.Heal((int)MathF.Min(1, ((float)pc.stats[2].value / 16f)));
+        pc.Heal(healAmount);
         yield return new WaitForSeconds(1);
-        pc.Heal((int)MathF.Min(1, ((float)pc.stats[2].value / 16f)));
+        pc.Heal(healAmount);
         yield return new WaitForSeconds(1);
-        pc.Heal((int)MathF.Min(1, ((float)pc.stats[2].value / 16f)));
+        pc.Heal(healAmount);
         pc.bodyAudio.clip = modifierAudio;
         pc.bodyAudio.Play();
         yield return new WaitForSeconds(1);
-        pc.Heal((int)MathF.Min(1, ((float)pc.stats[2].value / 16f)));
+        pc.Heal(healAmount);
         foreach (Collider2D col in Physics2D.OverlapCircleAll(pc.transform.position, radius))
         {
             if (col.CompareTag("Enemy"))

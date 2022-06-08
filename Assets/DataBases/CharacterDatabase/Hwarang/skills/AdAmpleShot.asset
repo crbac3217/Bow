@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillType: 0
   cdType: 0
-  skillName: Vigor Shot
-  description: 
+  skillName: Sundropper
+  description: Fires an arrow that penetrates through enemies. Enemies affected are
+    damaged once again shortly after.
   isSkillAvail: 1
   disableSkill: 0
   isPassive: 0
@@ -23,12 +24,15 @@ MonoBehaviour:
   held: 0
   sb: {fileID: 0}
   affectedSkills: []
+  enhanceTemp: {fileID: 0}
   activeFor: 0
   cooldownTime: 0
   lastTime: 0
+  skillSound: {fileID: 0}
   cdMaxCount: 5
   cdCurrentCount: 0
   enhanceObj: {fileID: 0}
+  moveMod: {fileID: 0}
   aimableSkill: {fileID: 11400000, guid: b72d903521e85684cb975348cffe7b8a, type: 2}
   thumbnail: {fileID: -8817879288524182854, guid: 4945b0bf06b76a4408539fe0d04138a2, type: 3}
   tempCounter: {fileID: 0}

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: BookOfTheDead
   m_EditorClassIdentifier: 
   onAdd: 0
-  modifierType: 1
-  chanceMax: 10
-  healMultiplier: 0.01
+  modifierType: 2
+  modifierAudio: {fileID: 0}
+  chanceMax: 7
+  healMultiplier: 0.05

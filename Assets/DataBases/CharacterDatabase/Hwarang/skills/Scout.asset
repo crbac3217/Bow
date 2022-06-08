@@ -12,29 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143cbe6efc15db648a3cfd5e9c82f296, type: 3}
   m_Name: Scout
   m_EditorClassIdentifier: 
+  skillType: 0
+  cdType: 0
   skillName: Scout
-  description: 
+  description: Send a bird that flies in a straight direction. Activate once again
+    to teleport to the bird's location, summoning homing projectiles.
   isSkillAvail: 1
+  disableSkill: 0
   isPassive: 0
-  isAimable: 1
-  isMoveSkill: 0
-  isTimedCooldown: 0
-  isHitCooldown: 1
-  isKillCooldown: 0
-  ShotSelected: 0
-  isAdvancable: 1
-  advanceSkill: {fileID: 11400000, guid: 7d5a2430516152946b75f3690a12bc20, type: 2}
-  sb: {fileID: 0}
+  selected: 0
   held: 0
-  skillTime: 0
+  sb: {fileID: 0}
+  affectedSkills: []
+  enhanceTemp: {fileID: 0}
+  activeFor: 0
   cooldownTime: 0
   lastTime: 0
+  skillSound: {fileID: 0}
   cdMaxCount: 5
   cdCurrentCount: 0
+  enhanceObj: {fileID: 0}
+  moveMod: {fileID: 0}
   aimableSkill: {fileID: 11400000, guid: 44b321944963b7349ba7200daaa355d8, type: 2}
   thumbnail: {fileID: 8626979464451430688, guid: c1a2d93721e62f74c85b1fac5b9727a7, type: 3}
-  buttonimg: {fileID: 8626979464451430688, guid: c1a2d93721e62f74c85b1fac5b9727a7, type: 3}
-  script:
-    attachTo: 0
-    scriptName: 
-    multiaffected: 0
+  tempCounter: {fileID: 0}

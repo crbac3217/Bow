@@ -15,7 +15,7 @@ MonoBehaviour:
   skillType: 4
   cdType: 3
   skillName: Blessing of Nine Tails
-  description: 
+  description: Fire additional projectile on 3rd, 6th and 9th shots.
   isSkillAvail: 0
   disableSkill: 0
   isPassive: 1
@@ -23,12 +23,15 @@ MonoBehaviour:
   held: 0
   sb: {fileID: 0}
   affectedSkills: []
+  enhanceTemp: {fileID: 0}
   activeFor: 0
   cooldownTime: 0
   lastTime: 0
+  skillSound: {fileID: 0}
   cdMaxCount: 0
   cdCurrentCount: 0
   enhanceObj: {fileID: 1848334850108072242, guid: 12caebe4fc0e1e642adc7a18e59f454b, type: 3}
+  moveMod: {fileID: 0}
   aimableSkill: {fileID: 0}
   thumbnail: {fileID: 5019999175783521436, guid: c1a2d93721e62f74c85b1fac5b9727a7, type: 3}
   tempCounter: {fileID: 0}

@@ -15,7 +15,7 @@ MonoBehaviour:
   skillType: 2
   cdType: 1
   skillName: Sun Drop
-  description: 
+  description: Summon a moon that drops, and deal damage to enemies around overtime.
   isSkillAvail: 1
   disableSkill: 0
   isPassive: 0
@@ -23,12 +23,15 @@ MonoBehaviour:
   held: 0
   sb: {fileID: 0}
   affectedSkills: []
+  enhanceTemp: {fileID: 0}
   activeFor: 0
   cooldownTime: 0
   lastTime: 0
+  skillSound: {fileID: 0}
   cdMaxCount: 5
   cdCurrentCount: 0
   enhanceObj: {fileID: 0}
+  moveMod: {fileID: 0}
   aimableSkill: {fileID: 0}
   thumbnail: {fileID: -162394689819335179, guid: 4945b0bf06b76a4408539fe0d04138a2, type: 3}
   tempCounter: {fileID: 0}

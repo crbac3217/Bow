@@ -15,7 +15,8 @@ MonoBehaviour:
   skillType: 0
   cdType: 0
   skillName: TripleShot
-  description: Rapidly Fires Three Projectiles to a position
+  description: Rapidly Fires Three Projectiles to a given direction. The last arrow
+    always applies status effect.
   isSkillAvail: 1
   disableSkill: 0
   isPassive: 0
@@ -23,9 +24,11 @@ MonoBehaviour:
   held: 0
   sb: {fileID: 0}
   affectedSkills: []
+  enhanceTemp: {fileID: 0}
   activeFor: 0
   cooldownTime: 0
   lastTime: 0
+  skillSound: {fileID: 0}
   cdMaxCount: 5
   cdCurrentCount: 0
   enhanceObj: {fileID: 0}
