@@ -72,6 +72,7 @@ public class LevelManager : MonoBehaviour
             }
             cp.lightsColorChange[0].GetComponent<Light2D>().intensity = theme.backgLightIntensity;
             cp.backGround.GetComponent<SpriteRenderer>().sprite = theme.backGround[Random.Range(0, theme.backGround.Count)];
+            cp.sky.GetComponent<SpriteRenderer>().sprite = theme.sky[Random.Range(0, theme.sky.Count)];
         }
         else
         {

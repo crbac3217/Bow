@@ -11,7 +11,7 @@ public class BackGroundParallax : MonoBehaviour
     private void LateUpdate()
     {
         float xrate = (float)Mathf.Abs((float)camPar.transform.position.x - camPar.xBoundaryL) / (float)Mathf.Abs((float)camPar.xBoundaryR - camPar.xBoundaryL);
-        float xpos = Mathf.Clamp(-4f + (-7 * xrate),-11, - 4);
+        float xpos = Mathf.Clamp(-4f + (-7 * xrate), -11, -4);
         float ypos = Mathf.Clamp(-1f - Mathf.Clamp(((lastCampos.y- camPar.transform.position.y) * vertMoveRate), 0.05f, -0.05f), -5f, -1f);
         transform.localPosition = new Vector3(xpos, ypos);
         lastCampos = camPar.transform.position;

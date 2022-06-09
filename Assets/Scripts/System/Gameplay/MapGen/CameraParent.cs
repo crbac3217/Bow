@@ -7,7 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class CameraParent : MonoBehaviour
 {
     public float dampAmount, height, shakeIntensity;
-    public GameObject backGround, player, lightObj;
+    public GameObject backGround, player, lightObj, sky;
     public List<GameObject> lightsColorChange;
     public Camera cam;
     public bool doFollowPlayer;
