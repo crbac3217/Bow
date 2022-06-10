@@ -7,9 +7,11 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerType:ScriptableObject
 {
-    public string typeName;
+    public string typeName, description;
     public ItemDatabase itemdb;
     public SetDataBase setdb;
+    public Sprite baseImage;
+    public RuntimeAnimatorController controller;
     public EquipmentDataBase equipdb;
     public EquipmentDataBase beginner;
     public List<Stat> defaultStats;

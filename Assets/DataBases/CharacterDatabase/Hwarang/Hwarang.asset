@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: Hwarang
   m_EditorClassIdentifier: 
   typeName: Hwarang
+  description: An elite warrior of ancient Korean country, Silla. Well balanced stats
+    with starting physical and aqua damage.
   itemdb: {fileID: 11400000, guid: 7bea01b3cd0215f4cb233c80b1fc3dfd, type: 2}
   setdb: {fileID: 11400000, guid: 3f5aa5f32cfc2b346b1e2c81d970b6de, type: 2}
+  baseImage: {fileID: 616100337895885277, guid: ac22a1f4e5663c347b45e31b177f1d62, type: 3}
+  controller: {fileID: 9100000, guid: 381d22afe290a4146ae46102e0dc03cb, type: 2}
   equipdb: {fileID: 11400000, guid: f73df900cfe99b141a980bee813317c5, type: 2}
   beginner: {fileID: 11400000, guid: f73df900cfe99b141a980bee813317c5, type: 2}
   defaultStats:
@@ -32,9 +36,9 @@ MonoBehaviour:
     value: 1
   defaultDamages:
   - damageElement: 0
-    value: 5
+    value: 2
   - damageElement: 1
-    value: 0
+    value: 3
   - damageElement: 2
     value: 0
   - damageElement: 3

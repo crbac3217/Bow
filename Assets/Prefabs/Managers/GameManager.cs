@@ -29,9 +29,10 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetFloat("JoyY", 230f);
     }
 
-    public void StartGame()
+    public void StartGame(PlayerType type)
     {
         DontDestroyOnLoad(this.gameObject);
+        pt = type;
         foreach (PerLevels lvl in lvldata.levels)
         {
             AddToLevels(lvl.levels[Random.Range(0, lvl.levels.Count)]);
