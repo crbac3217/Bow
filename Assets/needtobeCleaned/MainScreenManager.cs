@@ -3,13 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Rendering.Universal;
 
 public class MainScreenManager : MonoBehaviour
 {
     public GameManager gm;
     public List<PlayerType> playableChars = new List<PlayerType>();
     public GameObject CharSelectPanel, OptionsPanel, CharSelButtonPref;
+    public Light2D light;
 
+    private void Start()
+    {
+        
+    }
+    private void Update()
+    {
+        light.intensity = Mathf.Clamp(light.intensity + 0.01f, 0f, 2.5f);
+    }
     public void TurnOnOptionsPanel()
     {
 
