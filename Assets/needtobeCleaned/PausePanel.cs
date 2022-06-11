@@ -127,10 +127,12 @@ public class PausePanel : MonoBehaviour
     public void OnSFXChange()
     {
         guiManager.mixer.SetFloat("sfxVol", sfxBar.GetComponent<Slider>().value);
+        PlayerPrefs.SetFloat("sfxVol", sfxBar.GetComponent<Slider>().value);
     }
     public void OnBGMChange()
     {
         guiManager.mixer.SetFloat("bgmVol", bgmBar.GetComponent<Slider>().value);
+        PlayerPrefs.SetFloat("bgmVol", bgmBar.GetComponent<Slider>().value);
     }
     public void OnClose()
     {

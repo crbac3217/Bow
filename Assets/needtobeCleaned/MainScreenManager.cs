@@ -4,17 +4,30 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.Audio;
 
 public class MainScreenManager : MonoBehaviour
 {
     public GameManager gm;
     public List<PlayerType> playableChars = new List<PlayerType>();
     public GameObject CharSelectPanel, OptionsPanel, CharSelButtonPref;
+    public AudioMixer mixer;
     public Light2D light;
 
     private void Start()
     {
-        
+        SetUpAudio();
+    }
+    private void SetUpAudio()
+    {
+        if (PlayerPrefs.HasKey("bgmVol"))
+        {
+            mixer.SetFloat("bgmVol", PlayerPrefs.GetFloat("bgmVol"));
+        }
+        if (PlayerPrefs.HasKey("sfxVol"))
+        {
+            mixer.SetFloat("sfxVol", PlayerPrefs.GetFloat("sfxVol"));
+        }
     }
     private void Update()
     {
