@@ -18,7 +18,7 @@ public class VictoryScreen : MonoBehaviour
     public List<AudioClip> audios = new List<AudioClip>();
     private bool timescore, highscore = false;
     private AudioSource audioSource;
-    private int totalScoreInt;
+    private int totalScoreInt, timeInt;
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -69,6 +69,7 @@ public class VictoryScreen : MonoBehaviour
         timehigh.SetActive(true);
         timescore = true;
         PlayerPrefs.SetFloat("Timescore", time);
+        timeInt = (int)time * 100;
     }
     public void AnimFinished()
     {
@@ -77,12 +78,14 @@ public class VictoryScreen : MonoBehaviour
             if (timescore)
             {
                 scoreUpd.SetActive(true);
-                //var request = UpdatePlayerStatisticsRequest
-            }else if (highscore)
+                UpdateTimescore();
+            }
+            if (highscore)
             {
                 scoreUpd.SetActive(true);
+                UpdateHighscore();
             }
-            else
+            if (!highscore && !timescore)
             {
                 button.interactable = true;
                 button.GetComponent<Image>().color = new Color(0.3862f, 0, 1, 1);
@@ -96,22 +99,58 @@ public class VictoryScreen : MonoBehaviour
             buttonText.color = Color.white;
         }
     }
-    private void OnHighUpdateSuccess(UpdatePlayerStatisticsResult result)
+    private void UpdateHighscore()
     {
-
+        PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
+        {
+            FunctionName = "HighscoreUpdate",
+            FunctionParameter = new { highscoreval = totalScoreInt },
+            GeneratePlayStreamEvent = true,
+        },
+        OnHighUpdateSuccess, OnHighUpdateFail);
+    }
+    private void UpdateTimescore()
+    {
+        PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
+        {
+            FunctionName = "TimescoreUpdate",
+            FunctionParameter = new { timescoreval = timeInt },
+            GeneratePlayStreamEvent = true,
+        },
+        OnTimeUpdateSuccess, OnTimeUpdateFail);
+    }
+    private void OnHighUpdateSuccess(ExecuteCloudScriptResult result)
+    {
+        scoreUpd.SetActive(false);
+        scoreSuccess.SetActive(true);
+        button.interactable = true;
+        button.GetComponent<Image>().color = new Color(0.3862f, 0, 1, 1);
+        buttonText.color = Color.white;
     }
     private void OnHighUpdateFail(PlayFabError error)
     {
-
+        scoreUpd.SetActive(false);
+        scoreFailed.SetActive(true);
+        button.interactable = true;
+        button.GetComponent<Image>().color = new Color(0.3862f, 0, 1, 1);
+        buttonText.color = Color.white;
     }
     
-    private void OnTimeUpdateSuccess(UpdatePlayerStatisticsResult result)
+    private void OnTimeUpdateSuccess(ExecuteCloudScriptResult result)
     {
-
+        scoreUpd.SetActive(false);
+        scoreSuccess.SetActive(true);
+        button.interactable = true;
+        button.GetComponent<Image>().color = new Color(0.3862f, 0, 1, 1);
+        buttonText.color = Color.white;
     }
     private void OnTimeUpdateFail(PlayFabError error)
     {
-
+        scoreUpd.SetActive(false);
+        scoreFailed.SetActive(true);
+        button.interactable = true;
+        button.GetComponent<Image>().color = new Color(0.3862f, 0, 1, 1);
+        buttonText.color = Color.white;
     }
     public void OntoMain()
     {

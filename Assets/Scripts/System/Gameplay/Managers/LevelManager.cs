@@ -104,6 +104,7 @@ public class LevelManager : MonoBehaviour
         itemManager = itemManagerObject.GetComponent<ItemManager>();
         var guiManagerObject = Instantiate(GUIManagerObject, managerPar.transform);
         guiManager = guiManagerObject.GetComponent<GUIManager>();
+        guiManager.gm = gm;
         var damageManagerObject = Instantiate(DamageManagerObject, managerPar.transform);
         damageManager = damageManagerObject.GetComponent<DamageManager>();
         var lootManagerObject = Instantiate(LootManagerObject, managerPar.transform);

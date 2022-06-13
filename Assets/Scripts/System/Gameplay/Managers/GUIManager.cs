@@ -17,6 +17,7 @@ public class GUIManager : MonoBehaviour
     public bool tester = false;
     public PlayerControl pc;
     public Volume volume;
+    public GameManager gm;
     public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver, victoryScreenPref;
     private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton, volumeObj, victoryScreen;
     public ShopBase sb;
@@ -196,12 +197,13 @@ public class GUIManager : MonoBehaviour
     }
     private void SetUpVictoryScreen()
     {
-        victoryScreen = Instantiate(victoryScreen, canvas.transform);
+        victoryScreen = Instantiate(victoryScreenPref, canvas.transform);
         VictoryScreen vs = victoryScreen.GetComponent<VictoryScreen>();
         vs.im = pc.itemManager;
         vs.dm = pc.damageManager;
         vs.pc = pc;
-        vs.gm = pc.levelManager.gm;
+        vs.gm = gm;
+        victoryScreen.SetActive(false);
     }
     #endregion SetUpPanels
     #region equipments and skill

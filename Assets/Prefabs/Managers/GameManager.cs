@@ -59,7 +59,14 @@ public class GameManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        StartCoroutine(NextLevelAnim());
+        if (levels.Count <= 1)
+        {
+            Victory();
+        }
+        else
+        {
+            StartCoroutine(NextLevelAnim());
+        }
     }
     private IEnumerator NextLevelAnim()
     {
@@ -68,15 +75,7 @@ public class GameManager : MonoBehaviour
             anim.SetTrigger("Transition");
         }
         yield return new WaitForSeconds(transitionTime);
-        if (levels.Count > 0)
-        {
-            levels.Remove(levels[0]);
-        }
-        else
-        {
-            Victory();
-        }
-        
+        levels.Remove(levels[0]);
         SceneManager.LoadSceneAsync(1);
     }
     public void GameReset()
