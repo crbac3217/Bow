@@ -13,6 +13,7 @@ public class DamageManager : MonoBehaviour
     public List<Modifier> killedMods = new List<Modifier>();
     public GameObject damagePanel;
     public float distanceBetween;
+    public int killCount;
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -64,6 +65,7 @@ public class DamageManager : MonoBehaviour
         {
             kMod.OnEnemyModActive(killedArgs);
         }
+        killCount++;
     }
 }
 public class EnemyArg

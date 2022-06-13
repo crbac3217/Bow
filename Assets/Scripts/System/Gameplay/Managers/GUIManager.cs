@@ -17,8 +17,8 @@ public class GUIManager : MonoBehaviour
     public bool tester = false;
     public PlayerControl pc;
     public Volume volume;
-    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver, victoryScreen;
-    private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton, volumeObj;
+    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver, victoryScreenPref;
+    private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton, volumeObj, victoryScreen;
     public ShopBase sb;
     public GameObject[] skillButtons = new GameObject[] { };
     public List<string> test = new List<string>();
@@ -46,6 +46,7 @@ public class GUIManager : MonoBehaviour
         SetUpChestPanel();
         SetUpPausePanel();
         SetUpGameOverPanel();
+        SetUpVictoryScreen();
         //MoveButtonRead();
         //JoystickRead();
     }
@@ -192,6 +193,15 @@ public class GUIManager : MonoBehaviour
         gameOver.GetComponent<GameOver>().gm = FindObjectOfType<GameManager>();
         gameOver.GetComponent<GameOver>().volume = volume;
         gameOver.GetComponent<GameOver>().guim = this;
+    }
+    private void SetUpVictoryScreen()
+    {
+        victoryScreen = Instantiate(victoryScreen, canvas.transform);
+        VictoryScreen vs = victoryScreen.GetComponent<VictoryScreen>();
+        vs.im = pc.itemManager;
+        vs.dm = pc.damageManager;
+        vs.pc = pc;
+        vs.gm = pc.levelManager.gm;
     }
     #endregion SetUpPanels
     #region equipments and skill
@@ -525,5 +535,6 @@ public class GUIManager : MonoBehaviour
     public void VictoryScreenInit(float score)
     {
         victoryScreen.SetActive(true);
+        victoryScreen.GetComponent<VictoryScreen>().SetUp(score);
     }
 }

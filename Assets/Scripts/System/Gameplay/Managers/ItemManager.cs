@@ -11,6 +11,7 @@ public class ItemManager : MonoBehaviour
     public SetDataBase setdb;
     public EquipmentDataBase eqdb;
     public PlayerControl pc;
+    public int itemCount, setCount;
 
     public void SetPlayer()
     {
@@ -35,6 +36,7 @@ public class ItemManager : MonoBehaviour
                 AddNewItem(item);
             }
         }
+        itemCount++;
     }
     public void AddNewItem(Item item)
     {
@@ -209,6 +211,7 @@ public class ItemManager : MonoBehaviour
             DamageAdd(dtype);
         }
         pc.guiManager.DisplaySetText(effect);
+        setCount++;
     }
     public void StatAdd(Stat stat)
     {
