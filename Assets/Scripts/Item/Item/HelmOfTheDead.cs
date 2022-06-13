@@ -17,7 +17,7 @@ public class HelmOfTheDead : Modifier
     IEnumerator SetPlayerInvincible(PlayerControl pc)
     {
         float cdtemp = pc.ps.fixedJoystick.defaultCd;
-        pc.pa.bodyAnim.enabled = false;
+        pc.pa.bodyAnim.SetTrigger("fakeDead");
         pc.ph.SetInvincible();
         pc.ps.fixedJoystick.CancelShooting();
         pc.ps.fixedJoystick.defaultCd = 3;
@@ -53,18 +53,16 @@ public class HelmOfTheDead : Modifier
         pc.pf.UnfreezePos();
         foreach (Skill sk in pc.skills)
         {
-            if (sk)
+            if (sk && sk.skillType != SkillType.Movement)
             {
                 sk.isSkillAvail = true;
                 sk.sb.UpdateCD();
             }
         }
-        pc.pa.bodyAnim.Rebind();
-        pc.pa.bodyAnim.Update(0f);
+        pc.pa.bodyAnim.SetTrigger("revive");
         pc.ph.SetVulnerable();
         pc.ps.fixedJoystick.Avail = true;
         pc.ps.fixedJoystick.defaultCd = cdtemp;
-        pc.pa.bodyAnim.enabled = true;
         //trigger anim?
     }
 }

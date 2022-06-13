@@ -17,7 +17,7 @@ public class GUIManager : MonoBehaviour
     public bool tester = false;
     public PlayerControl pc;
     public Volume volume;
-    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver;
+    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver, victoryScreen;
     private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton, volumeObj;
     public ShopBase sb;
     public GameObject[] skillButtons = new GameObject[] { };
@@ -34,14 +34,7 @@ public class GUIManager : MonoBehaviour
     public void SpawnGUI()
     {
         canvas = Instantiate(canvasPref, pc.campar.cam.transform);
-        moveButton = Instantiate(movePref, canvas.transform);
-        RectTransform mtrans = moveButton.GetComponent<RectTransform>();
-        mtrans.anchoredPosition = new Vector2(PlayerPrefs.GetFloat("MoveX"), PlayerPrefs.GetFloat("MoveY"));
-        joyStick = Instantiate(joystickPref, canvas.transform);
-        RectTransform jtrans = joyStick.GetComponent<RectTransform>();
-        jtrans.anchoredPosition = new Vector2(PlayerPrefs.GetFloat("JoyX"), PlayerPrefs.GetFloat("JoyY"));
-        joyStick = GameObject.FindGameObjectWithTag("Joystick");
-        skillButtons = new GameObject[3] { GameObject.FindGameObjectWithTag("Skill1"), GameObject.FindGameObjectWithTag("Skill2"), GameObject.FindGameObjectWithTag("Skill3") };
+        MakeButtons();
         MoveButtonInitialize();
         JumpButtonInitialize();
         SkillButtonInitailize(); 
@@ -56,18 +49,39 @@ public class GUIManager : MonoBehaviour
         //MoveButtonRead();
         //JoystickRead();
     }
-    #region GUILoadSetUp
-    //public void MoveButtonRead()
-    //{
-    //    //moveButton.GetComponent<HorizontalLayoutGroup>().spacing += PlayerPrefs.GetFloat("MoveSpacingDisplacement");
-
-    //}
-    //public void JoystickRead()
-    //{
-
-    //}
-    #endregion GUILoadSetUp
     #region GUIButtonInitialize
+    public void MakeButtons()
+    {
+        moveButton = Instantiate(movePref, canvas.transform);
+        RectTransform mtrans = moveButton.GetComponent<RectTransform>();
+        if (PlayerPrefs.HasKey("moveX") && PlayerPrefs.HasKey("moveY"))
+        {
+            mtrans.anchoredPosition = new Vector2(PlayerPrefs.GetFloat("moveX"), PlayerPrefs.GetFloat("moveY"));
+            //mtrans.sizeDelta.Set(PlayerPrefs.GetFloat("moveWidth") * 100f, PlayerPrefs.GetFloat("moveHeight") * 100f);
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("moveX", mtrans.anchoredPosition.x);
+            PlayerPrefs.SetFloat("moveY", mtrans.anchoredPosition.y);
+            //PlayerPrefs.SetFloat("moveWidth", mtrans.sizeDelta.x);
+            //PlayerPrefs.SetFloat("moveHeight", mtrans.sizeDelta.y);
+        }
+        joyStick = Instantiate(joystickPref, canvas.transform);
+        RectTransform jtrans = joyStick.GetComponent<RectTransform>();
+        if (PlayerPrefs.HasKey("joyX") && PlayerPrefs.HasKey("joyY"))
+        {
+            jtrans.anchoredPosition = new Vector2(PlayerPrefs.GetFloat("joyX"), PlayerPrefs.GetFloat("joyY"));
+            //jtrans.sizeDelta.Set(PlayerPrefs.GetFloat("joyWidth") * 280f, PlayerPrefs.GetFloat("joyHeight") * 280f);
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("joyX", jtrans.anchoredPosition.x);
+            PlayerPrefs.SetFloat("joyY", jtrans.anchoredPosition.y);
+            //PlayerPrefs.SetFloat("joyWidth", jtrans.sizeDelta.x);
+            //PlayerPrefs.SetFloat("joyHeight", jtrans.sizeDelta.y);
+        }
+        skillButtons = new GameObject[3] { joyStick.transform.Find("SkillButton1").gameObject, joyStick.transform.Find("SkillButton2").gameObject, joyStick.transform.Find("SkillButton3").gameObject };
+    }
     public void MoveButtonInitialize()
     {
         object[] parameters = new object[] { };
@@ -507,5 +521,9 @@ public class GUIManager : MonoBehaviour
     {
         StopGame();
         gameOver.GetComponent<GameOver>().panel.SetActive(true);
+    }
+    public void VictoryScreenInit(float score)
+    {
+        victoryScreen.SetActive(true);
     }
 }

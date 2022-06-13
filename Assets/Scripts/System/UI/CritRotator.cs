@@ -26,7 +26,6 @@ public class CritRotator : MonoBehaviour
             Vector3 spawnPos = transform.position + spawnCircle * distance; // Radius is just the distance away from the point
             GameObject Panel = Instantiate(CritPanelPrefab, spawnPos, Quaternion.identity);
             Panel.GetComponent<SpriteRenderer>().sprite = crits[i].icon;
-            Debug.Log(crits[i].critName);
             Panel.transform.SetParent(this.transform);
         }
     }

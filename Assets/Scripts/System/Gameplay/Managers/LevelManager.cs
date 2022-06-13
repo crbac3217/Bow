@@ -40,6 +40,7 @@ public class LevelManager : MonoBehaviour
             level = gm.levels[0].level;
             endtype = gm.levels[0].endType;
             boss = gm.levels[0].boss;
+            gm.lvlM = this;
             if (!gm.instPlayer)
             {
                 SpawnCampar();

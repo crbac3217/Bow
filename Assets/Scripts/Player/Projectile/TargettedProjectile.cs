@@ -22,8 +22,8 @@ public class TargettedProjectile : Projectile
         }
         if (spawnnoise.Count > 0)
         {
-            audio.clip = spawnnoise[Random.Range(0, spawnnoise.Count)];
-            audio.Play();
+            GetComponent<AudioSource>().clip = spawnnoise[Random.Range(0, spawnnoise.Count)];
+            GetComponent<AudioSource>().Play();
         }
     }
     public override void Flying()

@@ -25,8 +25,8 @@ public class AmpleProjectile : Projectile
     }
     public override void OnCollisionEnemy(EnemyController ec)
     {
-        audio.clip = enemyImpact;
-        audio.Play();
+        GetComponent<AudioSource>().clip = enemyImpact;
+        GetComponent<AudioSource>().Play();
         DealDamage(ec);
         if (ec.hp > 0)
         {

@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [System.NonSerialized]
     public PlayerType pt;
     public GameObject playerPrf, instPlayer, managerPar, joystick, buttons, camPar;
-    public float transitionTime;
+    public float transitionTime, startTime;
     public List<Animator> transitionAnims = new List<Animator>();
     public List<Level> levels = new List<Level>();
     public List<GameObject> donotdestroy = new List<GameObject>();
     public LevelDataBase lvldata;
+    public LevelManager lvlM;
+    public bool online = false;
 
     private void Start()
     {
@@ -37,6 +40,7 @@ public class GameManager : MonoBehaviour
         {
             AddToLevels(lvl.levels[Random.Range(0, lvl.levels.Count)]);
         }
+        startTime = Time.time;
         SceneManager.LoadSceneAsync(1);
     }
     private void AddToLevels(Level lvl)
@@ -64,7 +68,15 @@ public class GameManager : MonoBehaviour
             anim.SetTrigger("Transition");
         }
         yield return new WaitForSeconds(transitionTime);
-        levels.Remove(levels[0]);
+        if (levels.Count > 0)
+        {
+            levels.Remove(levels[0]);
+        }
+        else
+        {
+            Victory();
+        }
+        
         SceneManager.LoadSceneAsync(1);
     }
     public void GameReset()
@@ -79,7 +91,8 @@ public class GameManager : MonoBehaviour
     }
     public void Victory()
     {
-
+        float score = Mathf.Round((Time.time - startTime) * 100) / 100f;
+        lvlM.pc.guiManager.VictoryScreenInit(score);
     }
 }
 

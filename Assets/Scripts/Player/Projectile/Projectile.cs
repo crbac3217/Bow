@@ -12,14 +12,14 @@ public class Projectile : MonoBehaviour
     public List<SpriteRenderer> spren = new List<SpriteRenderer>();
     public Rigidbody2D rb;
     public Animator anim;
-    public AudioSource audio;
+    public AudioSource projaudio;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spren.Add(GetComponent<SpriteRenderer>());
-        audio = GetComponent<AudioSource>();
+        projaudio = GetComponent<AudioSource>();
         SetUp();
         StartCoroutine(Fired());
     }
@@ -70,8 +70,8 @@ public class Projectile : MonoBehaviour
                 Color temp = collision.GetComponent<Platform>().color;
                 InvokeParticle(temp);
                 OnHit();
-                audio.clip = groundImpact;
-                audio.Play();
+                projaudio.clip = groundImpact;
+                projaudio.Play();
             }
         }
         else if (collision.CompareTag("EnemyProjectile") && !isHit)
@@ -97,8 +97,8 @@ public class Projectile : MonoBehaviour
     {
         OnHit();
         DealDamage(ec);
-        audio.clip = enemyImpact;
-        audio.Play();
+        projaudio.clip = enemyImpact;
+        projaudio.Play();
         transform.SetParent(ec.transform);
         Color temp = ec.color;
         InvokeParticle(temp);
