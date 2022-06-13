@@ -6,6 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class Skill : ScriptableObject
 {
+    public int skillNum;
     public SkillType skillType;
     public CooldownType cdType;
     public string skillName, description;

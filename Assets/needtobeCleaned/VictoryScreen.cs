@@ -52,10 +52,10 @@ public class VictoryScreen : MonoBehaviour
             {
                 UpdateLocalTimescore(time);
             }
-            else
-            {
-                UpdateLocalTimescore(time);
-            }
+        }
+        else
+        {
+            UpdateLocalTimescore(time);
         }
     }
     private void UpdateLocalHighscore()
@@ -69,7 +69,7 @@ public class VictoryScreen : MonoBehaviour
         timehigh.SetActive(true);
         timescore = true;
         PlayerPrefs.SetFloat("Timescore", time);
-        timeInt = (int)time * 100;
+        timeInt = Mathf.RoundToInt(time * 100f);
     }
     public void AnimFinished()
     {
@@ -104,7 +104,7 @@ public class VictoryScreen : MonoBehaviour
         PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
         {
             FunctionName = "HighscoreUpdate",
-            FunctionParameter = new { highscoreval = totalScoreInt },
+            FunctionParameter = new { highscoreval = totalScoreInt, highscoreChar = pc.playerType.charNum, highscoreSkill1 = pc.skills[0].skillNum, highscoreSkill2 = pc.skills[1].skillNum, highscoreSkill3 = pc.skills[2].skillNum, highscoreSkill4 = pc.skills[3].skillNum },
             GeneratePlayStreamEvent = true,
         },
         OnHighUpdateSuccess, OnHighUpdateFail);
@@ -114,7 +114,7 @@ public class VictoryScreen : MonoBehaviour
         PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
         {
             FunctionName = "TimescoreUpdate",
-            FunctionParameter = new { timescoreval = timeInt },
+            FunctionParameter = new { timescoreval = timeInt, timescoreChar = pc.playerType.charNum, timescoreSkill1 = pc.skills[0].skillNum, timescoreSkill2 = pc.skills[1].skillNum, timescoreSkill3 = pc.skills[2].skillNum, highscoreSkill4 = pc.skills[3].skillNum },
             GeneratePlayStreamEvent = true,
         },
         OnTimeUpdateSuccess, OnTimeUpdateFail);

@@ -11,6 +11,7 @@ public class PlayerType:ScriptableObject
     public ItemDatabase itemdb;
     public SetDataBase setdb;
     public Sprite baseImage;
+    public int charNum;
     public RuntimeAnimatorController controller;
     public EquipmentDataBase equipdb;
     public EquipmentDataBase beginner;
