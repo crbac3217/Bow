@@ -18,10 +18,10 @@ public class GUIManager : MonoBehaviour
     public PlayerControl pc;
     public Volume volume;
     public GameManager gm;
-    public GameObject joystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver, victoryScreenPref;
+    public GameObject fixedJoystickPref, dynamicJoystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver, victoryScreenPref;
     private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton, volumeObj, victoryScreen;
     public ShopBase sb;
-    public GameObject[] skillButtons = new GameObject[] { };
+    public GameObject[] skillButtons = new GameObject[3] {null, null, null};
     public List<string> test = new List<string>();
     public Dictionary<string, GameObject> uiElements = new Dictionary<string, GameObject>();
     public Dictionary<string, EventTrigger.Entry> entries = new Dictionary<string, EventTrigger.Entry>();
@@ -35,10 +35,14 @@ public class GUIManager : MonoBehaviour
     public void SpawnGUI()
     {
         canvas = Instantiate(canvasPref, pc.campar.cam.transform);
-        MakeButtons();
+#if UNITY_ANDROID
+        MobileMakeButtons();
         MoveButtonInitialize();
         JumpButtonInitialize();
         SkillButtonInitailize(); 
+#elif UNITY_STANDALONE_WIN
+        PCMakeButtons();
+#endif
         SetUpPlayerHealthBar();
         SetUpVolume();
         SetUpSetText();
@@ -48,11 +52,12 @@ public class GUIManager : MonoBehaviour
         SetUpPausePanel();
         SetUpGameOverPanel();
         SetUpVictoryScreen();
+        PCGUI();
         //MoveButtonRead();
         //JoystickRead();
     }
     #region GUIButtonInitialize
-    public void MakeButtons()
+    public void MobileMakeButtons()
     {
         moveButton = Instantiate(movePref, canvas.transform);
         RectTransform mtrans = moveButton.GetComponent<RectTransform>();
@@ -68,7 +73,7 @@ public class GUIManager : MonoBehaviour
             //PlayerPrefs.SetFloat("moveWidth", mtrans.sizeDelta.x);
             //PlayerPrefs.SetFloat("moveHeight", mtrans.sizeDelta.y);
         }
-        joyStick = Instantiate(joystickPref, canvas.transform);
+        joyStick = Instantiate(fixedJoystickPref, canvas.transform);
         RectTransform jtrans = joyStick.GetComponent<RectTransform>();
         if (PlayerPrefs.HasKey("joyX") && PlayerPrefs.HasKey("joyY"))
         {
@@ -83,6 +88,10 @@ public class GUIManager : MonoBehaviour
             //PlayerPrefs.SetFloat("joyHeight", jtrans.sizeDelta.y);
         }
         skillButtons = new GameObject[3] { joyStick.transform.Find("SkillButton1").gameObject, joyStick.transform.Find("SkillButton2").gameObject, joyStick.transform.Find("SkillButton3").gameObject };
+    }
+    private void PCMakeButtons()
+    {
+        joyStick = Instantiate(dynamicJoystickPref, canvas.transform);
     }
     public void MoveButtonInitialize()
     {
@@ -205,6 +214,20 @@ public class GUIManager : MonoBehaviour
         vs.gm = gm;
         victoryScreen.SetActive(false);
     }
+    private void PCGUI()
+    {
+        playerHealth.transform.Find("GemImage").gameObject.SetActive(true);
+        playerHealth.transform.Find("GemCooldown").gameObject.SetActive(true);
+        playerHealth.transform.Find("gemout").gameObject.SetActive(true);
+        pc.moveGem = playerHealth.transform.Find("GemImage").GetComponent<Image>();
+        pc.moveCDGem = playerHealth.transform.Find("GemCooldown").GetComponent<Image>();
+        for (int i = 1; i <= 3; i++)
+        {
+            playerHealth.transform.Find("SkillButton" + i).gameObject.SetActive(true);
+            Debug.Log(i.ToString());
+            skillButtons[i - 1] = playerHealth.transform.Find("SkillButton" + i).gameObject;
+        }
+    }
     #endregion SetUpPanels
     #region equipments and skill
     public void EQPanelOn(int typeint)
@@ -298,8 +321,8 @@ public class GUIManager : MonoBehaviour
             EventTrigger.Entry uEntry = new EventTrigger.Entry();
             dEntry.eventID = EventTriggerType.PointerDown;
             uEntry.eventID = EventTriggerType.PointerUp;
-            dEntry.callback.AddListener((eventData) => { skill.OnButtonPress(pc); });
-            uEntry.callback.AddListener((eventData) => { skill.OnButtonRelease(pc); });
+            dEntry.callback.AddListener((eventData) => { pc.OnSkillPress(num); });
+            uEntry.callback.AddListener((eventData) => { pc.OnSkillRelease(num); });
             trigger.triggers.Add(dEntry);
             trigger.triggers.Add(uEntry);
             skill.sb.UpdateCD();
@@ -518,15 +541,20 @@ public class GUIManager : MonoBehaviour
     {
         pc.ps.CancelShooting();
         joyStick.SetActive(false);
+    #if UNITY_ANDROID
         moveButton.SetActive(false);
         pauseButton.SetActive(false);
+    #endif
+
         Time.timeScale = 0;
     }
     public void ResumeGame()
     {
-        joyStick.SetActive(true);
+    #if UNITY_ANDROID
         moveButton.SetActive(true);
         pauseButton.SetActive(true);
+    #endif
+        joyStick.SetActive(true);
         Time.timeScale = 1;
     }
     public void GameOverPanelOn()
@@ -536,6 +564,7 @@ public class GUIManager : MonoBehaviour
     }
     public void VictoryScreenInit(float score)
     {
+        StopGame();
         victoryScreen.SetActive(true);
         victoryScreen.GetComponent<VictoryScreen>().SetUp(score);
     }

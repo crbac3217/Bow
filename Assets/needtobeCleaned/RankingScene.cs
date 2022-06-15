@@ -43,10 +43,11 @@ public class RankingScene : MonoBehaviour
     public void ClearRankScene()
     {
         int j = rankPanel.transform.childCount;
-        for (int i = j-1; i > 0; i--)
+        for (int i = j-1; i >= 0; i--)
         {
             Destroy(rankPanel.transform.GetChild(i).gameObject);
         }
+        rankPanel.GetComponent<RectTransform>().sizeDelta = new Vector2(rankPanel.GetComponent<RectTransform>().sizeDelta.x, 0);
         detailsPanel.SetActive(false);
     }
     public void OnScorePress()
@@ -73,7 +74,7 @@ public class RankingScene : MonoBehaviour
         request.StatisticName = "Highscore";
         request.StartPosition = 0;
         request.MaxResultsCount = maxRankings;
-        request.ProfileConstraints = new PlayerProfileViewConstraints() {ShowStatistics = true };
+        request.ProfileConstraints = new PlayerProfileViewConstraints() { ShowStatistics = true, ShowDisplayName = true };
         PlayFabClientAPI.GetLeaderboard(request, LeaderboardSuccess, LeaderboardError);
     }
     private void TimeScene()
@@ -82,7 +83,7 @@ public class RankingScene : MonoBehaviour
         request.StatisticName = "Timescore";
         request.StartPosition = 0;
         request.MaxResultsCount = maxRankings;
-        request.ProfileConstraints = new PlayerProfileViewConstraints() { ShowStatistics = true };
+        request.ProfileConstraints = new PlayerProfileViewConstraints() { ShowStatistics = true, ShowDisplayName = true };
         PlayFabClientAPI.GetLeaderboard(request, TimeLeaderboardSuccess, LeaderboardError);
     }
     private void LeaderboardSuccess(GetLeaderboardResult result)
@@ -94,7 +95,7 @@ public class RankingScene : MonoBehaviour
             rect.sizeDelta = new Vector2(rect.sizeDelta.x, rect.sizeDelta.y + 200f);
             RankPanel rp = inst.GetComponent<RankPanel>();
             rp.rank.text = "#"+(entry.Position + 1)+".";
-            rp.username.text = entry.DisplayName;
+            rp.username.text = entry.Profile.DisplayName;
             rp.score.text = entry.StatValue.ToString();
             foreach (var stat in entry.Profile.Statistics)
             {
@@ -159,7 +160,7 @@ public class RankingScene : MonoBehaviour
                 }
                 for (int i = 1; i <= 4; i++)
                 {
-                    if (stat.Name == "HighscoreSkill" + i.ToString())
+                    if (stat.Name == "TimescoreSkill" + i.ToString())
                     {
                         foreach (Skill sk in allSkills)
                         {
@@ -190,6 +191,7 @@ public class RankingScene : MonoBehaviour
     }
     private void ScoreOn()
     {
+        isScore = true;
         scorebuttonimg.color = Color.white;
         timebuttonimg.color = Color.black;
         scoretext.color = Color.white;
@@ -197,6 +199,7 @@ public class RankingScene : MonoBehaviour
     }
     private void TimeOn()
     {
+        isScore = false;
         timebuttonimg.color = Color.white;
         scorebuttonimg.color = Color.black;
         timetext.color = Color.white;
@@ -223,7 +226,7 @@ public class RankingScene : MonoBehaviour
     {
         detailsPanel.SetActive(true);
         RankDetails rd = detailsPanel.GetComponent<RankDetails>();
-        for (int i = 0; i < skillImages.Length - 1; i++)
+        for (int i = 0; i <= skillImages.Length - 1; i++)
         {
             rd.images[i].sprite = skillImages[i];
         }

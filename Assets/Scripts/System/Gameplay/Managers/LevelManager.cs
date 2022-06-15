@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     public int level;
     public PlayerType playerType;
     public CameraParent cp;
-    public GameObject managerPar, playerPrefab, camParPref, spawnPoint, ItemManagerObject, GUIManagerObject, DamageManagerObject, LootManagerObject, bgmManagerObject, boss;
+    public GameObject managerPar, playerPrefab, camParPref, spawnPoint, ItemManagerObject, GUIManagerObject, DamageManagerObject, LootManagerObject, bgmManagerObject, pcInputManagerObject, boss;
     public PlayerControl pc;
     public ThemeDatabase theme;
     public EndType endtype;
@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
     private GUIManager guiManager;
     private DamageManager damageManager;
     private LootManager lootManager;
+    private PCInputManager pcInputManager;
     public BGMManager bgmManager;
     public List<GameObject> enemies = new List<GameObject>();
     private void Start()
@@ -50,7 +51,6 @@ public class LevelManager : MonoBehaviour
             }
             else
             {
-                Destroy(managerPar);
                 cp = gm.camPar.GetComponent<CameraParent>();
                 managerPar = gm.managerPar;
                 gm.instPlayer.transform.position = spawnPoint.transform.position;
@@ -100,6 +100,8 @@ public class LevelManager : MonoBehaviour
     }
     private void SpawnManagers()
     {
+        GameObject temp = new GameObject();
+        managerPar = Instantiate(temp, Vector3.zero, Quaternion.identity);
         var itemManagerObject = Instantiate(ItemManagerObject, managerPar.transform);
         itemManager = itemManagerObject.GetComponent<ItemManager>();
         var guiManagerObject = Instantiate(GUIManagerObject, managerPar.transform);
@@ -111,6 +113,8 @@ public class LevelManager : MonoBehaviour
         lootManager = lootManagerObject.GetComponent<LootManager>();
         var BgmManagerObject = Instantiate(bgmManagerObject, managerPar.transform);
         bgmManager = BgmManagerObject.GetComponent<BGMManager>();
+        var PCInputManagerObject = Instantiate(pcInputManagerObject, managerPar.transform);
+        pcInputManager = PCInputManagerObject.GetComponent<PCInputManager>();
         gm.transitionAnims.Add(bgmManager.GetComponent<Animator>());
         DontDestroyOnLoad(managerPar);
         gm.donotdestroy.Add(managerPar);
@@ -125,6 +129,7 @@ public class LevelManager : MonoBehaviour
         damageManager.pc = pc;
         itemManager.pc = pc;
         guiManager.pc = pc;
+        pcInputManager.pc = pc;
         pc.playerType = Instantiate(playerType);
         pc.damageManager = damageManager;
         pc.guiManager = guiManager;
@@ -139,7 +144,11 @@ public class LevelManager : MonoBehaviour
         {
             float healAmount = (float)pc.stats[2].value / 10f;
             pc.Heal((int)healAmount);
-            pc.ps.fixedJoystick.CancelShooting();
+    #if UNITY_ANDROID
+        pc.ps.fixedJoystick.CancelShooting();
+    #elif UNITY_STANDALONE_WIN
+            pc.ps.dynamicJoystick.CancelShooting();
+    #endif
         }
     }
     #endregion SetUp

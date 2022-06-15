@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class FixedJoystick : Joystick
+public class
+    FixedJoystick : Joystick
 {
     protected Joystick joystick;
     public PlayerControl pc;
@@ -22,13 +23,15 @@ public class FixedJoystick : Joystick
 
     private void Awake()
     {
-        joystick = this;
+#if UNITY_ANDROID
+    joystick = this;
+#endif
     }
     protected override void Start()
     {
         base.Start();
         handleObj = transform.GetChild(0).gameObject;
-        handleCD = transform.GetChild(1).gameObject;
+        handleCD = transform.GetChild(0).Find("ShootCooldown").gameObject;
         progressBar = Resources.Load("Prefabs/ProgressBar") as GameObject;
     }
     //when handle is pressed
@@ -180,7 +183,7 @@ public class FixedJoystick : Joystick
     }
     public void FireLevelUp(int level)
     {
-        GameObject bar = Instantiate(progressBar, handleObj.transform);
+        GameObject bar = Instantiate(progressBar, handleCD.transform);
         Vector3 scale = bar.transform.localScale;
         bar.transform.localScale = new Vector3(scale.x + (0.15f * level), scale.y + (0.15f * level), scale.z + (0.15f * level));
         bar.GetComponent<Image>().fillAmount = 0;
@@ -231,7 +234,7 @@ public class FixedJoystick : Joystick
     {
         ps.bowArm.rotation = ps.ArmInitialDeg;
         armRotate = false;
-        foreach (Transform child in handleObj.transform)
+        foreach (Transform child in handleCD.transform)
         {
             GameObject.Destroy(child.gameObject);
         }

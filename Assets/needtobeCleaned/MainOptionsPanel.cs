@@ -50,7 +50,16 @@ public class MainOptionsPanel : MonoBehaviour
     #endregion volume
     private void SetUpDeviceSetting()
     {
-
+#if UNITY_ANDROID
+        joySetting.SetActive(true);
+        controlSetting.SetActive(false);
+#elif UNITY_STANDALONE_WIN
+        joySetting.SetActive(false);
+        controlSetting.SetActive(true);
+#elif UNITY_EDITOR
+        joySetting.SetActive(false);
+        controlSetting.SetActive(true);
+#endif
     }
     #region joystick
     public void OnJoyEditPress()
@@ -127,5 +136,11 @@ public class MainOptionsPanel : MonoBehaviour
     public void CloseButton()
     {
         this.gameObject.SetActive(false);
+#if UNITY_STANDALONE_WIN
+        foreach (ChangeControl cc in controlSetting.GetComponentsInChildren<ChangeControl>())
+        {
+            cc.ChangeOff();
+        }
+#endif
     }
 }

@@ -16,12 +16,17 @@ public class HelmOfTheDead : Modifier
 
     IEnumerator SetPlayerInvincible(PlayerControl pc)
     {
-        float cdtemp = pc.ps.fixedJoystick.defaultCd;
+#if UNITY_ANDROID
+    var joystick = pc.ps.fixedJoystick as FixedJoystick;
+#elif UNITY_STANDALONE_WIN
+        var joystick = pc.ps.dynamicJoystick as DynamicJoystick;
+#endif
+        float cdtemp = joystick.defaultCd;
         pc.pa.bodyAnim.SetTrigger("fakeDead");
         pc.ph.SetInvincible();
-        pc.ps.fixedJoystick.CancelShooting();
-        pc.ps.fixedJoystick.defaultCd = 3;
-        pc.ps.fixedJoystick.Avail = false;
+        joystick.CancelShooting();
+        joystick.defaultCd = 3;
+        joystick.Avail = false;
         foreach (Skill sk in pc.skills)
         {
             if (sk)
@@ -61,8 +66,8 @@ public class HelmOfTheDead : Modifier
         }
         pc.pa.bodyAnim.SetTrigger("revive");
         pc.ph.SetVulnerable();
-        pc.ps.fixedJoystick.Avail = true;
-        pc.ps.fixedJoystick.defaultCd = cdtemp;
+        joystick.Avail = true;
+        joystick.defaultCd = cdtemp;
         //trigger anim?
     }
 }

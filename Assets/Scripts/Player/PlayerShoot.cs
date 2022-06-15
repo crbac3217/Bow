@@ -10,6 +10,7 @@ public class PlayerShoot : MonoBehaviour
     public PlayerMove pm;
     public AudioClip meleeClip, drawClip;
     public FixedJoystick fixedJoystick;
+    public DynamicJoystick dynamicJoystick;
     public List<Modifier> shootMods = new List<Modifier>();
     public List<Modifier> killMods = new List<Modifier>();
     public LineRenderer projLine;
@@ -18,32 +19,50 @@ public class PlayerShoot : MonoBehaviour
     public Transform bowArm, firePoint;
     public Quaternion ArmInitialDeg;
     public float speedMultiplier, indicatorMultiplier, straightMultiplier, coolDown, ylimit, accuracyMult;
-    public bool isVisualized = false, canShoot = true;
+    public bool isVisualized = false, canShoot = true, isWin = true;
     public Material visualizerMaterial;
     public LayerMask groundMask;
 
     public void Begin()
     {
         pc = GetComponent<PlayerControl>();
+#if UNITY_ANDROID
         fixedJoystick = pc.guiManager.joyStick.GetComponent<FixedJoystick>();
         fixedJoystick.defaultCd = coolDown;
         fixedJoystick.pc = pc;
         fixedJoystick.ps = this;
-        ArmInitialDeg = bowArm.rotation;
         fixedJoystick.campar = pc.campar;
         fixedJoystick.camTemp = pc.campar.cam;
+        isWin = false;
+#elif UNITY_STANDALONE_WIN
+        dynamicJoystick = pc.guiManager.joyStick.GetComponent<DynamicJoystick>();
+        dynamicJoystick.defaultCd = coolDown;
+        dynamicJoystick.pc = pc;
+        dynamicJoystick.ps = this;
+        dynamicJoystick.campar = pc.campar;
+        dynamicJoystick.camTemp = pc.campar.cam;
+        isWin = true;
+#endif
+
+        ArmInitialDeg = bowArm.rotation;
+        
         pm = GetComponent<PlayerMove>();
     }
     public void Attack(Vector2 joyDir, float joyHeld, int joyIndicator)
     {
         float angle = Mathf.Atan2(-joyDir.y, -joyDir.x) * Mathf.Rad2Deg;
+#if UNITY_ANDROID
+    var joystick = fixedJoystick as FixedJoystick;
+#elif UNITY_STANDALONE_WIN
+        var joystick = dynamicJoystick as DynamicJoystick;
+#endif
         AttackArgs attackArg = new AttackArgs
         {
-            multval = joyHeld / fixedJoystick.indicator[joyIndicator] + (joyIndicator * indicatorMultiplier),
+            multval = joyHeld / joystick.indicator[joyIndicator] + (joyIndicator * indicatorMultiplier),
             angle = angle,
             dir = -joyDir,
             damageMult = 0,
-            heldPercent = joyHeld / fixedJoystick.indicator[joyIndicator],
+            heldPercent = joyHeld / joystick.indicator[joyIndicator],
             firePos = firePoint.transform.position,
             apc = pc,
             accuracyVal = pc.stats[4].value * accuracyMult,
@@ -108,10 +127,19 @@ public class PlayerShoot : MonoBehaviour
     }
     public void CancelShooting()
     {
-        fixedJoystick.CancelShooting();
+#if UNITY_ANDROID
+    fixedJoystick.CancelShooting();
+#elif UNITY_STANDALONE_WIN
+     dynamicJoystick.CancelShooting();
+#endif
     }
     public void Projectory(Vector2 joyDir, int joyIndicator, float joyHeld)
     {
+#if UNITY_ANDROID
+    var joystick = fixedJoystick as FixedJoystick;
+#elif UNITY_STANDALONE_WIN
+        var joystick = dynamicJoystick as DynamicJoystick;
+#endif
         float tempAngle = 0;
         bool tempIsgreater = false;
         if (joyDir.normalized.y < 0)
@@ -126,10 +154,11 @@ public class PlayerShoot : MonoBehaviour
         }
         if (!isVisualized)
         {
-            projLine.startColor = pc.playerType.tierColors[fixedJoystick.currentLevel];
+            projLine.startColor = pc.playerType.tierColors[joystick.currentLevel];
             ShowVisualizer(true);
         }
         tempAngle *= Mathf.Deg2Rad;
+
         ProjArgs projargs = new ProjArgs
         {
             ylim = transform.position.y - 1,
@@ -143,7 +172,7 @@ public class PlayerShoot : MonoBehaviour
             apc = pc,
             speedMult = speedMultiplier,
             indiMult = indicatorMultiplier,
-            joyIndi = fixedJoystick.indicator[joyIndicator],
+            joyIndi = joystick.indicator[joyIndicator],
             projLinei = projLine
 
         };

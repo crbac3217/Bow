@@ -66,8 +66,6 @@ public class PlayerControl : MonoBehaviour
         pf.Begin();
         pa.Begin();
         ReloadStats();
-        //this is temp function
-        FindObjectOfType<PCInputManager>().pc = this;
     }
     public void ReloadStats()
     {
@@ -199,5 +197,19 @@ public class PlayerControl : MonoBehaviour
         healthBar.color = Color.green;
         yield return new WaitForSeconds(0.5f);
         healthBar.color = temp;
+    }
+    public void OnSkillPress(int num)
+    {
+        if (skills[num] != null)
+        {
+            skills[num].OnButtonPress(this);
+        }
+    }
+    public void OnSkillRelease(int num)
+    {
+        if (skills[num] != null)
+        {
+            skills[num].OnButtonRelease(this);
+        }
     }
 }

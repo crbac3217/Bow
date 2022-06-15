@@ -29,8 +29,8 @@ public class VictoryScreen : MonoBehaviour
         totalScoreInt += dm.killCount;
         itemscollected.text = "Items Collected : " + im.itemCount + " X 2";
         totalScoreInt += (im.itemCount * 2);
-        setsactivated.text = "Sets Activated : " + im.setCount + " X 3";
-        totalScoreInt += im.setCount * 2;
+        setsactivated.text = "Sets Activated : " + im.setCount + " X 10";
+        totalScoreInt += im.setCount * 10;
         goldreserve.text = "Gold Reserve : " + pc.gold;
         totalScoreInt += pc.gold;
         totalscore.text = "Total Score : " + totalScoreInt;
@@ -104,20 +104,20 @@ public class VictoryScreen : MonoBehaviour
         PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
         {
             FunctionName = "HighscoreUpdate",
-            FunctionParameter = new { highscoreval = totalScoreInt, highscoreChar = pc.playerType.charNum/*, highscoreSkill1 = pc.skills[0].skillNum, highscoreSkill2 = pc.skills[1].skillNum, highscoreSkill3 = pc.skills[2].skillNum, highscoreSkill4 = pc.skills[3].skillNum */},
+            FunctionParameter = new { highscoreval = totalScoreInt, highscoreChar = pc.playerType.charNum, highscoreSkill1 = pc.skills[0].skillNum, highscoreSkill2 = pc.skills[1].skillNum, highscoreSkill3 = pc.skills[2].skillNum, highscoreSkill4 = pc.skills[3].skillNum },
             GeneratePlayStreamEvent = true,
         },
         OnHighUpdateSuccess, OnHighUpdateFail);
     }
     private void UpdateTimescore()
     {
-        //PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
-        //{
-        //    FunctionName = "TimescoreUpdate",
-        //    FunctionParameter = new { timescoreval = timeInt, timescoreChar = pc.playerType.charNum, timescoreSkill1 = pc.skills[0].skillNum, timescoreSkill2 = pc.skills[1].skillNum, timescoreSkill3 = pc.skills[2].skillNum, highscoreSkill4 = pc.skills[3].skillNum },
-        //    GeneratePlayStreamEvent = true,
-        //},
-        //OnTimeUpdateSuccess, OnTimeUpdateFail);
+        PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
+        {
+            FunctionName = "TimescoreUpdate",
+            FunctionParameter = new { timescoreval = timeInt, timescoreChar = pc.playerType.charNum, timescoreSkill1 = pc.skills[0].skillNum, timescoreSkill2 = pc.skills[1].skillNum, timescoreSkill3 = pc.skills[2].skillNum, highscoreSkill4 = pc.skills[3].skillNum },
+            GeneratePlayStreamEvent = true,
+        },
+        OnTimeUpdateSuccess, OnTimeUpdateFail);
     }
     private void OnHighUpdateSuccess(ExecuteCloudScriptResult result)
     {

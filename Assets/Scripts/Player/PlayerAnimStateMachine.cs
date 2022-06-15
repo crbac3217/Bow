@@ -9,6 +9,11 @@ public class PlayerAnimStateMachine : StateMachineBehaviour
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
         PlayerControl pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControl>();
-        pc.ps.fixedJoystick.armRotate = true;
+#if UNITY_ANDROID
+    var joystick = pc.ps.fixedJoystick as FixedJoystick;
+#elif UNITY_STANDALONE_WIN
+        var joystick = pc.ps.dynamicJoystick as DynamicJoystick;
+#endif
+        joystick.armRotate = true;
     }
 }

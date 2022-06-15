@@ -9,7 +9,11 @@ public class endPortal : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+#if UNITY_ANDROID
             collision.GetComponent<PlayerShoot>().fixedJoystick.CancelShooting();
+#elif UNITY_STANDALONE_WIN
+            collision.GetComponent<PlayerShoot>().dynamicJoystick.CancelShooting();
+#endif
             collision.GetComponent<PlayerMove>().LetGoLeft();
             collision.GetComponent<PlayerMove>().LetGoRight();
             lm.gm.LoadNextLevel();
