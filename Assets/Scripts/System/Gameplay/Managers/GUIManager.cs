@@ -171,6 +171,9 @@ public class GUIManager : MonoBehaviour
         pc.healthBar = playerHealth.transform.Find("playerhealthred").GetComponent<Image>();
         pc.goldUI = playerHealth.transform.Find("goldAmount").GetComponent<TextMeshProUGUI>();
         pc.healthUI = playerHealth.transform.Find("healthAmount").GetComponent<TextMeshProUGUI>();
+#if UNITY_STANDALONE_WIN
+        playerHealth.GetComponent<RectTransform>().anchoredPosition = new Vector2(playerHealth.GetComponent<RectTransform>().anchoredPosition.x, playerHealth.GetComponent<RectTransform>().anchoredPosition.y - 125);
+#endif
     }
     private void SetUpSetText()
     {
@@ -228,8 +231,8 @@ public class GUIManager : MonoBehaviour
             skillButtons[i - 1] = playerHealth.transform.Find("SkillButton" + i).gameObject;
         }
     }
-    #endregion SetUpPanels
-    #region equipments and skill
+#endregion SetUpPanels
+#region equipments and skill
     public void EQPanelOn(int typeint)
     {
         StopGame();
@@ -338,8 +341,8 @@ public class GUIManager : MonoBehaviour
             trigger.triggers.Clear();
         }
     }
-    #endregion equipments and skill
-    #region chests
+#endregion equipments and skill
+#region chests
     public void ChestItem(int tier)
     {
         List<Item> candidates = new List<Item>();
@@ -370,8 +373,8 @@ public class GUIManager : MonoBehaviour
         chestPanel.SetActive(false);
         ResumeGame();
     }
-    #endregion chests
-    #region Shop
+#endregion chests
+#region Shop
     public void ShopOn(int i)
     {
         StopGame();
@@ -488,8 +491,8 @@ public class GUIManager : MonoBehaviour
         shopPanel.SetActive(false);
         ResumeGame();
     }
-    #endregion Shop
-    #region Boss
+#endregion Shop
+#region Boss
     public void BossHPBarSpawn(BossController bc)
     {
         bossBar = Instantiate(bossBarPref, canvas.transform);
@@ -512,14 +515,14 @@ public class GUIManager : MonoBehaviour
     {
         bossBar.GetComponent<BossHpBar>().redBar.color = Color.white;
     }
-    #endregion Boss
-    #region SetText
+#endregion Boss
+#region SetText
     public void DisplaySetText(SetEffect set)
     {
         var temp = Instantiate(setTextPref, setTextParent.transform);
         temp.GetComponent<SetTextInst>().set = set;
     }
-    #endregion SetText
+#endregion SetText
     public void PausePanelOn()
     {
         if (!pausePanel.activeSelf)
@@ -541,19 +544,19 @@ public class GUIManager : MonoBehaviour
     {
         pc.ps.CancelShooting();
         joyStick.SetActive(false);
-    #if UNITY_ANDROID
+#if UNITY_ANDROID
         moveButton.SetActive(false);
         pauseButton.SetActive(false);
-    #endif
+#endif
 
         Time.timeScale = 0;
     }
     public void ResumeGame()
     {
-    #if UNITY_ANDROID
+#if UNITY_ANDROID
         moveButton.SetActive(true);
         pauseButton.SetActive(true);
-    #endif
+#endif
         joyStick.SetActive(true);
         Time.timeScale = 1;
     }

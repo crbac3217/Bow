@@ -54,27 +54,27 @@ public class PCInputManager : MonoBehaviour
         }
         if (Input.GetKeyDown(dic["SkillButton1"]))
         {
+            pc.OnSkillPress(0);
+        }
+        if (Input.GetKeyDown(dic["SkillButton2"]))
+        {
             pc.OnSkillPress(1);
         }
         if (Input.GetKeyDown(dic["SkillButton2"]))
         {
             pc.OnSkillPress(2);
         }
-        if (Input.GetKeyDown(dic["SkillButton2"]))
-        {
-            pc.OnSkillPress(3);
-        }
         if (Input.GetKeyDown(dic["SkillButton1"]))
+        {
+            pc.OnSkillRelease(0);
+        }
+        if (Input.GetKeyDown(dic["SkillButton2"]))
         {
             pc.OnSkillRelease(1);
         }
         if (Input.GetKeyDown(dic["SkillButton2"]))
         {
             pc.OnSkillRelease(2);
-        }
-        if (Input.GetKeyDown(dic["SkillButton2"]))
-        {
-            pc.OnSkillRelease(3);
         }
     }
 }
