@@ -10,6 +10,7 @@ using PlayFab.ClientModels;
 public class MainOptionsPanel : MonoBehaviour
 {
     public AudioMixer mixer;
+    public AudioSource audioS;
     public Slider bgmBar, sfxBar;
     public GameObject joySetting, controlSetting, joySettingPanel, playFabSuccessful, playFabUnsuccessful, uIDChangeSuccess, uIDChangeFailure;
     public TMP_InputField playfabInputfield;
@@ -64,6 +65,7 @@ public class MainOptionsPanel : MonoBehaviour
     #region joystick
     public void OnJoyEditPress()
     {
+        audioS.Play();
         joySettingPanel.SetActive(true);
         joySettingPanel.GetComponent<JoySettingPanel>().SetUp();
     }
@@ -101,6 +103,7 @@ public class MainOptionsPanel : MonoBehaviour
     }
     public void ConfirmUsername()
     {
+        audioS.Play();
         var request = new UpdateUserTitleDisplayNameRequest { DisplayName = uid };
         PlayFabClientAPI.UpdateUserTitleDisplayName(request, OnUsernameSuccess, OnUsernameFailure);
     }
@@ -135,6 +138,7 @@ public class MainOptionsPanel : MonoBehaviour
 
     public void CloseButton()
     {
+        audioS.Play();
         this.gameObject.SetActive(false);
 #if UNITY_STANDALONE_WIN
         foreach (ChangeControl cc in controlSetting.GetComponentsInChildren<ChangeControl>())

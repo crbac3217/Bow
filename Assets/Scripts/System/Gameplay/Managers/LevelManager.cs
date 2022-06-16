@@ -160,7 +160,7 @@ public class LevelManager : MonoBehaviour
         bgmManager.audioSource.Play();
         CreateStartArea();
         //change this
-        int areaAmount = 1 + (level * 0);
+        int areaAmount = Mathf.RoundToInt(1 + (level * 1));
         for (int i = 0; i < areaAmount; i++)
         {
             CreateMidArea(areas[i].end.transform.position);

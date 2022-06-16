@@ -10,6 +10,7 @@ public class ChangeControl : MonoBehaviour
     public TextMeshProUGUI textbox;
     public Image image;
     public bool active = false;
+    public AudioSource audioS;
     private void Start()
     {
         SetUp();
@@ -43,7 +44,8 @@ public class ChangeControl : MonoBehaviour
         {
             active = true;
             image.color = new Color(1, 1, 1, 1);
-            foreach (ChangeControl cc in this.transform.parent.GetComponentsInChildren<ChangeControl>())
+            audioS.Play();
+            foreach (ChangeControl cc in this.transform.parent.parent.GetComponent<ControlSettingInst>().ccs)
             {
                 if (cc != this)
                 {
@@ -65,6 +67,7 @@ public class ChangeControl : MonoBehaviour
                 KeyChange(kcode.ToString());
             }
         }
+        audioS.Play();
     }
     private void KeyChange(string keycode)
     {

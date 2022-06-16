@@ -13,7 +13,9 @@ public class MainScreenManager : MonoBehaviour
 {
     public GameManager gm;
     public List<PlayerType> playableChars = new List<PlayerType>();
-    public GameObject CharSelectPanel, OptionsPanel, CharSelButtonPref, username, onlineCheckScreen, userIDScreen, loginFailureScreen, userIDSuccess, userIDFailure, startButton;
+    public AudioSource audioS;
+    public AudioClip click1, click2, startclick;
+    public GameObject CharSelectPanel, OptionsPanel, CharSelButtonPref, username, onlineCheckScreen, userIDScreen, loginFailureScreen, userIDSuccess, userIDFailure, startButton, bgm, bgminst;
     public AudioMixer mixer;
     public Light2D light2d;
     public TMP_InputField usernameInput;
@@ -43,6 +45,11 @@ public class MainScreenManager : MonoBehaviour
         {
             mixer.SetFloat("sfxVol", PlayerPrefs.GetFloat("sfxVol"));
         }
+        if (!FindObjectOfType<MainMenuBGM>())
+        {
+            bgminst = Instantiate(bgm, Vector3.zero, Quaternion.identity);
+            DontDestroyOnLoad(bgminst);
+        }
     }
     private void Update()
     {
@@ -50,11 +57,15 @@ public class MainScreenManager : MonoBehaviour
     }
     public void TurnOnOptionsPanel()
     {
+        audioS.clip = click2;
+        audioS.Play();
         OptionsPanel.SetActive(true);
         OptionsPanel.GetComponent<MainOptionsPanel>().SetUp();
     }
     public void TurnOnPlayerSelection()
     {
+        audioS.clip = click2;
+        audioS.Play();
         CharSelectPanel.SetActive(true);
         GameObject panel = CharSelectPanel.transform.Find("CharSelectArea").gameObject;
         foreach (PlayerType pt in playableChars)
@@ -72,11 +83,15 @@ public class MainScreenManager : MonoBehaviour
     }
     public void TurnOnRanking()
     {
+        audioS.clip = click2;
+        audioS.Play();
         SceneManager.LoadSceneAsync(2);
     }
     #region Playfab
     public void TurnOnPlayfabSignin(PlayerType tpt)
     {
+        audioS.clip = click1;
+        audioS.Play();
         pt = tpt;
         onlineCheckScreen.SetActive(true);
     }
@@ -92,6 +107,8 @@ public class MainScreenManager : MonoBehaviour
         var request = new LoginWithCustomIDRequest { CustomId = SystemInfo.deviceUniqueIdentifier, CreateAccount = true };
         PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
 #endif
+        audioS.clip = click1;
+        audioS.Play();
     }
     private void OnLoginSuccess(LoginResult result)
     {
@@ -111,6 +128,8 @@ public class MainScreenManager : MonoBehaviour
     }
     public void ConfirmUsername()
     {
+        audioS.clip = click1;
+        audioS.Play();
         var request = new UpdateUserTitleDisplayNameRequest { DisplayName = usernameString };
         PlayFabClientAPI.UpdateUserTitleDisplayName(request, OnUsernameSuccess, OnUsernameFailure);
     }
@@ -147,21 +166,31 @@ public class MainScreenManager : MonoBehaviour
     }
     public void PlayOnline()
     {
+        audioS.clip = startclick;
+        audioS.Play();
         gm.online = true;
+        Destroy(bgminst);
         gm.StartGame(pt);
     }
     public void PlayOffline()
     {
+        audioS.clip = startclick;
+        audioS.Play();
         gm.online = false;
+        Destroy(bgminst);
         gm.StartGame(pt);
     }
     #endregion Playfab
     public void ResetScene()
     {
+        audioS.clip = click1;
+        audioS.Play();
         SceneManager.LoadSceneAsync(0);
     }
     public void EndGame()
     {
+        audioS.clip = startclick;
+        audioS.Play();
         Application.Quit();
     }
 }

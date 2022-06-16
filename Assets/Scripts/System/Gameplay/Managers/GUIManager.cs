@@ -19,7 +19,7 @@ public class GUIManager : MonoBehaviour
     public Volume volume;
     public GameManager gm;
     public AudioSource audioSource;
-    public AudioClip buySound, click1, click2;
+    public AudioClip buySound, click1, click2, mallet;
     public GameObject fixedJoystickPref, dynamicJoystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver, victoryScreenPref;
     private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton, volumeObj, victoryScreen;
     public ShopBase sb;
@@ -269,6 +269,8 @@ public class GUIManager : MonoBehaviour
             //clickEntry.callback.AddListener((eventData) => { pc.itemManager.ReplaceEquipment(eq); });
             candidates.Remove(eq);
         }
+        audioSource.clip = mallet;
+        audioSource.Play();
     }
     public void ConfirmEq(Equipment eq, EquipmentButtonPrefab eqPref)
     {
@@ -292,6 +294,8 @@ public class GUIManager : MonoBehaviour
             noEntry.eventID = EventTriggerType.PointerClick;
             noEntry.callback.AddListener((eventData) => {GoBackEq(); });
             noTrigger.triggers.Add(noEntry);
+            audioSource.clip = click1;
+            audioSource.Play();
         }
     }
     public void CloseEQ()
@@ -304,6 +308,8 @@ public class GUIManager : MonoBehaviour
             Destroy(eqPanel.transform.GetChild(i).gameObject);
         }
         eqPanel.SetActive(false);
+        audioSource.clip = click2;
+        audioSource.Play();
     }
     public void GoBackEq()
     {
@@ -312,6 +318,8 @@ public class GUIManager : MonoBehaviour
             epref.isAvail = true;
         }
         eqConfirm.SetActive(false);
+        audioSource.clip = click1;
+        audioSource.Play();
     }
     public void AddSkill(int num, Skill skill)
     {
@@ -345,7 +353,7 @@ public class GUIManager : MonoBehaviour
     }
 #endregion equipments and skill
 #region chests
-    public void ChestItem(int tier)
+    public void ChestItem(int tier, AudioClip audio)
     {
         List<Item> candidates = new List<Item>();
         foreach (Item item in pc.itemManager.itemdb.items)
@@ -356,9 +364,9 @@ public class GUIManager : MonoBehaviour
             }
         }
         int indexrand = UnityEngine.Random.Range(0, candidates.Count - 1);
-        ChestItemPopUp(candidates[indexrand]);
+        ChestItemPopUp(candidates[indexrand], audio);
     }
-    public void ChestItemPopUp(Item item)
+    public void ChestItemPopUp(Item item, AudioClip audio)
     {
         StopGame();
         ChestPanel cp = chestPanel.GetComponent<ChestPanel>();
@@ -368,6 +376,7 @@ public class GUIManager : MonoBehaviour
         cp.outline.color = pc.playerType.tierColors[item.itemTier];
         cp.panelOutline.effectColor = pc.playerType.tierColors[item.itemTier];
         chestPanel.SetActive(true);
+        cp.OnObtain(audio);
         pc.itemManager.AddItem(item.nameCode);
     }
     public void ChestPopUpOff()
@@ -423,6 +432,8 @@ public class GUIManager : MonoBehaviour
                     }
                 }
             }
+            audioSource.clip = mallet;
+            audioSource.Play();
             sb.items = tempCandidates;
         }
         RefreshGold();
@@ -481,6 +492,8 @@ public class GUIManager : MonoBehaviour
         if (item.cost <= pc.gold)
         {
             pc.itemManager.AddItem(item.nameCode);
+            audioSource.clip = buySound;
+            audioSource.Play();
             pc.goldUI.text = "$" + pc.gold;
             pc.gold -= item.cost;
             Destroy(sp.gameObject);
@@ -490,7 +503,11 @@ public class GUIManager : MonoBehaviour
     }
     public void ShopClose()
     {
+        audioSource.clip = click1;
+        audioSource.Play();
         shopPanel.SetActive(false);
+        audioSource.clip = click1;
+        audioSource.Play();
         ResumeGame();
     }
 #endregion Shop
@@ -531,6 +548,8 @@ public class GUIManager : MonoBehaviour
         {
             pausePanel.SetActive(true);
             pausePanel.GetComponent<PausePanel>().SetUpPanel();
+            audioSource.clip = click1;
+            audioSource.Play();
             StopGame();
         }
     }
@@ -538,6 +557,8 @@ public class GUIManager : MonoBehaviour
     {
         if (pausePanel.activeSelf)
         {
+            audioSource.clip = click2;
+            audioSource.Play();
             pausePanel.SetActive(false);
             ResumeGame();
         }

@@ -17,6 +17,7 @@ public class RankingScene : MonoBehaviour
     public List<PlayerType> allTypes;
     public int maxRankings;
     private bool isScore = true, online = false;
+    public AudioSource audioS;
 
     private void Start()
     {
@@ -57,6 +58,7 @@ public class RankingScene : MonoBehaviour
             ScoreOn();
             ClearRankScene();
             ScoreScene();
+            audioS.Play();
         }
     }
     public void OnTimePress()
@@ -66,6 +68,7 @@ public class RankingScene : MonoBehaviour
             TimeOn();
             ClearRankScene();
             TimeScene();
+            audioS.Play();
         }
     }
     private void ScoreScene()
@@ -238,6 +241,7 @@ public class RankingScene : MonoBehaviour
     }
     public void ReturnToMainMenu()
     {
+        audioS.Play();
         SceneManager.LoadSceneAsync(0);
     }
 }

@@ -166,8 +166,6 @@ public class PlayerControl : MonoBehaviour
     }
     public void GainGold(int amount)
     {
-        bodyAudio.clip = gain;
-        bodyAudio.Play();
         gold += amount;
         var pan = Instantiate(eachPanel, panel.transform);
         pan.GetComponent<TextMeshProUGUI>().text = "+" + amount;

@@ -9,6 +9,7 @@ public class JoySettingPanel : MonoBehaviour
     public Slider joySlider, moveSlider;
     public List<Image> joyImages = new List<Image>();
     public List<Image> moveImages = new List<Image>();
+    public AudioSource audioS;
     public void SetUp()
     {
         if (PlayerPrefs.HasKey("joyX") && PlayerPrefs.HasKey("joyY"))
@@ -54,6 +55,7 @@ public class JoySettingPanel : MonoBehaviour
 
     public void StartMovingJoy()
     {
+        audioS.Play();
         joyRect.GetComponent<MoveScript>().moving = true;
         joyRect.GetComponent<Image>().color = new Color(1f, 0.75f, 0f, 1f);
         foreach (Image im in joyImages)
@@ -74,6 +76,7 @@ public class JoySettingPanel : MonoBehaviour
     }
     public void StartMovingMove()
     {
+        audioS.Play();
         moveRect.GetComponent<MoveScript>().moving = true;
         foreach (Image im in moveImages)
         {
@@ -92,6 +95,7 @@ public class JoySettingPanel : MonoBehaviour
     }
     public void ResetToDefault()
     {
+        audioS.Play();
         PlayerPrefs.SetFloat("moveX", 200f);
         PlayerPrefs.SetFloat("moveY", 250f);
         PlayerPrefs.SetFloat("joyX", -250f);
@@ -112,6 +116,7 @@ public class JoySettingPanel : MonoBehaviour
     //}
     public void CloseButton()
     {
+        audioS.Play();
         this.gameObject.SetActive(false);
     }
 }

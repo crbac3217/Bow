@@ -10,4 +10,12 @@ public class ChestPanel : MonoBehaviour
     public Image outline, image;
     public Outline panelOutline;
     public Button closeButton;
+    public AudioSource audioS;
+
+    public void OnObtain(AudioClip audioclip)
+    {
+        audioS = GetComponent<AudioSource>();
+        audioS.clip = audioclip;
+        audioS.Play();
+    }
 }

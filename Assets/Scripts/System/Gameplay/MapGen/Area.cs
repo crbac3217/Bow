@@ -97,7 +97,7 @@ public class Area : MonoBehaviour
         ec.dm = dm;
         ec.damageCrits = crits;
         ec.lm = lm;
-        ec.GetComponent<AiHandler>().damage *= level;
+        ec.GetComponent<AiHandler>().damage += Mathf.RoundToInt(level * 0.75f);
         ec.GetComponent<AiHandler>().pc = pc;
         ec.lvlm = lvlm;
         ec.chestTier = level;
