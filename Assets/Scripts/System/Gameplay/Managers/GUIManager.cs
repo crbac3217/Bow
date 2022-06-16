@@ -18,6 +18,8 @@ public class GUIManager : MonoBehaviour
     public PlayerControl pc;
     public Volume volume;
     public GameManager gm;
+    public AudioSource audioSource;
+    public AudioClip buySound, click1, click2;
     public GameObject fixedJoystickPref, dynamicJoystickPref, movePref, canvasPref, canvas, moveButton, joyStick, eqPanelPref, eqConfirmPref, eqEachItem, chestPref, shopPref, shopEachPref, bossBarPref, bossBar, setTextParentPref, setTextPref, playerHealthPref, pausePanelPref, pauseButtonPref, volumePref, gameOverPref, gameOver, victoryScreenPref;
     private GameObject eqPanel, eqConfirm, shopPanel, chestPanel, setTextParent, playerHealth, pausePanel, pauseButton, volumeObj, victoryScreen;
     public ShopBase sb;
