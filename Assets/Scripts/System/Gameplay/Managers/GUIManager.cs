@@ -41,9 +41,10 @@ public class GUIManager : MonoBehaviour
         MobileMakeButtons();
         MoveButtonInitialize();
         JumpButtonInitialize();
-        SkillButtonInitailize(); 
+        SkillButtonInitailize();
 #elif UNITY_STANDALONE_WIN
         PCMakeButtons();
+        PCGUI();
 #endif
         SetUpPlayerHealthBar();
         SetUpVolume();
@@ -54,7 +55,6 @@ public class GUIManager : MonoBehaviour
         SetUpPausePanel();
         SetUpGameOverPanel();
         SetUpVictoryScreen();
-        PCGUI();
         //MoveButtonRead();
         //JoystickRead();
     }
