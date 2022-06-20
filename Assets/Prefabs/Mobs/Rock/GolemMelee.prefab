@@ -519,7 +519,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -818617093
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 7088880793078522420, guid: 22de369a73e3ca643afe9de99e0eb75c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -592,7 +592,7 @@ MonoBehaviour:
   - {x: 0.06469936, y: -0.30687365, z: 0}
   m_ShapePathHash: -679117002
   m_Mesh: {fileID: 0}
-  m_InstanceId: 97646
+  m_InstanceId: 102836
 --- !u!82 &7312289883997739641
 AudioSource:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -8312082079983998156, guid: eac65ab411cb02647973d88ce9c08de1, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.328
+  m_Volume: 0.127
   m_Pitch: 1
   Loop: 0
   Mute: 0

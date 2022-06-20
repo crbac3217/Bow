@@ -17,11 +17,10 @@ MonoBehaviour:
   whileMove: 0
   cantCutoff: 0
   AttackName: midDash
-  AttackSound: {fileID: 0}
   coolDown: 3
   duration: 1.5
   damageMult: 1.5
-  dashDist: 5
+  dashDist: 4
   attackRangePrefab: {fileID: 2433838169341078632, guid: 791d30b9736ac534190c3dd242124393, type: 3}
   projectilePrefab: {fileID: 0}
   range: {fileID: 0}

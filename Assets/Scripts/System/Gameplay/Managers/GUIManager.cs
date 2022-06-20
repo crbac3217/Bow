@@ -37,6 +37,7 @@ public class GUIManager : MonoBehaviour
     public void SpawnGUI()
     {
         canvas = Instantiate(canvasPref, pc.campar.cam.transform);
+        SetUpPlayerHealthBar();
 #if UNITY_ANDROID
         MobileMakeButtons();
         MoveButtonInitialize();
@@ -46,7 +47,6 @@ public class GUIManager : MonoBehaviour
         PCMakeButtons();
         PCGUI();
 #endif
-        SetUpPlayerHealthBar();
         SetUpVolume();
         SetUpSetText();
         SetUpEQPanels();
@@ -221,6 +221,13 @@ public class GUIManager : MonoBehaviour
     }
     private void PCGUI()
     {
+        if (!playerHealth)
+        {
+            Debug.Log("wot");
+        }else if (playerHealth.transform.Find("GemImage"))
+        {
+            Debug.Log("fuck");
+        }
         playerHealth.transform.Find("GemImage").gameObject.SetActive(true);
         playerHealth.transform.Find("GemCooldown").gameObject.SetActive(true);
         playerHealth.transform.Find("gemout").gameObject.SetActive(true);

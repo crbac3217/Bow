@@ -22,7 +22,7 @@ MonoBehaviour:
     itemThumbnail: {fileID: -8952701106119953289, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
     statMods:
     - statType: 2
-      value: 1
+      value: 2
     damageMods: []
     modifiers: []
   - nameCode: i002
@@ -34,7 +34,7 @@ MonoBehaviour:
     itemThumbnail: {fileID: -3467226488965244148, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
     statMods:
     - statType: 2
-      value: 2
+      value: 4
     damageMods: []
     modifiers: []
   - nameCode: i003
@@ -46,7 +46,7 @@ MonoBehaviour:
     itemThumbnail: {fileID: 7924064554569767795, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
     statMods:
     - statType: 2
-      value: 3
+      value: 5
     damageMods: []
     modifiers: []
   - nameCode: i004
@@ -54,7 +54,7 @@ MonoBehaviour:
     itemTier: 1
     cost: 5
     multi: 1
-    itemDescription: Botanical+
+    itemDescription: Vitae+
     itemThumbnail: {fileID: 4770331434234697323, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
     statMods: []
     damageMods:
@@ -66,7 +66,7 @@ MonoBehaviour:
     itemTier: 2
     cost: 11
     multi: 1
-    itemDescription: Botanical++
+    itemDescription: Vitae++
     itemThumbnail: {fileID: -4302082566658444737, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
     statMods: []
     damageMods:
@@ -78,7 +78,7 @@ MonoBehaviour:
     itemTier: 3
     cost: 18
     multi: 1
-    itemDescription: Botanical+++
+    itemDescription: Vitae+++
     itemThumbnail: {fileID: 4462785977665537077, guid: 7e8cd4cf47af46a4b970edb6445855e0, type: 3}
     statMods: []
     damageMods:
@@ -390,7 +390,7 @@ MonoBehaviour:
     itemTier: 2
     cost: 13
     multi: 1
-    itemDescription: Struck by lightning
+    itemDescription: A branch struck by lightning
     itemThumbnail: {fileID: 3325291523699893007, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
     statMods: []
     damageMods:
@@ -406,7 +406,7 @@ MonoBehaviour:
     itemTier: 2
     cost: 13
     multi: 1
-    itemDescription: Bonk
+    itemDescription: A frozen tuna used as a club
     itemThumbnail: {fileID: 21300000, guid: d71db354314330c4ea591eedfc39ec73, type: 3}
     statMods: []
     damageMods:
@@ -420,7 +420,7 @@ MonoBehaviour:
     itemTier: 2
     cost: 11
     multi: 1
-    itemDescription: Stronger legs
+    itemDescription: Allows you to jump higher, and move faster
     itemThumbnail: {fileID: 4727665762673792716, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
     statMods:
     - statType: 0
@@ -434,7 +434,7 @@ MonoBehaviour:
     itemTier: 2
     cost: 11
     multi: 1
-    itemDescription: Sharper Shots
+    itemDescription: Sharper Shots!
     itemThumbnail: {fileID: -2263691241740591259, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
     statMods:
     - statType: 4
@@ -448,7 +448,7 @@ MonoBehaviour:
     itemTier: 2
     cost: 13
     multi: 1
-    itemDescription: Sparks!
+    itemDescription: A Hammer That Sparks When Struck
     itemThumbnail: {fileID: 46928851760750416, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
     statMods: []
     damageMods:
@@ -464,11 +464,11 @@ MonoBehaviour:
     itemTier: 1
     cost: 8
     multi: 1
-    itemDescription: Light Protection
+    itemDescription: Protected With Fire
     itemThumbnail: {fileID: 5597620136797826553, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
     statMods:
     - statType: 2
-      value: 1
+      value: 2
     damageMods:
     - damageElement: 3
       value: 1
@@ -496,7 +496,7 @@ MonoBehaviour:
     itemThumbnail: {fileID: 846191573135054887, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
     statMods:
     - statType: 2
-      value: 1
+      value: 2
     - statType: 1
       value: 1
     - statType: 0
@@ -514,9 +514,9 @@ MonoBehaviour:
     itemThumbnail: {fileID: -4115969827457987160, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
     statMods:
     - statType: 3
-      value: -5
+      value: -3
     - statType: 4
-      value: -5
+      value: -3
     damageMods:
     - damageElement: 0
       value: 7
@@ -526,13 +526,13 @@ MonoBehaviour:
     itemTier: 3
     cost: 18
     multi: 1
-    itemDescription: Immense Power, Immense Sacrifice
+    itemDescription: Sheer Force, But Blunt Shots
     itemThumbnail: {fileID: 3066715354918297948, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
     statMods:
     - statType: 3
-      value: -8
+      value: -5
     - statType: 4
-      value: -8
+      value: -5
     damageMods:
     - damageElement: 0
       value: 12
@@ -546,7 +546,7 @@ MonoBehaviour:
     itemThumbnail: {fileID: -380481664353167724, guid: 24f8906ba6a3cef44a880cc071e2fa23, type: 3}
     statMods:
     - statType: 2
-      value: 1
+      value: 2
     - statType: 4
       value: -1
     damageMods:
@@ -613,11 +613,11 @@ MonoBehaviour:
     itemTier: 4
     cost: 25
     multi: 1
-    itemDescription: Flash
+    itemDescription: Flash Upon Hit
     itemThumbnail: {fileID: -5008339533774528205, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
     statMods:
     - statType: 2
-      value: 1
+      value: 2
     damageMods: []
     modifiers:
     - {fileID: 11400000, guid: 94bfee94737e0144c9c363da34071a25, type: 2}
@@ -626,11 +626,11 @@ MonoBehaviour:
     itemTier: 3
     cost: 20
     multi: 1
-    itemDescription: Protection
+    itemDescription: Deflect Partially
     itemThumbnail: {fileID: 6671177133590871485, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
     statMods:
     - statType: 2
-      value: 1
+      value: 4
     damageMods: []
     modifiers:
     - {fileID: 11400000, guid: 4e761b71b7233f04ab3dbfa069fa05a1, type: 2}
@@ -639,25 +639,14 @@ MonoBehaviour:
     itemTier: 3
     cost: 23
     multi: 1
-    itemDescription: Inflict Fear
+    itemDescription: Inflict Fear Upon Hit
     itemThumbnail: {fileID: 9218779822792652957, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
     statMods:
     - statType: 2
-      value: 1
+      value: 4
     damageMods: []
     modifiers:
     - {fileID: 11400000, guid: 4ac42cf0df083644d95978badd1a2f76, type: 2}
-  - nameCode: i052
-    itemName: Helm of the Dead
-    itemTier: 4
-    cost: 25
-    multi: 1
-    itemDescription: Necromancy?
-    itemThumbnail: {fileID: -8444492827580724224, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
-    statMods: []
-    damageMods: []
-    modifiers:
-    - {fileID: 11400000, guid: 9c94f45363d51e34d985154261abb961, type: 2}
   - nameCode: i053
     itemName: The Soulcaller
     itemTier: 3
@@ -674,11 +663,11 @@ MonoBehaviour:
     itemTier: 4
     cost: 30
     multi: 1
-    itemDescription: Chills
+    itemDescription: Create a Snow Globe Around
     itemThumbnail: {fileID: 6549172739181210766, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
     statMods:
     - statType: 2
-      value: 2
+      value: 4
     damageMods:
     - damageElement: 1
       value: 1
@@ -689,7 +678,7 @@ MonoBehaviour:
     itemTier: 5
     cost: 45
     multi: 0
-    itemDescription: Forbid Skills
+    itemDescription: Not Using Skills Increase Damage
     itemThumbnail: {fileID: 3260131147173602438, guid: 145871d5729986c49b054f4e2424e4ba, type: 3}
     statMods: []
     damageMods: []
@@ -711,7 +700,7 @@ MonoBehaviour:
     itemTier: 3
     cost: 20
     multi: 1
-    itemDescription: Multiplies
+    itemDescription: Grants Gold Overtime
     itemThumbnail: {fileID: -8565728930057674282, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
     statMods: []
     damageMods: []
@@ -746,7 +735,7 @@ MonoBehaviour:
     itemTier: 2
     cost: 11
     multi: 1
-    itemDescription: A gold brick used as a weapon
+    itemDescription: A Gold Brick Used As a Weapon
     itemThumbnail: {fileID: 6514505247206400422, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
     statMods: []
     damageMods: []
@@ -768,7 +757,7 @@ MonoBehaviour:
     itemTier: 3
     cost: 18
     multi: 1
-    itemDescription: Love
+    itemDescription: Creates a Pull
     itemThumbnail: {fileID: 21300000, guid: 522285ec715193744a5aac96b254fe69, type: 3}
     statMods: []
     damageMods: []
@@ -779,7 +768,7 @@ MonoBehaviour:
     itemTier: 3
     cost: 18
     multi: 1
-    itemDescription: Hate
+    itemDescription: Creates a Push
     itemThumbnail: {fileID: 21300000, guid: 8e9eb84c02b97a24085c23f5f387e63d, type: 3}
     statMods: []
     damageMods: []
@@ -814,7 +803,7 @@ MonoBehaviour:
     itemTier: 5
     cost: 30
     multi: 1
-    itemDescription: Destroy Everything
+    itemDescription: Depletes Health to Obtain Power
     itemThumbnail: {fileID: -3064179723642489473, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
     statMods: []
     damageMods:
@@ -837,7 +826,7 @@ MonoBehaviour:
     itemTier: 2
     cost: 11
     multi: 1
-    itemDescription: Wish for Sacrifice
+    itemDescription: Three Wishes for Three Sacrifices
     itemThumbnail: {fileID: -5917088129175094385, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
     statMods: []
     damageMods: []
@@ -848,11 +837,11 @@ MonoBehaviour:
     itemTier: 4
     cost: 20
     multi: 0
-    itemDescription: A helmet that belonged to a giant
+    itemDescription: A helmet That Once Belonged to a Giant
     itemThumbnail: {fileID: 6388486641446567860, guid: 27daf28b0e111df46a42040b9cd9bfd8, type: 3}
     statMods:
     - statType: 2
-      value: 5
+      value: 10
     damageMods:
     - damageElement: 0
       value: 5

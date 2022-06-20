@@ -97,15 +97,15 @@ public class Area : MonoBehaviour
         ec.dm = dm;
         ec.damageCrits = crits;
         ec.lm = lm;
-        ec.GetComponent<AiHandler>().damage += Mathf.RoundToInt(level * 0.333f);
         ec.GetComponent<AiHandler>().pc = pc;
         ec.lvlm = lvlm;
         ec.chestTier = level;
         if (level > 1)
         {
+            ec.GetComponent<AiHandler>().damage += Mathf.RoundToInt(level * 0.333f);
             ec.maxHp += Mathf.RoundToInt(ec.maxHp * 0.5f * level);
-            ec.minGoldDrop += Mathf.RoundToInt(ec.minGoldDrop * 0.2f * level);
-            ec.maxGoldDrop += Mathf.RoundToInt(ec.maxGoldDrop * 0.4f * level);
+            ec.minGoldDrop += Mathf.RoundToInt(ec.minGoldDrop * 0.1f * level);
+            ec.maxGoldDrop += Mathf.RoundToInt(ec.maxGoldDrop * 0.25f * level);
             foreach (DamageType dt in ec.strength)
             {
                 float val = dt.value + (dt.value * level * 0.5f);
