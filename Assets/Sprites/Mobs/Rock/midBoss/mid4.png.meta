@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1408,9 +1422,9 @@ TextureImporter:
       mid4_27: -4124879545948655096
       mid4_18: 2706796131274145197
       mid4_9: 2762442724535289366
-      mid4_23: 6960436056167405131
       mid4_25: 5854177657549743190
       mid4_31: -5203020184792067005
+      mid4_23: 6960436056167405131
       mid4_16: -7996337652120324170
       mid4_6: 2547326321044352880
       mid4_42: -8570869973388196693
@@ -1429,7 +1443,6 @@ TextureImporter:
       mid4_1: -173409015954332818
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

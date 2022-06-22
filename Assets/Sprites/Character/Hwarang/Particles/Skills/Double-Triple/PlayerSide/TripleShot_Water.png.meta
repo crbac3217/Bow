@@ -71,6 +71,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -114,6 +115,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -177,6 +179,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -558,8 +572,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TripleShot_Water_10: -1820142514737966018
       TripleShot_Water_16: 1078785062799500965
+      TripleShot_Water_10: -1820142514737966018
       TripleShot_Water_0: 8053922498413179767
       TripleShot_Water_15: -4267184624128155263
       TripleShot_Water_14: 8488835459970461039
@@ -577,7 +591,6 @@ TextureImporter:
       TripleShot_Water_7: -143840779706316789
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

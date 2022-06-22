@@ -65,6 +65,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -108,6 +109,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -171,6 +173,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -513,7 +527,6 @@ TextureImporter:
       DoubleShot_12: -5466926751816571708
       DoubleShot_4: -5336527256009641154
       DoubleShot_3: -8791274876626627078
-      DoubleShot_14: 6028116403658738901
       DoubleShot_7: -2782818309175059877
       DoubleShot_13: -1819776837946758622
       DoubleShot_1: 4623661386127988403
@@ -523,11 +536,11 @@ TextureImporter:
       DoubleShot_9: -7262626008906451568
       DoubleShot_8: 7797980919821049715
       DoubleShot_2: 5015482974316613039
+      DoubleShot_14: 6028116403658738901
       DoubleShot_10: -5308497893346205847
       DoubleShot_5: -6618283707203702409
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

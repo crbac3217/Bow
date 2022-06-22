@@ -20,6 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,13 +106,13 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 47
     textureCompression: 1
-    compressionQuality: 50
+    compressionQuality: 0
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
@@ -1235,7 +1237,7 @@ TextureImporter:
     - texture: {fileID: 2800000, guid: 2b295864528c24442a2b872485c11025, type: 3}
       name: _NormalMap
     nameFileIdTable:
-      pazuzu3_14: -659969797
+      pazuzu3_8: -2002435092
       pazuzu3_43: -406252319
       pazuzu3_46: -679281849
       pazuzu3_40: -826742852
@@ -1284,11 +1286,10 @@ TextureImporter:
       pazuzu3_6: 131648224
       pazuzu3_32: 407559564
       pazuzu3_22: -1379798330
-      pazuzu3_8: -2002435092
+      pazuzu3_14: -659969797
       pazuzu3_5: -507082095
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

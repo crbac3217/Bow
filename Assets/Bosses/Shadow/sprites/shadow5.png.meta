@@ -20,6 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,13 +106,13 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 47
     textureCompression: 1
-    compressionQuality: 50
+    compressionQuality: 0
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
@@ -1509,7 +1511,7 @@ TextureImporter:
       name: _NormalMap
     nameFileIdTable:
       shadow5_5: 744737016
-      shadow5_36: 1852641201
+      shadow5_47: -838705819
       shadow5_20: 1181071304
       shadow5_39: -407636900
       shadow5_41: 786418701
@@ -1566,15 +1568,14 @@ TextureImporter:
       shadow5_35: 1091910655
       shadow5_56: 344028088
       shadow5_57: 1255038394
+      shadow5_36: 1852641201
       shadow5_14: -744950035
-      shadow5_27: 762288434
-      shadow5_47: -838705819
-      shadow5_49: 1273121952
       shadow5_62: -790203576
+      shadow5_49: 1273121952
+      shadow5_27: 762288434
       shadow5_52: -1154893695
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

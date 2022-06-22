@@ -197,6 +197,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -240,6 +241,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -303,6 +305,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1595,12 +1609,12 @@ TextureImporter:
       dragonbite_wind_41: -6764039575060605143
       dragonbite_wind_43: 2593556875061491769
       dragonbite_wind_2: -5959330723706513976
+      dragonbite_wind_52: 8737029906561909493
       dragonbite_wind_3: -651457284069136800
       dragonbite_wind_16: 8871856870146367460
-      dragonbite_wind_30: -141827296900615707
-      dragonbite_wind_15: 3321349058626906531
       dragonbite_wind_6: 2395201700925413163
-      dragonbite_wind_52: 8737029906561909493
+      dragonbite_wind_15: 3321349058626906531
+      dragonbite_wind_30: -141827296900615707
       dragonbite_wind_10: 5351743469008650590
       dragonbite_wind_20: 6545126748705649565
       dragonbite_wind_39: 5628518241918534864
@@ -1627,7 +1641,6 @@ TextureImporter:
       dragonbite_wind_5: -7552431686885710621
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

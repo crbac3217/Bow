@@ -20,6 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,13 +106,13 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 47
     textureCompression: 1
-    compressionQuality: 50
+    compressionQuality: 0
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
@@ -1249,18 +1251,18 @@ TextureImporter:
       wendigo2_11: 1088573379
       wendigo2_32: 545372050
       wendigo2_49: 443854014
+      wendigo2_43: 551128614
+      wendigo2_38: 1047248208
+      wendigo2_9: 1470379787
       wendigo2_15: 335260930
       wendigo2_22: -1891242148
-      wendigo2_9: 1470379787
-      wendigo2_30: -1983850030
       wendigo2_33: -43935436
-      wendigo2_37: -2128426185
       wendigo2_16: 313366423
       wendigo2_44: -447687796
-      wendigo2_43: 551128614
+      wendigo2_30: -1983850030
       wendigo2_47: 977469468
       wendigo2_14: -1286048308
-      wendigo2_38: 1047248208
+      wendigo2_37: -2128426185
       wendigo2_29: -1596630400
       wendigo2_26: 454739932
       wendigo2_41: -1499859805
@@ -1283,12 +1285,11 @@ TextureImporter:
       wendigo2_19: 2116909384
       wendigo2_21: -1928410185
       wendigo2_48: 2094446729
+      wendigo2_42: 1703298115
       wendigo2_5: 1183498616
       wendigo2_7: 278989785
-      wendigo2_42: 1703298115
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

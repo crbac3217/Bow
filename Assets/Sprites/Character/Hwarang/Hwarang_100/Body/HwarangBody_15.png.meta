@@ -221,6 +221,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -264,6 +265,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -327,6 +329,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1791,22 +1805,22 @@ TextureImporter:
       HwarangBody_15_34: -8870830796446526688
       HwarangBody_15_3: -5955958284014208429
       HwarangBody_15_5: -4683514262256501700
-      HwarangBody_15_9: -39875622898581153
       HwarangBody_15_50: 641726724840196362
+      HwarangBody_15_9: -39875622898581153
+      HwarangBody_15_59: 4995394859184051032
       HwarangBody_15_1: 7628644982427540404
       HwarangBody_15_18: 3158756789417597701
       HwarangBody_15_31: -4387619898856860286
-      HwarangBody_15_41: 4654031356100088404
       HwarangBody_15_45: -5578459882716706878
-      HwarangBody_15_47: 5844694390743395506
-      HwarangBody_15_59: 4995394859184051032
-      HwarangBody_15_25: -2727907544240082232
+      HwarangBody_15_41: 4654031356100088404
       HwarangBody_15_60: -4688798158470332925
+      HwarangBody_15_25: -2727907544240082232
+      HwarangBody_15_47: 5844694390743395506
+      HwarangBody_15_64: 3816698993121253949
       HwarangBody_15_58: -3042594210327378883
       HwarangBody_15_61: -3029928841517890934
       HwarangBody_15_12: 6752903846066070562
       HwarangBody_15_33: 6518341803829880181
-      HwarangBody_15_64: 3816698993121253949
       HwarangBody_15_65: -8776263373227963873
       HwarangBody_15_15: -5324566835030745025
       HwarangBody_15_38: 3095753717730613527
@@ -1829,7 +1843,6 @@ TextureImporter:
       HwarangBody_15_4: -7031069626808248530
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

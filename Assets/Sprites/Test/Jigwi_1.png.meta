@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1376,7 +1390,7 @@ TextureImporter:
     - texture: {fileID: 2800000, guid: a7716c51bd237fb4bb45d787ce1b714e, type: 3}
       name: _NormalMap
     nameFileIdTable:
-      Jigwi_1_50: -6576850134245539062
+      Jigwi_1_2: 2986124374646889857
       Jigwi_1_41: 6153739164454215204
       Jigwi_1_14: 1299049583332371005
       Jigwi_1_30: 497981417466625448
@@ -1424,12 +1438,11 @@ TextureImporter:
       Jigwi_1_28: 8500873265439490202
       Jigwi_1_39: 8795058720096178782
       Jigwi_1_13: -1808033699670205519
-      Jigwi_1_2: 2986124374646889857
       Jigwi_1_8: -8290842859628052282
+      Jigwi_1_50: -6576850134245539062
       Jigwi_1_43: 6807889974102508750
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

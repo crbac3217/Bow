@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1381,7 +1395,7 @@ TextureImporter:
       HwarangHead_7_9: 6235220176919208316
       HwarangHead_7_47: 5030180248015300031
       HwarangHead_7_5: -2169785833625223161
-      HwarangHead_7_45: 3691543509935989305
+      HwarangHead_7_44: -4421660059915532723
       HwarangHead_7_27: 5660426885895046770
       HwarangHead_7_30: 8280571390658692850
       HwarangHead_7_38: 5497438834813155454
@@ -1405,11 +1419,11 @@ TextureImporter:
       HwarangHead_7_32: 2170342913243574934
       HwarangHead_7_3: 4576285296413364239
       HwarangHead_7_12: 6534827437237621904
-      HwarangHead_7_31: -832235237138041036
-      HwarangHead_7_17: 8107265479793569210
       HwarangHead_7_41: 2380655328107012318
-      HwarangHead_7_14: -6895321430776498910
+      HwarangHead_7_17: 8107265479793569210
+      HwarangHead_7_31: -832235237138041036
       HwarangHead_7_19: -2278182414804338407
+      HwarangHead_7_14: -6895321430776498910
       HwarangHead_7_16: -7987833034476226243
       HwarangHead_7_15: 3241780964147493910
       HwarangHead_7_43: -6174617649703581833
@@ -1425,11 +1439,10 @@ TextureImporter:
       HwarangHead_7_33: -7050409952344798949
       HwarangHead_7_20: 8940556935303899106
       HwarangHead_7_8: -598164685158836626
-      HwarangHead_7_44: -4421660059915532723
+      HwarangHead_7_45: 3691543509935989305
       HwarangHead_7_40: -6294053961139501378
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

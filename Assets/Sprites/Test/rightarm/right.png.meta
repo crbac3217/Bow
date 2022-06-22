@@ -767,6 +767,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -810,6 +811,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -863,6 +865,18 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 8192
     resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -872,7 +886,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Server
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -6150,14 +6164,14 @@ TextureImporter:
       right_236: -2741913724753735124
       right_222: 4559282755731853919
       right_131: 4486455505181987992
+      right_150: -1404912867763613069
       right_35: 6000613811599072908
       right_20: -4858738634707000283
       right_111: -1056758769554411056
       right_234: -1704436945512627779
-      right_150: -1404912867763613069
+      right_196: -6395784515743438187
       right_143: 4992250825855063683
       right_76: -1116862215986039247
-      right_196: -6395784515743438187
       right_129: -8429215289630871650
       right_100: 640931691697203505
       right_183: -2814555345652322055
@@ -6166,11 +6180,11 @@ TextureImporter:
       right_97: 4472090424240705535
       right_86: -5923915587660430853
       right_201: 8486166186341975316
-      right_210: 7411126120738920177
       right_233: 597716353020894639
       right_101: 4421627691296085557
       right_103: -5656359174029543084
       right_28: -4851718791761054403
+      right_210: 7411126120738920177
       right_141: -1203096415902557537
       right_79: -6460276030560942361
       right_192: -7255241433387277207
@@ -6211,12 +6225,12 @@ TextureImporter:
       right_65: 2092344515777288877
       right_104: -1007647186069523502
       right_185: -8341293263574295689
-      right_171: 4297321880243457461
       right_220: 953731142055464825
       right_237: 232485873545309388
+      right_171: 4297321880243457461
       right_109: 5962545056328937617
-      right_179: 8772262217171330592
       right_230: 1245787695779507445
+      right_179: 8772262217171330592
       right_75: 3258107265382729198
       right_149: 7275731781990330800
       right_18: 4225177105795532689
@@ -6288,12 +6302,12 @@ TextureImporter:
       right_218: 553757594497036209
       right_1: 6507350358835803604
       right_82: 2513255859661794951
-      right_132: 1774499330836045762
       right_224: 858686843009708959
+      right_231: 3008293158464885616
+      right_132: 1774499330836045762
       right_106: 887284006680646575
       right_219: -9026941867717054155
       right_153: -2711955268370867422
-      right_231: 3008293158464885616
       right_213: -8564088911660353319
       right_10: 2078935340654105550
       right_29: 2685713288900468998
@@ -6379,7 +6393,6 @@ TextureImporter:
       right_93: 5248614688001590682
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

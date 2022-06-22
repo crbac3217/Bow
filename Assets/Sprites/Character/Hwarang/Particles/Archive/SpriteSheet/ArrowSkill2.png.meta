@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1413,9 +1427,9 @@ TextureImporter:
       ArrowSkill2_43: -6083575010324266423
       ArrowSkill2_21: 5130337310338884544
       ArrowSkill2_4: -41748205418260548
+      ArrowSkill2_48: -3354185097977755851
       ArrowSkill2_7: -8812767575847308956
       ArrowSkill2_38: 3528231284961946482
-      ArrowSkill2_48: -3354185097977755851
       ArrowSkill2_40: 1165429627808440613
       ArrowSkill2_3: 8339819786461390228
       ArrowSkill2_9: -9108388192234889747
@@ -1429,7 +1443,6 @@ TextureImporter:
       ArrowSkill2_25: -7708745681573123691
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

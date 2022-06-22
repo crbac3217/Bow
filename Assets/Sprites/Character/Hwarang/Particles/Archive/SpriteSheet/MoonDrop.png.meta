@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1377,7 +1391,7 @@ TextureImporter:
       name: _NormalMap
     nameFileIdTable:
       MoonDrop_43: -8539359489286146869
-      MoonDrop_45: -6052313246494417375
+      MoonDrop_30: -3448570834006587458
       MoonDrop_26: 1068259307750567817
       MoonDrop_2: 8823636616121044805
       MoonDrop_3: 1356253848731164519
@@ -1425,11 +1439,10 @@ TextureImporter:
       MoonDrop_41: -7718449038694804357
       MoonDrop_31: 2972425522311085497
       MoonDrop_39: -6855134950544111641
-      MoonDrop_30: -3448570834006587458
       MoonDrop_23: -4687500720860446074
+      MoonDrop_45: -6052313246494417375
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

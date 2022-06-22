@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1391,6 +1405,7 @@ TextureImporter:
       range2_1: -5956102208081418742
       range2_12: 1758814675457066438
       range2_27: -7824580623874558455
+      range2_50: -4436207697659057228
       range2_42: 7688120122992072257
       range2_38: -8809845493737941028
       range2_29: 1213863894524301405
@@ -1402,13 +1417,12 @@ TextureImporter:
       range2_32: 6061484951929559986
       range2_41: 6278825107740500228
       range2_22: -6577586033915987805
-      range2_36: -2232258781144599805
       range2_35: -1557567565516900028
+      range2_36: -2232258781144599805
       range2_23: -252734213146513069
       range2_25: -2640189121549567622
       range2_46: 8063119597167166746
       range2_7: 686923538899949049
-      range2_50: -4436207697659057228
       range2_0: -9029770276192548722
       range2_31: -2776530410402454404
       range2_6: -3648296528068959706
@@ -1429,7 +1443,6 @@ TextureImporter:
       range2_39: -2250280675092824784
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

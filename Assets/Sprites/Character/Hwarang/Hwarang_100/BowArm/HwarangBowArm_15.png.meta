@@ -221,6 +221,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -264,6 +265,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -327,6 +329,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1789,12 +1803,12 @@ TextureImporter:
       HwarangBowArm_15_36: -1501146461894585662
       HwarangBowArm_15_22: -7211786617437600568
       HwarangBowArm_15_56: -2284591177450830340
+      HwarangBowArm_15_63: 1379954701751023998
       HwarangBowArm_15_23: -2643275079763371164
       HwarangBowArm_15_9: -4898647279871260300
-      HwarangBowArm_15_11: 1799108289680437180
       HwarangBowArm_15_55: 4385320694726943211
+      HwarangBowArm_15_11: 1799108289680437180
       HwarangBowArm_15_35: 295487678102787337
-      HwarangBowArm_15_63: 1379954701751023998
       HwarangBowArm_15_21: -475267616985616493
       HwarangBowArm_15_64: -2720225320474856477
       HwarangBowArm_15_61: -9198430796940666108
@@ -1829,7 +1843,6 @@ TextureImporter:
       HwarangBowArm_15_45: -7058123591673663816
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1380,7 +1394,6 @@ TextureImporter:
       dokebi_21: -2957977285305389532
       dokebi_38: 4467944984947016711
       dokebi_42: 1714014345310007488
-      dokebi_44: 5923379444976247295
       dokebi_31: -7010797227308660748
       dokebi_41: -7046669636337071741
       dokebi_48: -7628381067372034589
@@ -1394,16 +1407,16 @@ TextureImporter:
       dokebi_15: 8984855719187231244
       dokebi_27: -3035085266855646461
       dokebi_30: 3099798060227945097
-      dokebi_6: -3839361226986491361
+      dokebi_13: 3439976327662590919
       dokebi_4: -3943658863981573878
+      dokebi_6: -3839361226986491361
       dokebi_17: 690662102210787210
       dokebi_5: 9082306938529681088
-      dokebi_26: -5490831383862383975
-      dokebi_13: 3439976327662590919
-      dokebi_8: -6900083039637662720
-      dokebi_19: -409195985795276798
       dokebi_43: -2731844327360222239
       dokebi_49: 728986679529131834
+      dokebi_26: -5490831383862383975
+      dokebi_8: -6900083039637662720
+      dokebi_19: -409195985795276798
       dokebi_29: 2185553282209481833
       dokebi_34: -6047540946410525999
       dokebi_45: -654670584126503973
@@ -1416,18 +1429,18 @@ TextureImporter:
       dokebi_1: 3121014922903389776
       dokebi_37: 2769219273781682116
       dokebi_39: -7411634357210390054
+      dokebi_44: 5923379444976247295
       dokebi_18: 1275268150672842096
       dokebi_33: -3498906250791117618
-      dokebi_16: -299397326277539484
       dokebi_12: 7123845942626753528
+      dokebi_16: -299397326277539484
       dokebi_9: -6321747395955886658
       dokebi_36: -6135039612276529576
-      dokebi_28: 8526863718601204615
       dokebi_14: 7960534413648751561
+      dokebi_28: 8526863718601204615
       dokebi_0: -5272045242543906679
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

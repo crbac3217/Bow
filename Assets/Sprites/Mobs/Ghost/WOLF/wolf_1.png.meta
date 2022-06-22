@@ -20,6 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,13 +106,13 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 47
     textureCompression: 1
-    compressionQuality: 50
+    compressionQuality: 0
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
@@ -1259,13 +1261,13 @@ TextureImporter:
       wolf_1_6: 2084328091
       wolf_1_27: -1634173357
       wolf_1_12: -1100758209
-      wolf_1_21: 2086492965
       wolf_1_20: 1166702902
-      wolf_1_2: -1877520956
+      wolf_1_21: 2086492965
       wolf_1_26: 1149990251
+      wolf_1_2: -1877520956
+      wolf_1_33: -979054853
       wolf_1_9: 1195956409
       wolf_1_23: -1708650886
-      wolf_1_33: -979054853
       wolf_1_28: -340046392
       wolf_1_40: 1863004869
       wolf_1_15: 703503791
@@ -1288,7 +1290,6 @@ TextureImporter:
       wolf_1_13: -1699009162
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

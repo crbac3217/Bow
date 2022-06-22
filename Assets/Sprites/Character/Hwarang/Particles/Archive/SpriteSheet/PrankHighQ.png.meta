@@ -233,6 +233,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -276,6 +277,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -339,6 +341,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1885,6 +1899,7 @@ TextureImporter:
       PrankHighQ_55: -6980877332746338221
       PrankHighQ_14: -6696209136170191484
       PrankHighQ_53: 2443952868560264699
+      PrankHighQ_67: 4969018391461993941
       PrankHighQ_66: 1905933921541008163
       PrankHighQ_5: 2341127558063105625
       PrankHighQ_43: -885181001463263603
@@ -1895,7 +1910,6 @@ TextureImporter:
       PrankHighQ_57: -1562839193246449933
       PrankHighQ_8: 6778394322315439697
       PrankHighQ_48: 5169478672093273465
-      PrankHighQ_67: 4969018391461993941
       PrankHighQ_22: -2823227685122960405
       PrankHighQ_59: 9135071383596156678
       PrankHighQ_64: 7016034352267048379
@@ -1929,7 +1943,6 @@ TextureImporter:
       PrankHighQ_60: -6864505689767873634
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

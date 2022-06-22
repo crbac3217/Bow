@@ -176,6 +176,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -219,6 +220,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -282,6 +284,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1422,17 +1436,17 @@ TextureImporter:
       HwarangBody_2_38: 2774983968377891552
       HwarangBody_2_19: -8616139926063420630
       HwarangBody_2_18: -2273787409925514102
+      HwarangBody_2_37: -6039371698672971831
       HwarangBody_2_16: 2784995999862102617
       HwarangBody_2_15: 6534623455421881907
-      HwarangBody_2_11: -7628347045551740642
-      HwarangBody_2_37: -6039371698672971831
       HwarangBody_2_43: -222053907387633662
+      HwarangBody_2_11: -7628347045551740642
       HwarangBody_2_1: 6286228633490917251
-      HwarangBody_2_2: -8393459529296154028
       HwarangBody_2_8: 3592921949223144308
-      HwarangBody_2_51: 4616697302016620716
       HwarangBody_2_24: 2281647177427962286
+      HwarangBody_2_2: -8393459529296154028
       HwarangBody_2_25: -1891359621394590700
+      HwarangBody_2_51: 4616697302016620716
       HwarangBody_2_14: -358579827872766056
       HwarangBody_2_3: -749476819086383423
       HwarangBody_2_29: 6632705242189486300
@@ -1454,7 +1468,6 @@ TextureImporter:
       HwarangBody_2_21: 2613358662471512865
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

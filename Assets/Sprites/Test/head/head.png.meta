@@ -767,6 +767,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -810,6 +811,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -863,6 +865,18 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 8192
     resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -872,7 +886,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Server
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -6135,7 +6149,6 @@ TextureImporter:
       head_226: 1347823221719215670
       head_167: -7339910947924778326
       head_30: -7203548783230380283
-      head_236: -719867140320429353
       head_221: 954069273236888651
       head_15: 1263044571061311057
       head_161: -7707732220754946600
@@ -6158,17 +6171,17 @@ TextureImporter:
       head_42: -2670373741069628359
       head_129: -9176504298284015692
       head_94: -1418191467290573299
-      head_174: -4656856124759599915
       head_228: 4237922318984558242
+      head_174: -4656856124759599915
       head_43: 1354241459116857066
       head_1: 5945871790718036829
       head_197: 2850848280395295074
       head_179: 1799373484385133611
       head_91: -6992360932154184821
-      head_224: 1558630413356194435
       head_248: -4443960018762869379
       head_32: 5077859299074938296
       head_9: -650449075502435527
+      head_224: 1558630413356194435
       head_135: -3486133304881262473
       head_148: 3289211810269545581
       head_238: 4505313512535973788
@@ -6207,10 +6220,10 @@ TextureImporter:
       head_24: -3026582081871856460
       head_208: 3404037721935538932
       head_109: 676113598376693756
-      head_172: -4007377072098596251
       head_198: -9205618678921866366
       head_211: 5335969576214215553
       head_11: 3739505883361241151
+      head_172: -4007377072098596251
       head_0: 6943535168657398750
       head_165: -2797600678143448982
       head_5: 3757027314003655357
@@ -6239,11 +6252,11 @@ TextureImporter:
       head_65: -1064550847855533833
       head_28: 5797860677159036542
       head_71: 3254031234781861428
-      head_131: 7201182333672405084
+      head_170: -8286415569572852120
       head_38: -2835294517719849310
       head_233: 4635529669266416199
-      head_170: -8286415569572852120
       head_178: 7939417817571896263
+      head_131: 7201182333672405084
       head_63: -8592085224644982197
       head_123: 2089280125668958807
       head_95: 8217029192765130747
@@ -6342,11 +6355,12 @@ TextureImporter:
       head_242: -721236249408345886
       head_117: -6128529588796552945
       head_33: -7708513117431321764
+      head_236: -719867140320429353
       head_66: 7069458549573549672
-      head_67: 8524625722052268074
       head_124: 5581783094710429383
-      head_214: 127267078428795756
+      head_67: 8524625722052268074
       head_171: -5954888237673746444
+      head_214: 127267078428795756
       head_209: -5182131220278155545
       head_104: 2064952069343394297
       head_169: -3317872967445950938
@@ -6379,7 +6393,6 @@ TextureImporter:
       head_212: 7654040328097866745
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

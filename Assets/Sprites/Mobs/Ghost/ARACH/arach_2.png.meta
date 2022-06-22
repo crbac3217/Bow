@@ -20,6 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,13 +106,13 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 47
     textureCompression: 1
-    compressionQuality: 50
+    compressionQuality: 0
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
@@ -1235,7 +1237,7 @@ TextureImporter:
     - texture: {fileID: 2800000, guid: bbbc6b3463df3af4c829632b885e70ca, type: 3}
       name: _NormalMap
     nameFileIdTable:
-      arach_2_42: -852223978
+      arach_2_28: 1194330555
       arach_2_46: -1211333885
       arach_2_18: -123552621
       arach_2_19: -1729160298
@@ -1254,8 +1256,8 @@ TextureImporter:
       arach_2_34: -276249971
       arach_2_7: 900825574
       arach_2_6: -40622198
-      arach_2_43: 821070773
       arach_2_50: -1000722314
+      arach_2_43: 821070773
       arach_2_29: -1310414123
       arach_2_0: 284966598
       arach_2_15: -1730059578
@@ -1282,13 +1284,12 @@ TextureImporter:
       arach_2_37: -392462471
       arach_2_16: -774148169
       arach_2_17: 403264093
-      arach_2_35: -629928315
       arach_2_11: 2095049387
-      arach_2_28: 1194330555
       arach_2_21: 2048745263
+      arach_2_42: -852223978
+      arach_2_35: -629928315
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

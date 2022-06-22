@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1399,8 +1413,8 @@ TextureImporter:
       HwarangBowArm_6_43: 5347368312480495729
       HwarangBowArm_6_37: -1716326564378963516
       HwarangBowArm_6_16: 2974617608098880623
-      HwarangBowArm_6_27: -5439259001497296485
       HwarangBowArm_6_46: 8101968205892536432
+      HwarangBowArm_6_27: -5439259001497296485
       HwarangBowArm_6_25: 491235942438235594
       HwarangBowArm_6_40: -1431546610007728900
       HwarangBowArm_6_33: 7136828484840571876
@@ -1413,8 +1427,8 @@ TextureImporter:
       HwarangBowArm_6_0: -2392806036180378255
       HwarangBowArm_6_39: -3810112436785964254
       HwarangBowArm_6_23: -2084092954788228492
-      HwarangBowArm_6_7: 1537212591398786657
       HwarangBowArm_6_38: 6277057230614845985
+      HwarangBowArm_6_7: 1537212591398786657
       HwarangBowArm_6_47: -5971341558298458227
       HwarangBowArm_6_32: -8181107478888556417
       HwarangBowArm_6_12: 910629234246658888
@@ -1429,7 +1443,6 @@ TextureImporter:
       HwarangBowArm_6_42: 7613277140201915133
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

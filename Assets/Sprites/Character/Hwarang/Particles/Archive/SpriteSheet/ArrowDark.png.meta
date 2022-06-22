@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1377,10 +1391,10 @@ TextureImporter:
       name: _NormalMap
     nameFileIdTable:
       ArrowDark_27: -6947369766541262894
-      ArrowDark_49: -5064363976968309343
       ArrowDark_32: 5089679624490315345
       ArrowDark_10: -3950979802572890674
       ArrowDark_23: -7873428912380071251
+      ArrowDark_29: 479565320611778200
       ArrowDark_21: -139726435188085137
       ArrowDark_4: -229846516149850461
       ArrowDark_40: -4376399777628133417
@@ -1408,28 +1422,27 @@ TextureImporter:
       ArrowDark_18: 1560663604721350582
       ArrowDark_46: -4055800020444022815
       ArrowDark_25: 7382344194741830793
-      ArrowDark_28: 229299209460009644
       ArrowDark_33: 7367796550271446267
       ArrowDark_12: -723010128402690291
+      ArrowDark_28: 229299209460009644
       ArrowDark_35: -344319355811507738
       ArrowDark_38: 482605829685919572
       ArrowDark_13: -3504504622689266162
       ArrowDark_42: 8660483740475577806
       ArrowDark_14: 4954976428860298557
+      ArrowDark_45: -286498265214349740
       ArrowDark_24: 8524998415708970244
       ArrowDark_44: 2998590704834635546
       ArrowDark_43: 5454377030339513967
       ArrowDark_34: -5781812493654666228
-      ArrowDark_9: -3179982106820560315
       ArrowDark_41: -3912296544503860759
-      ArrowDark_20: -2836306054330310022
+      ArrowDark_9: -3179982106820560315
       ArrowDark_50: 2407446592328890561
+      ArrowDark_20: -2836306054330310022
       ArrowDark_0: -4251913273998712009
-      ArrowDark_45: -286498265214349740
-      ArrowDark_29: 479565320611778200
+      ArrowDark_49: -5064363976968309343
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

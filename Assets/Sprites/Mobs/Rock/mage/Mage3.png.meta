@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1379,7 +1393,7 @@ TextureImporter:
       Mage3_23: 7212411815993863601
       Mage3_38: -7405060416086223449
       Mage3_2: 377017708070545507
-      Mage3_33: 431857329053731459
+      Mage3_34: -7540174431744479946
       Mage3_9: 2279669879855868569
       Mage3_16: -7954253243092939447
       Mage3_45: 655461188127029036
@@ -1425,11 +1439,10 @@ TextureImporter:
       Mage3_40: 3554037172368963724
       Mage3_10: -3693607552280302021
       Mage3_25: -4606045226094078404
-      Mage3_34: -7540174431744479946
+      Mage3_33: 431857329053731459
       Mage3_41: -5037519023983485301
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

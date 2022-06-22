@@ -767,6 +767,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -810,6 +811,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -863,6 +865,18 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 16384
     resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -872,7 +886,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Server
     maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
@@ -6132,7 +6146,6 @@ TextureImporter:
       leftNormalMap_5: -906426004419621114
       leftNormalMap_56: -8301176285792258877
       leftNormalMap_111: -5134823370316400399
-      leftNormalMap_237: 6855628744186980054
       leftNormalMap_121: -47986261153916549
       leftNormalMap_232: 4450996876077097678
       leftNormalMap_58: 2177292112026388467
@@ -6161,13 +6174,13 @@ TextureImporter:
       leftNormalMap_31: 9072095258686992200
       leftNormalMap_230: -7378060384881776720
       leftNormalMap_182: -3126489835600985499
-      leftNormalMap_145: 7946512509231285264
+      leftNormalMap_171: -5911862539740000439
       leftNormalMap_115: -4664564789252772350
       leftNormalMap_55: -5313144243822170322
+      leftNormalMap_172: -8330305559634861740
       leftNormalMap_96: 3789509715224113689
       leftNormalMap_129: -3689295353183847479
-      leftNormalMap_172: -8330305559634861740
-      leftNormalMap_171: -5911862539740000439
+      leftNormalMap_145: 7946512509231285264
       leftNormalMap_240: 7167948777733217233
       leftNormalMap_86: -5610391133712852532
       leftNormalMap_170: 2333462535712226658
@@ -6188,17 +6201,17 @@ TextureImporter:
       leftNormalMap_184: 7180144894143284673
       leftNormalMap_173: -2152359306892346627
       leftNormalMap_226: 2501482389124401470
+      leftNormalMap_224: -8547859203959901258
       leftNormalMap_136: 4920801195285053197
       leftNormalMap_38: 7296613855413749195
-      leftNormalMap_138: -9193034181960263141
       leftNormalMap_116: 2557935760240835637
+      leftNormalMap_138: -9193034181960263141
       leftNormalMap_141: -249911023841947303
       leftNormalMap_197: 4095922148691687221
-      leftNormalMap_8: 1432303609894515898
-      leftNormalMap_200: 3257804483778241681
-      leftNormalMap_144: -6467454370179889271
       leftNormalMap_223: -54177386088895463
-      leftNormalMap_224: -8547859203959901258
+      leftNormalMap_8: 1432303609894515898
+      leftNormalMap_144: -6467454370179889271
+      leftNormalMap_200: 3257804483778241681
       leftNormalMap_146: 875260595310053074
       leftNormalMap_203: 6007489677483709070
       leftNormalMap_12: -7346963554165578382
@@ -6281,10 +6294,10 @@ TextureImporter:
       leftNormalMap_21: 4829992990822248590
       leftNormalMap_44: -8066213213818328131
       leftNormalMap_24: -8252343790126233369
-      leftNormalMap_50: -4455055072498025761
+      leftNormalMap_169: 6999018671890266954
       leftNormalMap_40: 3761441886488009453
       leftNormalMap_89: 8915222938604361977
-      leftNormalMap_169: 6999018671890266954
+      leftNormalMap_50: -4455055072498025761
       leftNormalMap_164: -4659052234588173701
       leftNormalMap_176: -5896695127473441930
       leftNormalMap_95: 7196094598322465012
@@ -6366,10 +6379,11 @@ TextureImporter:
       leftNormalMap_245: 7022762937193192525
       leftNormalMap_156: 4590780815795554387
       leftNormalMap_73: -7772575467139239664
-      leftNormalMap_61: 5613446250490569323
+      leftNormalMap_237: 6855628744186980054
       leftNormalMap_70: -1896846747321867071
-      leftNormalMap_131: -1003181614225425261
+      leftNormalMap_61: 5613446250490569323
       leftNormalMap_191: 8839511597090408191
+      leftNormalMap_131: -1003181614225425261
       leftNormalMap_14: 8472784694551466545
       leftNormalMap_123: -2604500759699609276
       leftNormalMap_192: 8216089675048596638
@@ -6377,7 +6391,6 @@ TextureImporter:
       leftNormalMap_186: 1699478802158776485
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

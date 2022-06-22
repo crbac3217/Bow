@@ -173,6 +173,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -216,6 +217,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -279,6 +281,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1399,12 +1413,12 @@ TextureImporter:
       HwarangBase_7_48: 3491743570410999129
       HwarangBase_7_3: -7472360810060425871
       HwarangBase_7_24: -1842091515217067592
-      HwarangBase_7_10: -334540966183501380
-      HwarangBase_7_22: 4712966786994433002
-      HwarangBase_7_46: 2836534264058045266
       HwarangBase_7_1: -7658938555567301424
+      HwarangBase_7_46: 2836534264058045266
+      HwarangBase_7_10: -334540966183501380
       HwarangBase_7_8: 4023267717870356992
       HwarangBase_7_29: 8467687369696973624
+      HwarangBase_7_22: 4712966786994433002
       HwarangBase_7_14: -1248086255226817477
       HwarangBase_7_26: 835770175294477858
       HwarangBase_7_20: -5960915332742372889
@@ -1429,7 +1443,6 @@ TextureImporter:
       HwarangBase_7_39: -1705994419657775118
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

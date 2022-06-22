@@ -509,6 +509,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -552,6 +553,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -615,6 +617,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -4065,13 +4079,13 @@ TextureImporter:
       birdpurple_67: -4266083953228464387
       birdpurple_155: -5961321095259449650
       birdpurple_113: -3960576427313831294
-      birdpurple_136: -4305673719479520609
+      birdpurple_25: 3527041916971390032
       birdpurple_110: 805558635379897619
       birdpurple_123: 6112603521884969707
       birdpurple_23: -4279143582177476746
       birdpurple_55: 3094278200782691009
       birdpurple_134: -4235237878048784542
-      birdpurple_147: -9223149667873266647
+      birdpurple_61: 8873677483146868052
       birdpurple_33: 7970350158957861009
       birdpurple_46: -1028167154737793308
       birdpurple_0: -701201530681585789
@@ -4093,12 +4107,11 @@ TextureImporter:
       birdpurple_104: 1864514451596970510
       birdpurple_90: -5696074858961318255
       birdpurple_99: 2732624680689490748
-      birdpurple_119: -4616258499838730470
       birdpurple_80: 4800549740683677153
-      birdpurple_93: 4403450703376341903
       birdpurple_105: -4472417612430272120
-      birdpurple_153: 6760389399415517738
+      birdpurple_93: 4403450703376341903
       birdpurple_38: 1249424832198361005
+      birdpurple_153: 6760389399415517738
       birdpurple_103: 6288778307940334464
       birdpurple_141: -1275461281726854563
       birdpurple_78: 633197515503419701
@@ -4207,27 +4220,27 @@ TextureImporter:
       birdpurple_27: -7781886989582536699
       birdpurple_152: 8404506506518607420
       birdpurple_44: 1162859210452056952
+      birdpurple_119: -4616258499838730470
       birdpurple_4: 7647680964850870047
-      birdpurple_17: -9065805840134046676
       birdpurple_45: 4404443969346996909
+      birdpurple_17: -9065805840134046676
       birdpurple_115: 1880768971711532488
-      birdpurple_108: -3441358509017165329
       birdpurple_149: 4454591552301077910
       birdpurple_74: 9181047758607173545
+      birdpurple_108: -3441358509017165329
       birdpurple_2: 5128287655734649667
-      birdpurple_159: 5884981474352232684
       birdpurple_117: 2888982500651996710
       birdpurple_32: -5513200617760192499
       birdpurple_150: 4027402724423226400
-      birdpurple_25: 3527041916971390032
+      birdpurple_159: 5884981474352232684
       birdpurple_92: 3132181651645370308
+      birdpurple_136: -4305673719479520609
       birdpurple_85: 8276727713519920106
-      birdpurple_61: 8873677483146868052
       birdpurple_107: 4545686618301173484
+      birdpurple_147: -9223149667873266647
       birdpurple_140: 5596945552820700633
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

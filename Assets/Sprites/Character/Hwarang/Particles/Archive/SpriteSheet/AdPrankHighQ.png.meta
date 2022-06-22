@@ -233,6 +233,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -276,6 +277,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -339,6 +341,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1859,7 +1873,6 @@ TextureImporter:
       AdPrankHighQ_11: -3703834617344146067
       AdPrankHighQ_54: 7036150687152330621
       AdPrankHighQ_66: 6771238180781145028
-      AdPrankHighQ_52: 5473092742093371929
       AdPrankHighQ_35: 755436595968435703
       AdPrankHighQ_22: 5288327639085911842
       AdPrankHighQ_2: 6021125748627548195
@@ -1923,13 +1936,13 @@ TextureImporter:
       AdPrankHighQ_28: 883076458021161534
       AdPrankHighQ_5: -4154852657548466398
       AdPrankHighQ_26: 7024050242668019550
-      AdPrankHighQ_50: 908151428390760970
+      AdPrankHighQ_52: 5473092742093371929
       AdPrankHighQ_36: 8034261114869939513
+      AdPrankHighQ_50: 908151428390760970
       AdPrankHighQ_61: -4043202075023658708
       AdPrankHighQ_41: -1928370825526936813
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

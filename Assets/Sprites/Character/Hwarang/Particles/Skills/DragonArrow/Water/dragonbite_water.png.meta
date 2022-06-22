@@ -197,6 +197,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -240,6 +241,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -303,6 +305,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1603,10 +1617,10 @@ TextureImporter:
       dragonbite_water_50: 4145813552948123243
       dragonbite_water_33: -3257606678225580779
       dragonbite_water_11: 8842277144326903328
-      dragonbite_water_17: 2308246411058745235
       dragonbite_water_51: -7521195392195040506
-      dragonbite_water_57: 3720476683899655163
+      dragonbite_water_17: 2308246411058745235
       dragonbite_water_42: 8686797688598244493
+      dragonbite_water_57: 3720476683899655163
       dragonbite_water_21: -7616975702411315508
       dragonbite_water_23: -2567051675040516470
       dragonbite_water_27: 7163198019226214785
@@ -1627,7 +1641,6 @@ TextureImporter:
       dragonbite_water_47: 8780890341338707762
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

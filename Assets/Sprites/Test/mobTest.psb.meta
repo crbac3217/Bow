@@ -21,6 +21,8 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
@@ -87,7 +89,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
@@ -564,7 +565,6 @@ ScriptedImporter:
     - {x: 26, y: 0}
     - {x: 38, y: 12}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -25, y: 62}
   - name: Head
     originalName: 
@@ -891,7 +891,6 @@ ScriptedImporter:
     - {x: 25, y: 24}
     - {x: 0, y: 25}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -104, y: 111}
   - name: Body
     originalName: 
@@ -1333,7 +1332,6 @@ ScriptedImporter:
     - {x: 26, y: 25}
     - {x: 26, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -155, y: -88}
   - name: hindArm
     originalName: 
@@ -1911,7 +1909,6 @@ ScriptedImporter:
     - {x: 28, y: 29}
     - {x: 0, y: 29}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -70, y: -45}
   characterData:
     bones:
@@ -2071,6 +2068,7 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   sharedRigSpriteImportData: []
   sharedRigCharacterData:
@@ -2078,6 +2076,7 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   platformSettings: []
   mosaicLayers: 1
@@ -2090,6 +2089,7 @@ ScriptedImporter:
   paperDollMode: 0
   keepDupilcateSpriteName: 1
   skeletonAssetReferenceID: 
+  padding: 4
   spriteCategoryList:
     categories: []
   spritePackingTag: 
@@ -2148,6 +2148,7 @@ ScriptedImporter:
     isVisible: 0
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
+  importFileNodeState: 1
   generateGOHierarchy: 0
   textureAssetName: mobTest Texture
   prefabAssetName: mobTest Prefab

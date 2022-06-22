@@ -509,6 +509,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -552,6 +553,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -615,6 +617,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -4063,8 +4077,6 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       birdEdit_33: -375803995110865361
-      birdEdit_141: -2909338659934004055
-      birdEdit_111: 6179260609297978098
       birdEdit_7: 6501316702566173227
       birdEdit_53: -5344772986127714195
       birdEdit_47: 3415143436891654595
@@ -4078,15 +4090,17 @@ TextureImporter:
       birdEdit_2: 963737805262448803
       birdEdit_120: 6224498512814960373
       birdEdit_103: 7997628762327481542
+      birdEdit_148: 4975625319618677841
       birdEdit_74: 8658275985613717350
-      birdEdit_150: 4336279109597720464
       birdEdit_151: -1589699824259018405
       birdEdit_146: -123192846527886479
       birdEdit_31: 5869159072413708444
+      birdEdit_150: 4336279109597720464
       birdEdit_76: 8373066182187848017
       birdEdit_109: -7557126028724935162
       birdEdit_122: -2130131640257354233
       birdEdit_24: -4135153316646461425
+      birdEdit_65: 7132093167137946628
       birdEdit_105: 7189132227845877646
       birdEdit_6: -6781218346389300305
       birdEdit_45: -6134016054066635341
@@ -4103,7 +4117,6 @@ TextureImporter:
       birdEdit_16: 5117316861802753887
       birdEdit_126: 1761983033746274181
       birdEdit_89: -8758290501525293307
-      birdEdit_148: 4975625319618677841
       birdEdit_152: -5662476620527081127
       birdEdit_128: 834136708392250511
       birdEdit_144: -4857963044381087938
@@ -4218,16 +4231,16 @@ TextureImporter:
       birdEdit_142: 1451250683244155269
       birdEdit_107: -7309033593032950482
       birdEdit_161: 5413411782574525422
-      birdEdit_4: 153728921543537569
-      birdEdit_25: -5049987866465540552
+      birdEdit_141: -2909338659934004055
+      birdEdit_111: 6179260609297978098
       birdEdit_3: -122685133739595972
-      birdEdit_34: 6416388454082648594
+      birdEdit_4: 153728921543537569
       birdEdit_90: 335075472035404883
-      birdEdit_65: 7132093167137946628
+      birdEdit_34: 6416388454082648594
+      birdEdit_25: -5049987866465540552
       birdEdit_72: 7718660498540247593
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
